@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Model 12 – Worked solutions</title>
+<link rel="stylesheet" href="../mo.css">
+</head>
+<body class="vyp">
+
+<header class="mo-head"><div class="mo-head-in">
+<div class="mo-kicker"><span class="mo-num">MODEL 12</span><span class="mo-kind">Worked solutions</span></div>
+<h1>Solids · Photoelectric Effect · Inertial Mass</h1>
+<p>Detailed worked solutions with explanations</p>
+</div></header>
+
+<nav class="mo-bar"><div class="mo-bar-in">
+<a class="mo-back" href="index.html">← All models</a>
+<div class="mo-switch"><a href="Model12_questions.html">Questions</a><a href="Model12_solutions.html" class="on">Solutions</a></div>
+<button type="button" onclick="window.print()">Print / PDF</button>
+<a class="mo-lang" href="../Vzor12_vypracovanie.html" hreflang="sk" title="Slovenská verzia">SK</a>
+</div></nav>
+
+<main class="wrap">
+
+<section class="sheet" id="cast-1"><div class="topline">Part 1 of 3</div>
+<h2>1. Structure and Mechanical Properties</h2>
+<h3>Crystalline and amorphous substances</h3>
+<p><b>Crystalline substances</b> have a regular spatial arrangement of particles over long distances. Single crystals can be anisotropic: some properties depend on the direction of measurement. Examples are table salt and quartz. <b>Amorphous substances</b> have no regular long-range arrangement; for example ordinary glass. When heated, they usually soften over a range of temperatures rather than at a single sharp melting point.</p>
+<h3>Deformation of a body</h3>
+<p>Deformation is a change in the shape or dimensions of a body caused by forces. <b>Elastic deformation</b> disappears when the load is removed; <b>plastic deformation</b> leaves a permanent change. Basic types: tension, compression, bending, shear and torsion.</p>
+<h3>Normal stress and Hooke’s law</h3>
+<div class="formula">σ = F / S &nbsp; [Pa]; &nbsp; ε = Δl / l₀</div>
+<p>For uniaxial tension in the region of linear elasticity, <b>Hooke’s law</b> holds:</p>
+<div class="formula">σ = E ε &nbsp; ⇒ &nbsp; Δl = F l₀ / (E S)</div>
+<p><b>E</b> is Young’s modulus (unit Pa), which expresses the resistance of a material to elastic deformation in tension or compression. Hooke’s law does not hold for an arbitrarily large load.</p>
+<h3>Thermal expansion</h3>
+<p>For moderate changes in temperature, the length of a solid body changes approximately according to:</p>
+<div class="formula">Δl = α l₀ ΔT &nbsp;; &nbsp; l = l₀(1 + α ΔT)</div>
+<p>The coefficient of linear thermal expansion α has the unit K⁻¹. In practice, expansion must be taken into account, for example, for rails, bridges and bimetallic strips.</p>
+<h3>Steel cable – calculation</h3>
+<p>We have 15 wires with a diameter of <b>d = 2.0 mm = 0.002 m</b>. Ultimate tensile strength <b>σ<sub>u</sub> = 1000 MPa = 10⁹ Pa</b>.</p>
+<div class="formula">S₁ = πd² / 4 = π · 10⁻⁶ m²</div>
+<div class="formula">S = 15S₁ = 15π · 10⁻⁶ m² ≈ 4.712 · 10⁻⁵ m²</div>
+<div class="formula">F<sub>max</sub> = σ<sub>u</sub> S = 10⁹ · 15π · 10⁻⁶ N ≈ 47 124 N</div>
+<div class="result"><b>Result:</b> The theoretical breaking force of the cable is approximately <b>47.1 kN</b>.</div>
+<p class="subtle">This is a simplified calculation assuming the wires share the load evenly. In practice one must distinguish between the breaking load and the permissible working load with a safety factor.</p>
+</section>
+
+<section class="sheet" id="cast-2"><div class="topline">Part 2 of 3</div>
+<h2>2. Photoelectric Effect – Solution</h2>
+<p>For the external photoelectric effect, Einstein’s equation holds:</p>
+<div class="formula">hf = W<sub>0</sub> + E<sub>k,max</sub> &nbsp;; &nbsp; E<sub>ph</sub> = hc / λ</div>
+<p>Constants: <b>h = 6.626 · 10⁻³⁴ J·s</b>, <b>c = 2.998 · 10⁸ m/s</b>, <b>e = 1.602 · 10⁻¹⁹ C</b>, <b>m<sub>e</sub> = 9.109 · 10⁻³¹ kg</b>.</p>
+<h3>a) Threshold wavelength</h3>
+<p>At the threshold wavelength the emitted electron has zero maximum kinetic energy. Therefore:</p>
+<div class="formula">λ₀ = hc / W<sub>0</sub> ≈ (1239.84 eV·nm)/(1.93 eV) ≈ <b>642.4 nm</b></div>
+<h3>b) Maximum kinetic energy</h3>
+<div class="formula">E<sub>ph</sub> = 1239.84 / 590 eV ≈ 2.1014 eV</div>
+<div class="formula">E<sub>k,max</sub> = 2.1014 − 1.93 ≈ <b>0.1714 eV</b></div>
+<div class="formula">E<sub>k,max</sub> ≈ <b>2.746 · 10⁻²⁰ J</b></div>
+<h3>c) Maximum speed of the electrons</h3>
+<p>At this energy the non-relativistic formula for kinetic energy is sufficient.</p>
+<div class="formula">½m<sub>e</sub>v² = E<sub>k,max</sub> &nbsp;⇒&nbsp; v = √(2E<sub>k,max</sub>/m<sub>e</sub>)</div>
+<div class="formula">v ≈ <b>2.46 · 10⁵ m/s</b></div>
+<div class="result"><b>Results:</b> threshold wavelength <b>642 nm</b>; maximum kinetic energy <b>0.171 eV</b> (about <b>2.75 · 10⁻²⁰ J</b>); maximum speed <b>2.46 · 10⁵ m/s</b>.</div>
+<p>Since 590 nm is shorter than 642 nm, the photon energy is sufficient to release an electron.</p>
+</section>
+
+<section class="sheet" id="cast-3"><div class="topline">Part 3 of 3</div>
+<h2>3. Experiment – Determining the Inertial Mass of a Body</h2>
+<h3>Physical principle</h3>
+<p>A body of unknown mass m is attached to a spring with spring constant k. For small displacements it performs approximately harmonic oscillations with period T and frequency f:</p>
+<div class="formula">T = 2π√(m/k) &nbsp;; &nbsp; f = (1/2π)√(k/m)</div>
+<div class="formula"><b>m = k / (4π²f²) = kT²/(4π²)</b></div>
+<p>First we determine the spring constant statically from the extension Δl when a known mass m<sub>k</sub> is hung on it:</p>
+<div class="formula">k = m<sub>k</sub>g / Δl</div>
+<svg class="diagram" viewBox="0 0 680 290" role="img" aria-label="Hanging spring with a mass; measuring the extension and the period"><rect x="113" y="26" width="210" height="15" rx="3" fill="#466477"/><g stroke="#466477" stroke-width="2"><line x1="126" y1="26" x2="114" y2="16"/><line x1="146" y1="26" x2="134" y2="16"/><line x1="166" y1="26" x2="154" y2="16"/><line x1="186" y1="26" x2="174" y2="16"/><line x1="206" y1="26" x2="194" y2="16"/><line x1="226" y1="26" x2="214" y2="16"/><line x1="246" y1="26" x2="234" y2="16"/><line x1="266" y1="26" x2="254" y2="16"/><line x1="286" y1="26" x2="274" y2="16"/><line x1="306" y1="26" x2="294" y2="16"/></g><path d="M217 42 L217 54 L198 66 L236 80 L198 94 L236 108 L198 122 L236 136 L198 150 L236 164 L217 175 L217 190" fill="none" stroke="#176c9b" stroke-width="4" stroke-linejoin="round"/><rect x="174" y="190" width="86" height="55" rx="7" fill="#c3dded" stroke="#176c9b" stroke-width="3"/><text x="217" y="225" font-family="Arial" font-size="22" text-anchor="middle" fill="#143f60">m</text><path d="M236 140 H322 M260 190 H322" stroke="#8aa0b0" stroke-width="1.5" stroke-dasharray="5 4"/><path d="M307 140 V190 M299 140 H315 M299 190 H315" stroke="#cd7340" stroke-width="2.5"/><text x="328" y="171" font-family="Arial" font-size="19" fill="#a65d32">Δl</text><text x="328" y="137" font-family="Arial" font-size="14" fill="#6b7f8e">without load</text><text x="445" y="122" font-family="Arial" font-size="17" fill="#183c59">Time of N oscillations</text><text x="445" y="150" font-family="Arial" font-size="17" fill="#183c59">T = t / N</text><text x="445" y="178" font-family="Arial" font-size="17" fill="#183c59">f = 1 / T</text></svg>
+<p class="caption">Diagram of the spring oscillator; the static extension is used to determine the spring constant.</p>
+<h3>Equipment</h3>
+<p>A stand with a spring, a mass of known value, a body of unknown mass, a ruler and a stopwatch. No electronic sensors are needed to determine the mass.</p>
+<h3>Procedure</h3>
+<ol><li>Measure the length of the unloaded spring l₀.</li>
+<li>Hang the known mass m<sub>k</sub> and measure the new equilibrium length l. Calculate the extension Δl = l − l₀ and the spring constant k = m<sub>k</sub>g/Δl. For a more accurate value, the static measurement can be repeated with several known masses.</li>
+<li>Replace the known mass with the body of unknown mass. Displace the body slightly in the vertical direction and release it without an initial push.</li>
+<li>Use the stopwatch to measure the time t for N = 20 complete oscillations. Repeat the measurement at least three times.</li>
+<li>Calculate the mean period T = t/N, the frequency f = 1/T and the mass m = kT²/(4π²).</li>
+<li>Assess the uncertainties and explain the difference between inertial and gravitational mass.</li>
+</ol>
+<h3>Sample measurement</h3>
+<p>Consider a known mass <b>m<sub>k</sub> = 0.200 kg</b> and a measured extension of the spring <b>Δl = 0.0981 m</b>. We obtain:</p>
+<div class="formula">k = (0.200 · 9.81)/0.0981 = <b>20.0 N/m</b></div>
+<table><thead><tr><th>Measurement</th><th>Number of oscillations N</th><th>Time t (s)</th><th>Period T (s)</th></tr>
+</thead><tbody><tr><td>1</td><td>20</td><td>17.8</td><td>0.890</td></tr>
+<tr><td>2</td><td>20</td><td>17.7</td><td>0.885</td></tr>
+<tr><td>3</td><td>20</td><td>17.9</td><td>0.895</td></tr>
+<tr><th>Mean</th><td>—</td><td>17.8</td><th>0.890</th></tr>
+</tbody></table>
+<div class="formula">f = 1/0.890 ≈ 1.124 Hz</div>
+<div class="formula">m = 20.0 · (0.890)²/(4π²) ≈ <b>0.401 kg</b></div>
+<div class="result"><b>Result of the sample measurement:</b> the inertial mass of the body is approximately <b>0.40 kg</b>.</div>
+<h3>Discussion of accuracy and physical meaning</h3>
+<ul><li>It is better to time a larger number of oscillations – this reduces the relative effect of reaction time when pressing the stopwatch.</li>
+<li>Errors are caused by an inaccurately determined extension of the spring and by the limited accuracy of the known mass.</li>
+<li>We assume a linear spring, small oscillations and negligible damping.</li>
+<li>If the spring is not very light, a more accurate model must also include its effective oscillating mass, approximately one third of the mass of a uniform spring.</li>
+<li><b>Inertial mass</b> expresses resistance to a change in the state of motion (F = ma); <b>gravitational mass</b> appears in gravitational interaction. The experiment based on frequency investigates the inertial mass, provided k is known.</li>
+</ul>
+</section>
+
+</main>
+
+<footer class="mo-foot"><a href="index.html">← All models</a><span>Model 12 · Worked solutions</span></footer>
+<script src="../mo.js"></script>
+</body>
+</html>

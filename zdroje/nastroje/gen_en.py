@@ -16,6 +16,7 @@ TOPICS = {
     5: ['Dynamics', 'Electromagnetic Induction', 'Nuclear Power Plant'],
     6: ['Energy of a Particle', 'Oscillator', 'Electric Circuit'],
     7: ['Mechanics of a Rigid Body', 'Alternating Current', 'Refractive Index of Light'],
+    12: ['Solids', 'Photoelectric Effect', 'Inertial Mass'],
     26: ['Electron Shell of the Atom', 'Electric Current', 'Properties of Gases'],
 }
 
@@ -65,6 +66,8 @@ SVG_EN = {
     'dopadajúci lúč': 'incident ray', 'lomený lúč': 'refracted ray', 'kolmica': 'normal',
     'priehľadný materiál n₂': 'transparent material n₂', 'vzduch n₁ ≈ 1': 'air n₁ ≈ 1', 'smernica ≈ n': 'gradient ≈ n',
     'sin α': 'sin α', 'sin β': 'sin β',
+    'Závesná pružina so závažím a meranie predĺženia a periódy': 'Hanging spring with a mass; measuring the extension and the period',
+    'Stopky: čas N kmitov': 'Time of N oscillations', 'bez závažia': 'without load',
     'spínač': 'switch', 'zdroj': 'source', 'ampérmeter': 'ammeter', 'voltmeter': 'voltmeter', 'rezistor': 'resistor',
 }
 
