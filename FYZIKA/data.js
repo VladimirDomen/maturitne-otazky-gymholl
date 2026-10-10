@@ -187,6 +187,17 @@ const OTAZKY = [
       sk: ['Naklonená rovina', 'Experiment: rovnomerne zrýchlený pohyb z pokoja, s ∼ t², určenie zrýchlenia'],
       en: ['Inclined plane', 'Experiment: uniformly accelerated motion from rest, s ∝ t², determining acceleration'] },
   ]},
+  { n: 16, casti: [
+    { o: ['elektrina'],
+      sk: ['Elektrický prúd', 'Prúd ako jav, zdroje napätia, elektromotorické a svorkové napätie, počet elektrónov'],
+      en: ['Electric current', 'Current as a phenomenon, voltage sources, emf and terminal voltage, number of electrons'] },
+    { o: ['mechanika'],
+      sk: ['Kinematika – graf v(t)', 'Charakter pohybu, zrýchlenie, dráha ako plocha pod grafom, grafy s(t) a a(t)'],
+      en: ['Kinematics – v–t graph', 'Type of motion, acceleration, distance as area under the graph, s–t and a–t graphs'] },
+    { o: ['optika'],
+      sk: ['Vlnová dĺžka svetla', 'Experiment: optická mriežka a laser, d sin α = kλ'],
+      en: ['Wavelength of light', 'Experiment: diffraction grating and laser, d sin α = kλ'] },
+  ]},
   { n: 26, casti: [
     { o: ['mikrosvet', 'optika'],
       sk: ['Elektrónový obal atómu', 'Kvantovanie energie, emisné a absorpčné spektrum, energia fotónu'],

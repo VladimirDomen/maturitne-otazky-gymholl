@@ -24,6 +24,7 @@ TOPICS = {
     13: ['Electric Current in Semiconductors', 'Mechanics of a Rigid Body', 'Inductance and Capacitance'],
     14: ['Electric Current in Electrolytes', 'Energy of a Particle', 'Efficiency of a Transformer'],
     15: ['Electric Field', 'Atomic Nucleus', 'Inclined Plane'],
+    16: ['Electric Current', 'Kinematics – v–t Graph', 'Wavelength of Light'],
     26: ['Electron Shell of the Atom', 'Electric Current', 'Properties of Gases'],
 }
 
@@ -128,6 +129,22 @@ SVG_EN = {
     'Zapojenie na meranie účinnosti transformátora: zdroj, ampérmeter A1 a voltmeter V1 na primárnej cievke; ampérmeter A2, voltmeter V2 a záťaž R na sekundárnej cievke':
         'Circuit for measuring the efficiency of a transformer: source, ammeter A1 and voltmeter V1 on the primary coil; ammeter A2, voltmeter V2 and load R on the secondary coil',
     'jadro': 'core', 'záťaž R': 'load R',
+    'Uzavretý obvod: zdroj s elektromotorickým napätím a vnútorným odporom, ampérmeter, vonkajší rezistor R a voltmeter na svorkách zdroja':
+        'Complete circuit: source with emf and internal resistance, ammeter, external resistor R and voltmeter across the source terminals',
+    'Zaťažovacia charakteristika zdroja: svorkové napätie lineárne klesá od elektromotorického napätia pri nulovom prúde po nulu pri skratovom prúde':
+        'Load characteristic of a source: terminal voltage decreases linearly from the emf at zero current to zero at the short-circuit current',
+    'naprázdno': 'open circuit', 'skrat': 'short circuit',
+    'Graf rýchlosti od času s vyznačenými dráhami ako plochami pod grafom: 12 m, 24 m a 32 m':
+        'Velocity–time graph with distances marked as areas under the graph: 12 m, 24 m and 32 m',
+    'Graf rýchlosti od času: od 0 do 3 s rýchlosť 4 m/s, od 3 do 7 s rastie na 8 m/s, od 7 do 15 s klesá na nulu':
+        'Velocity–time graph: from 0 to 3 s velocity 4 m/s, from 3 to 7 s it rises to 8 m/s, from 7 to 15 s it falls to zero',
+    'Graf dráhy od času: priamka do 3 s, potom parabola so stúpajúcou strmosťou do 7 s a parabola s klesajúcou strmosťou do 15 s, kde dráha dosiahne 68 m':
+        'Distance–time graph: a straight line up to 3 s, then a parabola of increasing steepness up to 7 s and a parabola of decreasing steepness up to 15 s, where the distance reaches 68 m',
+    'Graf zrýchlenia od času: 0 do 3 s nulové, od 3 do 7 s 1 m/s², od 7 do 15 s mínus 1 m/s², potom nulové':
+        'Acceleration–time graph: zero from 0 to 3 s, 1 m/s² from 3 to 7 s, minus 1 m/s² from 7 to 15 s, then zero',
+    'Laser, optická mriežka a tienidlo vo vzdialenosti L; na tienidle stredové maximum a maximá 1. a 2. rádu vo vzdialenostiach x1 a x2':
+        'Laser, diffraction grating and screen at distance L; on the screen the central maximum and 1st- and 2nd-order maxima at distances x1 and x2',
+    'laser': 'laser', 'mriežka': 'grating', 'tienidlo': 'screen',
 }
 
 def tr_svg(svg):
