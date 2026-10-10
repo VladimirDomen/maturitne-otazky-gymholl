@@ -264,6 +264,17 @@ const OTAZKY = [
       sk: ['Šmykové trenie a valivý odpor', 'Experiment: závislosť trecej sily od tlakovej sily, plochy, povrchu a rýchlosti'],
       en: ['Sliding friction and rolling resistance', 'Experiment: dependence of friction on normal force, area, surface and speed'] },
   ]},
+  { n: 25, casti: [
+    { o: ['mikrosvet'],
+      sk: ['Atómové jadro', 'Jadrové sily, väzbová energia, rádioaktivita, reťazová reakcia, ochrana pred žiarením'],
+      en: ['Atomic nucleus', 'Nuclear forces, binding energy, radioactivity, chain reaction, radiation protection'] },
+    { o: ['elektrina'],
+      sk: ['Elektrický prúd v elektrolytoch – poniklovanie', 'Faradayove zákony, hmotnosť a hrúbka vrstvy niklu, vplyv prúdu a času'],
+      en: ['Electric current in electrolytes – nickel plating', 'Faraday’s laws, mass and thickness of the nickel layer, effect of current and time'] },
+    { o: ['mechanika'],
+      sk: ['Meranie posuvným meradlom a chyby merania', 'Experiment: nónius, objem valčeka, absolútna a relatívna chyba, hustota'],
+      en: ['Vernier caliper and measurement errors', 'Experiment: vernier scale, volume of a cylinder, absolute and relative error, density'] },
+  ]},
   { n: 26, casti: [
     { o: ['mikrosvet', 'optika'],
       sk: ['Elektrónový obal atómu', 'Kvantovanie energie, emisné a absorpčné spektrum, energia fotónu'],

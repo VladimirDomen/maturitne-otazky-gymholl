@@ -31,6 +31,7 @@ TOPICS = {
     20: ['Electromagnetic Induction', 'Gravitational Field', 'Surface Tension from Capillary Rise'],
     21: ['Alternating Current – Generation and Transformation', 'Structure and Properties of Gases', 'Conversions of Mechanical Energy'],
     23: ['Fluid Mechanics – Flow', 'Change of State – Heating of a Bullet', 'Sliding Friction and Rolling Resistance'],
+    25: ['Atomic Nucleus', 'Electric Current in Electrolytes – Nickel Plating', 'Measuring with a Vernier Caliper and Measurement Errors'],
     26: ['Electron Shell of the Atom', 'Electric Current', 'Properties of Gases'],
 }
 
@@ -290,6 +291,46 @@ SVG_EN = {
         'Graph of frictional force against normal force: a straight line through the origin with gradient 0.30',
     'f = Fₜ / Fₙ ≈ 0,30':
         'f = Fₜ / Fₙ ≈ 0.30',
+    'Graf väzbovej energie na jeden nukleón od nukleónového čísla: maximum asi 8,8 MeV pri železe 56, hélium 4 má 7,1 MeV, urán 238 asi 7,6 MeV':
+        'Graph of binding energy per nucleon against nucleon number: maximum about 8.8 MeV at iron 56, helium 4 has 7.1 MeV, uranium 238 about 7.6 MeV',
+    'syntéza →':
+        'fusion →',
+    '← štiepenie':
+        '← fission',
+    'Reťazová štiepna reakcia: neutrón rozštiepi jadro uránu 235, vzniknú dva úlomky a tri neutróny, ktoré štiepia ďalšie jadrá':
+        'Fission chain reaction: a neutron splits a uranium 235 nucleus, producing two fragments and three neutrons that split further nuclei',
+    'úlomky':
+        'fragments',
+    'ďalšie neutróny':
+        'further neutrons',
+    'k &gt; 1 lavína, k = 1 reaktor':
+        'k &gt; 1 avalanche, k = 1 reactor',
+    'Prenikavosť žiarenia: alfa zastaví papier, beta hliníkový plech, gama zoslabí až hrubá vrstva olova alebo betónu':
+        'Penetration of radiation: alpha is stopped by paper, beta by an aluminium sheet, gamma is weakened only by a thick layer of lead or concrete',
+    'papier':
+        'paper',
+    'hliník (mm)':
+        'aluminium (mm)',
+    'olovo, betón':
+        'lead, concrete',
+    'Poniklovanie: predmet je katóda, niklová doska je anóda, v roztoku síranu nikelnatého sa ióny niklu pohybujú ku katóde a usadzujú sa na predmete':
+        'Nickel plating: the object is the cathode, a nickel plate is the anode; in nickel sulfate solution nickel ions move to the cathode and are deposited on the object',
+    'anóda: Ni':
+        'anode: Ni',
+    'katóda: predmet':
+        'cathode: object',
+    'roztok NiSO₄':
+        'NiSO₄ solution',
+    'Posuvné meradlo s nóniom: nula nónia je tesne pred 20 mm a s hlavnou stupnicou sa kryje 9. dielik nónia, výsledok 19,9 mm':
+        'Vernier caliper: the vernier zero is just before 20 mm and the 9th vernier division coincides with the main scale, reading 19.9 mm',
+    'hlavná stupnica (cm), dielik 1 mm':
+        'main scale (cm), division 1 mm',
+    'nónius (10 dielikov)':
+        'vernier (10 divisions)',
+    'valček':
+        'cylinder',
+    '19 mm + 9 · 0,1 mm = 19,9 mm':
+        '19 mm + 9 · 0.1 mm = 19.9 mm',
 }
 
 def tr_svg(svg):
