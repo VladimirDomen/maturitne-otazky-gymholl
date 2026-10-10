@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Model 23 – Worked solutions</title>
+<link rel="stylesheet" href="../mo.css">
+</head>
+<body class="vyp">
+
+<header class="mo-head"><div class="mo-head-in">
+<div class="mo-kicker"><span class="mo-num">MODEL 23</span><span class="mo-kind">Worked solutions</span></div>
+<h1>Fluid Mechanics – Flow · Change of State – Heating of a Bullet · Sliding Friction and Rolling Resistance</h1>
+<p>Detailed worked solutions with explanations</p>
+</div></header>
+
+<nav class="mo-bar"><div class="mo-bar-in">
+<a class="mo-back" href="index.html">← All models</a>
+<div class="mo-switch"><a href="Model23_questions.html">Questions</a><a href="Model23_solutions.html" class="on">Solutions</a></div>
+<button type="button" onclick="window.print()">Print / PDF</button>
+<a class="mo-lang" href="../Vzor23_vypracovanie.html" hreflang="sk" title="Slovenská verzia">SK</a>
+</div></nav>
+
+<main class="wrap">
+
+<section class="sheet" id="cast-1"><div class="topline">Part 1 of 3</div>
+<h2>1. Fluid Mechanics – Flow</h2>
+<h3>1.1 Steady and unsteady flow</h3>
+<p>In <strong>steady flow</strong> the velocity, pressure and density of the liquid at any point do not change with time – all particles pass a given point with the same velocity (water in a pipe with the tap open). In <strong>unsteady flow</strong> these quantities change with time at a given point (opening a tap, liquid draining from a vessel, blood flow in arteries).</p>
+<p>Flow is represented by <strong>streamlines</strong> – lines whose tangent at every point has the direction of the particle’s velocity. In steady flow the streamlines do not change and do not cross. A set of streamlines bounds a <strong>stream tube</strong>.</p>
+<h3>1.2 Continuity equation and Bernoulli’s equation</h3>
+<p>The <strong>continuity equation</strong> expresses the conservation of mass for an incompressible liquid. The same volume passes through every cross-section of the pipe in the same time:</p>
+<div class="formula">Q<sub>V</sub> = S₁ v₁ = S₂ v₂ = const.</div>
+<p>In a narrower place the liquid flows faster, in a wider place more slowly.</p>
+<p><strong>Bernoulli’s equation</strong> expresses the conservation of mechanical energy for an ideal liquid. The sum of the pressure, kinetic and gravitational potential energy per unit volume is constant:</p>
+<div class="formula">p + ½ ρ v² + ρ g h = const. &nbsp;&nbsp; (horizontal pipe: p₁ + ½ρv₁² = p₂ + ½ρv₂²)</div>
+<p>Where the liquid flows faster, its pressure is lower – the <strong>hydrodynamic paradox</strong>. Applications: Venturi tube for measuring flow speed, water-jet pump, sprayer, carburettor, lift of a wing.</p>
+<h3>1.3 Ideal and real liquid</h3>
+<p>An <strong>ideal liquid</strong> is incompressible and has no internal friction. All its layers in a pipe flow at the same speed, and the pressure does not change along a horizontal pipe of constant cross-section.</p>
+<p>A <strong>real liquid</strong> has <strong>viscosity</strong> (internal friction). The layer at the wall does not move and the speed increases towards the axis of the pipe – the velocity profile is parabolic. Energy is used to overcome friction, so the pressure falls along a pipe of constant cross-section. At low speeds the flow is <strong>laminar</strong> (the layers do not mix), at high speeds it is <strong>turbulent</strong> (eddies form). A body in a flowing real fluid experiences a drag force.</p>
+<svg class="diagram" viewBox="0 0 600 210" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Velocity profile: in an ideal liquid all layers have the same speed, in a real liquid the speed is greatest in the middle and zero at the walls"><g stroke="#193b59" stroke-width="3"><path d="M40 50H260M40 154H260M320 50H540M320 154H540"/></g><rect x="40" y="52" width="220" height="100" fill="#eef5fb"/><rect x="320" y="52" width="220" height="100" fill="#eef5fb"/><g stroke="#2f6db3" stroke-width="2.5" fill="none"><path d="M60 62H150M142 57L150 62L142 67M60 82H150M142 77L150 82L142 87M60 102H150M142 97L150 102L142 107M60 122H150M142 117L150 122L142 127M60 142H150M142 137L150 142L142 147"/></g><g stroke="#c0392b" stroke-width="2.5" fill="none"><path d="M340 62H374M366 57L374 62L366 67M340 82H414M406 77L414 82L406 87M340 102H432M424 97L432 102L424 107M340 122H414M406 117L414 122L406 127M340 142H374M366 137L374 142L366 147"/><path d="M340 52Q470 102 340 152" stroke-dasharray="4 4" stroke-width="1.5"/></g><g font-size="15" fill="#193b59"><text x="70" y="36">ideal liquid</text><text x="356" y="36">real liquid</text></g><g font-size="13" fill="#637889"><text x="64" y="182">same speed in all layers</text><text x="330" y="182">v = 0 at the wall, greatest in the middle</text></g></svg>
+<h3>1.4 Solution of the task</h3>
+<svg class="diagram" viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A horizontal pipe widens: in the narrower part water flows at 8 m/s at a pressure of 1.08 · 10⁵ Pa, in the wider part at 4 m/s"><path d="M40 80H250L320 60H560V140H320L250 120H40Z" fill="#d6e8f5"/><g stroke="#193b59" stroke-width="3" fill="none"><path d="M40 80H250L320 60H560M40 120H250L320 140H560"/></g><g stroke="#c0392b" stroke-width="3" fill="none"><path d="M70 100H150M140 93L152 100L140 107M380 100H420M410 93L422 100L410 107"/></g><g font-size="16" fill="#193b59"><text x="70" y="70">S₁</text><text x="400" y="50">S₂</text></g><g font-size="15" fill="#c0392b"><text x="60" y="148">v₁ = 8 m/s</text><text x="370" y="168">v₂ = 4 m/s</text></g><g font-size="15" fill="#193b59"><text x="150" y="148">p₁ = 1.08 · 10⁵ Pa</text><text x="440" y="190">p₂ = 1.32 · 10⁵ Pa</text></g></svg>
+<p><strong>a)</strong> From the continuity equation:</p>
+<div class="formula">S₁ v₁ = S₂ v₂ &nbsp; → &nbsp; S₂ / S₁ = v₁ / v₂ = 8 / 4 = 2</div>
+<p>The cross-section of the wider part is twice as large.</p>
+<p><strong>b)</strong> From Bernoulli’s equation for a horizontal pipe:</p>
+<div class="formula">p₂ = p₁ + ½ ρ (v₁² − v₂²) = 1.08 · 10⁵ Pa + ½ · 1 000 · (8² − 4²) Pa<br>p₂ = 1.08 · 10⁵ Pa + 24 000 Pa = 1.32 · 10⁵ Pa</div>
+<p>In the wider part the water flows more slowly; part of its kinetic energy is converted into pressure energy – the pressure rises.</p>
+<div class="result"><strong>S₂ = 2S₁; p₂ = 1.32 · 10⁵ Pa.</strong></div>
+</section>
+
+<section class="sheet" id="cast-2"><div class="topline">Part 2 of 3</div>
+<h2>2. Change of State – Heating of a Bullet</h2>
+<h3>2.1 Internal energy and heat</h3>
+<p><strong>Internal energy</strong> of a body is the sum of the kinetic energies of the random motion of its particles and the potential energies of their mutual interaction. It changes <strong>by doing work</strong> (friction, impact, compression) or <strong>by heat transfer</strong>. Energy transferred by heat transfer is <strong>heat Q</strong>. The heat needed to change the temperature of a body:</p>
+<div class="formula">Q = m c Δt</div>
+<p><strong>Specific heat capacity c</strong> is the heat needed to raise the temperature of 1 kg of a substance by 1 K [J·kg⁻¹·K⁻¹].</p>
+<h3>2.2 Changes of state</h3>
+<p>A substance can pass between the solid, liquid and gaseous states: <strong>melting</strong> and freezing, <strong>evaporation</strong> (boiling) and condensation, <strong>sublimation</strong> and deposition. A crystalline substance melts at its <strong>melting point</strong>, which does not change during melting. The energy supplied breaks down the crystal lattice – it increases the potential energy of the particles. The heat needed to melt a body at its melting point:</p>
+<div class="formula">L<sub>t</sub> = m l<sub>t</sub></div>
+<p><strong>The specific latent heat of fusion l<sub>t</sub></strong> is the heat needed to melt 1 kg of a substance at its melting point [J·kg⁻¹]. The same heat is released on freezing.</p>
+<h3>2.3 Solution of the task</h3>
+<p><strong>a)</strong> On impact the bullet stops abruptly and deforms. Its kinetic energy is converted – by the work of the deforming forces – into the <strong>internal energy</strong> of the bullet (and partly of the plate). The lead particles start to move faster and the temperature of the bullet rises. This is not heat transfer but a change of internal energy by doing work. The mass of the bullet cancels in the calculation.</p>
+<p><strong>b)</strong> If all the kinetic energy were used for heating:</p>
+<div class="formula">½ m v² = m c Δt &nbsp; → &nbsp; Δt = v² / (2c) = 300² / (2 · 125) K = 90 000 / 250 K = 360 K</div>
+<p>The bullet would reach 40 °C + 360 °C = 400 °C. That is more than the melting point of lead (327 °C). The bullet therefore heats up only to 327 °C and the rest of the energy is used for melting.</p>
+<p><strong>c)</strong> Minimum speed to heat up to the melting point (Δt = 327 °C − 40 °C = 287 K):</p>
+<div class="formula">½ v² = c Δt &nbsp; → &nbsp; v = √(2 c Δt) = √(2 · 125 · 287) m/s = √71 750 m/s ≈ 268 m/s</div>
+<p><strong>d)</strong> At a higher speed the bullet reaches 327 °C and the excess energy is used for <strong>melting</strong> – the state changes while the temperature stays at 327 °C. Energy per 1 kg of the bullet:</p>
+<div class="formula">kinetic energy: ½ v² = ½ · 300² J/kg = 45 000 J/kg<br>heating to 327 °C: c Δt = 125 · 287 J/kg = 35 875 J/kg<br>left for melting: 45 000 − 35 875 = 9 125 J/kg</div>
+<div class="formula">melted fraction: 9 125 / 23 000 ≈ 0.40 = 40 %</div>
+<svg class="diagram" viewBox="0 0 520 290" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Graph of the temperature of lead against energy supplied per kilogram: heating from 40 °C to 327 °C uses 35.9 kJ/kg, the rest up to 45 kJ/kg is used for melting at constant temperature"><g stroke="#e3eaf1" stroke-width="1"><path d="M70 200H480M70 150H480M70 100H480M70 50H480"/></g><g stroke="#193b59" stroke-width="2" fill="none"><path d="M70 262V25M60 250H500M64 37L70 25L76 37M488 244L500 250L488 256"/></g><polyline points="70.0,230.0 374.9,86.5 452.5,86.5" fill="none" stroke="#c0392b" stroke-width="3"/><g stroke="#637889" stroke-width="1.2" stroke-dasharray="4 4" fill="none"><path d="M70 86.5H375M375 86.5V250M452 86.5V250"/></g><g font-size="14" fill="#253d51"><text x="38" y="235.0">40</text><text x="30" y="91.5">327</text><text x="359" y="270">35.9</text><text x="446" y="270">45</text><text x="80" y="22">t (°C)</text><text x="408" y="286">E/m (kJ/kg)</text></g><g font-size="13" fill="#c0392b"><text x="138" y="130">heating of lead</text><text x="379" y="76">melting</text></g></svg>
+<p>To melt the bullet completely, a speed of v = √(2(cΔt + l<sub>t</sub>)) = √(2 · 58 875) m/s ≈ 343 m/s would be needed.</p>
+<div class="result"><strong>b) Δt = 360 K (without melting); c) v ≈ 268 m/s; d) the bullet heats up to 327 °C and about 40 % of the lead melts.</strong></div>
+<p class="subtle">In reality part of the energy goes into the plate, sound and deformation, so the bullet warms up less. The calculation gives an upper limit.</p>
+</section>
+
+<section class="sheet" id="cast-3"><div class="topline">Part 3 of 3</div>
+<h2>3. Experiment – Sliding Friction and Rolling Resistance</h2>
+<h3>3.1 Theory</h3>
+<p><strong>Sliding friction</strong> arises when a body slides over the surface of another body. It is caused by the unevenness of the contact surfaces, which catch on each other, and by attractive forces between the particles of the surfaces. The frictional force acts in the contact surface <strong>against the direction of motion</strong>:</p>
+<div class="formula">Fₜ = f · Fₙ</div>
+<p>Fₙ is the size of the normal force with which the body presses on the surface (on a horizontal surface Fₙ = G). The <strong>coefficient of sliding friction f</strong> is dimensionless and depends on the materials and the finish of the contact surfaces (wood on wood about 0.3, steel on ice about 0.02, rubber on dry asphalt about 0.7). To set a body in motion, <strong>static friction</strong> must be overcome, which is greater than friction during motion.</p>
+<p><strong>Rolling resistance</strong> arises when a body rolls (a wheel, cylinder, ball), because both the body and the surface deform at the point of contact. The resistive force is</p>
+<div class="formula">F<sub>v</sub> = ξ · Fₙ / R</div>
+<p>ξ is the arm of rolling resistance [m] and R the radius of the rolling body. Rolling resistance is much smaller than sliding friction – that is why wheels and ball bearings are used.</p>
+<h3>3.2 Apparatus</h3>
+<p>A wooden block with a hook whose faces have different areas and one face covered with rubber or felt, masses, a force meter (range 0–5 N), different surfaces (wooden board, glass, cloth), several round pencils or rollers, balance.</p>
+<h3>3.3 Arrangement and procedure</h3>
+<svg class="diagram" viewBox="0 0 600 230" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A block pulled by a force meter along a horizontal surface: pulling force F, frictional force Ft against the motion, weight G and normal force of the surface Fn"><rect x="20" y="150" width="560" height="22" fill="#d9c9a3" stroke="#9a6b12"/><rect x="200" y="90" width="140" height="60" fill="#c9a77c" stroke="#7a5230" stroke-width="2"/><rect x="390" y="108" width="110" height="24" rx="5" fill="#fff" stroke="#193b59" stroke-width="2"/><path d="M398 120H470" stroke="#193b59" stroke-width="1.5"/><g stroke="#193b59" stroke-width="2" fill="none"><path d="M340 120H390M500 120H540"/></g><g stroke="#c0392b" stroke-width="3" fill="none"><path d="M540 120H580M570 113L582 120L570 127"/><path d="M220 150H160M170 143L158 150L170 157"/></g><g stroke="#193b59" stroke-width="3" fill="none"><path d="M270 120V205M263 195L270 207L277 195"/></g><g stroke="#26724c" stroke-width="3" fill="none"><path d="M300 150V50M293 60L300 48L307 60"/></g><g font-size="16"><text x="556" y="104" fill="#c0392b">F</text><text x="150" y="140" fill="#c0392b">Fₜ</text><text x="280" y="214" fill="#193b59">G</text><text x="310" y="58" fill="#26724c">Fₙ</text><text x="404" y="100" font-size="13" fill="#637889">force meter</text><text x="40" y="196" font-size="13" fill="#637889">surface</text></g></svg>
+<p>Pull the block horizontally with the force meter in <strong>uniform motion</strong>. Then the resultant force is zero and the force meter shows exactly the size of the frictional force (F = Fₜ). Read the force during motion, not at the start.</p>
+<ol type="a"><li><strong>Normal force:</strong> add masses to the block and measure Fₜ for different Fₙ = G<sub>block</sub> + G<sub>masses</sub>.</li>
+<li><strong>Contact area:</strong> with the same load, place the block once on a large face and once on a small face.</li>
+<li><strong>Kind of surface:</strong> at the same Fₙ change the surface and the face of the block (wood, rubber, glass).</li>
+<li><strong>Speed:</strong> pull the block slowly and then faster. Separately measure the force needed to start it moving.</li>
+</ol>
+<p>For comparison with rolling resistance, place the block on pencils and measure the pulling force during uniform motion.</p>
+<h3>3.4 Sample evaluation</h3>
+<p class="subtle">The following numbers are model data for a wooden block with a weight of 2.0 N; they are not a real measurement.</p>
+<p><strong>a) Dependence on the normal force</strong> (wood on wood):</p>
+<table><tr><th>Fₙ (N)</th><th>2.0</th><th>4.0</th><th>6.0</th><th>8.0</th></tr><tr><td>Fₜ (N)</td><td>0.6</td><td>1.2</td><td>1.8</td><td>2.4</td></tr><tr><td>f = Fₜ/Fₙ</td><td>0.30</td><td>0.30</td><td>0.30</td><td>0.30</td></tr></table>
+<svg class="diagram" viewBox="0 0 520 290" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Graph of frictional force against normal force: a straight line through the origin with gradient 0.30"><g stroke="#e3eaf1" stroke-width="1"><path d="M70 202H480M70 154H480M70 106H480M70 58H480M170 250V40M270 250V40M370 250V40M470 250V40"/></g><g stroke="#193b59" stroke-width="2" fill="none"><path d="M70 262V25M60 250H500M64 37L70 25L76 37M488 244L500 250L488 256"/></g><path d="M70 250L495 46" stroke="#2f6db3" stroke-width="2.5"/><circle cx="170" cy="202" r="5" fill="#c0392b"/><circle cx="270" cy="154" r="5" fill="#c0392b"/><circle cx="370" cy="106" r="5" fill="#c0392b"/><circle cx="470" cy="58" r="5" fill="#c0392b"/><g font-size="14" fill="#253d51"><text x="40" y="207">0.6</text><text x="40" y="159">1.2</text><text x="40" y="111">1.8</text><text x="40" y="63">2.4</text><text x="164" y="270">2</text><text x="264" y="270">4</text><text x="364" y="270">6</text><text x="464" y="270">8</text><text x="80" y="22">Fₜ (N)</text><text x="440" y="240">Fₙ (N)</text></g><text x="300" y="200" font-size="15" fill="#2f6db3">f = Fₜ / Fₙ ≈ 0.30</text></svg>
+<p>The frictional force is directly proportional to the normal force – the graph is a straight line through the origin with gradient f ≈ 0.30.</p>
+<p><strong>b) Contact area</strong> (Fₙ = 4.0 N): large face Fₜ = 1.2 N, small face Fₜ = 1.2 N – the frictional force does not depend on the area of contact. With a smaller area the pressure is greater, so the actual area of contact of the unevennesses stays about the same.</p>
+<p><strong>c) Kind of surface</strong> (Fₙ = 4.0 N):</p>
+<table><tr><th>Contact surfaces</th><th>Fₜ (N)</th><th>f</th></tr><tr><td>wood on wood</td><td>1.2</td><td>0.30</td></tr><tr><td>wood on glass</td><td>0.8</td><td>0.20</td></tr><tr><td>rubber on wood</td><td>2.4</td><td>0.60</td></tr></table>
+<p><strong>d) Speed:</strong> with slow and faster pulling the force meter shows about 1.2 N – the frictional force (at low speeds) hardly depends on speed. About 1.6 N was needed to start the block moving – static friction is greater.</p>
+<p><strong>Rolling resistance:</strong> the block on pencils (Fₙ = 4.0 N) could be pulled with a force of about 0.1 N, i.e. about twelve times smaller than with sliding friction.</p>
+<h3>3.5 Sources of error</h3>
+<ul><li>It is difficult to pull perfectly uniformly – the force meter reading fluctuates; take the mean value from several measurements.</li>
+<li>The force meter must be horizontal, otherwise the normal force changes.</li>
+<li>The surfaces must be clean and dry; dust and moisture change the coefficient of friction.</li>
+</ul>
+<div class="result"><strong>Conclusion:</strong> The frictional force in sliding friction is directly proportional to the normal force (Fₜ = fFₙ), depends on the kind and finish of the contact surfaces, does not depend on their area and (at low speeds) hardly depends on speed. Static friction is greater than friction during motion, and rolling resistance is much smaller than sliding friction.</div>
+</section>
+
+</main>
+
+<footer class="mo-foot"><a href="index.html">← All models</a><span>Model 23 · Worked solutions</span></footer>
+<script src="../mo.js"></script>
+</body>
+</html>

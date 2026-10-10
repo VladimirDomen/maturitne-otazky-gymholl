@@ -253,6 +253,17 @@ const OTAZKY = [
       sk: ['Premeny mechanickej energie', 'Experiment: kyvadlo so svetelnou závorou, porovnanie mgh a ½mv²'],
       en: ['Conversions of mechanical energy', 'Experiment: pendulum with a light gate, comparing mgh and ½mv²'] },
   ]},
+  { n: 23, casti: [
+    { o: ['tekutiny'],
+      sk: ['Mechanika kvapalín – prúdenie', 'Ustálené prúdenie, rovnica spojitosti, Bernoulliho rovnica, ideálna a reálna kvapalina'],
+      en: ['Fluid mechanics – flow', 'Steady flow, continuity equation, Bernoulli’s equation, ideal and real liquid'] },
+    { o: ['termika'],
+      sk: ['Zmena skupenstva – zahriatie strely', 'Vnútorná energia, ohrev a topenie olovenej strely pri náraze'],
+      en: ['Change of state – heating of a bullet', 'Internal energy, heating and melting of a lead bullet on impact'] },
+    { o: ['mechanika'],
+      sk: ['Šmykové trenie a valivý odpor', 'Experiment: závislosť trecej sily od tlakovej sily, plochy, povrchu a rýchlosti'],
+      en: ['Sliding friction and rolling resistance', 'Experiment: dependence of friction on normal force, area, surface and speed'] },
+  ]},
   { n: 26, casti: [
     { o: ['mikrosvet', 'optika'],
       sk: ['Elektrónový obal atómu', 'Kvantovanie energie, emisné a absorpčné spektrum, energia fotónu'],

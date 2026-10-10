@@ -30,6 +30,7 @@ TOPICS = {
     19: ['Magnetic Field', 'Fluid Mechanics – Flow in a Pipe', 'Specific Latent Heat of Fusion of Ice'],
     20: ['Electromagnetic Induction', 'Gravitational Field', 'Surface Tension from Capillary Rise'],
     21: ['Alternating Current – Generation and Transformation', 'Structure and Properties of Gases', 'Conversions of Mechanical Energy'],
+    23: ['Fluid Mechanics – Flow', 'Change of State – Heating of a Bullet', 'Sliding Friction and Rolling Resistance'],
     26: ['Electron Shell of the Atom', 'Electric Current', 'Properties of Gases'],
 }
 
@@ -259,6 +260,36 @@ SVG_EN = {
         'Eₚ max, v = 0',
     'Eₖ max':
         'Eₖ max',
+    'Vodorovná trubica sa rozširuje: v užšej časti voda prúdi rýchlosťou 8 m/s pri tlaku 1,08 · 10⁵ Pa, v širšej časti rýchlosťou 4 m/s':
+        'A horizontal pipe widens: in the narrower part water flows at 8 m/s at a pressure of 1.08 · 10⁵ Pa, in the wider part at 4 m/s',
+    'p₁ = 1,08 · 10⁵ Pa':
+        'p₁ = 1.08 · 10⁵ Pa',
+    'p₂ = 1,32 · 10⁵ Pa':
+        'p₂ = 1.32 · 10⁵ Pa',
+    'Rýchlostný profil: pri ideálnej kvapaline majú všetky vrstvy rovnakú rýchlosť, pri reálnej je rýchlosť najväčšia v strede a pri stenách nulová':
+        'Velocity profile: in an ideal liquid all layers have the same speed, in a real liquid the speed is greatest in the middle and zero at the walls',
+    'ideálna kvapalina':
+        'ideal liquid',
+    'reálna kvapalina':
+        'real liquid',
+    'rovnaká rýchlosť vo všetkých vrstvách':
+        'same speed in all layers',
+    'pri stene v = 0, v strede najväčšia':
+        'v = 0 at the wall, greatest in the middle',
+    'Graf teploty olova od dodanej energie na kilogram: ohrev zo 40 °C na 327 °C spotrebuje 35,9 kJ/kg, zvyšok do 45 kJ/kg sa spotrebuje na topenie pri stálej teplote':
+        'Graph of the temperature of lead against energy supplied per kilogram: heating from 40 °C to 327 °C uses 35.9 kJ/kg, the rest up to 45 kJ/kg is used for melting at constant temperature',
+    'ohrev olova':
+        'heating of lead',
+    'Kváder ťahaný silomerom po vodorovnej podložke: ťažná sila F, trecia sila Ft proti pohybu, tiaž G a tlaková sila podložky Fn':
+        'A block pulled by a force meter along a horizontal surface: pulling force F, frictional force Ft against the motion, weight G and normal force of the surface Fn',
+    'silomer':
+        'force meter',
+    'podložka':
+        'surface',
+    'Graf trecej sily od tlakovej sily: priamka cez počiatok so smernicou 0,30':
+        'Graph of frictional force against normal force: a straight line through the origin with gradient 0.30',
+    'f = Fₜ / Fₙ ≈ 0,30':
+        'f = Fₜ / Fₙ ≈ 0.30',
 }
 
 def tr_svg(svg):
