@@ -1,0 +1,116 @@
+"""Vzor 17 zo zdrojov MO17_zadanie.html + MO17_riesenie.html (text prepísaný a doplnený, schéma prekreslená)
+-> Vzor17_zadanie.html + Vzor17_vypracovanie.html.
+Spustenie: python -I gen17.py <priečinok FYZIKA>"""
+import sys, pathlib
+
+DST = pathlib.Path(sys.argv[1])
+N = 17
+TOPICS = ['Elektrický prúd v kovoch', 'Dynamika – strela v hlavni', 'Povrchová vrstva kvapaliny']
+
+def page(n, kind, parts):
+    vyp = kind == 'vyp'
+    label = 'Vypracovanie' if vyp else 'Zadanie'
+    sub = 'Podrobné vypracovanie s vysvetlením' if vyp else 'Fyzika · 3 tematické časti'
+    body = ''.join(f'\n<section class="sheet" id="cast-{i}"><div class="topline">Časť {i} z {len(parts)}</div>\n{p.strip()}\n</section>\n'
+                   for i, p in enumerate(parts, 1))
+    z_on, v_on = ('', ' class="on"') if vyp else (' class="on"', '')
+    return f'''<!DOCTYPE html>
+<html lang="sk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Vzor {n} – {label}</title>
+<link rel="stylesheet" href="mo.css">
+</head>
+<body class="{'vyp' if vyp else 'zad'}">
+
+<header class="mo-head"><div class="mo-head-in">
+<div class="mo-kicker"><span class="mo-num">VZOR {n}</span><span class="mo-kind">{label}</span></div>
+<h1>{' · '.join(TOPICS)}</h1>
+<p>{sub}</p>
+</div></header>
+
+<nav class="mo-bar"><div class="mo-bar-in">
+<a class="mo-back" href="index.html">← Všetky vzory</a>
+<div class="mo-switch"><a href="Vzor{n}_zadanie.html"{z_on}>Zadanie</a><a href="Vzor{n}_vypracovanie.html"{v_on}>Vypracovanie</a></div>
+<button type="button" onclick="window.print()">Tlačiť / PDF</button>
+<a class="mo-lang" href="en/Model{n}_{'solutions' if vyp else 'questions'}.html" hreflang="en" title="English version">EN</a>
+</div></nav>
+
+<main class="wrap">
+{body}
+</main>
+
+<footer class="mo-foot"><a href="index.html">← Všetky vzory</a><span>Vzor {n} · {label}</span></footer>
+<script src="mo.js"></script>
+</body>
+</html>
+'''
+
+# ---------- obrázky ----------
+T = 'font-size="16" fill="#193b59"'
+
+def obvod(vyp):
+    i3 = 'I₃ = 250 mA' if vyp else 'I₃ = ?'
+    return ('<svg class="diagram" viewBox="0 0 600 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Rozvetvený obvod s dvoma zdrojmi a tromi rezistormi; prúdy I1 a I2 vtekajú do horného uzla, prúd I3 z neho vyteká cez stredný rezistor R3">'
+            '<g stroke="#193b59" stroke-width="3" fill="none"><path d="M85 101V54H188M230 54H371M412 54H512V101M512 115V232H85V115M293 54V119M293 157V232"/>'
+            '<path d="M69 101H101M496 101H528"/><path d="M77 115H93M504 115H520" stroke-width="7"/>'
+            '<rect x="188" y="40" width="42" height="28" fill="#fff"/><rect x="371" y="40" width="41" height="28" fill="#fff"/><rect x="279" y="119" width="28" height="38" fill="#fff"/></g>'
+            '<g fill="#193b59"><circle cx="293" cy="54" r="5"/><circle cx="293" cy="232" r="5"/></g>'
+            '<g stroke="#c0392b" stroke-width="2.5" fill="none"><path d="M120 78H170M161 72L171 78L161 84M470 78H420M429 72L419 78L429 84M322 170V212M316 202L322 213L328 202"/></g>'
+            f'<g {T}><text x="198" y="30">R₁</text><text x="381" y="30">R₂</text><text x="240" y="144">R₃</text><text x="34" y="114">U₁</text><text x="540" y="114">U₂</text>'
+            '<text x="58" y="96">+</text><text x="534" y="96">+</text><text x="300" y="42">A</text><text x="300" y="256">B</text></g>'
+            '<g font-size="15" fill="#c0392b"><text x="122" y="100">I₁ = 100 mA</text><text x="400" y="100">I₂ = 150 mA</text>'
+            f'<text x="332" y="198">{i3}</text></g></svg>')
+
+OBVOD_Z = obvod(False)
+OBVOD_V = obvod(True)
+
+HLAVEN = ('<svg class="diagram" viewBox="0 0 620 170" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Strela sa v hlavni rozbieha z pokoja; na konci hlavne dĺžky l má rýchlosť 150 m/s">'
+          '<rect x="40" y="58" width="80" height="44" rx="6" fill="#637889"/>'
+          '<g stroke="#375873" stroke-width="3" fill="#e7edf3"><path d="M120 66H500V94H120Z"/></g>'
+          '<path d="M128 72H148L160 80L148 88H128Z" fill="#b87333" stroke="#7a4a1c" stroke-width="1.5"/>'
+          '<path d="M520 72H540L552 80L540 88H520Z" fill="#b87333" stroke="#7a4a1c" stroke-width="1.5" opacity=".9"/>'
+          '<g stroke="#c0392b" stroke-width="2.5" fill="none"><path d="M162 80H222M212 74L224 80L212 86"/></g>'
+          '<g stroke="#26724c" stroke-width="2.5" fill="none"><path d="M556 80H606M596 74L608 80L596 86"/></g>'
+          '<g stroke="#637889" stroke-width="1.5" fill="none"><path d="M138 120H500M138 113V127M500 113V127"/></g>'
+          '<g font-size="15"><text x="228" y="86" fill="#c0392b">F</text><text x="300" y="145" fill="#193b59">l = ?</text>'
+          '<text x="130" y="56" fill="#193b59">v₀ = 0</text><text x="520" y="58" fill="#26724c">v = 150 m/s</text></g></svg>')
+
+def ihla():
+    return ('<svg class="diagram" viewBox="0 0 640 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Vľavo prierez ihlou ležiacou na hladine, hladina je prehnutá a sily povrchového napätia držia ihlu; vpravo mydlová blana v drôtenom očku s nitkou, ktorá sa po prepichnutí blany vo vnútri slučky napne do kružnice">'
+            '<rect x="20" y="120" width="280" height="110" fill="#d6e8f5"/>'
+            '<path d="M20 120H110C135 120,140 146,160 146C180 146,185 120,210 120H300V230H20Z" fill="#d6e8f5"/>'
+            '<path d="M20 120H110C135 120,140 146,160 146C180 146,185 120,210 120H300" fill="none" stroke="#375873" stroke-width="2"/>'
+            '<circle cx="160" cy="138" r="9" fill="#9aa4ad" stroke="#4f5d73" stroke-width="2"/>'
+            '<g stroke="#c0392b" stroke-width="2.5" fill="none"><path d="M150 140L112 118M119 128L110 117L124 117M170 140L208 118M196 117L210 117L201 128"/></g>'
+            '<g stroke="#193b59" stroke-width="2.5" fill="none"><path d="M160 147V198M154 188L160 200L166 188"/></g>'
+            '<g font-size="15"><text x="76" y="106" fill="#c0392b">F<tspan font-size="11" dy="4">σ</tspan></text><text x="214" y="106" fill="#c0392b">F<tspan font-size="11" dy="4">σ</tspan></text>'
+            '<text x="168" y="198" fill="#193b59">G</text><text x="230" y="214" fill="#637889">voda</text><text x="40" y="34" fill="#637889" font-size="14">ihla na hladine (prierez)</text></g>'
+            '<g stroke="#637889" stroke-width="3" fill="none"><circle cx="490" cy="130" r="85"/><path d="M490 215V245"/></g>'
+            '<circle cx="490" cy="130" r="83" fill="#eef5fb" opacity=".8"/>'
+            '<circle cx="500" cy="128" r="34" fill="#fff" stroke="#9a6b12" stroke-width="2.5"/>'
+            '<g font-size="14" fill="#637889"><text x="400" y="34">mydlová blana s nitkou</text><text x="476" y="133">otvor</text><text x="512" y="190">blana</text><text x="537" y="132">nitka</text></g></svg>')
+
+IHLA = ihla()
+
+# ---------- zadanie ----------
+Z1 = f'''<h2>1. Elektrický prúd v kovoch</h2><div class="task"><ol><li>Vysvetlite mechanizmus vedenia elektrického prúdu v kovoch a pojem elektrický odpor. Charakterizujte rezistivitu a závislosť odporu od rozmerov vodiča a od teploty.</li><li>Sformulujte Ohmov zákon pre časť elektrického obvodu a pre uzavretý obvod.</li><li>Vysvetlite prvý a druhý Kirchhoffov zákon.</li></ol><p><strong>Úloha:</strong> V rozvetvenom obvode s dvoma zdrojmi a tromi rezistormi tečie rezistorom R₁ prúd <strong>I₁ = 100 mA</strong> a rezistorom R₂ prúd <strong>I₂ = 150 mA</strong>. Smery prúdov sú vyznačené v schéme.</p>{OBVOD_Z}<ol type="a"><li>Pomocou prvého Kirchhoffovho zákona určte prúd I₃, ktorý tečie stredným rezistorom R₃.</li><li>Aký by bol prúd I₃, keby prúd I₂ tiekol opačným smerom (z uzla A)?</li></ol></div>'''
+
+Z2 = f'''<h2>2. Dynamika – strela v hlavni</h2><div class="task"><ol><li>Sformulujte Newtonove pohybové zákony.</li><li>Opíšte rovnomerne zrýchlený priamočiary pohyb (vzťahy pre rýchlosť a dráhu).</li></ol><p><strong>Úloha:</strong> Strela s hmotnosťou <strong>m = 20 g</strong> sa v hlavni pušky rozbieha z pokoja. Za čas <strong>t = 0,01 s</strong> dosiahne rýchlosť <strong>v = 150 m/s</strong>. Predpokladajte stále zrýchlenie a odporové sily zanedbajte.</p>{HLAVEN}<ol type="a"><li>Vypočítajte zrýchlenie strely.</li><li>Určte výslednú silu, ktorá pôsobí na strelu.</li><li>Vypočítajte dĺžku hlavne, ktorú strela pri zrýchľovaní prejde.</li></ol></div>'''
+
+Z3 = '''<h2>3. Experiment – povrchová vrstva kvapaliny</h2><div class="task"><p>Experimentálne demonštrujte existenciu povrchovej vrstvy kvapaliny. Navrhnite jednoduché pomôcky, opíšte postup a pozorovaný jav vysvetlite pomocou povrchového napätia.</p></div>'''
+
+# ---------- vypracovanie ----------
+V1 = f'''<h2>1. Elektrický prúd v kovoch</h2><h3>1.1 Vedenie prúdu v kovoch</h3><p>Kovy majú kryštálovú mriežku z kladných iónov. Valenčné elektróny nie sú viazané na konkrétne atómy a voľne sa pohybujú celým kryštálom – tvoria <strong>elektrónový plyn</strong>. Bez napätia sa pohybujú neusporiadane a prúd netečie. Po pripojení napätia vznikne vo vodiči elektrické pole a k neusporiadanému pohybu sa pridá pomalý <strong>usmernený (driftový) pohyb</strong> elektrónov proti smeru intenzity poľa. Nosičmi prúdu v kovoch sú teda <strong>voľné elektróny</strong>.</p><h3>1.2 Elektrický odpor a rezistivita</h3><p>Elektróny sa pri pohybe zrážajú s kmitajúcimi iónmi mriežky a s jej poruchami. To je príčinou <strong>elektrického odporu</strong> R = U/I [Ω]. Odpor kovového drôtu:</p><div class="formula">R = ρ · l / S</div><p>ρ je <strong>rezistivita</strong> (merný odpor) materiálu [Ω·m], l dĺžka vodiča a S obsah jeho prierezu. Odpor rastie s dĺžkou a klesá s prierezom. Najmenšiu rezistivitu má striebro a meď, preto sa meď používa na vodiče.</p><p>S rastúcou teplotou ióny kmitajú intenzívnejšie, zrážok pribúda a odpor kovov <strong>rastie</strong>:</p><div class="formula">R = R₀ (1 + α Δt)</div><p>α je teplotný súčiniteľ odporu. Pri niektorých látkach pri veľmi nízkych teplotách odpor úplne zanikne – <strong>supravodivosť</strong>.</p><h3>1.3 Ohmov zákon</h3><p><strong>Pre časť obvodu:</strong> prúd vo vodiči je priamo úmerný napätiu medzi jeho koncami (pri stálej teplote):</p><div class="formula">I = U / R</div><p><strong>Pre uzavretý obvod:</strong> zdroj má elektromotorické napätie U<sub>e</sub> a vnútorný odpor R<sub>i</sub>:</p><div class="formula">I = U<sub>e</sub> / (R + R<sub>i</sub>) &nbsp;&nbsp;&nbsp; U = U<sub>e</sub> − R<sub>i</sub> I</div><h3>1.4 Kirchhoffove zákony</h3><p><strong>1. Kirchhoffov zákon (pre uzol):</strong> súčet prúdov, ktoré do uzla vtekajú, sa rovná súčtu prúdov, ktoré z neho vytekajú. Algebraický súčet prúdov v uzle je nulový:</p><div class="formula">Σ I<sub>k</sub> = 0</div><p>Vyjadruje zákon zachovania elektrického náboja – náboj sa v uzle nehromadí.</p><p><strong>2. Kirchhoffov zákon (pre slučku):</strong> v každej uzavretej slučke sa súčet elektromotorických napätí zdrojov rovná súčtu úbytkov napätia na rezistoroch:</p><div class="formula">Σ U<sub>e,k</sub> = Σ R<sub>k</sub> I<sub>k</sub></div><p>Vyjadruje zákon zachovania energie. Znamienka určíme podľa zvoleného smeru obiehania slučky.</p><h3>1.5 Riešenie úlohy</h3>{OBVOD_V}<p><strong>a)</strong> V uzle A sa stretávajú tri vetvy. Podľa schémy prúdy I₁ a I₂ do uzla vtekajú a prúd I₃ z neho vyteká:</p><div class="formula">I₃ = I₁ + I₂ = 100 mA + 150 mA = 250 mA</div><p>Rovnaký výsledok dostaneme pre uzol B, kam prúd I₃ priteká a odkiaľ sa delí späť do vetiev so zdrojmi.</p><p><strong>b)</strong> Ak by prúd I₂ z uzla A vytekal, do uzla by vtekal len prúd I₁:</p><div class="formula">I₁ = I₂ + I₃ &nbsp; → &nbsp; I₃ = I₁ − I₂ = 100 mA − 150 mA = −50 mA</div><p>Záporné znamienko znamená, že prúd I₃ tečie opačne, ako sme predpokladali – rezistorom R₃ smerom nahor do uzla A, s veľkosťou 50 mA.</p><div class="result"><strong>a) I₃ = 250 mA; b) |I₃| = 50 mA, smerom do uzla A.</strong></div>'''
+
+V2 = f'''<h2>2. Dynamika – strela v hlavni</h2><h3>2.1 Newtonove pohybové zákony</h3><ul><li><strong>1. zákon (zákon zotrvačnosti):</strong> teleso zotrváva v pokoji alebo v rovnomernom priamočiarom pohybe, kým nie je nútené vonkajšími silami tento stav zmeniť. Platí v inerciálnych vzťažných sústavách.</li><li><strong>2. zákon (zákon sily):</strong> zrýchlenie telesa je priamo úmerné výslednej sile a nepriamo úmerné hmotnosti telesa: F = m a. Všeobecnejšie F = Δp/Δt, kde p = mv je hybnosť.</li><li><strong>3. zákon (zákon akcie a reakcie):</strong> sily, ktorými na seba pôsobia dve telesá, sú rovnako veľké, opačného smeru a súčasne vznikajú a zanikajú. Každá pôsobí na iné teleso.</li></ul><h3>2.2 Rovnomerne zrýchlený pohyb</h3><div class="formula">a = Δv/Δt = konšt. &nbsp;&nbsp; v = v₀ + a t &nbsp;&nbsp; s = v₀ t + ½ a t²</div><h3>2.3 Riešenie úlohy</h3><p>Zadané: m = 20 g = 0,020 kg, v₀ = 0, v = 150 m/s, t = 0,01 s.</p>{HLAVEN}<p><strong>a)</strong> Zrýchlenie:</p><div class="formula">a = (v − v₀)/t = 150 m/s / 0,01 s = 15 000 m/s² = 1,5 · 10⁴ m/s²</div><p>To je asi 1 500-násobok tiažového zrýchlenia.</p><p><strong>b)</strong> Výsledná sila z 2. Newtonovho zákona:</p><div class="formula">F = m a = 0,020 kg · 15 000 m/s² = 300 N</div><p>Pri zanedbaní odporových síl je to sila tlaku plynov na strelu. V skutočnosti sa sila počas výstrelu mení a 300 N je jej stredná hodnota.</p><p><strong>c)</strong> Dĺžka hlavne:</p><div class="formula">l = s = ½ a t² = ½ · 15 000 · (0,01)² m = 0,75 m</div><p><strong>Kontrola</strong> priemernou rýchlosťou: v<sub>p</sub> = (0 + 150)/2 m/s = 75 m/s, s = 75 m/s · 0,01 s = 0,75 m.</p><p><strong>Kontrola</strong> cez hybnosť a energiu: impulz sily F·t = 300 N · 0,01 s = 3 N·s sa rovná hybnosti strely mv = 0,020 · 150 kg·m/s = 3 kg·m/s. Práca sily F·s = 300 N · 0,75 m = 225 J sa rovná kinetickej energii ½mv² = ½ · 0,020 · 150² J = 225 J.</p><p>Podľa 3. Newtonovho zákona pôsobí rovnako veľká sila 300 N aj na pušku opačným smerom – spätný ráz.</p><div class="result"><strong>a = 1,5 · 10⁴ m/s², F = 300 N, l = 0,75 m.</strong></div>'''
+
+V3 = f'''<h2>3. Experiment – povrchová vrstva kvapaliny</h2><h3>3.1 Povrchová vrstva a povrchové napätie</h3><p>Molekuly kvapaliny sa navzájom priťahujú. Molekula vo vnútri kvapaliny je priťahovaná susedmi zo všetkých strán rovnako, výslednica síl je nulová. Molekula v <strong>povrchovej vrstve</strong> (hrúbka rádovo 10⁻⁹ m) má susedov len na strane kvapaliny, preto na ňu pôsobí výsledná sila smerujúca do kvapaliny. Povrchová vrstva má väčšiu energiu ako vnútro kvapaliny a kvapalina sa snaží mať čo najmenší povrch – správa sa ako <strong>napnutá pružná blana</strong>. Preto majú malé kvapky tvar gule.</p><p>Na okraj povrchovej vrstvy pôsobí <strong>povrchová sila</strong> F, ktorá leží v povrchu kvapaliny a je kolmá na okraj. <strong>Povrchové napätie</strong> je podiel tejto sily a dĺžky okraja:</p><div class="formula">σ = F / l &nbsp;&nbsp; [σ] = N·m⁻¹</div><p>Pre vodu pri 20 °C je σ ≈ 0,073 N·m⁻¹. Povrchové napätie klesá s rastúcou teplotou a výrazne ho znižujú povrchovo aktívne látky (saponát, mydlo).</p><h3>3.2 Pomôcky</h3><p>Široká nádoba s čistou vodou, suchá oceľová ihla (alebo kancelárska sponka), kúsok papierovej vreckovky, saponát; drôtené očko, mydlový roztok, tenká nitka zviazaná do slučky.</p><h3>3.3 Postup a pozorovanie</h3>{IHLA}<p><strong>Pokus 1 – ihla na hladine:</strong></p><ol><li>Ihlu položíme na kúsok papierovej vreckovky a ten opatrne položíme na pokojnú hladinu.</li><li>Vreckovka nasiakne a klesne ku dnu, ihla zostane ležať na hladine. Pozorujeme, že hladina je pod ihlou prehnutá ako blana.</li><li>Na okraj nádoby kvapneme saponát – ihla sa potopí.</li></ol><p><strong>Pokus 2 – mydlová blana s nitkou:</strong></p><ol><li>Drôtené očko ponoríme do mydlového roztoku, vznikne blana. Na blanu položíme navlhčenú slučku z nitky – slučka má nepravidelný tvar.</li><li>Blanu vo vnútri slučky prepichneme suchou ihlou. Nitka sa okamžite napne do tvaru <strong>kružnice</strong>.</li></ol><h3>3.4 Vysvetlenie</h3><p><strong>Pokus 1:</strong> Oceľ má hustotu asi 7 800 kg/m³ a vo vode by sa mala potopiť. Ihla však neprerazí povrchovú vrstvu, len ju prehne. Sily povrchového napätia pôsobia na ihlu pozdĺž oboch jej strán v smere povrchu. Ich zvislé zložky vyrovnajú tiaž ihly. Saponát zmenší povrchové napätie a sila už nestačí.</p><p><strong>Odhad:</strong> ihla dĺžky l = 4 cm s hmotnosťou 0,2 g má tiaž G ≈ 2 · 10⁻³ N. Povrchová sila pôsobí na oboch stranách ihly, najviac F = 2σl = 2 · 0,073 · 0,04 N ≈ 5,8 · 10⁻³ N. To je viac ako tiaž, preto ihla môže na hladine ležať.</p><p><strong>Pokus 2:</strong> Kým je blana na oboch stranách nitky, povrchové sily na nitku sa vyrovnajú. Po prepichnutí ťahá nitku len blana zvonka a snaží sa zmenšiť svoj povrch. Plocha blany je najmenšia, keď je otvor najväčší. Pri danej dĺžke nitky má najväčší obsah kružnica.</p><p>Ďalšie prejavy povrchovej vrstvy: vodomerky behajú po hladine, voda sa dá naliať do pohára „nad okraj“, kvapka visí na kohútiku, kapilárna elevácia a depresia.</p><div class="result"><strong>Záver:</strong> Povrchová vrstva kvapaliny sa správa ako napnutá blana. Svedčí o tom ihla ležiaca na hladine aj nitka, ktorá sa po prepichnutí blany napne do kružnice. Príčinou sú príťažlivé sily medzi molekulami, ktoré vedú k povrchovému napätiu σ = F/l.</div><p class="subtle">Pri práci s ihlou buďte opatrní; saponát pridávajte až nakoniec, inak treba vodu vymeniť a nádobu dôkladne umyť.</p>'''
+
+for name, html in (('zadanie', page(N, 'zad', [Z1, Z2, Z3])), ('vypracovanie', page(N, 'vyp', [V1, V2, V3]))):
+    for bad in ('ekonštru', 'rukopis', 'MO17', 'Otázka', 'maturit', 'riginál'):
+        assert bad not in html, (name, bad)
+    (DST / f'Vzor{N}_{name}.html').write_text(html, encoding='utf-8', newline='\n')
+    print('ok', name, len(html))

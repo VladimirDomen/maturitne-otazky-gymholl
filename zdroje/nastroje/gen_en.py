@@ -25,6 +25,7 @@ TOPICS = {
     14: ['Electric Current in Electrolytes', 'Energy of a Particle', 'Efficiency of a Transformer'],
     15: ['Electric Field', 'Atomic Nucleus', 'Inclined Plane'],
     16: ['Electric Current', 'Kinematics – v–t Graph', 'Wavelength of Light'],
+    17: ['Electric Current in Metals', 'Dynamics – Bullet in a Barrel', 'Surface Layer of a Liquid'],
     18: ['Free Oscillations', 'Motion in a Gravitational Field – Horizontal Projection', 'Diameter of an Oleic Acid Molecule'],
     19: ['Magnetic Field', 'Fluid Mechanics – Flow in a Pipe', 'Specific Latent Heat of Fusion of Ice'],
     26: ['Electron Shell of the Atom', 'Electric Current', 'Properties of Gases'],
@@ -199,6 +200,22 @@ SVG_EN = {
         'calorimeter',
     'miešačka':
         'stirrer',
+    'Rozvetvený obvod s dvoma zdrojmi a tromi rezistormi; prúdy I1 a I2 vtekajú do horného uzla, prúd I3 z neho vyteká cez stredný rezistor R3':
+        'Branched circuit with two sources and three resistors; currents I1 and I2 flow into the upper junction, current I3 flows out of it through the middle resistor R3',
+    'Strela sa v hlavni rozbieha z pokoja; na konci hlavne dĺžky l má rýchlosť 150 m/s':
+        'The bullet starts from rest in the barrel; at the end of the barrel of length l its speed is 150 m/s',
+    'Vľavo prierez ihlou ležiacou na hladine, hladina je prehnutá a sily povrchového napätia držia ihlu; vpravo mydlová blana v drôtenom očku s nitkou, ktorá sa po prepichnutí blany vo vnútri slučky napne do kružnice':
+        'Left: cross-section of a needle lying on the water surface, the surface is bent and surface tension forces hold the needle; right: soap film in a wire loop with a thread that pulls into a circle after the film inside the loop is pierced',
+    'ihla na hladine (prierez)':
+        'needle on the surface (cross-section)',
+    'mydlová blana s nitkou':
+        'soap film with a thread',
+    'otvor':
+        'hole',
+    'blana':
+        'film',
+    'nitka':
+        'thread',
 }
 
 def tr_svg(svg):

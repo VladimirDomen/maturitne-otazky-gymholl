@@ -1,0 +1,82 @@
+<h2>1. Electric Current in Metals</h2>
+<h3>1.1 Conduction in metals</h3>
+<p>Metals have a crystal lattice of positive ions. The valence electrons are not bound to particular atoms and move freely through the whole crystal – they form an <strong>electron gas</strong>. Without a voltage they move randomly and no current flows. When a voltage is applied, an electric field is set up in the conductor and a slow <strong>directed (drift) motion</strong> of electrons against the field is added to the random motion. The charge carriers in metals are therefore <strong>free electrons</strong>.</p>
+<h3>1.2 Electrical resistance and resistivity</h3>
+<p>As they move, the electrons collide with the vibrating ions of the lattice and with its defects. This is the cause of <strong>electrical resistance</strong> R = U/I [Ω]. The resistance of a metal wire:</p>
+<div class="formula">R = ρ · l / S</div>
+<p>ρ is the <strong>resistivity</strong> of the material [Ω·m], l the length of the conductor and S its cross-sectional area. Resistance increases with length and decreases with cross-section. Silver and copper have the lowest resistivity, which is why copper is used for wires.</p>
+<p>As the temperature rises, the ions vibrate more strongly, there are more collisions and the resistance of metals <strong>increases</strong>:</p>
+<div class="formula">R = R₀ (1 + α Δt)</div>
+<p>α is the temperature coefficient of resistance. In some materials the resistance disappears completely at very low temperatures – <strong>superconductivity</strong>.</p>
+<h3>1.3 Ohm’s law</h3>
+<p><strong>For part of a circuit:</strong> the current in a conductor is directly proportional to the voltage between its ends (at constant temperature):</p>
+<div class="formula">I = U / R</div>
+<p><strong>For a complete circuit:</strong> the source has an emf U<sub>e</sub> and an internal resistance R<sub>i</sub>:</p>
+<div class="formula">I = U<sub>e</sub> / (R + R<sub>i</sub>) &nbsp;&nbsp;&nbsp; U = U<sub>e</sub> − R<sub>i</sub> I</div>
+<h3>1.4 Kirchhoff’s laws</h3>
+<p><strong>Kirchhoff’s first law (junction rule):</strong> the sum of the currents flowing into a junction equals the sum of the currents flowing out. The algebraic sum of the currents at a junction is zero:</p>
+<div class="formula">Σ I<sub>k</sub> = 0</div>
+<p>It expresses the conservation of electric charge – charge does not accumulate at a junction.</p>
+<p><strong>Kirchhoff’s second law (loop rule):</strong> in every closed loop the sum of the emfs of the sources equals the sum of the voltage drops across the resistors:</p>
+<div class="formula">Σ U<sub>e,k</sub> = Σ R<sub>k</sub> I<sub>k</sub></div>
+<p>It expresses the conservation of energy. The signs are determined by the chosen direction of going round the loop.</p>
+<h3>1.5 Solution of the task</h3>
+{{SVG0}}
+<p><strong>a)</strong> Three branches meet at junction A. According to the diagram, currents I₁ and I₂ flow into the junction and current I₃ flows out of it:</p>
+<div class="formula">I₃ = I₁ + I₂ = 100 mA + 150 mA = 250 mA</div>
+<p>Junction B gives the same result: current I₃ flows into it and divides back into the branches with the sources.</p>
+<p><strong>b)</strong> If current I₂ flowed out of junction A, only current I₁ would flow into it:</p>
+<div class="formula">I₁ = I₂ + I₃ &nbsp; → &nbsp; I₃ = I₁ − I₂ = 100 mA − 150 mA = −50 mA</div>
+<p>The minus sign means that I₃ flows opposite to the assumed direction – upwards through R₃ into junction A, with a magnitude of 50 mA.</p>
+<div class="result"><strong>a) I₃ = 250 mA; b) |I₃| = 50 mA, towards junction A.</strong></div>
+<!--PART-->
+<h2>2. Dynamics – Bullet in a Barrel</h2>
+<h3>2.1 Newton’s laws of motion</h3>
+<ul><li><strong>First law (law of inertia):</strong> a body remains at rest or in uniform motion in a straight line unless external forces make it change this state. It holds in inertial frames of reference.</li>
+<li><strong>Second law (law of force):</strong> the acceleration of a body is directly proportional to the resultant force and inversely proportional to the mass of the body: F = m a. More generally F = Δp/Δt, where p = mv is momentum.</li>
+<li><strong>Third law (law of action and reaction):</strong> the forces two bodies exert on each other are equal in size, opposite in direction and arise and disappear at the same time. Each acts on a different body.</li>
+</ul>
+<h3>2.2 Uniformly accelerated motion</h3>
+<div class="formula">a = Δv/Δt = const. &nbsp;&nbsp; v = v₀ + a t &nbsp;&nbsp; s = v₀ t + ½ a t²</div>
+<h3>2.3 Solution of the task</h3>
+<p>Given: m = 20 g = 0.020 kg, v₀ = 0, v = 150 m/s, t = 0.01 s.</p>
+{{SVG1}}
+<p><strong>a)</strong> Acceleration:</p>
+<div class="formula">a = (v − v₀)/t = 150 m/s / 0.01 s = 15 000 m/s² = 1.5 · 10⁴ m/s²</div>
+<p>That is about 1 500 times the acceleration due to gravity.</p>
+<p><strong>b)</strong> Resultant force from Newton’s second law:</p>
+<div class="formula">F = m a = 0.020 kg · 15 000 m/s² = 300 N</div>
+<p>Neglecting resistive forces, this is the force of the gas pressure on the bullet. In reality the force changes during firing and 300 N is its mean value.</p>
+<p><strong>c)</strong> Length of the barrel:</p>
+<div class="formula">l = s = ½ a t² = ½ · 15 000 · (0.01)² m = 0.75 m</div>
+<p><strong>Check</strong> using the average speed: v<sub>p</sub> = (0 + 150)/2 m/s = 75 m/s, s = 75 m/s · 0.01 s = 0.75 m.</p>
+<p><strong>Check</strong> using momentum and energy: the impulse F·t = 300 N · 0.01 s = 3 N·s equals the momentum of the bullet mv = 0.020 · 150 kg·m/s = 3 kg·m/s. The work F·s = 300 N · 0.75 m = 225 J equals the kinetic energy ½mv² = ½ · 0.020 · 150² J = 225 J.</p>
+<p>By Newton’s third law an equally large force of 300 N acts on the rifle in the opposite direction – the recoil.</p>
+<div class="result"><strong>a = 1.5 · 10⁴ m/s², F = 300 N, l = 0.75 m.</strong></div>
+<!--PART-->
+<h2>3. Experiment – Surface Layer of a Liquid</h2>
+<h3>3.1 Surface layer and surface tension</h3>
+<p>The molecules of a liquid attract one another. A molecule inside the liquid is attracted equally by its neighbours on all sides, and the resultant force is zero. A molecule in the <strong>surface layer</strong> (thickness of the order of 10⁻⁹ m) has neighbours only on the liquid side, so a resultant force acts on it directed into the liquid. The surface layer has more energy than the interior of the liquid and the liquid tends to have the smallest possible surface – it behaves like a <strong>stretched elastic membrane</strong>. That is why small drops are spherical.</p>
+<p>A <strong>surface force</strong> F acts on the edge of the surface layer; it lies in the surface of the liquid and is perpendicular to the edge. <strong>Surface tension</strong> is the ratio of this force to the length of the edge:</p>
+<div class="formula">σ = F / l &nbsp;&nbsp; [σ] = N·m⁻¹</div>
+<p>For water at 20 °C, σ ≈ 0.073 N·m⁻¹. Surface tension decreases as the temperature rises and is reduced considerably by surfactants (detergent, soap).</p>
+<h3>3.2 Apparatus</h3>
+<p>A wide vessel with clean water, a dry steel needle (or a paper clip), a piece of tissue paper, detergent; a wire loop, soap solution, a thin thread tied into a loop.</p>
+<h3>3.3 Procedure and observation</h3>
+{{SVG2}}
+<p><strong>Experiment 1 – needle on the surface:</strong></p>
+<ol><li>Place the needle on a piece of tissue paper and lay it gently on the calm water surface.</li>
+<li>The tissue soaks up water and sinks; the needle stays lying on the surface. We observe that the surface under the needle is bent like a membrane.</li>
+<li>Add a drop of detergent at the edge of the vessel – the needle sinks.</li>
+</ol>
+<p><strong>Experiment 2 – soap film with a thread:</strong></p>
+<ol><li>Dip the wire loop into the soap solution to form a film. Place a wet thread loop on the film – the loop has an irregular shape.</li>
+<li>Pierce the film inside the thread loop with a dry needle. The thread immediately pulls tight into a <strong>circle</strong>.</li>
+</ol>
+<h3>3.4 Explanation</h3>
+<p><strong>Experiment 1:</strong> Steel has a density of about 7 800 kg/m³ and should sink in water. However, the needle does not break through the surface layer, it only bends it. Surface tension forces act on the needle along both its sides in the direction of the surface. Their vertical components balance the weight of the needle. Detergent reduces the surface tension and the force is no longer sufficient.</p>
+<p><strong>Estimate:</strong> a needle of length l = 4 cm and mass 0.2 g has a weight G ≈ 2 · 10⁻³ N. The surface force acts on both sides of the needle, at most F = 2σl = 2 · 0.073 · 0.04 N ≈ 5.8 · 10⁻³ N. This is more than the weight, so the needle can lie on the surface.</p>
+<p><strong>Experiment 2:</strong> While the film is on both sides of the thread, the surface forces on the thread balance. After piercing, only the film outside pulls on the thread and tries to reduce its area. The area of the film is smallest when the hole is largest. For a given length of thread, a circle has the largest area.</p>
+<p>Other evidence of the surface layer: pond skaters run on water, water can be poured into a glass “above the rim”, a drop hangs from a tap, capillary rise and depression.</p>
+<div class="result"><strong>Conclusion:</strong> The surface layer of a liquid behaves like a stretched membrane. This is shown by the needle lying on the water surface and by the thread that pulls into a circle when the film is pierced. The cause is the attractive forces between molecules, which give rise to surface tension σ = F/l.</div>
+<p class="subtle">Handle the needle carefully; add detergent only at the end, otherwise the water must be replaced and the vessel washed thoroughly.</p>

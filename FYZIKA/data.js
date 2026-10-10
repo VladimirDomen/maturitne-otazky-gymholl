@@ -198,6 +198,17 @@ const OTAZKY = [
       sk: ['Vlnová dĺžka svetla', 'Experiment: optická mriežka a laser, d sin α = kλ'],
       en: ['Wavelength of light', 'Experiment: diffraction grating and laser, d sin α = kλ'] },
   ]},
+  { n: 17, casti: [
+    { o: ['elektrina'],
+      sk: ['Elektrický prúd v kovoch', 'Odpor a rezistivita, Ohmov zákon, Kirchhoffove zákony, prúd v uzle rozvetveného obvodu'],
+      en: ['Electric current in metals', 'Resistance and resistivity, Ohm’s law, Kirchhoff’s laws, current at a junction of a branched circuit'] },
+    { o: ['mechanika'],
+      sk: ['Dynamika – strela v hlavni', 'Newtonove zákony, zrýchlenie, sila a dĺžka hlavne'],
+      en: ['Dynamics – bullet in a barrel', 'Newton’s laws, acceleration, force and length of the barrel'] },
+    { o: ['tekutiny', 'termika'],
+      sk: ['Povrchová vrstva kvapaliny', 'Experiment: ihla na hladine, mydlová blana s nitkou, povrchové napätie'],
+      en: ['Surface layer of a liquid', 'Experiment: needle on water, soap film with a thread, surface tension'] },
+  ]},
   { n: 18, casti: [
     { o: ['vlnenie'],
       sk: ['Vlastné kmitanie', 'Kmitavý pohyb, výchylka a amplitúda, kinematická rovnica, A, T, f a φ₀ z grafu'],

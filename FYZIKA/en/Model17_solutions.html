@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Model 17 – Worked solutions</title>
+<link rel="stylesheet" href="../mo.css">
+</head>
+<body class="vyp">
+
+<header class="mo-head"><div class="mo-head-in">
+<div class="mo-kicker"><span class="mo-num">MODEL 17</span><span class="mo-kind">Worked solutions</span></div>
+<h1>Electric Current in Metals · Dynamics – Bullet in a Barrel · Surface Layer of a Liquid</h1>
+<p>Detailed worked solutions with explanations</p>
+</div></header>
+
+<nav class="mo-bar"><div class="mo-bar-in">
+<a class="mo-back" href="index.html">← All models</a>
+<div class="mo-switch"><a href="Model17_questions.html">Questions</a><a href="Model17_solutions.html" class="on">Solutions</a></div>
+<button type="button" onclick="window.print()">Print / PDF</button>
+<a class="mo-lang" href="../Vzor17_vypracovanie.html" hreflang="sk" title="Slovenská verzia">SK</a>
+</div></nav>
+
+<main class="wrap">
+
+<section class="sheet" id="cast-1"><div class="topline">Part 1 of 3</div>
+<h2>1. Electric Current in Metals</h2>
+<h3>1.1 Conduction in metals</h3>
+<p>Metals have a crystal lattice of positive ions. The valence electrons are not bound to particular atoms and move freely through the whole crystal – they form an <strong>electron gas</strong>. Without a voltage they move randomly and no current flows. When a voltage is applied, an electric field is set up in the conductor and a slow <strong>directed (drift) motion</strong> of electrons against the field is added to the random motion. The charge carriers in metals are therefore <strong>free electrons</strong>.</p>
+<h3>1.2 Electrical resistance and resistivity</h3>
+<p>As they move, the electrons collide with the vibrating ions of the lattice and with its defects. This is the cause of <strong>electrical resistance</strong> R = U/I [Ω]. The resistance of a metal wire:</p>
+<div class="formula">R = ρ · l / S</div>
+<p>ρ is the <strong>resistivity</strong> of the material [Ω·m], l the length of the conductor and S its cross-sectional area. Resistance increases with length and decreases with cross-section. Silver and copper have the lowest resistivity, which is why copper is used for wires.</p>
+<p>As the temperature rises, the ions vibrate more strongly, there are more collisions and the resistance of metals <strong>increases</strong>:</p>
+<div class="formula">R = R₀ (1 + α Δt)</div>
+<p>α is the temperature coefficient of resistance. In some materials the resistance disappears completely at very low temperatures – <strong>superconductivity</strong>.</p>
+<h3>1.3 Ohm’s law</h3>
+<p><strong>For part of a circuit:</strong> the current in a conductor is directly proportional to the voltage between its ends (at constant temperature):</p>
+<div class="formula">I = U / R</div>
+<p><strong>For a complete circuit:</strong> the source has an emf U<sub>e</sub> and an internal resistance R<sub>i</sub>:</p>
+<div class="formula">I = U<sub>e</sub> / (R + R<sub>i</sub>) &nbsp;&nbsp;&nbsp; U = U<sub>e</sub> − R<sub>i</sub> I</div>
+<h3>1.4 Kirchhoff’s laws</h3>
+<p><strong>Kirchhoff’s first law (junction rule):</strong> the sum of the currents flowing into a junction equals the sum of the currents flowing out. The algebraic sum of the currents at a junction is zero:</p>
+<div class="formula">Σ I<sub>k</sub> = 0</div>
+<p>It expresses the conservation of electric charge – charge does not accumulate at a junction.</p>
+<p><strong>Kirchhoff’s second law (loop rule):</strong> in every closed loop the sum of the emfs of the sources equals the sum of the voltage drops across the resistors:</p>
+<div class="formula">Σ U<sub>e,k</sub> = Σ R<sub>k</sub> I<sub>k</sub></div>
+<p>It expresses the conservation of energy. The signs are determined by the chosen direction of going round the loop.</p>
+<h3>1.5 Solution of the task</h3>
+<svg class="diagram" viewBox="0 0 600 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Branched circuit with two sources and three resistors; currents I1 and I2 flow into the upper junction, current I3 flows out of it through the middle resistor R3"><g stroke="#193b59" stroke-width="3" fill="none"><path d="M85 101V54H188M230 54H371M412 54H512V101M512 115V232H85V115M293 54V119M293 157V232"/><path d="M69 101H101M496 101H528"/><path d="M77 115H93M504 115H520" stroke-width="7"/><rect x="188" y="40" width="42" height="28" fill="#fff"/><rect x="371" y="40" width="41" height="28" fill="#fff"/><rect x="279" y="119" width="28" height="38" fill="#fff"/></g><g fill="#193b59"><circle cx="293" cy="54" r="5"/><circle cx="293" cy="232" r="5"/></g><g stroke="#c0392b" stroke-width="2.5" fill="none"><path d="M120 78H170M161 72L171 78L161 84M470 78H420M429 72L419 78L429 84M322 170V212M316 202L322 213L328 202"/></g><g font-size="16" fill="#193b59"><text x="198" y="30">R₁</text><text x="381" y="30">R₂</text><text x="240" y="144">R₃</text><text x="34" y="114">U₁</text><text x="540" y="114">U₂</text><text x="58" y="96">+</text><text x="534" y="96">+</text><text x="300" y="42">A</text><text x="300" y="256">B</text></g><g font-size="15" fill="#c0392b"><text x="122" y="100">I₁ = 100 mA</text><text x="400" y="100">I₂ = 150 mA</text><text x="332" y="198">I₃ = 250 mA</text></g></svg>
+<p><strong>a)</strong> Three branches meet at junction A. According to the diagram, currents I₁ and I₂ flow into the junction and current I₃ flows out of it:</p>
+<div class="formula">I₃ = I₁ + I₂ = 100 mA + 150 mA = 250 mA</div>
+<p>Junction B gives the same result: current I₃ flows into it and divides back into the branches with the sources.</p>
+<p><strong>b)</strong> If current I₂ flowed out of junction A, only current I₁ would flow into it:</p>
+<div class="formula">I₁ = I₂ + I₃ &nbsp; → &nbsp; I₃ = I₁ − I₂ = 100 mA − 150 mA = −50 mA</div>
+<p>The minus sign means that I₃ flows opposite to the assumed direction – upwards through R₃ into junction A, with a magnitude of 50 mA.</p>
+<div class="result"><strong>a) I₃ = 250 mA; b) |I₃| = 50 mA, towards junction A.</strong></div>
+</section>
+
+<section class="sheet" id="cast-2"><div class="topline">Part 2 of 3</div>
+<h2>2. Dynamics – Bullet in a Barrel</h2>
+<h3>2.1 Newton’s laws of motion</h3>
+<ul><li><strong>First law (law of inertia):</strong> a body remains at rest or in uniform motion in a straight line unless external forces make it change this state. It holds in inertial frames of reference.</li>
+<li><strong>Second law (law of force):</strong> the acceleration of a body is directly proportional to the resultant force and inversely proportional to the mass of the body: F = m a. More generally F = Δp/Δt, where p = mv is momentum.</li>
+<li><strong>Third law (law of action and reaction):</strong> the forces two bodies exert on each other are equal in size, opposite in direction and arise and disappear at the same time. Each acts on a different body.</li>
+</ul>
+<h3>2.2 Uniformly accelerated motion</h3>
+<div class="formula">a = Δv/Δt = const. &nbsp;&nbsp; v = v₀ + a t &nbsp;&nbsp; s = v₀ t + ½ a t²</div>
+<h3>2.3 Solution of the task</h3>
+<p>Given: m = 20 g = 0.020 kg, v₀ = 0, v = 150 m/s, t = 0.01 s.</p>
+<svg class="diagram" viewBox="0 0 620 170" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The bullet starts from rest in the barrel; at the end of the barrel of length l its speed is 150 m/s"><rect x="40" y="58" width="80" height="44" rx="6" fill="#637889"/><g stroke="#375873" stroke-width="3" fill="#e7edf3"><path d="M120 66H500V94H120Z"/></g><path d="M128 72H148L160 80L148 88H128Z" fill="#b87333" stroke="#7a4a1c" stroke-width="1.5"/><path d="M520 72H540L552 80L540 88H520Z" fill="#b87333" stroke="#7a4a1c" stroke-width="1.5" opacity=".9"/><g stroke="#c0392b" stroke-width="2.5" fill="none"><path d="M162 80H222M212 74L224 80L212 86"/></g><g stroke="#26724c" stroke-width="2.5" fill="none"><path d="M556 80H606M596 74L608 80L596 86"/></g><g stroke="#637889" stroke-width="1.5" fill="none"><path d="M138 120H500M138 113V127M500 113V127"/></g><g font-size="15"><text x="228" y="86" fill="#c0392b">F</text><text x="300" y="145" fill="#193b59">l = ?</text><text x="130" y="56" fill="#193b59">v₀ = 0</text><text x="520" y="58" fill="#26724c">v = 150 m/s</text></g></svg>
+<p><strong>a)</strong> Acceleration:</p>
+<div class="formula">a = (v − v₀)/t = 150 m/s / 0.01 s = 15 000 m/s² = 1.5 · 10⁴ m/s²</div>
+<p>That is about 1 500 times the acceleration due to gravity.</p>
+<p><strong>b)</strong> Resultant force from Newton’s second law:</p>
+<div class="formula">F = m a = 0.020 kg · 15 000 m/s² = 300 N</div>
+<p>Neglecting resistive forces, this is the force of the gas pressure on the bullet. In reality the force changes during firing and 300 N is its mean value.</p>
+<p><strong>c)</strong> Length of the barrel:</p>
+<div class="formula">l = s = ½ a t² = ½ · 15 000 · (0.01)² m = 0.75 m</div>
+<p><strong>Check</strong> using the average speed: v<sub>p</sub> = (0 + 150)/2 m/s = 75 m/s, s = 75 m/s · 0.01 s = 0.75 m.</p>
+<p><strong>Check</strong> using momentum and energy: the impulse F·t = 300 N · 0.01 s = 3 N·s equals the momentum of the bullet mv = 0.020 · 150 kg·m/s = 3 kg·m/s. The work F·s = 300 N · 0.75 m = 225 J equals the kinetic energy ½mv² = ½ · 0.020 · 150² J = 225 J.</p>
+<p>By Newton’s third law an equally large force of 300 N acts on the rifle in the opposite direction – the recoil.</p>
+<div class="result"><strong>a = 1.5 · 10⁴ m/s², F = 300 N, l = 0.75 m.</strong></div>
+</section>
+
+<section class="sheet" id="cast-3"><div class="topline">Part 3 of 3</div>
+<h2>3. Experiment – Surface Layer of a Liquid</h2>
+<h3>3.1 Surface layer and surface tension</h3>
+<p>The molecules of a liquid attract one another. A molecule inside the liquid is attracted equally by its neighbours on all sides, and the resultant force is zero. A molecule in the <strong>surface layer</strong> (thickness of the order of 10⁻⁹ m) has neighbours only on the liquid side, so a resultant force acts on it directed into the liquid. The surface layer has more energy than the interior of the liquid and the liquid tends to have the smallest possible surface – it behaves like a <strong>stretched elastic membrane</strong>. That is why small drops are spherical.</p>
+<p>A <strong>surface force</strong> F acts on the edge of the surface layer; it lies in the surface of the liquid and is perpendicular to the edge. <strong>Surface tension</strong> is the ratio of this force to the length of the edge:</p>
+<div class="formula">σ = F / l &nbsp;&nbsp; [σ] = N·m⁻¹</div>
+<p>For water at 20 °C, σ ≈ 0.073 N·m⁻¹. Surface tension decreases as the temperature rises and is reduced considerably by surfactants (detergent, soap).</p>
+<h3>3.2 Apparatus</h3>
+<p>A wide vessel with clean water, a dry steel needle (or a paper clip), a piece of tissue paper, detergent; a wire loop, soap solution, a thin thread tied into a loop.</p>
+<h3>3.3 Procedure and observation</h3>
+<svg class="diagram" viewBox="0 0 640 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Left: cross-section of a needle lying on the water surface, the surface is bent and surface tension forces hold the needle; right: soap film in a wire loop with a thread that pulls into a circle after the film inside the loop is pierced"><rect x="20" y="120" width="280" height="110" fill="#d6e8f5"/><path d="M20 120H110C135 120,140 146,160 146C180 146,185 120,210 120H300V230H20Z" fill="#d6e8f5"/><path d="M20 120H110C135 120,140 146,160 146C180 146,185 120,210 120H300" fill="none" stroke="#375873" stroke-width="2"/><circle cx="160" cy="138" r="9" fill="#9aa4ad" stroke="#4f5d73" stroke-width="2"/><g stroke="#c0392b" stroke-width="2.5" fill="none"><path d="M150 140L112 118M119 128L110 117L124 117M170 140L208 118M196 117L210 117L201 128"/></g><g stroke="#193b59" stroke-width="2.5" fill="none"><path d="M160 147V198M154 188L160 200L166 188"/></g><g font-size="15"><text x="76" y="106" fill="#c0392b">F<tspan font-size="11" dy="4">σ</tspan></text><text x="214" y="106" fill="#c0392b">F<tspan font-size="11" dy="4">σ</tspan></text><text x="168" y="198" fill="#193b59">G</text><text x="230" y="214" fill="#637889">water</text><text x="40" y="34" fill="#637889" font-size="14">needle on the surface (cross-section)</text></g><g stroke="#637889" stroke-width="3" fill="none"><circle cx="490" cy="130" r="85"/><path d="M490 215V245"/></g><circle cx="490" cy="130" r="83" fill="#eef5fb" opacity=".8"/><circle cx="500" cy="128" r="34" fill="#fff" stroke="#9a6b12" stroke-width="2.5"/><g font-size="14" fill="#637889"><text x="400" y="34">soap film with a thread</text><text x="476" y="133">hole</text><text x="512" y="190">film</text><text x="537" y="132">thread</text></g></svg>
+<p><strong>Experiment 1 – needle on the surface:</strong></p>
+<ol><li>Place the needle on a piece of tissue paper and lay it gently on the calm water surface.</li>
+<li>The tissue soaks up water and sinks; the needle stays lying on the surface. We observe that the surface under the needle is bent like a membrane.</li>
+<li>Add a drop of detergent at the edge of the vessel – the needle sinks.</li>
+</ol>
+<p><strong>Experiment 2 – soap film with a thread:</strong></p>
+<ol><li>Dip the wire loop into the soap solution to form a film. Place a wet thread loop on the film – the loop has an irregular shape.</li>
+<li>Pierce the film inside the thread loop with a dry needle. The thread immediately pulls tight into a <strong>circle</strong>.</li>
+</ol>
+<h3>3.4 Explanation</h3>
+<p><strong>Experiment 1:</strong> Steel has a density of about 7 800 kg/m³ and should sink in water. However, the needle does not break through the surface layer, it only bends it. Surface tension forces act on the needle along both its sides in the direction of the surface. Their vertical components balance the weight of the needle. Detergent reduces the surface tension and the force is no longer sufficient.</p>
+<p><strong>Estimate:</strong> a needle of length l = 4 cm and mass 0.2 g has a weight G ≈ 2 · 10⁻³ N. The surface force acts on both sides of the needle, at most F = 2σl = 2 · 0.073 · 0.04 N ≈ 5.8 · 10⁻³ N. This is more than the weight, so the needle can lie on the surface.</p>
+<p><strong>Experiment 2:</strong> While the film is on both sides of the thread, the surface forces on the thread balance. After piercing, only the film outside pulls on the thread and tries to reduce its area. The area of the film is smallest when the hole is largest. For a given length of thread, a circle has the largest area.</p>
+<p>Other evidence of the surface layer: pond skaters run on water, water can be poured into a glass “above the rim”, a drop hangs from a tap, capillary rise and depression.</p>
+<div class="result"><strong>Conclusion:</strong> The surface layer of a liquid behaves like a stretched membrane. This is shown by the needle lying on the water surface and by the thread that pulls into a circle when the film is pierced. The cause is the attractive forces between molecules, which give rise to surface tension σ = F/l.</div>
+<p class="subtle">Handle the needle carefully; add detergent only at the end, otherwise the water must be replaced and the vessel washed thoroughly.</p>
+</section>
+
+</main>
+
+<footer class="mo-foot"><a href="index.html">← All models</a><span>Model 17 · Worked solutions</span></footer>
+<script src="../mo.js"></script>
+</body>
+</html>
