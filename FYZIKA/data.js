@@ -88,6 +88,17 @@ const OTAZKY = [
       sk: ['Elektrický obvod', 'Meranie napätia a prúdu, overenie Ohmovho zákona, graf I = f(U)'],
       en: ['Electric circuit', 'Measuring voltage and current, verifying Ohm’s law, graph of I against U'] },
   ]},
+  { n: 7, casti: [
+    { o: ['mechanika'],
+      sk: ['Mechanika tuhého telesa', 'Moment sily, momentová veta, skladanie síl, ťažisko, dvojica síl'],
+      en: ['Mechanics of a rigid body', 'Moment of force, principle of moments, composition of forces, centre of gravity, couple'] },
+    { o: ['elektrina'],
+      sk: ['Striedavý prúd', 'Okamžitá hodnota, amplitúda a efektívna hodnota napätia'],
+      en: ['Alternating current', 'Instantaneous value, amplitude and rms value of voltage'] },
+    { o: ['optika'],
+      sk: ['Index lomu svetla', 'Experiment: Snellov zákon, meranie uhlov, graf sin α – sin β'],
+      en: ['Refractive index of light', 'Experiment: Snell’s law, measuring angles, graph of sin α against sin β'] },
+  ]},
   { n: 26, casti: [
     { o: ['mikrosvet', 'optika'],
       sk: ['Elektrónový obal atómu', 'Kvantovanie energie, emisné a absorpčné spektrum, energia fotónu'],

@@ -15,6 +15,7 @@ TOPICS = {
     4: ['Kinematics of a Particle', 'Magnetic Field', 'The Microworld'],
     5: ['Dynamics', 'Electromagnetic Induction', 'Nuclear Power Plant'],
     6: ['Energy of a Particle', 'Oscillator', 'Electric Circuit'],
+    7: ['Mechanics of a Rigid Body', 'Alternating Current', 'Refractive Index of Light'],
     26: ['Electron Shell of the Atom', 'Electric Current', 'Properties of Gases'],
 }
 
@@ -56,6 +57,14 @@ SVG_EN = {
     'Riešenie: indukované napätie je nula do 0,01 s, mínus 0,6 voltu do 0,02 s a opäť nula do 0,03 s.':
         'Solution: the induced voltage is zero up to 0.01 s, minus 0.6 volts up to 0.02 s and zero again up to 0.03 s.',
     'Zjednodušená schéma jadrovej elektrárne s tlakovodným reaktorom': 'Simplified diagram of a nuclear power plant with a pressurised water reactor',
+    'Dve rovnobežné sily pôsobiace na nosník v rôznych bodoch': 'Two parallel forces acting on a beam at different points',
+    'Dvojica síl – opačne orientované rovnobežné sily': 'A couple – opposite parallel forces',
+    'Graf sínusu uhla dopadu v závislosti od sínusu uhla lomu': 'Graph of the sine of the angle of incidence against the sine of the angle of refraction',
+    'Schéma lomu svetla na rovinnom rozhraní vzduchu a priehľadného materiálu': 'Refraction of light at a plane boundary between air and a transparent material',
+    'Schematické znázornenie skladania rovnobežných síl': 'Schematic composition of parallel forces',
+    'dopadajúci lúč': 'incident ray', 'lomený lúč': 'refracted ray', 'kolmica': 'normal',
+    'priehľadný materiál n₂': 'transparent material n₂', 'vzduch n₁ ≈ 1': 'air n₁ ≈ 1', 'smernica ≈ n': 'gradient ≈ n',
+    'sin α': 'sin α', 'sin β': 'sin β',
     'spínač': 'switch', 'zdroj': 'source', 'ampérmeter': 'ammeter', 'voltmeter': 'voltmeter', 'rezistor': 'resistor',
 }
 
