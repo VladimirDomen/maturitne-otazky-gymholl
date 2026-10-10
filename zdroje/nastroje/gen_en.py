@@ -92,6 +92,7 @@ def page(n, kind, parts):
 </main>
 
 <footer class="mo-foot"><a href="index.html">← All models</a><span>Model {n} · {label}</span></footer>
+<script src="../mo.js"></script>
 </body>
 </html>
 '''

@@ -130,7 +130,7 @@ $('grid').innerHTML = OTAZKY.map(q => {
       <li class="part" data-o="${c.o.join(' ')}">
         <span class="part-n" style="--c:${farba(c.o[0])}">${i + 1}</span>
         <div>
-          <div class="part-t">${esc(c[LANG][0])}</div>
+          <div class="part-t"><a href="${T.linkZ(q.n)}?cast=${i + 1}">${esc(c[LANG][0])}</a></div>
           <div class="part-d">${esc(c[LANG][1])}</div>
           <div class="tags">${c.o.map(k => `<span class="tag" style="--c:${farba(k)}">${nazov(k)}</span>`).join('')}</div>
         </div>

@@ -70,6 +70,14 @@ svg.graph{width:100%;border:1px solid #e0e6ed;border-radius:10px;background:#fff
 svg.diagram{width:100%;max-width:650px}
 sub,sup{font-size:.75em}
 
+/* ---------- zobrazená len jedna časť (mo.js, ?cast=N) ---------- */
+.jedna-cast .sheet:not(.vybrana){display:none}
+.mo-cast{display:flex;justify-content:space-between;align-items:center;gap:10px 16px;flex-wrap:wrap;background:#fff7e6;border:1px solid #f0d9a8;border-radius:10px;padding:10px 16px;font-size:15px;color:#6b4a12}
+.mo-cast-nav{display:flex;gap:6px;flex-wrap:wrap}
+.mo-cast-nav a{font-weight:600;font-size:14px;color:var(--blue);text-decoration:none;background:#fff;border:1px solid #e6d3a8;border-radius:7px;padding:6px 10px}
+.mo-cast-nav a:hover{background:var(--sky)}
+.mo-cast-nav a.mo-cela{background:var(--blue);border-color:var(--blue);color:#fff}
+
 .mo-foot{max-width:1060px;margin:0 auto 40px;padding:0 18px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:15px;color:var(--muted)}
 .mo-foot a{color:var(--blue);font-weight:600;text-decoration:none}
 .mo-foot a:hover{text-decoration:underline}
@@ -86,7 +94,7 @@ sub,sup{font-size:.75em}
 @media print{
   @page{size:A4;margin:16mm}
   body{background:#fff;font-size:12pt;line-height:1.5}
-  .mo-bar,.mo-foot{display:none}
+  .mo-bar,.mo-foot,.mo-cast{display:none}
   .mo-head{background:#fff;color:var(--ink);border-bottom:2px solid var(--navy)}
   .mo-head-in{padding:0 0 8px}
   .mo-num{color:var(--gold-d)}
@@ -96,6 +104,7 @@ sub,sup{font-size:.75em}
   .wrap{margin:0;padding:0;max-width:none}
   .sheet{border:0;box-shadow:none;border-radius:0;padding:12px 0;margin:0}
   .vyp .sheet+.sheet{break-before:page}
+  .jedna-cast .sheet{break-before:auto}
   h2{font-size:18pt}
   h3{font-size:14pt}
   h2,h3,h4{break-after:avoid}

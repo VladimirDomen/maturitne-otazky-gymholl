@@ -47,6 +47,7 @@ def page(n, kind, parts):
 </main>
 
 <footer class="mo-foot"><a href="index.html">← Všetky vzory</a><span>Vzor {n} · {label}</span></footer>
+<script src="mo.js"></script>
 </body>
 </html>
 '''
