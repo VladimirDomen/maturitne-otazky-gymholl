@@ -33,7 +33,9 @@ body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 var(--sans)}
 .chip.on .dot{background:#fff}
 .chip.on .cnt{background:#ffffff33;color:#fff}
 .chip[data-a=""]{--c:var(--navy)}
-.filter-info{min-height:22px;margin-top:12px;font-size:14px;color:var(--muted)}
+.filter-info{min-height:22px;margin-top:12px;font-size:14px;color:var(--muted);display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px}
+.info-link{font-weight:700;color:#fff;background:var(--blue);text-decoration:none;border-radius:8px;padding:8px 13px}
+.info-link:hover{background:var(--navy)}
 
 /* ---------- karty ---------- */
 .grid{max-width:1400px;margin:0 auto;padding:14px 20px 50px;display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:20px}

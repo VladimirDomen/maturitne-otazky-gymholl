@@ -78,6 +78,12 @@ sub,sup{font-size:.75em}
 .mo-cast-nav a:hover{background:var(--sky)}
 .mo-cast-nav a.mo-cela{background:var(--blue);border-color:var(--blue);color:#fff}
 
+/* ---------- stránka oblasti (tema.html / en/topic.html) ---------- */
+.mo-head[style*="--oblast"]{border-bottom-color:var(--oblast)}
+.t-obsah{justify-content:flex-start;background:#fff;border-color:var(--line);color:var(--ink)}
+.topline a{color:inherit;text-decoration:none}
+.topline a:hover{text-decoration:underline}
+
 .mo-foot{max-width:1060px;margin:0 auto 40px;padding:0 18px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:15px;color:var(--muted)}
 .mo-foot a{color:var(--blue);font-weight:600;text-decoration:none}
 .mo-foot a:hover{text-decoration:underline}
