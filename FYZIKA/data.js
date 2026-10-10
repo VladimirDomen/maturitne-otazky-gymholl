@@ -209,6 +209,17 @@ const OTAZKY = [
       sk: ['Priemer molekuly kyseliny olejovej', 'Experiment: olejová škvrna na vode, d = V/S'],
       en: ['Diameter of an oleic acid molecule', 'Experiment: oil film on water, d = V/S'] },
   ]},
+  { n: 19, casti: [
+    { o: ['magnetizmus'],
+      sk: ['Magnetické pole', 'Permanentný magnet, pole vodiča a cievky, rovnobežné vodiče, Lorentzova sila'],
+      en: ['Magnetic field', 'Permanent magnet, field of a wire and a coil, parallel wires, Lorentz force'] },
+    { o: ['tekutiny'],
+      sk: ['Mechanika tekutín – prúdenie v trubici', 'Objemový a hmotnostný tok, rovnica spojitosti, Bernoulliho rovnica'],
+      en: ['Fluid mechanics – flow in a pipe', 'Volume and mass flow rate, continuity equation, Bernoulli’s equation'] },
+    { o: ['termika'],
+      sk: ['Merné skupenské teplo topenia ľadu', 'Experiment: vnútorná energia, práca a teplo, kalorimetrická rovnica'],
+      en: ['Specific latent heat of fusion of ice', 'Experiment: internal energy, work and heat, calorimetric equation'] },
+  ]},
   { n: 26, casti: [
     { o: ['mikrosvet', 'optika'],
       sk: ['Elektrónový obal atómu', 'Kvantovanie energie, emisné a absorpčné spektrum, energia fotónu'],

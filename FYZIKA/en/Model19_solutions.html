@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Model 19 – Worked solutions</title>
+<link rel="stylesheet" href="../mo.css">
+</head>
+<body class="vyp">
+
+<header class="mo-head"><div class="mo-head-in">
+<div class="mo-kicker"><span class="mo-num">MODEL 19</span><span class="mo-kind">Worked solutions</span></div>
+<h1>Magnetic Field · Fluid Mechanics – Flow in a Pipe · Specific Latent Heat of Fusion of Ice</h1>
+<p>Detailed worked solutions with explanations</p>
+</div></header>
+
+<nav class="mo-bar"><div class="mo-bar-in">
+<a class="mo-back" href="index.html">← All models</a>
+<div class="mo-switch"><a href="Model19_questions.html">Questions</a><a href="Model19_solutions.html" class="on">Solutions</a></div>
+<button type="button" onclick="window.print()">Print / PDF</button>
+<a class="mo-lang" href="../Vzor19_vypracovanie.html" hreflang="sk" title="Slovenská verzia">SK</a>
+</div></nav>
+
+<main class="wrap">
+
+<section class="sheet" id="cast-1"><div class="topline">Part 1 of 3</div>
+<h2>1. Magnetic Field</h2>
+<h3>1.1 Magnetic field of a permanent magnet</h3>
+<p>A permanent magnet (made of steel, ferrite or neodymium alloys) produces a <strong>magnetic field</strong> around it. The field shows itself by forces on other magnets, ferromagnetic materials and current-carrying wires. A magnet has two poles – <strong>north N</strong> and <strong>south S</strong>. Unlike poles attract, like poles repel. The poles cannot be separated: breaking a magnet produces two smaller magnets, each with both poles.</p>
+<p>The field is represented by <strong>magnetic field lines</strong>. Their tangent at a given point has the direction of the axis of a freely pivoted compass needle, and the line is oriented from the needle’s south pole to its north pole. Field lines are <strong>closed</strong> – outside the magnet they leave the north pole and enter the south pole, inside the magnet they continue from S to N. Where the lines are denser, the field is stronger.</p>
+<svg class="diagram" viewBox="0 0 560 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Field lines of a bar magnet leave the north pole and enter the south pole"><g stroke="#637889" stroke-width="1.6" fill="none"><path d="M200 124C160 95,400 95,360 124M200 124C120 40,440 40,360 124M200 124C60 -20,500 -20,360 124M200 136C160 165,400 165,360 136M200 136C120 220,440 220,360 136M200 136C60 280,500 280,360 136M200 130H40M520 130H360"/></g><g stroke="#637889" stroke-width="1.6" fill="none"><path d="M275 93L285 102L275 111M275 52L285 61L275 70M275 7L285 16L275 25M275 149L285 158L275 167M275 190L285 199L275 208M275 235L285 244L275 253M115 121L105 130L115 139M455 121L445 130L455 139"/></g><rect x="200" y="115" width="80" height="30" fill="#c0392b"/><rect x="280" y="115" width="80" height="30" fill="#2f6db3"/><g font-size="18" fill="#fff" font-weight="bold"><text x="232" y="137">N</text><text x="313" y="137">S</text></g></svg>
+<p>The force effect of the field is described by the vector quantity <strong>magnetic flux density B</strong>, measured in tesla (T). The Earth also has a magnetic field – its south magnetic pole is near the geographic North Pole, so the north pole of a compass needle points north.</p>
+<h3>1.2 Magnetic field of a current-carrying wire and a coil</h3>
+<p>A magnetic field forms around every current-carrying wire (Oersted’s experiment – the wire deflects a compass needle). The field lines of a straight wire are concentric circles in planes perpendicular to the wire. Their orientation is given by <strong>the right-hand grip rule</strong>: if the thumb points in the direction of the current, the fingers show the orientation of the field lines. The flux density at a distance d from a long straight wire:</p>
+<div class="formula">B = μ₀ I / (2π d) &nbsp;&nbsp;&nbsp; μ₀ = 4π · 10⁻⁷ T·m·A⁻¹</div>
+<p>A current-carrying <strong>coil (solenoid)</strong> has a field similar to that of a bar magnet. Inside a long coil the field is <strong>uniform</strong> – the field lines are parallel:</p>
+<div class="formula">B = μ₀ μᵣ N I / l</div>
+<p>N is the number of turns, l the length of the coil and μᵣ the relative permeability of the core. The poles of the coil are found by the right-hand rule: fingers in the direction of the current in the turns, the thumb points to the north pole. A ferromagnetic core strengthens the field many times – an <strong>electromagnet</strong>.</p>
+<svg class="diagram" viewBox="0 0 560 230" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Field lines of a current-carrying coil: parallel inside, closing outside as for a bar magnet"><g stroke="#637889" stroke-width="1.6" fill="none"><path d="M130 100H436M130 115H436M130 130H436M446 110C506 0,64 0,124 110M446 120C506 230,64 230,124 120"/><path d="M431 91L441 100L431 109M431 106L441 115L431 124M431 121L441 130L431 139M285 19L275 28L285 37M285 193L275 202L285 211"/></g><g stroke="#b87333" stroke-width="3" fill="none"><ellipse cx="180" cy="115" rx="10" ry="45"/><ellipse cx="205" cy="115" rx="10" ry="45"/><ellipse cx="230" cy="115" rx="10" ry="45"/><ellipse cx="255" cy="115" rx="10" ry="45"/><ellipse cx="280" cy="115" rx="10" ry="45"/><ellipse cx="305" cy="115" rx="10" ry="45"/><ellipse cx="330" cy="115" rx="10" ry="45"/><ellipse cx="355" cy="115" rx="10" ry="45"/><ellipse cx="380" cy="115" rx="10" ry="45"/><path d="M180 160V205M380 160V205"/></g><g font-size="16" fill="#193b59"><text x="458" y="121">N</text><text x="94" y="121">S</text><text x="190" y="205">I</text><text x="390" y="205">I</text></g></svg>
+<h3>1.3 Two parallel current-carrying wires</h3>
+<p>A force acts on a wire of length l carrying current I in a magnetic field of flux density B (its direction is given by Fleming’s left-hand rule):</p>
+<div class="formula">F = B I l sin α</div>
+<p>Each of two parallel wires lies in the magnetic field of the other, so they exert forces on each other of equal size and opposite direction (law of action and reaction):</p>
+<div class="formula">F = μ₀ I₁ I₂ l / (2π d)</div>
+<svg class="diagram" viewBox="0 0 600 230" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Two parallel wires: they attract when the currents are in the same direction and repel when the currents are opposite"><g stroke="#193b59" stroke-width="3" fill="none"><path d="M110 40V190M210 40V190"/><path d="M103 72L110 58L117 72"/><path d="M203 72L210 58L217 72"/></g><path d="M110 125H146M138 119L148 125L138 131M210 125H174M182 119L172 125L182 131" stroke="#c0392b" stroke-width="2.5" fill="none"/><g font-size="15" fill="#c0392b"><text x="116" y="116">F₁</text><text x="176" y="116">F₂</text></g><g font-size="16" fill="#193b59"><text x="118" y="56">I₁</text><text x="218" y="56">I₂</text></g><text x="66" y="220" font-size="14" fill="#637889">same direction: attract</text><g stroke="#193b59" stroke-width="3" fill="none"><path d="M400 40V190M500 40V190"/><path d="M393 72L400 58L407 72"/><path d="M493 58L500 72L507 58"/></g><path d="M400 125H364M372 119L362 125L372 131M500 125H536M528 119L538 125L528 131" stroke="#c0392b" stroke-width="2.5" fill="none"/><g font-size="15" fill="#c0392b"><text x="364" y="116">F₁</text><text x="510" y="116">F₂</text></g><g font-size="16" fill="#193b59"><text x="408" y="56">I₁</text><text x="508" y="56">I₂</text></g><text x="360" y="220" font-size="14" fill="#637889">opposite directions: repel</text></svg>
+<ul><li>currents in <strong>the same direction</strong> – the wires <strong>attract</strong>,</li>
+<li>currents in <strong>opposite directions</strong> – the wires <strong>repel</strong>.</li>
+</ul>
+<p>The force is proportional to the product of the currents and inversely proportional to the distance between the wires. The original definition of the ampere was based on this interaction.</p>
+<h3>1.4 Effect of a magnetic field on charged particles</h3>
+<p>A particle with charge Q moving with velocity v in a magnetic field experiences the <strong>Lorentz (magnetic) force</strong>:</p>
+<div class="formula">F<sub>m</sub> = Q v B sin α</div>
+<p>α is the angle between the velocity and the flux density. The force is perpendicular to both the velocity and the field, so it changes only the direction of the velocity, not its magnitude – it does no work. A particle moving along the field lines experiences no force. If a particle enters a uniform field perpendicular to the field lines, it moves in a <strong>circle</strong>. The Lorentz force provides the centripetal force:</p>
+<svg class="diagram" viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A positively charged particle in a uniform magnetic field perpendicular to the page moves in a circle; the Lorentz force points to the centre"><g stroke="#9fb3c8" stroke-width="1.4" fill="none"><g transform="translate(40 30)"><circle r="7"/><path d="M-4 -4L4 4M-4 4L4 -4"/></g><g transform="translate(40 90)"><circle r="7"/><path d="M-4 -4L4 4M-4 4L4 -4"/></g><g transform="translate(40 150)"><circle r="7"/><path d="M-4 -4L4 4M-4 4L4 -4"/></g><g transform="translate(100 30)"><circle r="7"/><path d="M-4 -4L4 4M-4 4L4 -4"/></g><g transform="translate(100 90)"><circle r="7"/><path d="M-4 -4L4 4M-4 4L4 -4"/></g><g transform="translate(100 150)"><circle r="7"/><path d="M-4 -4L4 4M-4 4L4 -4"/></g><g transform="translate(160 30)"><circle r="7"/><path d="M-4 -4L4 4M-4 4L4 -4"/></g><g transform="translate(160 90)"><circle r="7"/><path d="M-4 -4L4 4M-4 4L4 -4"/></g><g transform="translate(160 150)"><circle r="7"/><path d="M-4 -4L4 4M-4 4L4 -4"/></g><g transform="translate(220 30)"><circle r="7"/><path d="M-4 -4L4 4M-4 4L4 -4"/></g><g transform="translate(220 90)"><circle r="7"/><path d="M-4 -4L4 4M-4 4L4 -4"/></g><g transform="translate(220 150)"><circle r="7"/><path d="M-4 -4L4 4M-4 4L4 -4"/></g><g transform="translate(280 30)"><circle r="7"/><path d="M-4 -4L4 4M-4 4L4 -4"/></g><g transform="translate(280 90)"><circle r="7"/><path d="M-4 -4L4 4M-4 4L4 -4"/></g><g transform="translate(280 150)"><circle r="7"/><path d="M-4 -4L4 4M-4 4L4 -4"/></g><g transform="translate(340 30)"><circle r="7"/><path d="M-4 -4L4 4M-4 4L4 -4"/></g><g transform="translate(340 90)"><circle r="7"/><path d="M-4 -4L4 4M-4 4L4 -4"/></g><g transform="translate(340 150)"><circle r="7"/><path d="M-4 -4L4 4M-4 4L4 -4"/></g></g><circle cx="200" cy="130" r="80" fill="none" stroke="#2f6db3" stroke-width="2" stroke-dasharray="7 5"/><path d="M200 130V210" stroke="#637889" stroke-width="1.5" stroke-dasharray="4 4"/><g stroke="#26724c" stroke-width="3" fill="none"><path d="M200 210H262M252 203L264 210L252 217"/></g><g stroke="#c0392b" stroke-width="3" fill="none"><path d="M200 210V162M193 172L200 160L207 172"/></g><circle cx="200" cy="210" r="9" fill="#c0392b"/><text x="194" y="215" font-size="14" fill="#fff">+</text><g font-size="15"><text x="268" y="215" fill="#26724c">v</text><text x="208" y="174" fill="#c0392b">F</text><text x="184" y="190" fill="#637889">r</text><text x="290" y="252" fill="#193b59">B (into the page)</text></g></svg>
+<div class="formula">Q v B = m v²/r &nbsp;&nbsp; → &nbsp;&nbsp; r = m v / (Q B)</div>
+<p><strong>Applications and occurrences:</strong> mass spectrometer (separating isotopes by the radius of the path), cyclotron and other accelerators, deflection of the electron beam in older picture tubes, Hall probe for measuring flux density. The Earth’s magnetic field deflects charged particles of the solar wind – near the poles this produces the <strong>aurora</strong>.</p>
+<div class="result"><strong>Summary:</strong> Magnetic fields are produced by magnets and moving charges (currents). The field acts on current-carrying wires with the force F = BIl sin α and on moving charged particles with the Lorentz force F = QvB sin α. Parallel wires with currents in the same direction attract, with opposite currents they repel.</div>
+</section>
+
+<section class="sheet" id="cast-2"><div class="topline">Part 2 of 3</div>
+<h2>2. Fluid Mechanics – Flow in a Pipe</h2>
+<h3>2.1 Ideal liquid and flow</h3>
+<p>An <strong>ideal liquid</strong> is perfectly fluid (no internal friction) and incompressible. In <strong>steady flow</strong> the velocity at a given point does not change with time. A <strong>streamline</strong> is a line whose tangent at every point has the direction of the velocity of the moving particle. Streamlines do not cross.</p>
+<h3>2.2 Volume and mass flow rate, continuity equation</h3>
+<p><strong>The volume flow rate</strong> is the volume of liquid flowing through a cross-section of the pipe per unit time. <strong>The mass flow rate</strong> is the mass of liquid flowing per unit time:</p>
+<div class="formula">Q<sub>V</sub> = V/t = S v &nbsp;[m³·s⁻¹] &nbsp;&nbsp;&nbsp; Q<sub>m</sub> = m/t = ρ S v &nbsp;[kg·s⁻¹]</div>
+<p>An ideal liquid does not accumulate or disappear anywhere, so the same volume passes through every cross-section of the pipe in the same time – <strong>the continuity equation</strong>:</p>
+<div class="formula">S₁ v₁ = S₂ v₂ = const.</div>
+<p>In a narrower place the liquid flows faster, in a wider place more slowly.</p>
+<h3>2.3 Bernoulli’s equation</h3>
+<p>The law of conservation of mechanical energy for a horizontal pipe implies that the sum of the kinetic energy per unit volume of the liquid and the pressure potential energy per unit volume is constant:</p>
+<div class="formula">½ ρ v₁² + p₁ = ½ ρ v₂² + p₂</div>
+<p>Where the liquid flows faster, its pressure is lower (the hydrodynamic paradox). This is used in the water-jet pump, sprayer, carburettor, in measuring flow speed (Venturi tube) and it explains the lift of an aircraft wing.</p>
+<h3>2.4 Solution of the task</h3>
+<p>Given: S₁ = 20 cm² = 2 · 10⁻³ m², v₁ = 8 m/s, S₂ = 40 cm² = 4 · 10⁻³ m², p₁ = 1.08 · 10⁵ Pa, ρ = 1 000 kg/m³.</p>
+<svg class="diagram" viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Horizontal pipe: the narrower part with a cross-section of 20 cm² and water speed 8 m/s widens to a part with a cross-section of 40 cm²"><path d="M40 80H250L320 60H560V140H320L250 120H40Z" fill="#d6e8f5"/><g stroke="#193b59" stroke-width="3" fill="none"><path d="M40 80H250L320 60H560M40 120H250L320 140H560"/></g><g stroke="#637889" stroke-width="1.5" stroke-dasharray="5 4" fill="none"><path d="M150 80V120M440 60V140"/></g><g stroke="#c0392b" stroke-width="3" fill="none"><path d="M70 100H150M140 93L152 100L140 107M380 100H420M410 93L422 100L410 107"/></g><g font-size="16" fill="#193b59"><text x="120" y="70">S₁ = 20 cm²</text><text x="400" y="50">S₂ = 40 cm²</text></g><g font-size="15" fill="#c0392b"><text x="70" y="148">v₁ = 8 m/s</text><text x="380" y="168">v₂ = 4 m/s</text></g></svg>
+<p><strong>a)</strong> Volume flow rate:</p>
+<div class="formula">Q<sub>V</sub> = S₁ v₁ = 2 · 10⁻³ m² · 8 m/s = 1.6 · 10⁻² m³/s = 16 l/s</div>
+<p><strong>b)</strong> Mass flow rate:</p>
+<div class="formula">Q<sub>m</sub> = ρ Q<sub>V</sub> = 1 000 kg/m³ · 1.6 · 10⁻² m³/s = 16 kg/s</div>
+<p><strong>c)</strong> From the continuity equation:</p>
+<div class="formula">v₂ = S₁ v₁ / S₂ = 20 cm² · 8 m/s / 40 cm² = 4 m/s</div>
+<p>The cross-section doubled, so the speed halved. Both the volume and the mass flow rate in the wider part are the same as in the narrower part.</p>
+<p><strong>d)</strong> <em>Extension task</em> – from Bernoulli’s equation:</p>
+<div class="formula">p₂ = p₁ + ½ ρ (v₁² − v₂²) = 1.08 · 10⁵ Pa + ½ · 1 000 · (8² − 4²) Pa<br>p₂ = 1.08 · 10⁵ Pa + 0.24 · 10⁵ Pa = 1.32 · 10⁵ Pa</div>
+<p>In the wider part the water flows more slowly, so its pressure is higher.</p>
+<div class="result"><strong>Q<sub>V</sub> = 1.6 · 10⁻² m³/s = 16 l/s; Q<sub>m</sub> = 16 kg/s; v₂ = 4 m/s; p₂ = 1.32 · 10⁵ Pa.</strong></div>
+</section>
+
+<section class="sheet" id="cast-3"><div class="topline">Part 3 of 3</div>
+<h2>3. Experiment – Specific Latent Heat of Fusion of Ice</h2>
+<h3>3.1 Theoretical background</h3>
+<p><strong>The internal energy U</strong> of a body is the sum of the kinetic energies of the random motion of its particles and the potential energies of their mutual interaction. Internal energy can be changed in two ways:</p>
+<ul><li><strong>by doing work W</strong> – e.g. by friction, by compressing a gas,</li>
+<li><strong>by heat transfer</strong> – a body at a higher temperature passes part of its internal energy to a body at a lower temperature. The energy transferred in this way is called <strong>heat Q</strong>.</li>
+</ul>
+<p>Both ways are combined in the first law of thermodynamics: ΔU = W + Q. The heat needed to change the temperature of a body and the heat needed to melt a body at its melting point:</p>
+<div class="formula">Q = m c Δt &nbsp;&nbsp;&nbsp; L<sub>t</sub> = m l<sub>t</sub></div>
+<p><strong>The specific latent heat of fusion l<sub>t</sub></strong> is the heat needed to melt 1 kg of a substance at its melting point [J·kg⁻¹]. During melting the temperature does not change; the energy supplied increases the potential energy of the particles (breaks down the crystal lattice).</p>
+<p>In a thermally insulated system (a calorimeter) the <strong>calorimetric equation</strong> holds: the heat given out by the warmer bodies equals the heat taken in by the colder bodies.</p>
+<h3>3.2 Apparatus</h3>
+<p>Calorimeter with a stirrer (with a known heat capacity C, or determined beforehand), thermometer with 0.1 °C or 0.5 °C divisions, digital balance, warm water (about 30 °C), pieces of ice from a freezer left to warm to 0 °C (they start to melt), paper towel.</p>
+<h3>3.3 Arrangement</h3>
+<svg class="diagram" viewBox="0 0 440 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Calorimeter: outer and inner vessel, water, a piece of ice, thermometer and stirrer"><rect x="60" y="80" width="240" height="200" rx="6" fill="#eef2f6" stroke="#375873" stroke-width="2"/><rect x="90" y="100" width="180" height="160" fill="#fff" stroke="#375873" stroke-width="2"/><rect x="92" y="140" width="176" height="118" fill="#d6e8f5"/><rect x="148" y="146" width="38" height="34" rx="4" fill="#f4fbff" stroke="#7fa6c4" stroke-width="2"/><path d="M50 80H310" stroke="#375873" stroke-width="5"/><g stroke="#637889" stroke-width="3" fill="none"><path d="M120 30V228"/><ellipse cx="120" cy="232" rx="20" ry="5"/></g><rect x="214" y="30" width="12" height="206" rx="6" fill="#fff" stroke="#c0392b" stroke-width="2"/><circle cx="220" cy="240" r="10" fill="#c0392b"/><path d="M220 236V150" stroke="#c0392b" stroke-width="4"/><g stroke="#637889" stroke-width="1" fill="none"><path d="M232 50H330M188 160H330M270 210H330M300 120H330M130 30H140"/></g><g font-size="15" fill="#193b59"><text x="336" y="55">thermometer</text><text x="336" y="165">ice</text><text x="336" y="215">water</text><text x="336" y="125">calorimeter</text><text x="146" y="35">stirrer</text></g></svg>
+<h3>3.4 Procedure</h3>
+<ol><li>Weigh the empty inner vessel of the calorimeter, pour in water and weigh again – this gives the mass of water m₁.</li>
+<li>After stirring, measure the initial temperature of the water t₁.</li>
+<li>Dry the pieces of ice at 0 °C with a towel (water on the surface would distort the result) and put them into the calorimeter immediately. Cover the calorimeter.</li>
+<li>Stir and watch the temperature. When all the ice has melted, record the lowest steady temperature t.</li>
+<li>Weigh the calorimeter with the water again. The mass of ice m₂ follows from the difference in mass.</li>
+<li>Repeat the measurement at least twice and average the results.</li>
+</ol>
+<h3>3.5 Calorimetric equation and evaluation</h3>
+<p>The warm water and the calorimeter give out heat. The ice takes it in, first for melting (at 0 °C) and then the water from the ice for warming from 0 °C to t:</p>
+<div class="formula">(m₁ c + C)(t₁ − t) = m₂ l<sub>t</sub> + m₂ c (t − 0 °C)</div>
+<div class="formula">l<sub>t</sub> = [(m₁ c + C)(t₁ − t) − m₂ c t] / m₂</div>
+<p class="subtle">The following numbers are model data; they are not a real measurement. c = 4 180 J·kg⁻¹·K⁻¹.</p>
+<table><tr><th>m₁ (kg)</th><th>t₁ (°C)</th><th>C (J/K)</th><th>m₂ (kg)</th><th>t (°C)</th></tr><tr><td>0.200</td><td>30.0</td><td>80</td><td>0.040</td><td>13.0</td></tr></table>
+<div class="formula">heat given out: (0.200 · 4 180 + 80) J/K · 17.0 K = 916 · 17.0 J ≈ 15 570 J<br>warming the water from the ice: 0.040 · 4 180 · 13.0 J ≈ 2 170 J<br>l<sub>t</sub> = (15 570 − 2 170) J / 0.040 kg ≈ 3.35 · 10⁵ J/kg = 335 kJ/kg</div>
+<p>The table value is 334 kJ/kg – the result agrees well.</p>
+<h3>3.6 Sources of error</h3>
+<ul><li><strong>Heat exchange with the surroundings</strong> – the calorimeter is not perfectly insulated. We therefore choose t₁ about as far above room temperature as t will be below it – the losses and gains partly cancel.</li>
+<li><strong>Water on the surface of the ice</strong> – it increases m₂ without using latent heat; the result would be too small.</li>
+<li><strong>Ice below 0 °C</strong> – part of the heat would be used to warm it; the result would be too large.</li>
+<li>Accuracy of the thermometer and balance, neglecting the heat capacity of the thermometer and stirrer.</li>
+</ul>
+<div class="result"><strong>Conclusion:</strong> From the calorimetric equation (m₁c + C)(t₁ − t) = m₂l<sub>t</sub> + m₂ct the specific latent heat of fusion of ice comes out at about 335 kJ/kg (table value 334 kJ/kg).</div>
+</section>
+
+</main>
+
+<footer class="mo-foot"><a href="index.html">← All models</a><span>Model 19 · Worked solutions</span></footer>
+<script src="../mo.js"></script>
+</body>
+</html>

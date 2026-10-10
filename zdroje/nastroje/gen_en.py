@@ -26,6 +26,7 @@ TOPICS = {
     15: ['Electric Field', 'Atomic Nucleus', 'Inclined Plane'],
     16: ['Electric Current', 'Kinematics – v–t Graph', 'Wavelength of Light'],
     18: ['Free Oscillations', 'Motion in a Gravitational Field – Horizontal Projection', 'Diameter of an Oleic Acid Molecule'],
+    19: ['Magnetic Field', 'Fluid Mechanics – Flow in a Pipe', 'Specific Latent Heat of Fusion of Ice'],
     26: ['Electron Shell of the Atom', 'Electric Current', 'Properties of Gases'],
 }
 
@@ -172,6 +173,32 @@ SVG_EN = {
         'oleic acid molecules',
     '– polárna skupina vo vode':
         '– polar group in the water',
+    'Indukčné čiary tyčového magnetu vychádzajú zo severného pólu a vstupujú do južného pólu':
+        'Field lines of a bar magnet leave the north pole and enter the south pole',
+    'Indukčné čiary cievky s prúdom: vo vnútri rovnobežné, zvonka sa uzatvárajú ako pri tyčovom magnete':
+        'Field lines of a current-carrying coil: parallel inside, closing outside as for a bar magnet',
+    'Dva rovnobežné vodiče: pri prúdoch rovnakého smeru sa priťahujú, pri prúdoch opačného smeru sa odpudzujú':
+        'Two parallel wires: they attract when the currents are in the same direction and repel when the currents are opposite',
+    'rovnaký smer: priťahujú sa':
+        'same direction: attract',
+    'opačný smer: odpudzujú sa':
+        'opposite directions: repel',
+    'Kladne nabitá častica v homogénnom magnetickom poli kolmom na nákresňu sa pohybuje po kružnici; Lorentzova sila smeruje do stredu':
+        'A positively charged particle in a uniform magnetic field perpendicular to the page moves in a circle; the Lorentz force points to the centre',
+    'B (do nákresne)':
+        'B (into the page)',
+    'Vodorovná trubica: užšia časť s prierezom 20 cm² a rýchlosťou vody 8 m/s prechádza do širšej časti s prierezom 40 cm²':
+        'Horizontal pipe: the narrower part with a cross-section of 20 cm² and water speed 8 m/s widens to a part with a cross-section of 40 cm²',
+    'Kalorimeter: vonkajšia a vnútorná nádoba, voda, kúsok ľadu, teplomer a miešačka':
+        'Calorimeter: outer and inner vessel, water, a piece of ice, thermometer and stirrer',
+    'teplomer':
+        'thermometer',
+    'ľad':
+        'ice',
+    'kalorimeter':
+        'calorimeter',
+    'miešačka':
+        'stirrer',
 }
 
 def tr_svg(svg):
