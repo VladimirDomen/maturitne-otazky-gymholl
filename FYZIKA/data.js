@@ -66,6 +66,17 @@ const OTAZKY = [
       sk: ['Mikrosvet', 'Stavba atómu, rádioaktivita, zákon rozpadu, polčas'],
       en: ['The microworld', 'Structure of the atom, radioactivity, decay law, half-life'] },
   ]},
+  { n: 5, casti: [
+    { o: ['mechanika'],
+      sk: ['Dynamika', 'Newtonove zákony, hybnosť a jej zachovanie, dostredivá sila, zrýchlenie vlečky'],
+      en: ['Dynamics', 'Newton’s laws, momentum and its conservation, centripetal force, acceleration of a trailer'] },
+    { o: ['magnetizmus', 'elektrina'],
+      sk: ['Elektromagnetická indukcia', 'Grafická úloha: z priebehu toku Φ(t) nakresliť indukované napätie'],
+      en: ['Electromagnetic induction', 'Graphical task: induced voltage from the graph of flux Φ(t)'] },
+    { o: ['mikrosvet'],
+      sk: ['Jadrová elektráreň', 'Tlakovodný reaktor, primárny a sekundárny okruh, premeny energie'],
+      en: ['Nuclear power plant', 'Pressurised water reactor, primary and secondary circuit, energy conversions'] },
+  ]},
   { n: 6, casti: [
     { o: ['mechanika'],
       sk: ['Energia hmotného bodu', 'Práca, kinetická a potenciálna energia, zákon zachovania energie, výkon a účinnosť'],

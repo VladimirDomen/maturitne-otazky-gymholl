@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Model 5 – Worked solutions</title>
+<link rel="stylesheet" href="../mo.css">
+</head>
+<body class="vyp">
+
+<header class="mo-head"><div class="mo-head-in">
+<div class="mo-kicker"><span class="mo-num">MODEL 5</span><span class="mo-kind">Worked solutions</span></div>
+<h1>Dynamics · Electromagnetic Induction · Nuclear Power Plant</h1>
+<p>Detailed worked solutions with explanations</p>
+</div></header>
+
+<nav class="mo-bar"><div class="mo-bar-in">
+<a class="mo-back" href="index.html">← All models</a>
+<div class="mo-switch"><a href="Model5_questions.html">Questions</a><a href="Model5_solutions.html" class="on">Solutions</a></div>
+<button type="button" onclick="window.print()">Print / PDF</button>
+<a class="mo-lang" href="../Vzor5_vypracovanie.html" hreflang="sk" title="Slovenská verzia">SK</a>
+</div></nav>
+
+<main class="wrap">
+
+<section class="sheet" id="cast-1"><div class="topline">Part 1 of 3</div>
+<h2>1. Dynamics</h2>
+<h3>Interaction of bodies and an isolated system</h3>
+<p>Bodies act on each other with forces. A force describes the interaction of bodies; it can change the state of motion or cause deformation. An <strong>isolated system</strong> is a model of a system on which no resultant external force acts (or external influences can be neglected). Then the total momentum of the system is conserved.</p>
+<h3>Newton’s laws of motion</h3>
+<p><strong>I. Law of inertia:</strong> In an inertial frame of reference, a body remains at rest or in uniform motion in a straight line if the resultant force acting on it is zero.</p>
+<p><strong>II. Law of force:</strong> The resultant force equals the rate of change of momentum. For constant mass:</p>
+<div class="formula">Σ<strong>F</strong> = m<strong>a</strong></div>
+<p><strong>III. Law of action and reaction:</strong> If body A exerts a force on body B, body B simultaneously exerts on A a force of equal magnitude and opposite direction. The forces act on <em>different bodies</em>, so they do not cancel each other on one body.</p>
+<h3>Momentum and its conservation</h3>
+<div class="formula"><strong>p</strong> = m<strong>v</strong> &nbsp;&nbsp; [p] = kg·m/s</div>
+<p>If the resultant of the external forces on a system is zero, its total (vector) momentum does not change:</p>
+<div class="formula">Σ<strong>p</strong><sub>before</sub> = Σ<strong>p</strong><sub>after</sub></div>
+<h3>Centripetal force</h3>
+<p>In motion along a circle, the resultant radial component of force always points <strong>towards the centre of the circle</strong>. It is not a new, separate force; the centripetal force can be provided, for example, by friction, the tension in a string or the gravitational force.</p>
+<div class="formula">F<sub>c</sub> = m v² / r = m ω²r</div>
+<h3>Calculation – trailer</h3>
+<p><strong>Given:</strong> m = 2000 kg, n = 4, force of one worker F₁ = 500 N.</p>
+<p>Since all of them push in the same direction, the forces add up:</p>
+<div class="formula">F = 4 · 500 = 2000 N</div>
+<h4>a) Without resistive forces</h4>
+<div class="formula">a = F / m = 2000 / 2000 = <strong>1 m/s²</strong></div>
+<div class="result">Answer: The acceleration of the trailer is 1 m/s².</div>
+<h4>b) With a resistive force of 400 N (extension)</h4>
+<div class="formula">F<sub>res</sub> = 2000 − 400 = 1600 N</div>
+<div class="formula">a = 1600 / 2000 = <strong>0.8 m/s²</strong></div>
+<div class="result">Answer: With a resistive force of 400 N the acceleration is 0.8 m/s².</div>
+</section>
+
+<section class="sheet" id="cast-2"><div class="topline">Part 2 of 3</div>
+<h2>2. Electromagnetic Induction</h2>
+<svg class="graph" viewBox="0 0 760 330" role="img" aria-label="Graph of magnetic flux: from 0 to 0.01 s constant at 0.002 Wb; from 0.01 to 0.02 s increasing linearly to 0.008 Wb; from 0.02 to 0.03 s constant at 0.008 Wb."><g stroke="#e4ebf1" stroke-width="1"><path d="M98 217.75H680 M98 168.50H680 M98 119.25H680 M98 70.00H680 M280 55V267 M462 55V267 M644 55V267"/></g><g stroke="#1c3043" stroke-width="2.5" fill="none"><path d="M98 47V267H698"/><path d="M91 57L98 42L105 57 M687 260L701 267L687 274"/></g><g font-family="Arial" fill="#172f45" font-size="19"><text x="27" y="35">Φ (Wb)</text><text x="692" y="298">t (s)</text><text x="86" y="273" text-anchor="end">0</text><text x="86" y="223.75" text-anchor="end">2·10⁻³</text><text x="86" y="174.50" text-anchor="end">4·10⁻³</text><text x="86" y="125.25" text-anchor="end">6·10⁻³</text><text x="86" y="76.00" text-anchor="end">8·10⁻³</text><text x="280" y="298" text-anchor="middle">0.01</text><text x="462" y="298" text-anchor="middle">0.02</text><text x="644" y="298" text-anchor="middle">0.03</text></g><path d="M98 217.75H280L462 70.00H644" fill="none" stroke="#17669b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><g fill="#17669b"><circle cx="280" cy="217.75" r="5"/><circle cx="462" cy="70.00" r="5"/></g></svg>
+<p class="caption">The given magnetic flux Φ(t).</p>
+<p>For a single loop, Faraday’s law gives:</p>
+<div class="formula">u<sub>i</sub> = − ΔΦ / Δt</div>
+<p><strong>0 to 0.01 s:</strong> the magnetic flux is constant, so u<sub>i</sub> = 0 V.</p>
+<p><strong>0.01 to 0.02 s:</strong> the flux increases linearly from 2·10⁻³ Wb to 8·10⁻³ Wb:</p>
+<div class="formula">u<sub>i</sub> = −(8−2)·10⁻³ / (0.02−0.01) = <strong>−0.6 V</strong></div>
+<p><strong>0.02 to 0.03 s:</strong> the flux is constant, so u<sub>i</sub> = 0 V.</p>
+<svg class="graph" viewBox="0 0 760 300" role="img" aria-label="Solution: the induced voltage is zero up to 0.01 s, minus 0.6 volts up to 0.02 s and zero again up to 0.03 s."><g stroke="#e4ebf1" stroke-width="1"><path d="M98 75H680 M98 145H680 M98 235H680 M280 48V245 M462 48V245 M644 48V245"/></g><path d="M98 43V250 M98 145H698" stroke="#1c3043" stroke-width="2.5" fill="none"/><g font-family="Arial" fill="#172f45" font-size="19"><text x="29" y="35">uᵢ (V)</text><text x="690" y="174">t (s)</text><text x="86" y="151" text-anchor="end">0</text><text x="86" y="242" text-anchor="end">−0.6</text><text x="280" y="280" text-anchor="middle">0.01</text><text x="462" y="280" text-anchor="middle">0.02</text><text x="644" y="280" text-anchor="middle">0.03</text></g><path d="M98 145H280 V235 H462 V145 H644" fill="none" stroke="#a43c36" stroke-width="4" stroke-linejoin="round"/><g fill="#fff" stroke="#a43c36" stroke-width="2"><circle cx="280" cy="235" r="3"/><circle cx="462" cy="235" r="3"/></g></svg>
+<p class="caption">The induced voltage uᵢ(t). The vertical segments mark the jumps between intervals; the value exactly at the break points of an idealised graph is not important.</p>
+<p class="subtle">The sign depends on the chosen orientation of the loop. Without a specified orientation, the physically unambiguous result is the magnitude 0.6 V while the flux is increasing, not the absolute sign.</p>
+</section>
+
+<section class="sheet" id="cast-3"><div class="topline">Part 3 of 3</div>
+<h2>3. Nuclear Power Plant</h2>
+<svg class="diagram" viewBox="0 0 720 340" role="img" aria-label="Simplified diagram of a nuclear power plant with a pressurised water reactor" style="max-width:720px"><path d="M30 305 V125 A125 95 0 0 1 280 125 V305 Z" fill="#f3f6f9" stroke="#8ca0b3" stroke-width="3"/><path d="M135 185 H205" stroke="#d0412f" stroke-width="7" fill="none"/><path d="M205 262 H135" stroke="#e08a3c" stroke-width="7" fill="none"/><circle cx="170" cy="262" r="11" fill="#fff" stroke="#e08a3c" stroke-width="3"/><rect x="70" y="150" width="65" height="130" rx="26" fill="#fde8d8" stroke="#b5532d" stroke-width="3"/><line x1="86" y1="200" x2="86" y2="262" stroke="#d4842a" stroke-width="4"/><line x1="96" y1="200" x2="96" y2="262" stroke="#d4842a" stroke-width="4"/><line x1="106" y1="200" x2="106" y2="262" stroke="#d4842a" stroke-width="4"/><line x1="116" y1="200" x2="116" y2="262" stroke="#d4842a" stroke-width="4"/><line x1="126" y1="200" x2="126" y2="262" stroke="#d4842a" stroke-width="4"/><line x1="96" y1="112" x2="96" y2="215" stroke="#33414f" stroke-width="4"/><line x1="112" y1="112" x2="112" y2="215" stroke="#33414f" stroke-width="4"/><rect x="205" y="135" width="52" height="150" rx="24" fill="#fff" stroke="#375873" stroke-width="3"/><path d="M215 175 q8 -8 16 0 t16 0" fill="none" stroke="#d0412f" stroke-width="2"/><path d="M215 195 q8 -8 16 0 t16 0" fill="none" stroke="#d0412f" stroke-width="2"/><path d="M215 215 q8 -8 16 0 t16 0" fill="none" stroke="#d0412f" stroke-width="2"/><path d="M215 235 q8 -8 16 0 t16 0" fill="none" stroke="#d0412f" stroke-width="2"/><path d="M231 135 V88 H340" stroke="#9aa9b8" stroke-width="7" fill="none"/><path d="M345 245 H300 V300 H231 V285" stroke="#2f6db3" stroke-width="5" fill="none"/><circle cx="300" cy="272" r="10" fill="#fff" stroke="#2f6db3" stroke-width="3"/><path d="M340 68 V108 L425 126 V50 Z" fill="#dfe7ef" stroke="#375873" stroke-width="3"/><line x1="425" y1="88" x2="458" y2="88" stroke="#375873" stroke-width="5"/><circle cx="486" cy="88" r="28" fill="#fff7e6" stroke="#a8721f" stroke-width="3"/><path d="M514 88 H556 M548 80 L558 88 L548 96" stroke="#a8721f" stroke-width="3" fill="none"/><path d="M383 118 V200" stroke="#9aa9b8" stroke-width="7"/><rect x="345" y="200" width="100" height="58" rx="6" fill="#e3f0fa" stroke="#375873" stroke-width="3"/><path d="M445 215 H590 M598 250 H445" stroke="#2fa0b5" stroke-width="5" fill="none"/><path d="M570 300 C598 238 598 196 582 140 H664 C648 196 648 238 676 300 Z" fill="#eef2f5" stroke="#6d8490" stroke-width="3"/><path d="M600 128 c-14 -6 -6 -24 10 -18 c4 -16 26 -14 28 0 c16 -4 22 16 8 20 Z" fill="#fff" stroke="#b7c4cf" stroke-width="2"/><circle cx="102" cy="300" r="12" fill="#152c4d"/><text x="102" y="305" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">1</text><circle cx="130" cy="112" r="12" fill="#152c4d"/><text x="130" y="117" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">2</text><circle cx="170" cy="170" r="12" fill="#152c4d"/><text x="170" y="175" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">3</text><circle cx="231" cy="300" r="12" fill="#152c4d"/><text x="231" y="305" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">4</text><circle cx="382" cy="88" r="12" fill="#152c4d"/><text x="382" y="93" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">5</text><circle cx="486" cy="88" r="12" fill="#152c4d"/><text x="486" y="93" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">6</text><circle cx="395" cy="229" r="12" fill="#152c4d"/><text x="395" y="234" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">7</text><circle cx="623" cy="245" r="12" fill="#152c4d"/><text x="623" y="250" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">8</text><circle cx="52" cy="150" r="12" fill="#152c4d"/><text x="52" y="155" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">9</text><circle cx="290" cy="70" r="12" fill="#152c4d"/><text x="290" y="75" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">10</text></svg>
+<p class="caption">1&nbsp;reactor · 2&nbsp;control rods · 3&nbsp;primary circuit · 4&nbsp;steam generator · 5&nbsp;turbine · 6&nbsp;generator · 7&nbsp;condenser · 8&nbsp;cooling tower · 9&nbsp;containment · 10&nbsp;secondary circuit (steam)</p>
+<p>A power plant with a pressurised water reactor converts the energy released in nuclear fission into electrical energy. Main parts and process:</p>
+<ul><li><strong>Reactor:</strong> a controlled fission chain reaction takes place in the fuel. Control rods regulate the power; water serves as coolant and moderator.</li>
+<li><strong>Primary circuit:</strong> hot water at high pressure removes heat from the reactor and carries it to the steam generator; under normal conditions the water does not boil in the reactor.</li>
+<li><strong>Steam generator:</strong> transfers heat from the primary circuit to a separate secondary circuit, in which steam is produced.</li>
+<li><strong>Turbine and generator:</strong> the steam drives the turbine; the generator converts mechanical energy into electrical energy.</li>
+<li><strong>Condenser and cooling circuit:</strong> after passing through the turbine, the steam is cooled and condenses. The water returns to the secondary circuit. Cooling towers release the waste heat into the surroundings.</li>
+<li><strong>Safety systems:</strong> limit the risks and ensure shutdown and cooling of the reactor.</li>
+</ul>
+<div class="formula" style="font-size:18px">nuclear energy → thermal energy → mechanical energy → electrical energy</div>
+<p class="subtle">When describing a particular picture, label the parts that are actually shown in it.</p>
+</section>
+
+</main>
+
+<footer class="mo-foot"><a href="index.html">← All models</a><span>Model 5 · Worked solutions</span></footer>
+<script src="../mo.js"></script>
+</body>
+</html>

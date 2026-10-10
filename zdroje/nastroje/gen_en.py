@@ -13,6 +13,7 @@ TOPICS = {
     2: ['Gravitational Field', 'Mechanical Waves', 'Electric Current'],
     3: ['Motion in a Gravitational Field', 'Interference of Waves', 'Origin of Electric Current'],
     4: ['Kinematics of a Particle', 'Magnetic Field', 'The Microworld'],
+    5: ['Dynamics', 'Electromagnetic Induction', 'Nuclear Power Plant'],
     6: ['Energy of a Particle', 'Oscillator', 'Electric Circuit'],
     26: ['Electron Shell of the Atom', 'Electric Current', 'Properties of Gases'],
 }
@@ -50,6 +51,11 @@ SVG_EN = {
         'DC circuit: battery, switch and ammeter in series with a resistor; voltmeter in parallel with the resistor',
     'Graf lineárnej závislosti elektrického prúdu od napätia pre 100 ohmový odpor':
         'Linear graph of current against voltage for a 100-ohm resistor',
+    'Graf magnetického toku: od 0 do 0,01 s konštantný 0,002 Wb; od 0,01 do 0,02 s rastie lineárne na 0,008 Wb; od 0,02 do 0,03 s konštantný 0,008 Wb.':
+        'Graph of magnetic flux: from 0 to 0.01 s constant at 0.002 Wb; from 0.01 to 0.02 s increasing linearly to 0.008 Wb; from 0.02 to 0.03 s constant at 0.008 Wb.',
+    'Riešenie: indukované napätie je nula do 0,01 s, mínus 0,6 voltu do 0,02 s a opäť nula do 0,03 s.':
+        'Solution: the induced voltage is zero up to 0.01 s, minus 0.6 volts up to 0.02 s and zero again up to 0.03 s.',
+    'Zjednodušená schéma jadrovej elektrárne s tlakovodným reaktorom': 'Simplified diagram of a nuclear power plant with a pressurised water reactor',
     'spínač': 'switch', 'zdroj': 'source', 'ampérmeter': 'ammeter', 'voltmeter': 'voltmeter', 'rezistor': 'resistor',
 }
 
