@@ -319,4 +319,15 @@ const OTAZKY = [
       sk: ['Výtoková rýchlosť kvapaliny', 'Experiment: vodorovný vrh prúdu vody, porovnanie s Torricelliho vzťahom'],
       en: ['Outflow speed of a liquid', 'Experiment: horizontal projection of a water jet, comparison with Torricelli’s formula'] },
   ]},
+  { n: 28, casti: [
+    { o: ['optika'],
+      sk: ['Optické zobrazovanie', 'Zrkadlá a šošovky, zobrazovacia rovnica, znamienková konvencia, priečne zväčšenie, obraz spojkou'],
+      en: ['Optical imaging', 'Mirrors and lenses, imaging equation, sign convention, lateral magnification, image formed by a converging lens'] },
+    { o: ['elektrina'],
+      sk: ['Elektrické pole dvoch nábojov', 'Intenzita v strede spojnice, bod s nulovou intenzitou, náboje opačného znamienka'],
+      en: ['Electric field of two charges', 'Field strength at the midpoint, point of zero field, charges of opposite sign'] },
+    { o: ['termika'],
+      sk: ['Merná tepelná kapacita pevnej látky', 'Experiment: zmiešavací kalorimeter, kalorimetrická rovnica'],
+      en: ['Specific heat capacity of a solid', 'Experiment: mixing calorimeter, calorimetric equation'] },
+  ]},
 ];
