@@ -253,6 +253,17 @@ const OTAZKY = [
       sk: ['Premeny mechanickej energie', 'Experiment: kyvadlo so svetelnou závorou, porovnanie mgh a ½mv²'],
       en: ['Conversions of mechanical energy', 'Experiment: pendulum with a light gate, comparing mgh and ½mv²'] },
   ]},
+  { n: 22, casti: [
+    { o: ['elektrina'],
+      sk: ['Striedavý prúd', 'Vznik striedavého napätia, okamžitá a efektívna hodnota, R, L a C v obvode, indukčnosť cievky'],
+      en: ['Alternating current', 'Production of AC voltage, instantaneous and rms values, R, L and C in a circuit, inductance of a coil'] },
+    { o: ['termika'],
+      sk: ['Kalorimetrická rovnica', 'Teplo, skupenské teplo topenia, ľad vo vode pri 0 °C a pri −15 °C'],
+      en: ['Calorimetric equation', 'Heat, latent heat of fusion, ice in water at 0 °C and at −15 °C'] },
+    { o: ['mechanika'],
+      sk: ['Výslednica dvoch síl', 'Experiment: tri silomery, rovnobežník síl, výpočet výslednice'],
+      en: ['Resultant of two forces', 'Experiment: three spring balances, parallelogram of forces, calculating the resultant'] },
+  ]},
   { n: 23, casti: [
     { o: ['tekutiny'],
       sk: ['Mechanika kvapalín – prúdenie', 'Ustálené prúdenie, rovnica spojitosti, Bernoulliho rovnica, ideálna a reálna kvapalina'],

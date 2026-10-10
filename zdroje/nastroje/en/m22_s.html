@@ -1,0 +1,86 @@
+<h2>1. Alternating Current</h2>
+<h3>1.1 Production of an alternating voltage</h3>
+<p>A loop (a coil with N turns) of area S rotates uniformly with angular velocity ω in a uniform magnetic field of flux density B. The magnetic flux through the loop changes periodically:</p>
+<div class="formula">Φ = BS cos ωt</div>
+<p>By Faraday’s law of electromagnetic induction the voltage induced in the coil is u = −N·dΦ/dt:</p>
+<div class="formula">u = U<sub>m</sub> sin ωt, &nbsp;&nbsp; U<sub>m</sub> = NBSω, &nbsp;&nbsp; ω = 2πf = 2π/T</div>
+<p>An alternator works on this principle. The mains frequency is f = 50 Hz.</p>
+<h3>1.2 Instantaneous and rms values</h3>
+<p>The instantaneous values of voltage and current are harmonic functions of time:</p>
+<div class="formula">u = U<sub>m</sub> sin ωt &nbsp;&nbsp;&nbsp; i = I<sub>m</sub> sin(ωt + φ)</div>
+<p>U<sub>m</sub>, I<sub>m</sub> are the amplitudes and φ is the phase difference of the current relative to the voltage. The graph is a sine curve with period T. The rms (effective) value is the value of a direct current that would produce the same heat in a resistor:</p>
+<div class="formula">U = U<sub>m</sub>/√2 &nbsp;&nbsp;&nbsp; I = I<sub>m</sub>/√2</div>
+<p>The mains voltage of 230 V is an rms value; the amplitude is about 325 V.</p>
+<h3>1.3 R, L and C in an AC circuit</h3>
+<table><tr><th>Component</th><th>Opposition to current</th><th>Phase difference</th></tr>
+<tr><td>resistor</td><td>R (independent of f)</td><td>current and voltage in phase, φ = 0</td></tr>
+<tr><td>ideal coil</td><td>inductive reactance X<sub>L</sub> = ωL</td><td>current lags the voltage by π/2 (T/4)</td></tr>
+<tr><td>ideal capacitor</td><td>capacitive reactance X<sub>C</sub> = 1/(ωC)</td><td>current leads the voltage by π/2 (T/4)</td></tr>
+</table>
+<p><strong>Effect on amplitude:</strong> for each component I<sub>m</sub> = U<sub>m</sub>/X. A coil opposes the current more at higher frequency – the induced voltage opposes the change of current. A capacitor, on the other hand, “passes” higher frequencies better, and a steady direct current does not flow through it.</p>
+<p><strong>Effect on phase:</strong> on a coil the voltage is greatest when the current changes fastest – that is, when the current is zero. That is why the current lags by a quarter of a period:</p>
+{{SVG0}}
+<p>For R, L and C in series the impedance is Z = √(R² + (X<sub>L</sub> − X<sub>C</sub>)²).</p>
+<h3>1.4 Solution of the task</h3>
+<p>The coil has negligible resistance, so the current is limited only by the inductive reactance. The voltage and current are rms values:</p>
+<div class="formula">X<sub>L</sub> = U/I = 230 V / 0.5 A = 460 Ω</div>
+<div class="formula">L = X<sub>L</sub>/(2πf) = 460 Ω / (2π · 50 Hz) ≈ 1.46 H</div>
+<div class="result"><strong>The inductance of the coil is about 1.46 H.</strong></div>
+<p class="subtle">A real coil also has winding resistance R. Then U/I = Z = √(R² + X<sub>L</sub>²) and the inductance would come out slightly smaller.</p>
+<!--PART-->
+<h2>2. Molecular Physics and Thermodynamics – Calorimetric Equation</h2>
+<h3>2.1 Internal energy and heat</h3>
+<p>The <strong>internal energy</strong> of a body is the sum of the kinetic energies of the random motion of its particles and the potential energies of their mutual interaction. <strong>Heat</strong> Q is the internal energy that a body gives or receives in thermal exchange – without doing work, only because of a temperature difference.</p>
+<p>To change the temperature of a body by Δt we need heat:</p>
+<div class="formula">Q = mcΔt = CΔt</div>
+<p>c is the specific heat capacity of the substance [J/(kg·K)], C = mc the heat capacity of the body [J/K].</p>
+<p>During melting the temperature does not change until the whole body has melted. The heat supplied increases the potential energy of the particles (breaks up the crystal lattice):</p>
+<div class="formula">L<sub>t</sub> = m · l<sub>t</sub></div>
+<h3>2.2 Calorimetric equation</h3>
+<p>In a thermally isolated system the heat given by the warmer bodies equals the heat received by the colder bodies until the temperatures become equal:</p>
+<div class="formula">Q<sub>given</sub> = Q<sub>received</sub></div>
+<p>It is the law of conservation of energy for thermal exchange. It holds if we neglect heat exchange with the surroundings and the system does no work.</p>
+<h3>2.3 Solution of the task</h3>
+<p>m<sub>w</sub> = 0.200 kg, t<sub>w</sub> = 80 °C, m<sub>i</sub> = 0.150 kg, C = 90 J/K, c<sub>w</sub> = 4 180 J/(kg·K), c<sub>i</sub> = 2 100 J/(kg·K), l<sub>t</sub> = 334 000 J/kg. The calorimeter was initially at the temperature of the water.</p>
+<p><strong>First we check whether all the ice melts.</strong> The hot water and the calorimeter can give, when cooling to 0 °C:</p>
+<div class="formula">(m<sub>w</sub>c<sub>w</sub> + C) · 80 K = (836 + 90) J/K · 80 K = 74 080 J</div>
+<p>Melting the ice at 0 °C needs m<sub>i</sub>l<sub>t</sub> = 50 100 J. For ice at −15 °C we need a further m<sub>i</sub>c<sub>i</sub> · 15 K = 4 725 J, in total 54 825 J. In both cases this is less than 74 080 J, so all the ice melts and the final temperature t is above 0 °C.</p>
+<p><strong>a) Ice at 0 °C.</strong> The water and the calorimeter cool from 80 °C to t. The ice melts and the resulting water warms from 0 °C to t:</p>
+<div class="formula">(m<sub>w</sub>c<sub>w</sub> + C)(80 − t) = m<sub>i</sub>l<sub>t</sub> + m<sub>i</sub>c<sub>w</sub>(t − 0)</div>
+<div class="formula">926(80 − t) = 50 100 + 627t<br>74 080 − 50 100 = 1 553t &nbsp; → &nbsp; t = 23 980/1 553 ≈ 15.4 °C</div>
+<p><strong>b) Ice at −15 °C.</strong> The ice must first warm to 0 °C:</p>
+<div class="formula">(m<sub>w</sub>c<sub>w</sub> + C)(80 − t) = m<sub>i</sub>c<sub>i</sub> · 15 + m<sub>i</sub>l<sub>t</sub> + m<sub>i</sub>c<sub>w</sub>t</div>
+<div class="formula">926(80 − t) = 4 725 + 50 100 + 627t<br>74 080 − 54 825 = 1 553t &nbsp; → &nbsp; t = 19 255/1 553 ≈ 12.4 °C</div>
+<div class="result"><strong>a) t ≈ 15.4 °C; b) t ≈ 12.4 °C.</strong> In both cases all the ice melts and the calorimeter contains 350 g of water.</div>
+<p>The colder ice needs an extra 4 725 J to warm to 0 °C, so the final temperature is lower. Most of the heat is used by the melting itself – about 80 to 85 % of the heat the ice receives.</p>
+<p class="subtle">The heat capacity of the calorimeter belongs on the side of the bodies that give heat, because the calorimeter was initially at 80 °C.</p>
+<!--PART-->
+<h2>3. Experiment – Resultant of Two Forces</h2>
+<h3>3.1 Theory</h3>
+<p>Force is a vector. The resultant of two forces acting at one point is their vector sum. Graphically it is the diagonal of the <strong>parallelogram of forces</strong> constructed from F₁ and F₂. If the forces make an angle α, the magnitude of the resultant is:</p>
+<div class="formula">F = √(F₁² + F₂² + 2F₁F₂ cos α)</div>
+<p>The resultant is largest for α = 0° (F = F₁ + F₂) and smallest for α = 180° (F = |F₁ − F₂|). For α = 90° Pythagoras’ theorem applies.</p>
+{{SVG1}}
+<h3>3.2 Equipment</h3>
+<p>Three spring balances, a small ring, threads, a board with paper, a protractor, a ruler.</p>
+<h3>3.3 Procedure</h3>
+<ol><li>Attach the ring with threads to three spring balances lying on the paper. Pull the balances in different directions until the ring is at rest.</li>
+<li>The ring is in equilibrium, so the third force F₃ has the same magnitude as the resultant of F₁ and F₂ but the opposite direction. F₃ is the <strong>equilibrant</strong>.</li>
+<li>Mark the directions of the threads on the paper and read the magnitudes F₁, F₂ and F₃. Measure the angle α between F₁ and F₂ with the protractor.</li>
+<li>Using a chosen scale (e.g. 1 N = 2 cm) construct the parallelogram of forces and measure the length of the diagonal.</li>
+<li>Also calculate the resultant from the formula for F and compare all three values. Repeat the measurement for other angles.</li>
+</ol>
+<h3>3.4 Sample evaluation</h3>
+<p class="subtle">The following numbers are model data for F₁ = 3.0 N and F₂ = 4.0 N; they are not a real measurement.</p>
+<table><tr><th>α</th><th>F calculated (N)</th><th>F₃ measured (N)</th></tr>
+<tr><td>0°</td><td>7.00</td><td>6.9</td></tr>
+<tr><td>60°</td><td>6.08</td><td>6.0</td></tr>
+<tr><td>90°</td><td>5.00</td><td>5.1</td></tr>
+<tr><td>120°</td><td>3.61</td><td>3.6</td></tr>
+</table>
+<p>For example, for α = 60°:</p>
+<div class="formula">F = √(3² + 4² + 2 · 3 · 4 · cos 60°) N = √37 N ≈ 6.08 N</div>
+<p>The direction of the resultant is given by the angle β it makes with F₁: tan β = F₂ sin α/(F₁ + F₂ cos α). For α = 60°, β ≈ 34.7°.</p>
+<div class="result"><strong>Conclusion:</strong> Within the accuracy of the spring balances, the measured equilibrant agrees with the resultant found graphically and by calculation. Forces add as vectors, not as numbers – as the angle α increases, the resultant decreases.</div>
+<h3>3.5 Uncertainties</h3>
+<p>Errors are caused by reading the spring balances, friction of the balances and the ring on the board, inaccurate marking of the thread directions and an inaccurate construction. Using balances with a suitable range and a larger drawing scale helps.</p>

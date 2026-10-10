@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Model 22 – Worked solutions</title>
+<link rel="stylesheet" href="../mo.css">
+</head>
+<body class="vyp">
+
+<header class="mo-head"><div class="mo-head-in">
+<div class="mo-kicker"><span class="mo-num">MODEL 22</span><span class="mo-kind">Worked solutions</span></div>
+<h1>Alternating Current · Calorimetric Equation · Resultant of Two Forces</h1>
+<p>Detailed worked solutions with explanations</p>
+</div></header>
+
+<nav class="mo-bar"><div class="mo-bar-in">
+<a class="mo-back" href="index.html">← All models</a>
+<div class="mo-switch"><a href="Model22_questions.html">Questions</a><a href="Model22_solutions.html" class="on">Solutions</a></div>
+<button type="button" onclick="window.print()">Print / PDF</button>
+<a class="mo-lang" href="../Vzor22_vypracovanie.html" hreflang="sk" title="Slovenská verzia">SK</a>
+</div></nav>
+
+<main class="wrap">
+
+<section class="sheet" id="cast-1"><div class="topline">Part 1 of 3</div>
+<h2>1. Alternating Current</h2>
+<h3>1.1 Production of an alternating voltage</h3>
+<p>A loop (a coil with N turns) of area S rotates uniformly with angular velocity ω in a uniform magnetic field of flux density B. The magnetic flux through the loop changes periodically:</p>
+<div class="formula">Φ = BS cos ωt</div>
+<p>By Faraday’s law of electromagnetic induction the voltage induced in the coil is u = −N·dΦ/dt:</p>
+<div class="formula">u = U<sub>m</sub> sin ωt, &nbsp;&nbsp; U<sub>m</sub> = NBSω, &nbsp;&nbsp; ω = 2πf = 2π/T</div>
+<p>An alternator works on this principle. The mains frequency is f = 50 Hz.</p>
+<h3>1.2 Instantaneous and rms values</h3>
+<p>The instantaneous values of voltage and current are harmonic functions of time:</p>
+<div class="formula">u = U<sub>m</sub> sin ωt &nbsp;&nbsp;&nbsp; i = I<sub>m</sub> sin(ωt + φ)</div>
+<p>U<sub>m</sub>, I<sub>m</sub> are the amplitudes and φ is the phase difference of the current relative to the voltage. The graph is a sine curve with period T. The rms (effective) value is the value of a direct current that would produce the same heat in a resistor:</p>
+<div class="formula">U = U<sub>m</sub>/√2 &nbsp;&nbsp;&nbsp; I = I<sub>m</sub>/√2</div>
+<p>The mains voltage of 230 V is an rms value; the amplitude is about 325 V.</p>
+<h3>1.3 R, L and C in an AC circuit</h3>
+<table><tr><th>Component</th><th>Opposition to current</th><th>Phase difference</th></tr>
+<tr><td>resistor</td><td>R (independent of f)</td><td>current and voltage in phase, φ = 0</td></tr>
+<tr><td>ideal coil</td><td>inductive reactance X<sub>L</sub> = ωL</td><td>current lags the voltage by π/2 (T/4)</td></tr>
+<tr><td>ideal capacitor</td><td>capacitive reactance X<sub>C</sub> = 1/(ωC)</td><td>current leads the voltage by π/2 (T/4)</td></tr>
+</table>
+<p><strong>Effect on amplitude:</strong> for each component I<sub>m</sub> = U<sub>m</sub>/X. A coil opposes the current more at higher frequency – the induced voltage opposes the change of current. A capacitor, on the other hand, “passes” higher frequencies better, and a steady direct current does not flow through it.</p>
+<p><strong>Effect on phase:</strong> on a coil the voltage is greatest when the current changes fastest – that is, when the current is zero. That is why the current lags by a quarter of a period:</p>
+<svg class="diagram" viewBox="0 0 560 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Voltage and current against time for an ideal coil; the current lags by a quarter of a period"><g stroke="#193b59" stroke-width="2" fill="none"><path d="M60 215V25M50 120H530M54 37L60 25L66 37M518 114L530 120L518 126"/></g><g stroke="#e3eaf1"><path d="M220 30V210M380 30V210"/></g><polyline points="60.0,120.0 63.2,115.0 66.4,110.0 69.6,105.0 72.8,100.1 76.0,95.3 79.2,90.6 82.4,85.9 85.6,81.5 88.8,77.1 92.0,73.0 95.2,69.0 98.4,65.2 101.6,61.7 104.8,58.4 108.0,55.3 111.2,52.5 114.4,49.9 117.6,47.6 120.8,45.6 124.0,43.9 127.2,42.5 130.4,41.4 133.6,40.6 136.8,40.2 140.0,40.0 143.2,40.2 146.4,40.6 149.6,41.4 152.8,42.5 156.0,43.9 159.2,45.6 162.4,47.6 165.6,49.9 168.8,52.5 172.0,55.3 175.2,58.4 178.4,61.7 181.6,65.2 184.8,69.0 188.0,73.0 191.2,77.1 194.4,81.5 197.6,85.9 200.8,90.6 204.0,95.3 207.2,100.1 210.4,105.0 213.6,110.0 216.8,115.0 220.0,120.0 223.2,125.0 226.4,130.0 229.6,135.0 232.8,139.9 236.0,144.7 239.2,149.4 242.4,154.1 245.6,158.5 248.8,162.9 252.0,167.0 255.2,171.0 258.4,174.8 261.6,178.3 264.8,181.6 268.0,184.7 271.2,187.5 274.4,190.1 277.6,192.4 280.8,194.4 284.0,196.1 287.2,197.5 290.4,198.6 293.6,199.4 296.8,199.8 300.0,200.0 303.2,199.8 306.4,199.4 309.6,198.6 312.8,197.5 316.0,196.1 319.2,194.4 322.4,192.4 325.6,190.1 328.8,187.5 332.0,184.7 335.2,181.6 338.4,178.3 341.6,174.8 344.8,171.0 348.0,167.0 351.2,162.9 354.4,158.5 357.6,154.1 360.8,149.4 364.0,144.7 367.2,139.9 370.4,135.0 373.6,130.0 376.8,125.0 380.0,120.0 383.2,115.0 386.4,110.0 389.6,105.0 392.8,100.1 396.0,95.3 399.2,90.6 402.4,85.9 405.6,81.5 408.8,77.1 412.0,73.0 415.2,69.0 418.4,65.2 421.6,61.7 424.8,58.4 428.0,55.3 431.2,52.5 434.4,49.9 437.6,47.6 440.8,45.6 444.0,43.9 447.2,42.5 450.4,41.4 453.6,40.6 456.8,40.2 460.0,40.0 463.2,40.2 466.4,40.6 469.6,41.4 472.8,42.5 476.0,43.9 479.2,45.6 482.4,47.6 485.6,49.9 488.8,52.5 492.0,55.3 495.2,58.4 498.4,61.7 501.6,65.2 504.8,69.0 508.0,73.0" fill="none" stroke="#c0392b" stroke-width="3"/><polyline points="60.0,170.0 63.2,169.9 66.4,169.6 69.6,169.1 72.8,168.4 76.0,167.6 79.2,166.5 82.4,165.2 85.6,163.8 88.8,162.2 92.0,160.5 95.2,158.5 98.4,156.4 101.6,154.2 104.8,151.9 108.0,149.4 111.2,146.8 114.4,144.1 117.6,141.3 120.8,138.4 124.0,135.5 127.2,132.4 130.4,129.4 133.6,126.3 136.8,123.1 140.0,120.0 143.2,116.9 146.4,113.7 149.6,110.6 152.8,107.6 156.0,104.5 159.2,101.6 162.4,98.7 165.6,95.9 168.8,93.2 172.0,90.6 175.2,88.1 178.4,85.8 181.6,83.6 184.8,81.5 188.0,79.5 191.2,77.8 194.4,76.2 197.6,74.8 200.8,73.5 204.0,72.4 207.2,71.6 210.4,70.9 213.6,70.4 216.8,70.1 220.0,70.0 223.2,70.1 226.4,70.4 229.6,70.9 232.8,71.6 236.0,72.4 239.2,73.5 242.4,74.8 245.6,76.2 248.8,77.8 252.0,79.5 255.2,81.5 258.4,83.6 261.6,85.8 264.8,88.1 268.0,90.6 271.2,93.2 274.4,95.9 277.6,98.7 280.8,101.6 284.0,104.5 287.2,107.6 290.4,110.6 293.6,113.7 296.8,116.9 300.0,120.0 303.2,123.1 306.4,126.3 309.6,129.4 312.8,132.4 316.0,135.5 319.2,138.4 322.4,141.3 325.6,144.1 328.8,146.8 332.0,149.4 335.2,151.9 338.4,154.2 341.6,156.4 344.8,158.5 348.0,160.5 351.2,162.2 354.4,163.8 357.6,165.2 360.8,166.5 364.0,167.6 367.2,168.4 370.4,169.1 373.6,169.6 376.8,169.9 380.0,170.0 383.2,169.9 386.4,169.6 389.6,169.1 392.8,168.4 396.0,167.6 399.2,166.5 402.4,165.2 405.6,163.8 408.8,162.2 412.0,160.5 415.2,158.5 418.4,156.4 421.6,154.2 424.8,151.9 428.0,149.4 431.2,146.8 434.4,144.1 437.6,141.3 440.8,138.4 444.0,135.5 447.2,132.4 450.4,129.4 453.6,126.3 456.8,123.1 460.0,120.0 463.2,116.9 466.4,113.7 469.6,110.6 472.8,107.6 476.0,104.5 479.2,101.6 482.4,98.7 485.6,95.9 488.8,93.2 492.0,90.6 495.2,88.1 498.4,85.8 501.6,83.6 504.8,81.5 508.0,79.5" fill="none" stroke="#2f6db3" stroke-width="3"/><g stroke="#637889" stroke-width="1.5" fill="none" stroke-dasharray="4 4"><path d="M140 40V120M220 70V120"/></g><g stroke="#637889" stroke-width="1.5" fill="none"><path d="M140 34H220M146 29L140 34L146 39M214 29L220 34L214 39"/></g><g font-size="15"><text x="168" y="27" fill="#637889">T/4</text><text x="96" y="52" fill="#c0392b">u</text><text x="244" y="58" fill="#2f6db3">i</text><text x="520" y="142" fill="#193b59">t</text><text x="214" y="140" fill="#637889">T/2</text><text x="374" y="140" fill="#637889">T</text></g></svg>
+<p>For R, L and C in series the impedance is Z = √(R² + (X<sub>L</sub> − X<sub>C</sub>)²).</p>
+<h3>1.4 Solution of the task</h3>
+<p>The coil has negligible resistance, so the current is limited only by the inductive reactance. The voltage and current are rms values:</p>
+<div class="formula">X<sub>L</sub> = U/I = 230 V / 0.5 A = 460 Ω</div>
+<div class="formula">L = X<sub>L</sub>/(2πf) = 460 Ω / (2π · 50 Hz) ≈ 1.46 H</div>
+<div class="result"><strong>The inductance of the coil is about 1.46 H.</strong></div>
+<p class="subtle">A real coil also has winding resistance R. Then U/I = Z = √(R² + X<sub>L</sub>²) and the inductance would come out slightly smaller.</p>
+</section>
+
+<section class="sheet" id="cast-2"><div class="topline">Part 2 of 3</div>
+<h2>2. Molecular Physics and Thermodynamics – Calorimetric Equation</h2>
+<h3>2.1 Internal energy and heat</h3>
+<p>The <strong>internal energy</strong> of a body is the sum of the kinetic energies of the random motion of its particles and the potential energies of their mutual interaction. <strong>Heat</strong> Q is the internal energy that a body gives or receives in thermal exchange – without doing work, only because of a temperature difference.</p>
+<p>To change the temperature of a body by Δt we need heat:</p>
+<div class="formula">Q = mcΔt = CΔt</div>
+<p>c is the specific heat capacity of the substance [J/(kg·K)], C = mc the heat capacity of the body [J/K].</p>
+<p>During melting the temperature does not change until the whole body has melted. The heat supplied increases the potential energy of the particles (breaks up the crystal lattice):</p>
+<div class="formula">L<sub>t</sub> = m · l<sub>t</sub></div>
+<h3>2.2 Calorimetric equation</h3>
+<p>In a thermally isolated system the heat given by the warmer bodies equals the heat received by the colder bodies until the temperatures become equal:</p>
+<div class="formula">Q<sub>given</sub> = Q<sub>received</sub></div>
+<p>It is the law of conservation of energy for thermal exchange. It holds if we neglect heat exchange with the surroundings and the system does no work.</p>
+<h3>2.3 Solution of the task</h3>
+<p>m<sub>w</sub> = 0.200 kg, t<sub>w</sub> = 80 °C, m<sub>i</sub> = 0.150 kg, C = 90 J/K, c<sub>w</sub> = 4 180 J/(kg·K), c<sub>i</sub> = 2 100 J/(kg·K), l<sub>t</sub> = 334 000 J/kg. The calorimeter was initially at the temperature of the water.</p>
+<p><strong>First we check whether all the ice melts.</strong> The hot water and the calorimeter can give, when cooling to 0 °C:</p>
+<div class="formula">(m<sub>w</sub>c<sub>w</sub> + C) · 80 K = (836 + 90) J/K · 80 K = 74 080 J</div>
+<p>Melting the ice at 0 °C needs m<sub>i</sub>l<sub>t</sub> = 50 100 J. For ice at −15 °C we need a further m<sub>i</sub>c<sub>i</sub> · 15 K = 4 725 J, in total 54 825 J. In both cases this is less than 74 080 J, so all the ice melts and the final temperature t is above 0 °C.</p>
+<p><strong>a) Ice at 0 °C.</strong> The water and the calorimeter cool from 80 °C to t. The ice melts and the resulting water warms from 0 °C to t:</p>
+<div class="formula">(m<sub>w</sub>c<sub>w</sub> + C)(80 − t) = m<sub>i</sub>l<sub>t</sub> + m<sub>i</sub>c<sub>w</sub>(t − 0)</div>
+<div class="formula">926(80 − t) = 50 100 + 627t<br>74 080 − 50 100 = 1 553t &nbsp; → &nbsp; t = 23 980/1 553 ≈ 15.4 °C</div>
+<p><strong>b) Ice at −15 °C.</strong> The ice must first warm to 0 °C:</p>
+<div class="formula">(m<sub>w</sub>c<sub>w</sub> + C)(80 − t) = m<sub>i</sub>c<sub>i</sub> · 15 + m<sub>i</sub>l<sub>t</sub> + m<sub>i</sub>c<sub>w</sub>t</div>
+<div class="formula">926(80 − t) = 4 725 + 50 100 + 627t<br>74 080 − 54 825 = 1 553t &nbsp; → &nbsp; t = 19 255/1 553 ≈ 12.4 °C</div>
+<div class="result"><strong>a) t ≈ 15.4 °C; b) t ≈ 12.4 °C.</strong> In both cases all the ice melts and the calorimeter contains 350 g of water.</div>
+<p>The colder ice needs an extra 4 725 J to warm to 0 °C, so the final temperature is lower. Most of the heat is used by the melting itself – about 80 to 85 % of the heat the ice receives.</p>
+<p class="subtle">The heat capacity of the calorimeter belongs on the side of the bodies that give heat, because the calorimeter was initially at 80 °C.</p>
+</section>
+
+<section class="sheet" id="cast-3"><div class="topline">Part 3 of 3</div>
+<h2>3. Experiment – Resultant of Two Forces</h2>
+<h3>3.1 Theory</h3>
+<p>Force is a vector. The resultant of two forces acting at one point is their vector sum. Graphically it is the diagonal of the <strong>parallelogram of forces</strong> constructed from F₁ and F₂. If the forces make an angle α, the magnitude of the resultant is:</p>
+<div class="formula">F = √(F₁² + F₂² + 2F₁F₂ cos α)</div>
+<p>The resultant is largest for α = 0° (F = F₁ + F₂) and smallest for α = 180° (F = |F₁ − F₂|). For α = 90° Pythagoras’ theorem applies.</p>
+<svg class="diagram" viewBox="0 0 440 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Adding two forces using the parallelogram of forces"><path d="M230 220L330 46.8L180 46.8" fill="none" stroke="#8297a6" stroke-width="2" stroke-dasharray="6 5"/><path d="M80 220L222.0 220.0" stroke="#2f6db3" stroke-width="3"/><path d="M230 220L217.0 214.0L217.0 226.0Z" fill="#2f6db3"/><path d="M80 220L176.0 53.7" stroke="#2f6db3" stroke-width="3"/><path d="M180 46.8L168.3 55.1L178.7 61.1Z" fill="#2f6db3"/><path d="M80 220L323.4 51.4" stroke="#c0392b" stroke-width="3.5"/><path d="M330 46.8L315.9 49.3L322.7 59.1Z" fill="#c0392b"/><path d="M115 220A35 35 0 0 0 97.5 189.7" fill="none" stroke="#637889" stroke-width="1.5"/><circle cx="80" cy="220" r="4" fill="#193b59"/><g font-size="16" fill="#193b59"><text x="148" y="246">F₁ = 3 N</text><text x="70" y="124">F₂ = 4 N</text><text x="120" y="208">α = 60°</text></g><text x="336" y="104" font-size="16" fill="#c0392b">F ≈ 6.1 N</text></svg>
+<h3>3.2 Equipment</h3>
+<p>Three spring balances, a small ring, threads, a board with paper, a protractor, a ruler.</p>
+<h3>3.3 Procedure</h3>
+<ol><li>Attach the ring with threads to three spring balances lying on the paper. Pull the balances in different directions until the ring is at rest.</li>
+<li>The ring is in equilibrium, so the third force F₃ has the same magnitude as the resultant of F₁ and F₂ but the opposite direction. F₃ is the <strong>equilibrant</strong>.</li>
+<li>Mark the directions of the threads on the paper and read the magnitudes F₁, F₂ and F₃. Measure the angle α between F₁ and F₂ with the protractor.</li>
+<li>Using a chosen scale (e.g. 1 N = 2 cm) construct the parallelogram of forces and measure the length of the diagonal.</li>
+<li>Also calculate the resultant from the formula for F and compare all three values. Repeat the measurement for other angles.</li>
+</ol>
+<h3>3.4 Sample evaluation</h3>
+<p class="subtle">The following numbers are model data for F₁ = 3.0 N and F₂ = 4.0 N; they are not a real measurement.</p>
+<table><tr><th>α</th><th>F calculated (N)</th><th>F₃ measured (N)</th></tr>
+<tr><td>0°</td><td>7.00</td><td>6.9</td></tr>
+<tr><td>60°</td><td>6.08</td><td>6.0</td></tr>
+<tr><td>90°</td><td>5.00</td><td>5.1</td></tr>
+<tr><td>120°</td><td>3.61</td><td>3.6</td></tr>
+</table>
+<p>For example, for α = 60°:</p>
+<div class="formula">F = √(3² + 4² + 2 · 3 · 4 · cos 60°) N = √37 N ≈ 6.08 N</div>
+<p>The direction of the resultant is given by the angle β it makes with F₁: tan β = F₂ sin α/(F₁ + F₂ cos α). For α = 60°, β ≈ 34.7°.</p>
+<div class="result"><strong>Conclusion:</strong> Within the accuracy of the spring balances, the measured equilibrant agrees with the resultant found graphically and by calculation. Forces add as vectors, not as numbers – as the angle α increases, the resultant decreases.</div>
+<h3>3.5 Uncertainties</h3>
+<p>Errors are caused by reading the spring balances, friction of the balances and the ring on the board, inaccurate marking of the thread directions and an inaccurate construction. Using balances with a suitable range and a larger drawing scale helps.</p>
+</section>
+
+</main>
+
+<footer class="mo-foot"><a href="index.html">← All models</a><span>Model 22 · Worked solutions</span></footer>
+<script src="../mo.js"></script>
+</body>
+</html>

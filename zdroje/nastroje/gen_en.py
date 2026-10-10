@@ -30,6 +30,7 @@ TOPICS = {
     19: ['Magnetic Field', 'Fluid Mechanics – Flow in a Pipe', 'Specific Latent Heat of Fusion of Ice'],
     20: ['Electromagnetic Induction', 'Gravitational Field', 'Surface Tension from Capillary Rise'],
     21: ['Alternating Current – Generation and Transformation', 'Structure and Properties of Gases', 'Conversions of Mechanical Energy'],
+    22: ['Alternating Current', 'Calorimetric Equation', 'Resultant of Two Forces'],
     23: ['Fluid Mechanics – Flow', 'Change of State – Heating of a Bullet', 'Sliding Friction and Rolling Resistance'],
     24: ['Mechanical Waves', 'Capillarity', 'Coefficient of Sliding Friction'],
     25: ['Atomic Nucleus', 'Electric Current in Electrolytes – Nickel Plating', 'Measuring with a Vernier Caliper and Measurement Errors'],
@@ -125,6 +126,9 @@ SVG_EN = {
     'Kváder na vodorovnej podložke ťahaný silomerom': 'Block on a horizontal surface pulled by a spring balance',
     'Graf trecej sily od tlakovej sily, priamka so smernicou 0,30': 'Graph of friction force against normal force, straight line with gradient 0.30',
     'benzín': 'petrol', 'smernica = μ ≈ 0,30': 'gradient = μ ≈ 0.30',
+    'Časový priebeh napätia a prúdu na ideálnej cievke, prúd zaostáva o štvrtinu periódy':
+        'Voltage and current against time for an ideal coil; the current lags by a quarter of a period',
+    'Skladanie dvoch síl pomocou rovnobežníka síl': 'Adding two forces using the parallelogram of forces', 'F ≈ 6,1 N': 'F ≈ 6.1 N',
     'spínač': 'switch', 'zdroj': 'source', 'ampérmeter': 'ammeter', 'voltmeter': 'voltmeter', 'rezistor': 'resistor',
     'Elektrolýza roztoku síranu meďnatého medzi dvoma medenými elektródami; katióny medi idú ku katóde, síranové anióny k anóde':
         'Electrolysis of copper(II) sulfate solution between two copper electrodes; copper cations move to the cathode, sulfate anions to the anode',
