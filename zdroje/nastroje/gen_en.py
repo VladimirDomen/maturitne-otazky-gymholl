@@ -29,6 +29,7 @@ TOPICS = {
     18: ['Free Oscillations', 'Motion in a Gravitational Field – Horizontal Projection', 'Diameter of an Oleic Acid Molecule'],
     19: ['Magnetic Field', 'Fluid Mechanics – Flow in a Pipe', 'Specific Latent Heat of Fusion of Ice'],
     20: ['Electromagnetic Induction', 'Gravitational Field', 'Surface Tension from Capillary Rise'],
+    21: ['Alternating Current – Generation and Transformation', 'Structure and Properties of Gases', 'Conversions of Mechanical Energy'],
     26: ['Electron Shell of the Atom', 'Electric Current', 'Properties of Gases'],
 }
 
@@ -236,6 +237,28 @@ SVG_EN = {
         'capillary',
     'hladina':
         'water surface',
+    'Princíp generátora striedavého napätia: závit sa otáča v magnetickom poli medzi pólmi N a S, cez zberacie krúžky je pripojený k spotrebiču':
+        'Principle of an AC generator: a loop rotates in the magnetic field between poles N and S and is connected to the load through slip rings',
+    'závit':
+        'loop',
+    'zberacie krúžky':
+        'slip rings',
+    'Trojfázová sústava: tri sínusové napätia rovnakej amplitúdy posunuté o tretinu periódy':
+        'Three-phase system: three sinusoidal voltages of equal amplitude shifted by one third of a period',
+    'posun o T/3 (120°)':
+        'shift of T/3 (120°)',
+    'Transformátor: primárna cievka s 5000 závitmi na napätí 230 V, sekundárna cievka s 2500 závitmi':
+        'Transformer: primary coil with 5000 turns at 230 V, secondary coil with 2500 turns',
+    'p–V diagram kruhového deja: A (3 m³; 0,4 MPa), B (12 m³; 0,4 MPa), C (12 m³; 0,1 MPa), D (3 m³; 0,1 MPa), smer A, B, C, D, A':
+        'p–V diagram of a cycle: A (3 m³; 0.4 MPa), B (12 m³; 0.4 MPa), C (12 m³; 0.1 MPa), D (3 m³; 0.1 MPa), direction A, B, C, D, A',
+    'Kyvadlo vychýlené do výšky h nad najnižšiu polohu, v ktorej je svetelná závora meriaca rýchlosť guľôčky':
+        'Pendulum displaced to a height h above its lowest position, where a light gate measures the speed of the ball',
+    'svetelná závora':
+        'light gate',
+    'Eₚ max, v = 0':
+        'Eₚ max, v = 0',
+    'Eₖ max':
+        'Eₖ max',
 }
 
 def tr_svg(svg):

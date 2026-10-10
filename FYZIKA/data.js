@@ -242,6 +242,17 @@ const OTAZKY = [
       sk: ['Povrchové napätie z kapilárnej elevácie', 'Experiment: kapilárna elevácia, σ = ρgrh/2'],
       en: ['Surface tension from capillary rise', 'Experiment: capillary rise, σ = ρgrh/2'] },
   ]},
+  { n: 21, casti: [
+    { o: ['elektrina', 'magnetizmus'],
+      sk: ['Striedavý prúd – výroba a transformácia', 'Alternátor, trojfázová sústava, transformátor, prenos energie, typy elektrární'],
+      en: ['Alternating current – generation and transformation', 'Alternator, three-phase system, transformer, energy transmission, types of power stations'] },
+    { o: ['termika'],
+      sk: ['Štruktúra a vlastnosti plynov', 'Ideálny plyn, stavová rovnica, deje v plyne, práca plynu v kruhovom deji'],
+      en: ['Structure and properties of gases', 'Ideal gas, equation of state, gas processes, work done in a cycle'] },
+    { o: ['mechanika'],
+      sk: ['Premeny mechanickej energie', 'Experiment: kyvadlo so svetelnou závorou, porovnanie mgh a ½mv²'],
+      en: ['Conversions of mechanical energy', 'Experiment: pendulum with a light gate, comparing mgh and ½mv²'] },
+  ]},
   { n: 26, casti: [
     { o: ['mikrosvet', 'optika'],
       sk: ['Elektrónový obal atómu', 'Kvantovanie energie, emisné a absorpčné spektrum, energia fotónu'],

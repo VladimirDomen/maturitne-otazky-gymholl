@@ -1,0 +1,87 @@
+<h2>1. Alternating Current – Generation and Transformation</h2>
+<h3>1.1 Generating an alternating voltage</h3>
+<p>An alternating voltage is produced by <strong>electromagnetic induction</strong>. If a loop (a coil with N turns) rotates with constant angular velocity ω in a uniform magnetic field, the magnetic flux changes harmonically, Φ = BS cos ωt. According to Faraday’s law a voltage is induced:</p>
+{{SVG0}}
+<div class="formula">u = U<sub>m</sub> sin ωt &nbsp;&nbsp;&nbsp; U<sub>m</sub> = N B S ω</div>
+<p>Power stations use an <strong>alternator</strong>: an electromagnet (the rotor) rotates and the voltage is induced in the stationary stator coils – no slip rings are needed for large currents. The mains frequency is f = 50 Hz. The mains voltage is given as the <strong>rms value</strong> U = U<sub>m</sub>/√2 = 230 V (amplitude ≈ 325 V).</p>
+<p><strong>Three-phase system:</strong> the alternator has three stator coils turned by 120°. Three voltages of the same amplitude and frequency are produced, shifted in phase by one third of a period. Between a phase wire and the neutral there is 230 V, between two phases 400 V. Three-phase current allows economical transmission and produces a rotating magnetic field for electric motors.</p>
+{{SVG1}}
+<p>The real power in an AC circuit is P = U I cos φ, where cos φ is the power factor. With a resistive load P = UI. Electrical energy is E = P t (in practice in kWh).</p>
+<h3>1.2 Transformer and energy transmission</h3>
+<p>A transformer has a primary and a secondary coil on a common closed core of insulated laminations. The alternating current in the primary coil produces a varying magnetic flux in the core. The flux also passes through the secondary coil and induces a voltage in it. For an ideal transformer (no losses):</p>
+<div class="formula">U₂ / U₁ = N₂ / N₁ = k &nbsp;&nbsp;&nbsp; I₂ / I₁ = N₁ / N₂ &nbsp;&nbsp;&nbsp; P₁ = P₂</div>
+<p>A transformer works only with alternating current – a steady current does not produce a varying flux.</p>
+<p><strong>Energy transmission:</strong> the losses in the line are ΔP = R I². For the same transmitted power P = UI, the current is smaller at a higher voltage – at ten times the voltage the losses are a hundred times smaller. That is why the voltage from the alternator (about 10–25 kV) is stepped up to 110–400 kV, transmitted, and gradually stepped down to 230/400 V near the consumers.</p>
+<h3>1.3 Types of power stations</h3>
+<table><tr><th>Power station</th><th>Energy conversion</th></tr><tr><td>thermal (coal, gas, biomass)</td><td>chemical → internal (steam) → mechanical (turbine) → electrical</td></tr><tr><td>nuclear</td><td>nuclear (fission of uranium) → internal → mechanical → electrical</td></tr><tr><td>hydroelectric (run-of-river, storage, pumped storage)</td><td>potential and kinetic energy of water → mechanical → electrical</td></tr><tr><td>wind</td><td>kinetic energy of wind → mechanical → electrical</td></tr><tr><td>photovoltaic</td><td>energy of solar radiation → electrical directly (direct current, converted to alternating by an inverter)</td></tr><tr><td>geothermal, tidal</td><td>internal energy of the Earth, tidal energy → mechanical → electrical</td></tr></table>
+<p>Apart from photovoltaics, all power stations generate electrical energy with an alternator driven by a turbine. A pumped-storage hydroelectric station stores energy: when there is a surplus it pumps water up, at peak times it generates.</p>
+<h3>1.4 Solution of the task</h3>
+{{SVG2}}
+<p><strong>a)</strong> For an ideal transformer:</p>
+<div class="formula">U₂ = U₁ · N₂ / N₁ = 230 V · 2 500 / 5 000 = 115 V</div>
+<p><strong>b)</strong> We define the turns ratio as the ratio of the secondary to the primary voltage:</p>
+<div class="formula">k = U₂ / U₁ = N₂ / N₁ = 2 500 / 5 000 = 0.5</div>
+<p>Some textbooks use the opposite definition k′ = N₁/N₂ = 2. That is why it must always be stated which ratio is meant.</p>
+<p><strong>c)</strong> k &lt; 1 (N₂ &lt; N₁), the voltage has been halved – it is a <strong>step-down transformer</strong>. The current in the secondary circuit will be twice the primary current.</p>
+<div class="result"><strong>U₂ = 115 V; k = N₂/N₁ = 0.5; step-down transformer.</strong></div>
+<!--PART-->
+<h2>2. Structure and Properties of Gases</h2>
+<h3>2.1 Structure of gases and the ideal gas</h3>
+<p>The molecules of a gas are on average much farther apart than their own size. The attractive forces between them are therefore very weak and a gas has no fixed shape or volume – it fills the whole container. The molecules move randomly (thermal motion) at high speeds, of the order of hundreds of m/s, and collide with each other. Diffusion and Brownian motion are evidence of this. <strong>Gas pressure</strong> is the result of the impacts of molecules on the walls of the container.</p>
+<p>An <strong>ideal gas</strong> is a model: we neglect the size of the molecules, the molecules interact only during collisions and the collisions are perfectly elastic. Real gases resemble it at low pressures and high temperatures. The thermodynamic temperature is proportional to the mean kinetic energy of the molecules: E<sub>k</sub> = 3/2 kT.</p>
+<h3>2.2 Equation of state and processes in a gas</h3>
+<div class="formula">p V = n R T = N k T &nbsp;&nbsp;&nbsp; for constant mass: p V / T = const.</div>
+<ul><li><strong>isothermal</strong> process (T = const.): pV = const. (Boyle’s law), a hyperbola in the p–V diagram,</li>
+<li><strong>isobaric</strong> process (p = const.): V/T = const. (Gay-Lussac’s law), a horizontal line,</li>
+<li><strong>isochoric</strong> process (V = const.): p/T = const. (Charles’s law), a vertical line,</li>
+<li><strong>adiabatic</strong> process: no heat exchange with the surroundings.</li>
+</ul>
+<h3>2.3 Work done by a gas</h3>
+<p>In an isobaric process the gas does work W′ = p ΔV. In general the work equals the <strong>area under the graph</strong> in the p–V diagram. When the volume increases the gas does work (W′ &gt; 0); when it decreases, external forces do work on it (W′ &lt; 0). In an isochoric process W′ = 0.</p>
+<p>In a <strong>cycle</strong> the gas returns to its initial state. The total work equals the area enclosed by the closed curve. If the cycle runs clockwise, the total work is positive – heat engines work on this principle. By the first law of thermodynamics Q = ΔU + W′, and over a cycle ΔU = 0, so W′ = Q<sub>in</sub> − Q<sub>out</sub>.</p>
+<h3>2.4 Solution of the task</h3>
+{{SVG3}}
+<p><strong>a)</strong> Processes. We compare temperatures using the equation of state pV/T = const. The product pV is proportional to temperature: p<sub>A</sub>V<sub>A</sub> = 1.2 MJ, p<sub>B</sub>V<sub>B</sub> = 4.8 MJ, p<sub>C</sub>V<sub>C</sub> = 1.2 MJ, p<sub>D</sub>V<sub>D</sub> = 0.3 MJ. So T<sub>B</sub> = 4T<sub>A</sub>, T<sub>C</sub> = T<sub>A</sub>, T<sub>D</sub> = T<sub>A</sub>/4.</p>
+<table><tr><th>Process</th><th>Character</th><th>Temperature</th><th>Work by gas</th></tr><tr><td>A → B</td><td>isobaric expansion at 0.4 MPa</td><td>rises 4 times</td><td>positive</td></tr><tr><td>B → C</td><td>isochoric fall in pressure at 12 m³</td><td>falls 4 times</td><td>zero</td></tr><tr><td>C → D</td><td>isobaric compression at 0.1 MPa</td><td>falls 4 times</td><td>negative</td></tr><tr><td>D → A</td><td>isochoric rise in pressure at 3 m³</td><td>rises 4 times</td><td>zero</td></tr></table>
+<p>In A → B and D → A the gas takes in heat, in B → C and C → D it gives out heat.</p>
+<p><strong>b)</strong> Work in each section:</p>
+<div class="formula">W′<sub>AB</sub> = p<sub>A</sub> (V<sub>B</sub> − V<sub>A</sub>) = 0.4 · 10⁶ Pa · (12 − 3) m³ = 3.6 · 10⁶ J = 3.6 MJ<br>W′<sub>BC</sub> = 0 &nbsp;&nbsp;&nbsp; W′<sub>DA</sub> = 0<br>W′<sub>CD</sub> = p<sub>C</sub> (V<sub>D</sub> − V<sub>C</sub>) = 0.1 · 10⁶ Pa · (3 − 12) m³ = −0.9 MJ</div>
+<div class="formula">W = 3.6 MJ + 0 − 0.9 MJ + 0 = 2.7 MJ</div>
+<p>Check using the area of the rectangle: (0.4 − 0.1) MPa · (12 − 3) m³ = 0.3 · 10⁶ Pa · 9 m³ = 2.7 MJ. The cycle runs clockwise, so the total work is positive.</p>
+<div class="result"><strong>W′<sub>AB</sub> = 3.6 MJ, W′<sub>BC</sub> = 0, W′<sub>CD</sub> = −0.9 MJ, W′<sub>DA</sub> = 0; for the cycle W = 2.7 MJ.</strong></div>
+<!--PART-->
+<h2>3. Experiment – Conversions of Mechanical Energy</h2>
+<h3>3.1 Theory</h3>
+<p>Kinetic energy E<sub>k</sub> = ½ m v² is the energy of motion, gravitational potential energy E<sub>p</sub> = m g h is the energy of position. Their sum is the mechanical energy. <strong>Law of conservation of mechanical energy:</strong> if only conservative forces act (gravitational, elastic), the mechanical energy is constant and only its form changes:</p>
+<div class="formula">E<sub>k</sub> + E<sub>p</sub> = const. &nbsp; → &nbsp; m g h = ½ m v² &nbsp; → &nbsp; v = √(2 g h)</div>
+<p>Resistive forces (air resistance, friction) do negative work and part of the mechanical energy is converted into the internal energy of the bodies and the surroundings.</p>
+<h3>3.2 Apparatus</h3>
+<p>Pendulum: a ball of mass m = 100 g and diameter d = 2.0 cm on a thin inextensible thread, stand, light gate with a timer (measures the time Δt the beam is blocked), height gauge, balance.</p>
+<h3>3.3 Arrangement and observation</h3>
+{{SVG4}}
+<p>The light gate is at the lowest position of the ball. The ball is displaced so that it is a height h higher and released without initial speed.</p>
+<ul><li><strong>Extreme position:</strong> v = 0, E<sub>k</sub> = 0, E<sub>p</sub> is maximum.</li>
+<li><strong>Moving down:</strong> E<sub>p</sub> decreases and E<sub>k</sub> increases by the same amount.</li>
+<li><strong>Lowest position:</strong> E<sub>p</sub> = 0 (zero level), the speed and E<sub>k</sub> are maximum.</li>
+<li><strong>On the other side</strong> E<sub>k</sub> changes back into E<sub>p</sub> and the ball rises almost to the same height. After many oscillations the amplitude decreases – a sign of resistive forces.</li>
+</ul>
+<h3>3.4 Measurement procedure</h3>
+<ol><li>Weigh the ball and measure its diameter d.</li>
+<li>Raise the ball to a height h above the lowest position (measure the height of its centre) and release it.</li>
+<li>The timer records the time Δt for which the ball blocks the beam. The speed at the lowest position is v = d/Δt.</li>
+<li>Repeat the measurement for different heights h.</li>
+<li>For each height compare E<sub>p</sub> = mgh and E<sub>k</sub> = ½mv².</li>
+</ol>
+<h3>3.5 Sample evaluation</h3>
+<p class="subtle">The following numbers are model data for m = 0.100 kg, d = 2.0 cm, g = 9.81 m/s²; they are not a real measurement.</p>
+<table><tr><th>h (cm)</th><th>Δt (ms)</th><th>v = d/Δt (m/s)</th><th>E<sub>p</sub> (mJ)</th><th>E<sub>k</sub> (mJ)</th><th>E<sub>k</sub>/E<sub>p</sub></th></tr><tr><td>5.0</td><td>20.4</td><td>0.98</td><td>49.1</td><td>48.1</td><td>98 %</td></tr><tr><td>10.0</td><td>14.5</td><td>1.38</td><td>98.1</td><td>95.1</td><td>97 %</td></tr><tr><td>20.0</td><td>10.3</td><td>1.94</td><td>196.2</td><td>188.5</td><td>96 %</td></tr></table>
+<p>For example, for h = 10.0 cm:</p>
+<div class="formula">E<sub>p</sub> = m g h = 0.100 · 9.81 · 0.100 J ≈ 98.1 mJ<br>v = d/Δt = 0.020 m / 0.0145 s ≈ 1.38 m/s &nbsp;&nbsp; E<sub>k</sub> = ½ · 0.100 · 1.38² J ≈ 95.1 mJ</div>
+<p>The kinetic energy at the lowest point is 96–98 % of the potential energy at the extreme position. The law of conservation of mechanical energy is satisfied within the accuracy of the measurement. The theoretical speed for h = 10 cm is v = √(2gh) ≈ 1.40 m/s.</p>
+<h3>3.6 Sources of error and the effect of resistive forces</h3>
+<ul><li>Air resistance and friction at the pivot – part of the energy is converted into internal energy, so E<sub>k</sub> comes out slightly smaller. At a greater height (speed) the loss is larger, because air resistance increases with speed.</li>
+<li>The gate measures the average speed over the distance d, not the instantaneous speed. The beam must pass through the centre of the ball.</li>
+<li>Inaccurate determination of the height h (we measure the height of the ball’s centre).</li>
+<li>The ball may rotate slightly and swing sideways – part of the energy goes into these motions.</li>
+</ul>
+<div class="result"><strong>Conclusion:</strong> As the pendulum moves, potential energy changes into kinetic energy and back. The measurement showed E<sub>k</sub> ≈ E<sub>p</sub> (96–98 %); the small difference is caused by resistive forces, which convert part of the mechanical energy into internal energy.</div>
