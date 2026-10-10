@@ -22,6 +22,7 @@ TOPICS = {
     11: ['Properties of Liquids', 'Thin-Film Interference', 'Current–Voltage Characteristic of a Diode'],
     12: ['Solids', 'Photoelectric Effect', 'Inertial Mass'],
     13: ['Electric Current in Semiconductors', 'Mechanics of a Rigid Body', 'Inductance and Capacitance'],
+    14: ['Electric Current in Electrolytes', 'Energy of a Particle', 'Efficiency of a Transformer'],
     15: ['Electric Field', 'Atomic Nucleus', 'Inclined Plane'],
     26: ['Electron Shell of the Atom', 'Electric Current', 'Properties of Gases'],
 }
@@ -111,6 +112,22 @@ SVG_EN = {
         'Circuit: AC voltage source, ammeter in series with a capacitor or a coil, voltmeter in parallel',
     'C alebo L': 'C or L',
     'spínač': 'switch', 'zdroj': 'source', 'ampérmeter': 'ammeter', 'voltmeter': 'voltmeter', 'rezistor': 'resistor',
+    'Elektrolýza roztoku síranu meďnatého medzi dvoma medenými elektródami; katióny medi idú ku katóde, síranové anióny k anóde':
+        'Electrolysis of copper(II) sulfate solution between two copper electrodes; copper cations move to the cathode, sulfate anions to the anode',
+    'anóda (+)': 'anode (+)', 'katóda (−)': 'cathode (−)', 'roztok CuSO₄': 'CuSO₄ solution',
+    'Voltampérová charakteristika elektrolytického vodiča: s medenými elektródami priamka z počiatku, s inertnými elektródami prúd tečie až nad rozkladným napätím':
+        'Current–voltage characteristic of an electrolytic conductor: a straight line through the origin with copper electrodes; with inert electrodes current flows only above the decomposition voltage',
+    'Cu elektródy v CuSO₄': 'Cu electrodes in CuSO₄', 'inertné elektródy': 'inert electrodes',
+    'Teleso s hmotnosťou 1 kg vo výške 45 m nad zemou, poloha v čase 1 s nie je známa':
+        'Body of mass 1 kg at a height of 45 m above the ground; its position at 1 s is unknown',
+    'zem (Eₚ = 0)': 'ground (Eₚ = 0)',
+    'Poloha telesa pri voľnom páde z výšky 45 m v časoch 0, 1, 2 a 3 sekundy':
+        'Position of a body falling freely from 45 m at times 0, 1, 2 and 3 seconds',
+    'Graf kinetickej a potenciálnej energie od času pri voľnom páde; ich súčet je stále 450 J':
+        'Graph of kinetic and potential energy against time in free fall; their sum is always 450 J',
+    'Zapojenie na meranie účinnosti transformátora: zdroj, ampérmeter A1 a voltmeter V1 na primárnej cievke; ampérmeter A2, voltmeter V2 a záťaž R na sekundárnej cievke':
+        'Circuit for measuring the efficiency of a transformer: source, ammeter A1 and voltmeter V1 on the primary coil; ammeter A2, voltmeter V2 and load R on the secondary coil',
+    'jadro': 'core', 'záťaž R': 'load R',
 }
 
 def tr_svg(svg):

@@ -165,6 +165,17 @@ const OTAZKY = [
       sk: ['Indukčnosť a kapacita', 'Experiment: kapacitancia a induktancia, meranie striedavým a jednosmerným prúdom'],
       en: ['Inductance and capacitance', 'Experiment: capacitive and inductive reactance, measuring with AC and DC'] },
   ]},
+  { n: 14, casti: [
+    { o: ['elektrina'],
+      sk: ['Elektrický prúd v elektrolytoch', 'Elektrolytická disociácia, VA charakteristika, Faradayove zákony, vylučovanie medi z CuSO₄'],
+      en: ['Electric current in electrolytes', 'Electrolytic dissociation, current–voltage characteristic, Faraday’s laws, deposition of copper from CuSO₄'] },
+    { o: ['mechanika'],
+      sk: ['Energia hmotného bodu', 'Kinetická a potenciálna energia, zákon zachovania mechanickej energie, voľný pád'],
+      en: ['Energy of a particle', 'Kinetic and potential energy, conservation of mechanical energy, free fall'] },
+    { o: ['elektrina', 'magnetizmus'],
+      sk: ['Účinnosť transformátora', 'Experiment: príkon a výkon, straty vo vinutí a v jadre'],
+      en: ['Efficiency of a transformer', 'Experiment: input and output power, copper and core losses'] },
+  ]},
   { n: 15, casti: [
     { o: ['elektrina'],
       sk: ['Elektrické pole', 'Náboj, intenzita, Coulombov zákon, kapacita, sériové a paralelné zapojenie kondenzátorov'],

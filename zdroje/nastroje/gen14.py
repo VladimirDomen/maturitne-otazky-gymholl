@@ -1,0 +1,133 @@
+"""Vzor 14 (bez zdrojového HTML – obsah písaný priamo) -> Vzor14_zadanie.html + Vzor14_vypracovanie.html.
+Spustenie: python -I gen14.py <priečinok FYZIKA>"""
+import sys, pathlib
+
+DST = pathlib.Path(sys.argv[1])
+N = 14
+TOPICS = ['Elektrický prúd v elektrolytoch', 'Energia hmotného bodu', 'Účinnosť transformátora']
+
+def page(n, kind, parts):
+    vyp = kind == 'vyp'
+    label = 'Vypracovanie' if vyp else 'Zadanie'
+    sub = 'Podrobné vypracovanie s vysvetlením' if vyp else 'Fyzika · 3 tematické časti'
+    body = ''.join(f'\n<section class="sheet" id="cast-{i}"><div class="topline">Časť {i} z {len(parts)}</div>\n{p.strip()}\n</section>\n'
+                   for i, p in enumerate(parts, 1))
+    z_on, v_on = ('', ' class="on"') if vyp else (' class="on"', '')
+    return f'''<!DOCTYPE html>
+<html lang="sk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Vzor {n} – {label}</title>
+<link rel="stylesheet" href="mo.css">
+</head>
+<body class="{'vyp' if vyp else 'zad'}">
+
+<header class="mo-head"><div class="mo-head-in">
+<div class="mo-kicker"><span class="mo-num">VZOR {n}</span><span class="mo-kind">{label}</span></div>
+<h1>{' · '.join(TOPICS)}</h1>
+<p>{sub}</p>
+</div></header>
+
+<nav class="mo-bar"><div class="mo-bar-in">
+<a class="mo-back" href="index.html">← Všetky vzory</a>
+<div class="mo-switch"><a href="Vzor{n}_zadanie.html"{z_on}>Zadanie</a><a href="Vzor{n}_vypracovanie.html"{v_on}>Vypracovanie</a></div>
+<button type="button" onclick="window.print()">Tlačiť / PDF</button>
+<a class="mo-lang" href="en/Model{n}_{'solutions' if vyp else 'questions'}.html" hreflang="en" title="English version">EN</a>
+</div></nav>
+
+<main class="wrap">
+{body}
+</main>
+
+<footer class="mo-foot"><a href="index.html">← Všetky vzory</a><span>Vzor {n} · {label}</span></footer>
+<script src="mo.js"></script>
+</body>
+</html>
+'''
+
+# ---------- obrázky ----------
+T = 'font-size="16" fill="#193b59"'
+
+ELEKTROLYZA = f'''<svg class="diagram" viewBox="0 0 560 330" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Elektrolýza roztoku síranu meďnatého medzi dvoma medenými elektródami; katióny medi idú ku katóde, síranové anióny k anóde"><rect x="112" y="140" width="336" height="148" fill="#d6e8f5"/><g stroke="#193b59" stroke-width="3" fill="none"><path d="M110 100V290H450V100"/><path d="M178 80V40H264M278 40H316M344 40H382V80"/><path d="M264 24V56"/><path d="M278 32V48" stroke-width="7"/><circle cx="330" cy="40" r="14" fill="#fff"/></g><g stroke="#7a4a1c" stroke-width="2"><rect x="170" y="80" width="16" height="180" fill="#b87333"/><rect x="374" y="80" width="16" height="180" fill="#b87333"/></g><rect x="368" y="140" width="6" height="120" fill="#8a4f1f"/><g stroke="#c0392b" stroke-width="2.5" fill="none"><path d="M300 192H346M338 186L348 192L338 198"/></g><g stroke="#26724c" stroke-width="2.5" fill="none"><path d="M262 228H214M222 222L212 228L222 234"/></g><g {T}><text x="324" y="46">A</text><text x="250" y="20">+</text><text x="284" y="20">−</text><text x="128" y="316">anóda (+)</text><text x="330" y="316">katóda (−)</text><text x="222" y="278" font-size="15">roztok CuSO₄</text></g><text x="296" y="182" font-size="15" fill="#c0392b">Cu²⁺</text><text x="226" y="218" font-size="15" fill="#26724c">SO₄²⁻</text></svg>'''
+
+VA_ELEKTROLYT = '''<svg class="diagram" viewBox="0 0 540 290" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Voltampérová charakteristika elektrolytického vodiča: s medenými elektródami priamka z počiatku, s inertnými elektródami prúd tečie až nad rozkladným napätím"><g stroke="#193b59" stroke-width="2" fill="none"><path d="M70 262V30M60 250H490M64 42L70 30L76 42M478 244L490 250L478 256"/></g><path d="M190 244V256" stroke="#193b59" stroke-width="2"/><path d="M70 250L400 60" stroke="#c0392b" stroke-width="3" fill="none"/><path d="M70 250L190 246L460 90" stroke="#2f6db3" stroke-width="3" fill="none"/><g font-size="14" fill="#253d51"><text x="62" y="268">0</text><text x="82" y="34">I</text><text x="474" y="272">U</text><text x="182" y="274">Uᵣ</text></g><text x="385" y="58" font-size="14" fill="#c0392b" text-anchor="end">Cu elektródy v CuSO₄</text><text x="392" y="200" font-size="14" fill="#2f6db3">inertné elektródy</text></svg>'''
+
+# voľný pád: 45 m = 250 px, zem y = 290
+def ypad(t):
+    return 40 + 250 * (5 * t * t) / 45
+
+def pad(vyp):
+    if vyp:
+        gul = ''.join(f'<circle cx="200" cy="{ypad(t) - (9 if t == 3 else 0):.1f}" r="9" fill="{"#c0392b" if t == 0 else "#e8a093"}" stroke="#c0392b" stroke-width="2"/>' for t in range(4))
+        txt = ''.join(f'<text x="250" y="{ypad(t) + (5 if t < 3 else -12):.1f}">t = {t} s · h = {45 - 5 * t * t} m · v = {10 * t} m/s</text>' for t in range(4))
+        return ('<svg class="diagram" viewBox="0 0 560 310" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Poloha telesa pri voľnom páde z výšky 45 m v časoch 0, 1, 2 a 3 sekundy">'
+                '<path d="M40 290H520" stroke="#6b5232" stroke-width="4"/><g stroke="#637889" stroke-width="1.5" fill="none" stroke-dasharray="4 4"><path d="M209 40H244M209 67.8H244M209 151.1H244M209 281H244"/></g>'
+                f'<g stroke="#193b59" stroke-width="1.5" fill="none"><path d="M120 40V290M114 40H126M114 290H126"/></g>{gul}'
+                f'<g font-size="15" fill="#193b59"><text x="60" y="170">45 m</text>{txt}</g></svg>')
+    return ('<svg class="diagram" viewBox="0 0 560 310" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Teleso s hmotnosťou 1 kg vo výške 45 m nad zemou, poloha v čase 1 s nie je známa">'
+            '<path d="M40 290H520" stroke="#6b5232" stroke-width="4"/><g stroke="#637889" stroke-width="1.5" fill="none" stroke-dasharray="4 4"><path d="M209 40H244M209 67.8H244"/></g>'
+            '<g stroke="#193b59" stroke-width="1.5" fill="none"><path d="M120 40V290M114 40H126M114 290H126"/></g>'
+            '<circle cx="200" cy="40" r="9" fill="#c0392b" stroke="#c0392b" stroke-width="2"/><circle cx="200" cy="67.8" r="9" fill="#fff" stroke="#c0392b" stroke-width="2" stroke-dasharray="3 3"/>'
+            '<path d="M200 90V130M194 120L200 132L206 120" stroke="#c0392b" stroke-width="2.5" fill="none"/>'
+            '<g font-size="15" fill="#193b59"><text x="50" y="170">h = 45 m</text><text x="250" y="45">t = 0 s · m = 1 kg · v = 0</text><text x="250" y="73">t = 1 s · h₁ = ?</text><text x="250" y="278">zem (Eₚ = 0)</text></g></svg>')
+
+PAD_Z = pad(False)
+PAD_V = pad(True)
+
+def graf_energie():
+    X = lambda t: 70 + 120 * t
+    Y = lambda e: 250 - 0.44 * e
+    ts = [i / 10 for i in range(31)]
+    ep = ' '.join(f'{X(t):.0f},{Y(450 - 50 * t * t):.1f}' for t in ts)
+    ek = ' '.join(f'{X(t):.0f},{Y(50 * t * t):.1f}' for t in ts)
+    grid = ''.join(f'M70 {Y(e):.0f}H470' for e in (100, 200, 300, 400)) + ''.join(f'M{X(t)} 250V40' for t in (1, 2, 3))
+    yl = ''.join(f'<text x="{30}" y="{Y(e) + 5:.0f}">{e}</text>' for e in (100, 200, 300, 400))
+    xl = ''.join(f'<text x="{X(t) - 4}" y="270">{t}</text>' for t in (0, 1, 2, 3))
+    return ('<svg class="diagram" viewBox="0 0 520 290" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Graf kinetickej a potenciálnej energie od času pri voľnom páde; ich súčet je stále 450 J">'
+            f'<g stroke="#dbe5ee" stroke-width="1"><path d="{grid}"/></g>'
+            '<g stroke="#193b59" stroke-width="2" fill="none"><path d="M70 262V25M60 250H490M64 37L70 25L76 37M478 244L490 250L478 256"/></g>'
+            f'<path d="M70 {Y(450):.0f}H430" stroke="#637889" stroke-width="2.5" stroke-dasharray="7 5"/>'
+            f'<polyline points="{ep}" fill="none" stroke="#2f6db3" stroke-width="3"/><polyline points="{ek}" fill="none" stroke="#c0392b" stroke-width="3"/>'
+            f'<g font-size="14" fill="#253d51">{yl}{xl}<text x="80" y="22">E (J)</text><text x="462" y="272">t (s)</text></g>'
+            f'<text x="210" y="{Y(450) - 10:.0f}" font-size="14" fill="#637889">E = Eₖ + Eₚ = 450 J</text>'
+            f'<text x="436" y="72" font-size="15" fill="#c0392b">Eₖ</text><text x="436" y="238" font-size="15" fill="#2f6db3">Eₚ</text></svg>')
+
+GRAF_E = graf_energie()
+
+def cievka(x1, x2, ys):
+    return ''.join(f'M{x1} {y}H{x2}' for y in ys)
+
+TRANSFORMATOR = ('<svg class="diagram" viewBox="0 0 680 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Zapojenie na meranie účinnosti transformátora: zdroj, ampérmeter A1 a voltmeter V1 na primárnej cievke; ampérmeter A2, voltmeter V2 a záťaž R na sekundárnej cievke">'
+                 '<path d="M250 60H390V220H250ZM275 85V195H365V85Z" fill="#b9c4cf" fill-rule="evenodd" stroke="#637889" stroke-width="1.5"/>'
+                 f'<g stroke="#b87333" stroke-width="4" fill="none"><path d="{cievka(244, 281, range(100, 185, 12))}{cievka(359, 396, range(104, 177, 18))}"/></g>'
+                 '<g stroke="#193b59" stroke-width="3" fill="none">'
+                 '<path d="M60 116V40H136M164 40H230V100H244M244 184H230V240H60V164"/><path d="M190 40V126M190 154V240"/>'
+                 '<path d="M396 104H410V40H486M514 40H580V110M580 170V240H410V176H396"/><path d="M450 40V126M450 154V240"/>'
+                 '<rect x="568" y="110" width="24" height="60" fill="#fff"/>'
+                 '<circle cx="60" cy="140" r="24" fill="#fff"/><circle cx="150" cy="40" r="14" fill="#fff"/><circle cx="190" cy="140" r="14" fill="#fff"/>'
+                 '<circle cx="500" cy="40" r="14" fill="#fff"/><circle cx="450" cy="140" r="14" fill="#fff"/></g>'
+                 '<g fill="#193b59"><circle cx="190" cy="40" r="4"/><circle cx="190" cy="240" r="4"/><circle cx="450" cy="40" r="4"/><circle cx="450" cy="240" r="4"/></g>'
+                 f'<g {T}><text x="50" y="148" font-size="22">~</text><text x="141" y="46">A₁</text><text x="181" y="146">V₁</text><text x="491" y="46">A₂</text><text x="441" y="146">V₂</text>'
+                 '<text x="200" y="210">N₁</text><text x="416" y="210">N₂</text><text x="300" y="50">jadro</text><text x="600" y="146">záťaž R</text></g></svg>')
+
+# ---------- zadanie ----------
+Z1 = f'''<h2>1. Elektrický prúd v elektrolytoch</h2><div class="task"><ol><li>Vysvetlite, čo je elektrolyt a elektrolytická disociácia. Čo sú nosiče náboja v elektrolytickom vodiči a ako sa pohybujú?</li><li>Opíšte voltampérovú charakteristiku elektrolytického vodiča. Kedy platí Ohmov zákon a čo je rozkladné napätie?</li><li>Sformulujte Faradayove zákony elektrolýzy a opíšte veličiny, ktoré v nich vystupujú.</li><li>Popíšte technické využitie elektrolýzy.</li></ol><p><strong>Úloha:</strong> Pri elektrolýze roztoku síranu meďnatého CuSO₄ prechádza obvodom stály prúd <strong>I = 3 A</strong>. Na katóde sa vylúčila meď s hmotnosťou <strong>m = 1,778 g</strong>. Elektrochemický ekvivalent medi je <strong>A = 0,33 · 10⁻⁶ kg·C⁻¹</strong>.</p>{ELEKTROLYZA}<ol type="a"><li>Aký elektrický náboj prešiel elektrolytom?</li><li>Za aký čas sa meď vylúčila?</li><li>Overte hodnotu elektrochemického ekvivalentu z 2. Faradayovho zákona (M<sub>Cu</sub> = 63,5 g·mol⁻¹, meď je v roztoku dvojmocná).</li><li>Koľko atómov medi sa vylúčilo a koľko elektrónov pritom prešlo obvodom?</li></ol></div>'''
+
+Z2 = f'''<h2>2. Energia hmotného bodu</h2><div class="task"><ol><li>Definujte kinetickú a potenciálnu tiažovú energiu hmotného bodu. Od čoho závisí potenciálna energia?</li><li>Vysvetlite súvis zmeny energie s vykonanou prácou.</li><li>Sformulujte zákon zachovania mechanickej energie. Za akých podmienok platí?</li></ol><p><strong>Úloha:</strong> Teleso s hmotnosťou <strong>m = 1 kg</strong> voľne padá z výšky <strong>h = 45 m</strong> nad zemou, začiatočná rýchlosť je nulová. Odpor vzduchu zanedbajte, g = 10 m/s². Potenciálnu energiu počítajte vzhľadom na povrch zeme.</p>{PAD_Z}<ol type="a"><li>Vypočítajte kinetickú a potenciálnu energiu telesa v čase t = 0 s.</li><li>Určte polohu telesa (výšku h₁ nad zemou) a jeho rýchlosť v čase t = 1 s.</li><li>Vypočítajte kinetickú a potenciálnu energiu v čase t = 1 s.</li><li>Porovnajte zmenu kinetickej a potenciálnej energie za prvú sekundu pádu.</li><li>Na výsledkoch overte zákon zachovania mechanickej energie. S akou rýchlosťou teleso dopadne?</li></ol></div>'''
+
+Z3 = '''<h2>3. Experiment – účinnosť transformátora</h2><div class="task"><p>Experimentálne určte účinnosť transformátora. Navrhnite zapojenie, postup merania a spracovanie výsledkov. Vysvetlite, čím sú spôsobené straty energie v transformátore a ako sa dajú zmenšiť.</p></div>'''
+
+# ---------- vypracovanie ----------
+V1 = f'''<h2>1. Elektrický prúd v elektrolytoch</h2><h3>1.1 Elektrolyt a elektrolytická disociácia</h3><p><strong>Elektrolyt</strong> je roztok alebo tavenina látky, ktorá sa rozpadá na ióny – sú to kyseliny, zásady a soli. Rozpad molekúl na ióny pôsobením rozpúšťadla (napr. vody) sa volá <strong>elektrolytická disociácia</strong>:</p><div class="formula">CuSO₄ → Cu²⁺ + SO₄²⁻</div><p>Ióny sa môžu opäť spájať (rekombinácia). Podiel disociovaných molekúl udáva stupeň disociácie.</p><p>Nosičmi náboja v elektrolyte sú <strong>ióny</strong>. Po pripojení napätia vznikne v elektrolyte elektrické pole: kladné <strong>katióny</strong> sa pohybujú ku katóde (záporná elektróda), záporné <strong>anióny</strong> k anóde (kladná elektróda). Na elektródach sa ióny vylučujú. Vedenie prúdu je spojené s prenosom látky a s chemickými zmenami – <strong>elektrolýzou</strong>. Elektrolyty preto nazývame vodiče 2. triedy (kovy sú vodiče 1. triedy).</p>{ELEKTROLYZA}<p>Pri elektrolýze CuSO₄ s medenými elektródami:</p><div class="formula">katóda: Cu²⁺ + 2e⁻ → Cu &nbsp;&nbsp;&nbsp; anóda: Cu → Cu²⁺ + 2e⁻</div><p>Na katóde pribúda meď a medená anóda sa rovnakou rýchlosťou rozpúšťa. Koncentrácia roztoku sa nemení.</p><h3>1.2 Voltampérová charakteristika</h3>{VA_ELEKTROLYT}<p><strong>Elektródy sa nemenia</strong> (napr. medené elektródy v roztoku CuSO₄): charakteristika je priamka prechádzajúca počiatkom a pre elektrolyt platí Ohmov zákon I = U/R.</p><p><strong>Inertné elektródy</strong> (napr. platinové alebo uhlíkové v zriedenej kyseline): produkty elektrolýzy sa usadia na elektródach a vytvoria s elektrolytom galvanický článok. Jeho napätie pôsobí proti vonkajšiemu napätiu (polarizácia elektród). Prúd začne výraznejšie tiecť až po prekročení <strong>rozkladného napätia U<sub>r</sub></strong>, potom približne platí:</p><div class="formula">I = (U − U<sub>r</sub>)/R</div><p>Pri elektrolýze vody je rozkladné napätie približne 1,7 V. Odpor elektrolytu s rastúcou teplotou <strong>klesá</strong> – pribúda disociovaných iónov a zmenšuje sa viskozita roztoku.</p><h3>1.3 Faradayove zákony</h3><p><strong>1. Faradayov zákon:</strong> hmotnosť látky vylúčenej na elektróde je priamo úmerná náboju, ktorý prešiel elektrolytom:</p><div class="formula">m = A · Q = A · I · t</div><p><strong>2. Faradayov zákon:</strong> elektrochemický ekvivalent látky je priamo úmerný jej molárnej hmotnosti a nepriamo úmerný počtu elementárnych nábojov iónu:</p><div class="formula">A = M/(F · z) &nbsp;&nbsp; → &nbsp;&nbsp; m = M · I · t/(F · z)</div><table><tr><th>Veličina</th><th>Význam</th><th>Jednotka</th></tr><tr><td>m</td><td>hmotnosť vylúčenej látky</td><td>kg</td></tr><tr><td>Q = It</td><td>náboj, ktorý prešiel elektrolytom</td><td>C</td></tr><tr><td>A</td><td>elektrochemický ekvivalent – hmotnosť látky vylúčenej nábojom 1 C</td><td>kg·C⁻¹</td></tr><tr><td>M</td><td>molárna hmotnosť látky</td><td>kg·mol⁻¹</td></tr><tr><td>z</td><td>počet elementárnych nábojov iónu (mocenstvo)</td><td>–</td></tr><tr><td>F</td><td>Faradayova konštanta F = N<sub>A</sub>e ≈ 96 485 C·mol⁻¹ – náboj potrebný na vylúčenie 1 mólu jednomocnej látky</td><td>C·mol⁻¹</td></tr></table><h3>1.4 Technické využitie</h3><ul><li><strong>Galvanické pokovovanie</strong> – poniklovanie, pochrómovanie, pozlátenie; predmet je katóda, ochrana proti korózii a vzhľad.</li><li><strong>Galvanoplastika</strong> – kovové kópie predmetov a foriem.</li><li><strong>Elektrolytická rafinácia</strong> – výroba veľmi čistej medi (nečistá meď je anóda, čistá sa vylučuje na katóde).</li><li><strong>Výroba kovov a látok</strong> – hliník elektrolýzou taveniny oxidu hlinitého, sodík, chlór a hydroxid sodný, vodík elektrolýzou vody.</li><li><strong>Eloxovanie</strong> – anodická oxidácia hliníka, ochranná vrstva.</li><li><strong>Akumulátory</strong> – nabíjanie je elektrolýza; ďalej elektrolytické kondenzátory a elektrolytické leštenie.</li></ul><h3>1.5 Riešenie úlohy</h3><p>Zadané: I = 3 A, m = 1,778 g = 1,778 · 10⁻³ kg, A = 0,33 · 10⁻⁶ kg·C⁻¹.</p><p><strong>a)</strong> Z 1. Faradayovho zákona m = AQ:</p><div class="formula">Q = m/A = 1,778 · 10⁻³ kg / (0,33 · 10⁻⁶ kg·C⁻¹) ≈ 5 390 C</div><p><strong>b)</strong> Pri stálom prúde Q = It:</p><div class="formula">t = Q/I = m/(A · I) = 1,778 · 10⁻³ / (0,33 · 10⁻⁶ · 3) s ≈ 1 800 s = 30 min</div><p><strong>c)</strong> Meď je v roztoku vo forme iónov Cu²⁺, teda z = 2:</p><div class="formula">A = M/(F · z) = 63,5 · 10⁻³ kg·mol⁻¹ / (96 485 C·mol⁻¹ · 2) ≈ 0,329 · 10⁻⁶ kg·C⁻¹</div><p>Hodnota zo zadania je zaokrúhlená správne.</p><p><strong>d)</strong> Látkové množstvo vylúčenej medi a počet atómov:</p><div class="formula">n = m/M = 1,778 g / 63,5 g·mol⁻¹ = 0,028 mol<br>N = n · N<sub>A</sub> = 0,028 mol · 6,022 · 10²³ mol⁻¹ ≈ 1,69 · 10²² atómov</div><p>Každý ión Cu²⁺ potrebuje na katóde dva elektróny. Počet elektrónov určíme aj z náboja:</p><div class="formula">N<sub>e</sub> = Q/e = 5 390 C / 1,602 · 10⁻¹⁹ C ≈ 3,36 · 10²² ≈ 2N</div><div class="result"><strong>Q ≈ 5,4 · 10³ C, t ≈ 1 800 s = 30 min; vylúčilo sa asi 1,7 · 10²² atómov medi a prešlo asi 3,4 · 10²² elektrónov.</strong></div>'''
+
+V2 = f'''<h2>2. Energia hmotného bodu</h2><h3>2.1 Kinetická a potenciálna energia</h3><p><strong>Kinetická energia</strong> je energia, ktorú má teleso vďaka svojmu pohybu:</p><div class="formula">E<sub>k</sub> = ½ m v² &nbsp;&nbsp; [E] = J</div><p><strong>Potenciálna tiažová energia</strong> je energia, ktorú má teleso vďaka svojej polohe v tiažovom poli. V homogénnom poli pri povrchu Zeme:</p><div class="formula">E<sub>p</sub> = m g h</div><p>Výška h sa meria od zvolenej nulovej hladiny, preto potenciálna energia závisí od jej voľby – fyzikálny význam majú len jej <strong>zmeny</strong>. Potenciálnu energiu má aj pružne deformované teleso (pružina): E<sub>p</sub> = ½ k y².</p><h3>2.2 Energia a práca</h3><p>Práca výslednej sily sa rovná zmene kinetickej energie telesa:</p><div class="formula">W = ΔE<sub>k</sub> = ½ m v₂² − ½ m v₁²</div><p>Tiažová sila vykoná pri poklese telesa o výšku Δh prácu W = mgΔh a potenciálna energia sa o rovnakú hodnotu zmenší: W = −ΔE<sub>p</sub>. Keď teleso zdvíhame, vonkajšia sila koná prácu a potenciálna energia rastie.</p><h3>2.3 Zákon zachovania mechanickej energie</h3><p>Súčet kinetickej a potenciálnej energie je <strong>mechanická energia</strong> E = E<sub>k</sub> + E<sub>p</sub>.</p><p><strong>Zákon zachovania mechanickej energie:</strong> v izolovanej sústave, v ktorej pôsobia len konzervatívne sily (tiažová, pružná), je mechanická energia stála:</p><div class="formula">E<sub>k</sub> + E<sub>p</sub> = konšt. &nbsp;&nbsp; → &nbsp;&nbsp; ΔE<sub>k</sub> = −ΔE<sub>p</sub></div><p>Energia sa len mení z jednej formy na druhú. Ak pôsobí trenie alebo odpor prostredia, časť mechanickej energie sa mení na vnútornú energiu telies a prostredia. Celková energia sa zachováva vždy (zákon zachovania energie).</p><h3>2.4 Riešenie úlohy</h3><p>Zadané: m = 1 kg, h = 45 m, v₀ = 0, g = 10 m/s². Teleso koná rovnomerne zrýchlený pohyb so zrýchlením g.</p><p><strong>a)</strong> Čas t = 0 s: teleso je v pokoji vo výške 45 m.</p><div class="formula">E<sub>k0</sub> = 0 J &nbsp;&nbsp;&nbsp; E<sub>p0</sub> = m g h = 1 · 10 · 45 J = 450 J</div><p><strong>b)</strong> Za prvú sekundu teleso prejde dráhu:</p><div class="formula">s = ½ g t² = ½ · 10 · 1² m = 5 m &nbsp; → &nbsp; h₁ = h − s = 45 m − 5 m = 40 m<br>v₁ = g t = 10 m/s² · 1 s = 10 m/s</div><p><strong>c)</strong> Energie v čase t = 1 s:</p><div class="formula">E<sub>k1</sub> = ½ m v₁² = ½ · 1 · 10² J = 50 J &nbsp;&nbsp;&nbsp; E<sub>p1</sub> = m g h₁ = 1 · 10 · 40 J = 400 J</div><p><strong>d)</strong> Zmeny energií za prvú sekundu:</p><div class="formula">ΔE<sub>k</sub> = 50 J − 0 J = +50 J &nbsp;&nbsp;&nbsp; ΔE<sub>p</sub> = 400 J − 450 J = −50 J</div><p>Kinetická energia vzrástla presne o toľko, o koľko klesla potenciálna. Rovnakú hodnotu má práca tiažovej sily: W = mgs = 1 · 10 · 5 J = 50 J.</p><p><strong>e)</strong> Mechanická energia je v oboch okamihoch rovnaká:</p><div class="formula">E = E<sub>k0</sub> + E<sub>p0</sub> = 0 J + 450 J = 450 J &nbsp;&nbsp;&nbsp; E = E<sub>k1</sub> + E<sub>p1</sub> = 50 J + 400 J = 450 J</div><p>Pri dopade (h = 0) je všetka energia kinetická:</p><div class="formula">½ m v² = m g h &nbsp; → &nbsp; v = √(2gh) = √(2 · 10 · 45) m/s = 30 m/s</div><p>Doba pádu: t = v/g = 3 s. Prehľad pre celé sekundy:</p>{PAD_V}<table><tr><th>t (s)</th><th>h (m)</th><th>v (m/s)</th><th>E<sub>k</sub> (J)</th><th>E<sub>p</sub> (J)</th><th>E (J)</th></tr><tr><td>0</td><td>45</td><td>0</td><td>0</td><td>450</td><td>450</td></tr><tr><td>1</td><td>40</td><td>10</td><td>50</td><td>400</td><td>450</td></tr><tr><td>2</td><td>25</td><td>20</td><td>200</td><td>250</td><td>450</td></tr><tr><td>3</td><td>0</td><td>30</td><td>450</td><td>0</td><td>450</td></tr></table>{GRAF_E}<p>Kinetická energia nerastie s časom rovnomerne (E<sub>k</sub> = ½ m g² t²), ale rovnomerne s dráhou pádu: E<sub>k</sub> = m g s. Za prvú sekundu teleso získa 50 J, za tretiu až 250 J, lebo za ňu prejde dráhu 25 m.</p><div class="result"><strong>t = 0 s: E<sub>k</sub> = 0 J, E<sub>p</sub> = 450 J; t = 1 s: h₁ = 40 m, v₁ = 10 m/s, E<sub>k</sub> = 50 J, E<sub>p</sub> = 400 J; ΔE<sub>k</sub> = −ΔE<sub>p</sub> = 50 J, E = 450 J; dopad rýchlosťou 30 m/s.</strong></div><p class="subtle">Pri g = 9,81 m/s² je E<sub>p0</sub> ≈ 441 J, h₁ ≈ 40,1 m, v₁ ≈ 9,8 m/s, E<sub>k1</sub> ≈ 48 J a E<sub>p1</sub> ≈ 393 J; súčet je opäť stály.</p>'''
+
+V3 = f'''<h2>3. Experiment – účinnosť transformátora</h2><h3>3.1 Teória</h3><p>Transformátor mení striedavé napätie. Má dve cievky na spoločnom uzavretom jadre z feromagnetických plechov. Striedavý prúd v <strong>primárnej cievke</strong> (N₁ závitov) vytvára v jadre premenlivý magnetický tok. Ten v <strong>sekundárnej cievke</strong> (N₂ závitov) indukuje striedavé napätie s rovnakou frekvenciou. Pre ideálny transformátor platí:</p><div class="formula">U₂/U₁ = N₂/N₁ = k &nbsp;&nbsp;&nbsp; I₂/I₁ ≈ N₁/N₂</div><p><strong>Účinnosť</strong> je podiel výkonu odovzdaného do záťaže (P₂) a príkonu odoberaného zo zdroja (P₁):</p><div class="formula">η = P₂/P₁ = (U₂ I₂)/(U₁ I₁) · 100 %</div><p>Vzťah platí, keď je záťaž odporová (žiarovka, rezistor) a transformátor je dostatočne zaťažený. Vtedy sú napätie a prúd približne vo fáze. Presne je príkon P₁ = U₁I₁ cos φ₁.</p><p><strong>Straty energie</strong> (P₁ − P₂ sa mení na vnútornú energiu):</p><ul><li><strong>straty vo vinutí</strong> – Joulovo teplo P = RI² v odpore cievok; zmenšia sa hrubším medeným drôtom,</li><li><strong>straty v jadre</strong> – vírivé prúdy (zmenšia sa jadrom zo vzájomne izolovaných tenkých plechov) a opakované premagnetovanie, hysterézia (zmenšia sa mäkkým feromagnetickým materiálom),</li><li><strong>rozptyl magnetického toku</strong> – časť toku prechádza mimo sekundárnej cievky; zmenší sa uzavretým jadrom bez medzier.</li></ul><p>Veľké transformátory v rozvodnej sieti majú účinnosť 98–99 %, malé školské transformátory zvyčajne 70–90 %.</p><h3>3.2 Pomôcky</h3><p>Rozoberateľný školský transformátor (napr. cievky so 600 a 300 závitmi, jadro v tvare U so spojkou), zdroj bezpečného striedavého napätia (napr. 12 V, 50 Hz), dva ampérmetre a dva voltmetre na striedavom rozsahu (alebo dva wattmetre), záťaž – rezistory alebo reostat (napr. 5–20 Ω, dimenzované na niekoľko wattov), vodiče.</p><h3>3.3 Zapojenie</h3>{TRANSFORMATOR}<p>V primárnom obvode meria ampérmeter A₁ prúd I₁ a voltmeter V₁ napätie U₁ na primárnej cievke. V sekundárnom obvode meria A₂ prúd I₂ cez záťaž a V₂ napätie U₂ na sekundárnej cievke.</p><h3>3.4 Postup</h3><ol><li>Zložíme transformátor s uzavretým jadrom (spojka dobre dosadá) a zapojíme obvod podľa schémy. Zapíšeme N₁ a N₂.</li><li>Najprv zmeriame napätia <strong>naprázdno</strong> (bez záťaže) a porovnáme pomer U₁/U₂ s pomerom N₁/N₂.</li><li>Pripojíme záťaž R a odčítame U₁, I₁, U₂, I₂. Meranie zopakujeme pre niekoľko rôznych záťaží.</li><li>Pre každé meranie vypočítame P₁ = U₁I₁, P₂ = U₂I₂ a η = P₂/P₁.</li><li>Na porovnanie môžeme odobrať spojku jadra – rozptyl toku vzrastie, U₂ klesne a účinnosť sa výrazne zmenší.</li></ol><h3>3.5 Ukážka vyhodnotenia</h3><p class="subtle">Nasledujúce čísla sú modelové údaje pre N₁ = 600, N₂ = 300 a U₁ = 12,0 V; nejde o skutočné meranie.</p><p>Naprázdno: U₂ = 5,9 V, U₁/U₂ ≈ 2,03 ≈ N₁/N₂ = 2.</p><table><tr><th>R (Ω)</th><th>I₁ (A)</th><th>P₁ (W)</th><th>U₂ (V)</th><th>I₂ (A)</th><th>P₂ (W)</th><th>η</th></tr><tr><td>20</td><td>0,19</td><td>2,28</td><td>5,7</td><td>0,285</td><td>1,62</td><td>71 %</td></tr><tr><td>10</td><td>0,33</td><td>3,96</td><td>5,6</td><td>0,56</td><td>3,14</td><td>79 %</td></tr><tr><td>5</td><td>0,62</td><td>7,44</td><td>5,4</td><td>1,08</td><td>5,83</td><td>78 %</td></tr></table><p>Napríklad pre R = 10 Ω:</p><div class="formula">η = (5,6 V · 0,56 A)/(12,0 V · 0,33 A) = 3,14 W / 3,96 W ≈ 0,79 = 79 %</div><p>Pri malej záťaži tvorí veľkú časť primárneho prúdu magnetizačný prúd, ktorý nesie len jalový výkon. Súčin U₁I₁ je vtedy väčší ako skutočný príkon a vypočítaná účinnosť vychádza menšia. Pri veľkom prúde rastú straty vo vinutí (RI²) a napätie U₂ klesá. Účinnosť je preto najväčšia pri strednom zaťažení.</p><h3>3.6 Nepresnosti a bezpečnosť</h3><p>Pracujeme len s bezpečným malým napätím – primárnu cievku nikdy nepripájame priamo na sieť 230 V. Obvod meníme len pri vypnutom zdroji. Záťaž musí vydržať daný výkon. Nepresnosť spôsobujú tolerancie meracích prístrojov na striedavom rozsahu, zanedbanie fázového posunu (cos φ₁) a vlastná spotreba prístrojov. Presnejšie výsledky dáva meranie príkonu a výkonu wattmetrami.</p><div class="result"><strong>Záver:</strong> Účinnosť určíme z η = U₂I₂/(U₁I₁). Školský transformátor s uzavretým jadrom dosahuje pri odporovej záťaži približne 70–80 %. Straty sú vo vinutí, v jadre a rozptylom magnetického toku.</div>'''
+
+for name, html in (('zadanie', page(N, 'zad', [Z1, Z2, Z3])), ('vypracovanie', page(N, 'vyp', [V1, V2, V3]))):
+    for bad in ('ekonštru', 'rukopis', 'MO14', 'Otázka', 'maturit'):
+        assert bad not in html, (name, bad)
+    (DST / f'Vzor{N}_{name}.html').write_text(html, encoding='utf-8', newline='\n')
+    print('ok', name, len(html))
