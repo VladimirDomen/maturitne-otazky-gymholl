@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Model 20 – Worked solutions</title>
+<link rel="stylesheet" href="../mo.css">
+</head>
+<body class="vyp">
+
+<header class="mo-head"><div class="mo-head-in">
+<div class="mo-kicker"><span class="mo-num">MODEL 20</span><span class="mo-kind">Worked solutions</span></div>
+<h1>Electromagnetic Induction · Gravitational Field · Surface Tension from Capillary Rise</h1>
+<p>Detailed worked solutions with explanations</p>
+</div></header>
+
+<nav class="mo-bar"><div class="mo-bar-in">
+<a class="mo-back" href="index.html">← All models</a>
+<div class="mo-switch"><a href="Model20_questions.html">Questions</a><a href="Model20_solutions.html" class="on">Solutions</a></div>
+<button type="button" onclick="window.print()">Print / PDF</button>
+<a class="mo-lang" href="../Vzor20_vypracovanie.html" hreflang="sk" title="Slovenská verzia">SK</a>
+</div></nav>
+
+<main class="wrap">
+
+<section class="sheet" id="cast-1"><div class="topline">Part 1 of 3</div>
+<h2>1. Electromagnetic Induction</h2>
+<h3>1.1 Magnetic flux</h3>
+<p><strong>The magnetic flux Φ</strong> through an area S in a uniform magnetic field of flux density B:</p>
+<div class="formula">Φ = B S cos α &nbsp;&nbsp; [Φ] = T·m² = Wb (weber)</div>
+<p>α is the angle between the flux density B and the normal to the area. Intuitively, it gives the “number of field lines” passing through the area. The flux is greatest when the area is perpendicular to the field lines (α = 0) and zero when the lines are parallel to the area.</p>
+<p>The flux can change with time in three ways: by a change of <strong>flux density B</strong> (moving a magnet closer, changing the current in a neighbouring coil), a change of <strong>area S</strong> (a moving conductor, changing the shape of a loop) or a change of <strong>angle α</strong> (rotating a loop in the field – a generator).</p>
+<h3>1.2 The phenomenon of electromagnetic induction</h3>
+<p>If the magnetic flux through an area bounded by a conductor changes, an <strong>electromotive force</strong> is induced in the conductor. In a closed circuit it drives an <strong>induced current</strong>. What matters is the <strong>change</strong> of flux, not its size: a stationary magnet at rest next to a coil induces no voltage. The phenomenon was discovered by M. Faraday in 1831. Experiments: pushing a magnet into a coil, switching the current in a neighbouring coil on and off, rotating a coil in a magnetic field.</p>
+<h3>1.3 Faraday’s and Lenz’s laws</h3>
+<p><strong>Faraday’s law:</strong> the induced voltage equals minus the rate of change of magnetic flux. For a coil with N turns:</p>
+<div class="formula">Uᵢ = −N · ΔΦ / Δt</div>
+<p><strong>Lenz’s law:</strong> the induced current flows in such a direction that its magnetic field <strong>opposes the change</strong> that produced it. The minus sign in Faraday’s law expresses Lenz’s law. It is a consequence of the conservation of energy: if the induced current assisted the change, energy would be created from nothing.</p>
+<svg class="diagram" viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A magnet approaches a coil with its north pole; the induced current creates a north pole in the coil facing the magnet, which repels it"><rect x="40" y="80" width="70" height="36" fill="#2f6db3"/><rect x="110" y="80" width="70" height="36" fill="#c0392b"/><g font-size="18" font-weight="bold" fill="#fff"><text x="68" y="105">S</text><text x="138" y="105">N</text></g><g stroke="#193b59" stroke-width="2.5" fill="none"><path d="M120 140H200M190 134L202 140L190 146"/></g><g stroke="#b87333" stroke-width="3" fill="none"><ellipse cx="280" cy="98" rx="9" ry="40"/><ellipse cx="300" cy="98" rx="9" ry="40"/><ellipse cx="320" cy="98" rx="9" ry="40"/><ellipse cx="340" cy="98" rx="9" ry="40"/><ellipse cx="360" cy="98" rx="9" ry="40"/><ellipse cx="380" cy="98" rx="9" ry="40"/><ellipse cx="400" cy="98" rx="9" ry="40"/><ellipse cx="420" cy="98" rx="9" ry="40"/><path d="M280 138V175H520V150M420 58V44H520V110"/></g><circle cx="520" cy="130" r="20" fill="#fff" stroke="#193b59" stroke-width="2.5"/><text x="512" y="136" font-size="16" fill="#193b59">G</text><g font-size="15"><text x="140" y="160" fill="#193b59">v</text><text x="244" y="60" fill="#c0392b">N</text><text x="434" y="150" fill="#2f6db3">S</text></g><g stroke="#c0392b" stroke-width="2" fill="none"><path d="M262 98H214M224 92L212 98L224 104"/></g><text x="150" y="22" font-size="13" fill="#637889">the induced current creates a pole that repels the magnet</text></svg>
+<p>Applications: generators in power stations, transformers, dynamo, induction hob, electromagnetic brake (eddy currents), inductive charging, sensors (electric guitar pickup, microphone).</p>
+<h3>1.4 Voltage across a moving conductor</h3>
+<p>If a conductor of length l moves with velocity v perpendicular to the field lines, in a time Δt it sweeps an area ΔS = l v Δt. The flux through it is ΔΦ = B l v Δt, and therefore:</p>
+<div class="formula">Uᵢ = ΔΦ / Δt = B l v</div>
+<p>The Lorentz force gives the same result: a force evB acts on the free electrons in the conductor along its length. The electrons accumulate at one end until their electric field balances the magnetic force.</p>
+<h3>1.5 Solution of the task</h3>
+<p>Given: l = 20 cm = 0.20 m, B = 0.1 T, Uᵢ = 0.01 V.</p>
+<svg class="diagram" viewBox="0 0 600 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A straight conductor 20 cm long moves with velocity v perpendicular to the field lines of a uniform magnetic field directed into the page"><rect x="10" y="10" width="580" height="200" rx="8" fill="#f3f7fb" stroke="#bccbdc"/><g stroke="#9fb3c8" stroke-width="1.4" fill="none"><g transform="translate(50 34)"><circle r="8"/><path d="M-4.5 -4.5L4.5 4.5M-4.5 4.5L4.5 -4.5"/></g><g transform="translate(50 186)"><circle r="8"/><path d="M-4.5 -4.5L4.5 4.5M-4.5 4.5L4.5 -4.5"/></g><g transform="translate(120 34)"><circle r="8"/><path d="M-4.5 -4.5L4.5 4.5M-4.5 4.5L4.5 -4.5"/></g><g transform="translate(120 186)"><circle r="8"/><path d="M-4.5 -4.5L4.5 4.5M-4.5 4.5L4.5 -4.5"/></g><g transform="translate(190 34)"><circle r="8"/><path d="M-4.5 -4.5L4.5 4.5M-4.5 4.5L4.5 -4.5"/></g><g transform="translate(190 186)"><circle r="8"/><path d="M-4.5 -4.5L4.5 4.5M-4.5 4.5L4.5 -4.5"/></g><g transform="translate(260 34)"><circle r="8"/><path d="M-4.5 -4.5L4.5 4.5M-4.5 4.5L4.5 -4.5"/></g><g transform="translate(260 186)"><circle r="8"/><path d="M-4.5 -4.5L4.5 4.5M-4.5 4.5L4.5 -4.5"/></g><g transform="translate(330 34)"><circle r="8"/><path d="M-4.5 -4.5L4.5 4.5M-4.5 4.5L4.5 -4.5"/></g><g transform="translate(330 186)"><circle r="8"/><path d="M-4.5 -4.5L4.5 4.5M-4.5 4.5L4.5 -4.5"/></g><g transform="translate(400 34)"><circle r="8"/><path d="M-4.5 -4.5L4.5 4.5M-4.5 4.5L4.5 -4.5"/></g><g transform="translate(400 186)"><circle r="8"/><path d="M-4.5 -4.5L4.5 4.5M-4.5 4.5L4.5 -4.5"/></g><g transform="translate(470 34)"><circle r="8"/><path d="M-4.5 -4.5L4.5 4.5M-4.5 4.5L4.5 -4.5"/></g><g transform="translate(470 186)"><circle r="8"/><path d="M-4.5 -4.5L4.5 4.5M-4.5 4.5L4.5 -4.5"/></g><g transform="translate(540 34)"><circle r="8"/><path d="M-4.5 -4.5L4.5 4.5M-4.5 4.5L4.5 -4.5"/></g><g transform="translate(540 186)"><circle r="8"/><path d="M-4.5 -4.5L4.5 4.5M-4.5 4.5L4.5 -4.5"/></g></g><path d="M220 60V160" stroke="#b87333" stroke-width="9" stroke-linecap="round"/><g stroke="#c0392b" stroke-width="3" fill="none"><path d="M234 110H340M328 103L342 110L328 117"/></g><g stroke="#637889" stroke-width="1.5" fill="none"><path d="M190 60V160M184 60H196M184 160H196"/></g><g fill="#193b59" font-size="13"><text x="226" y="58">+</text><text x="228" y="172">−</text></g><g font-size="16" fill="#193b59"><text x="120" y="115">l = 20 cm</text><text x="350" y="116" fill="#c0392b">v = 0.5 m/s</text><text x="420" y="78">B = 0.1 T</text><text x="250" y="160">Uᵢ = 0.01 V</text><text x="420" y="152" font-size="13" fill="#637889">B into the page</text></g></svg>
+<div class="formula">Uᵢ = B l v &nbsp; → &nbsp; v = Uᵢ / (B l) = 0.01 V / (0.1 T · 0.20 m) = 0.5 m/s</div>
+<p>Unit check: V/(T·m) = V/(V·s·m⁻²·m) = m/s.</p>
+<div class="result"><strong>The conductor moves at a speed of v = 0.5 m/s.</strong></div>
+</section>
+
+<section class="sheet" id="cast-2"><div class="topline">Part 2 of 3</div>
+<h2>2. Gravitational Field</h2>
+<h3>2.1 Newton’s law of gravitation</h3>
+<p>Any two bodies attract each other with gravitational forces. For particles (and also for uniform spheres, r being the distance between their centres):</p>
+<div class="formula">F = G · m₁ m₂ / r² &nbsp;&nbsp;&nbsp; G = 6.67 · 10⁻¹¹ N·m²·kg⁻²</div>
+<p>The size of the force is <strong>directly proportional to the product of the masses</strong> and <strong>inversely proportional to the square of the distance</strong>. The gravitational constant G is very small, so gravitational forces between everyday objects are imperceptible. They become significant only when at least one body is very massive (the Earth, the Sun).</p>
+<h3>2.2 Gravitational field and its strength</h3>
+<p>A gravitational field is the space around a body in which a gravitational force acts on other bodies. It is described by the <strong>gravitational field strength</strong> – the force acting on a body of mass 1 kg:</p>
+<div class="formula">K = F<sub>g</sub> / m = G M / r² &nbsp;&nbsp; [K] = N·kg⁻¹ = m·s⁻²</div>
+<p>The field strength points towards the centre of the body producing the field. The field of a particle (sphere) is <strong>radial</strong>; in a small region near the Earth’s surface we treat it as <strong>uniform</strong>. At the Earth’s surface K ≈ 9.8 N/kg.</p>
+<h3>2.3 Solution of the task</h3>
+<svg class="diagram" viewBox="0 0 650 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Two bodies attract each other gravitationally with forces of magnitude 12 N; the distance between their centres is r"><circle cx="120" cy="64" r="30" fill="#d6e7f5" stroke="#2f6db3" stroke-width="2"/><circle cx="520" cy="64" r="38" fill="#dbe9e2" stroke="#427866" stroke-width="2"/><g stroke="#2f6db3" stroke-width="3" fill="none"><path d="M152 64H262M250 57L264 64L250 71"/></g><g stroke="#427866" stroke-width="3" fill="none"><path d="M480 64H370M382 57L368 64L382 71"/></g><g stroke="#637889" stroke-width="1.5" fill="none"><path d="M120 120H520M120 113V127M520 113V127"/></g><g font-size="16" fill="#193b59"><text x="108" y="70">m₁</text><text x="508" y="70">m₂</text><text x="314" y="142">r</text><text x="168" y="96">F₁ = 12 N</text><text x="380" y="96">F₂ = 12 N</text></g></svg>
+<p><strong>a)</strong> By Newton’s third law (action and reaction) the second body exerts an equally large force of <strong>12 N</strong> on the first, in the opposite direction. Both forces lie on the line joining the centres and point towards the other body – the bodies attract. Each acts on a different body, so they do not cancel. The forces are equal even when the masses of the bodies are different. Only the accelerations they give the bodies are different.</p>
+<p><strong>b)</strong> The new force follows from the ratio; the constant G cancels:</p>
+<div class="formula">F′ / F = (m₁′ / m₁) · (m₂′ / m₂) · (r / r′)²</div>
+<table><tr><th>Change relative to the original state</th><th>Calculation</th><th>New force</th></tr><tr><td>r′ = 2r</td><td>12 N · 1/2²</td><td><strong>3 N</strong></td></tr><tr><td>r′ = r/2</td><td>12 N · 2²</td><td><strong>48 N</strong></td></tr><tr><td>m₁′ = 2m₁</td><td>12 N · 2</td><td><strong>24 N</strong></td></tr><tr><td>r′ = 2r, m₁′ = 2m₁</td><td>12 N · 2/2²</td><td><strong>6 N</strong></td></tr><tr><td>r′ = 2r, m₁′ = 2m₁, m₂′ = 2m₂</td><td>12 N · 2 · 2/2²</td><td><strong>12 N</strong></td></tr></table>
+<svg class="diagram" viewBox="0 0 520 290" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Graph of gravitational force against distance: at distance r the force is 12 N, at r/2 it is 48 N, at 2r it is 3 N"><g stroke="#e3eaf1" stroke-width="1"><path d="M70 202H480M70 154H480M70 106H480M70 58H480M140 250V40M210 250V40M350 250V40M490 250V40"/></g><g stroke="#193b59" stroke-width="2" fill="none"><path d="M70 262V25M60 250H500M64 37L70 25L76 37M488 244L500 250L488 256"/></g><polyline points="138.6,50.1 142.8,72.5 147.0,91.3 151.2,107.3 155.4,121.0 159.6,132.8 163.8,143.1 168.0,152.0 172.2,159.9 176.4,166.9 180.6,173.1 184.8,178.6 189.0,183.6 193.2,188.0 197.4,192.0 201.6,195.7 205.8,199.0 210.0,202.0 214.2,204.8 218.4,207.3 222.6,209.6 226.8,211.7 231.0,213.7 235.2,215.5 239.4,217.2 243.6,218.8 247.8,220.2 252.0,221.6 256.2,222.9 260.4,224.0 264.6,225.2 268.8,226.2 273.0,227.2 277.2,228.1 281.4,228.9 285.6,229.8 289.8,230.5 294.0,231.2 298.2,231.9 302.4,232.6 306.6,233.2 310.8,233.8 315.0,234.3 319.2,234.9 323.4,235.3 327.6,235.8 331.8,236.3 336.0,236.7 340.2,237.1 344.4,237.5 348.6,237.9 352.8,238.2 357.0,238.6 361.2,238.9 365.4,239.2 369.6,239.5 373.8,239.8 378.0,240.1 382.2,240.3 386.4,240.6 390.6,240.8 394.8,241.1 399.0,241.3 403.2,241.5 407.4,241.7 411.6,241.9 415.8,242.1 420.0,242.3 424.2,242.5 428.4,242.7 432.6,242.8 436.8,243.0 441.0,243.2 445.2,243.3 449.4,243.5 453.6,243.6 457.8,243.7 462.0,243.9 466.2,244.0 470.4,244.1 474.6,244.3 478.8,244.4 483.0,244.5 487.2,244.6" fill="none" stroke="#2f6db3" stroke-width="3"/><circle cx="140" cy="58" r="5" fill="#c0392b"/><circle cx="210" cy="202" r="5" fill="#c0392b"/><circle cx="350" cy="238" r="5" fill="#c0392b"/><g stroke="#637889" stroke-width="1.2" stroke-dasharray="4 4" fill="none"><path d="M70 58H140V250M70 202H210V250M70 238H350V250"/></g><g font-size="14" fill="#253d51"><text x="40" y="63">48</text><text x="40" y="207">12</text><text x="48" y="242">3</text><text x="128" y="270">r/2</text><text x="206" y="270">r</text><text x="340" y="270">2r</text><text x="484" y="270">3r</text><text x="80" y="22">F (N)</text><text x="496" y="228">r</text></g><text x="250" y="110" font-size="15" fill="#2f6db3">F ~ 1/r²</text></svg>
+<p>Distance has a greater effect than mass – it appears squared. Doubling the distance is exactly compensated by doubling both masses, so in the last case the force remains 12 N.</p>
+<div class="result"><strong>a) 12 N, opposite direction; b) 3 N, 48 N, 24 N, 6 N and 12 N.</strong></div>
+</section>
+
+<section class="sheet" id="cast-3"><div class="topline">Part 3 of 3</div>
+<h2>3. Experiment – Surface Tension from Capillary Rise</h2>
+<h3>3.1 Principle</h3>
+<p>Water wets clean glass well – water molecules are attracted to glass more than to each other. The water surface in a narrow tube (capillary) is therefore curved downwards (concave meniscus) and the water in the capillary rises above the surrounding surface – <strong>capillary rise</strong>. A liquid that does not wet the wall (mercury in glass) falls in the capillary instead – <strong>capillary depression</strong>.</p>
+<svg class="diagram" viewBox="0 0 600 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Water rises in a thin glass capillary to a height h above the water surface in the vessel"><path d="M90 45V210H510V45" fill="none" stroke="#61758b" stroke-width="4"/><rect x="92" y="134" width="416" height="74" fill="#d6e8f5"/><path d="M92 134H508" stroke="#3279a8" stroke-width="2"/><path d="M270 65Q283 75 296 65V182H270Z" fill="#b4def5"/><path d="M270 65Q283 75 296 65" fill="none" stroke="#3279a8" stroke-width="2"/><path d="M266 22V182M300 22V182" fill="none" stroke="#567083" stroke-width="5"/><g stroke="#c0392b" stroke-width="2" fill="none"><path d="M335 70V133M328 80L335 68L342 80M328 123L335 135L342 123"/><path d="M296 70H335M296 134H335" stroke-dasharray="3 3" stroke-width="1.2"/></g><g stroke="#193b59" stroke-width="1.5" fill="none"><path d="M270 196H296M270 191V201M296 191V201"/></g><g font-size="16" fill="#193b59"><text x="350" y="108">h</text><text x="312" y="34">capillary</text><text x="106" y="124">water surface</text><text x="304" y="202">2r</text></g></svg>
+<h3>3.2 Derivation</h3>
+<p>The surface force F = σ · 2πr acts along the edge of the meniscus (length 2πr). With perfect wetting (contact angle θ ≈ 0°) it points vertically upwards. Water rises until this force balances the weight of the water column of height h:</p>
+<div class="formula">2π r σ = ρ π r² h g</div>
+<div class="formula">σ = ρ g r h / 2 &nbsp;&nbsp;&nbsp; h = 2σ / (ρ g r)</div>
+<p>With imperfect wetting the force must be multiplied by cos θ; then σ = ρgrh / (2 cos θ). The height of the column is inversely proportional to the radius of the capillary: the thinner the capillary, the higher the water rises. That is why the internal radius r must be known.</p>
+<h3>3.3 Apparatus</h3>
+<p>Several clean glass capillaries with different internal diameters (0.5–2 mm), a wide vessel with water, a stand with a clamp, a ruler with a millimetre scale or a measuring magnifier, thermometer. The internal radius is found with a measuring magnifier on the cut end of the capillary, or indirectly: fill the capillary with water, weigh the water in a column of length L and calculate r from the volume V = πr²L.</p>
+<h3>3.4 Procedure</h3>
+<ol><li>Clean the capillaries (e.g. with detergent and rinse thoroughly with distilled water) so that wetting is perfect.</li>
+<li>Fix the capillary vertically and dip its lower end into the water. Draw the water in the capillary slightly higher and let it fall back to equilibrium – the meniscus settles more reliably.</li>
+<li>Read the height h from the outer water surface to the bottom of the meniscus.</li>
+<li>Repeat the measurement for the other capillaries and record the water temperature.</li>
+<li>For each capillary calculate σ = ρgrh/2 and average the results.</li>
+</ol>
+<h3>3.5 Sample evaluation</h3>
+<p class="subtle">The following numbers are model data for water at 20 °C, ρ = 998 kg/m³, g = 9.81 m/s²; they are not a real measurement.</p>
+<table><tr><th>Capillary</th><th>r (mm)</th><th>h (mm)</th><th>r · h (mm²)</th><th>σ (N/m)</th></tr><tr><td>1</td><td>0.25</td><td>59.4</td><td>14.9</td><td>0.0727</td></tr><tr><td>2</td><td>0.50</td><td>29.7</td><td>14.9</td><td>0.0727</td></tr><tr><td>3</td><td>1.00</td><td>14.9</td><td>14.9</td><td>0.0729</td></tr></table>
+<p>For example, for capillary 2:</p>
+<div class="formula">σ = ρ g r h / 2 = 998 · 9.81 · 0.50 · 10⁻³ · 29.7 · 10⁻³ / 2 N/m ≈ 0.0727 N/m</div>
+<p>The product r · h is the same for all capillaries, which confirms the inverse proportionality h ~ 1/r. The average σ ≈ 0.073 N/m agrees well with the table value of 0.0728 N/m at 20 °C.</p>
+<h3>3.6 Sources of error</h3>
+<ul><li>Dirt and grease on the capillary walls worsen wetting (cos θ &lt; 1) and the result comes out too small. Detergent lowers the surface tension of water.</li>
+<li>The largest relative error comes from determining the internal radius – it is small and appears directly in the formula.</li>
+<li>Reading the height h (parallax, curvature of the meniscus), a capillary that is not vertical.</li>
+<li>Temperature – surface tension decreases as the temperature rises.</li>
+</ul>
+<div class="result"><strong>Conclusion:</strong> The balance between the surface force and the weight of the water column gives σ = ρgrh/2. Measuring the capillary rise in capillaries of known radius gives σ ≈ 0.073 N/m for water.</div>
+</section>
+
+</main>
+
+<footer class="mo-foot"><a href="index.html">← All models</a><span>Model 20 · Worked solutions</span></footer>
+<script src="../mo.js"></script>
+</body>
+</html>

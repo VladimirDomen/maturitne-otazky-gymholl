@@ -231,6 +231,17 @@ const OTAZKY = [
       sk: ['Merné skupenské teplo topenia ľadu', 'Experiment: vnútorná energia, práca a teplo, kalorimetrická rovnica'],
       en: ['Specific latent heat of fusion of ice', 'Experiment: internal energy, work and heat, calorimetric equation'] },
   ]},
+  { n: 20, casti: [
+    { o: ['magnetizmus', 'elektrina'],
+      sk: ['Elektromagnetická indukcia', 'Magnetický indukčný tok, Faradayov a Lenzov zákon, rýchlosť vodiča z Uᵢ = Blv'],
+      en: ['Electromagnetic induction', 'Magnetic flux, Faraday’s and Lenz’s laws, speed of a conductor from Uᵢ = Blv'] },
+    { o: ['gravitacia'],
+      sk: ['Gravitačné pole', 'Newtonov gravitačný zákon, intenzita poľa, zmena sily pri zmene vzdialenosti a hmotností'],
+      en: ['Gravitational field', 'Newton’s law of gravitation, field strength, change of force with distance and masses'] },
+    { o: ['tekutiny', 'termika'],
+      sk: ['Povrchové napätie z kapilárnej elevácie', 'Experiment: kapilárna elevácia, σ = ρgrh/2'],
+      en: ['Surface tension from capillary rise', 'Experiment: capillary rise, σ = ρgrh/2'] },
+  ]},
   { n: 26, casti: [
     { o: ['mikrosvet', 'optika'],
       sk: ['Elektrónový obal atómu', 'Kvantovanie energie, emisné a absorpčné spektrum, energia fotónu'],

@@ -1,0 +1,75 @@
+<h2>1. Electromagnetic Induction</h2>
+<h3>1.1 Magnetic flux</h3>
+<p><strong>The magnetic flux Φ</strong> through an area S in a uniform magnetic field of flux density B:</p>
+<div class="formula">Φ = B S cos α &nbsp;&nbsp; [Φ] = T·m² = Wb (weber)</div>
+<p>α is the angle between the flux density B and the normal to the area. Intuitively, it gives the “number of field lines” passing through the area. The flux is greatest when the area is perpendicular to the field lines (α = 0) and zero when the lines are parallel to the area.</p>
+<p>The flux can change with time in three ways: by a change of <strong>flux density B</strong> (moving a magnet closer, changing the current in a neighbouring coil), a change of <strong>area S</strong> (a moving conductor, changing the shape of a loop) or a change of <strong>angle α</strong> (rotating a loop in the field – a generator).</p>
+<h3>1.2 The phenomenon of electromagnetic induction</h3>
+<p>If the magnetic flux through an area bounded by a conductor changes, an <strong>electromotive force</strong> is induced in the conductor. In a closed circuit it drives an <strong>induced current</strong>. What matters is the <strong>change</strong> of flux, not its size: a stationary magnet at rest next to a coil induces no voltage. The phenomenon was discovered by M. Faraday in 1831. Experiments: pushing a magnet into a coil, switching the current in a neighbouring coil on and off, rotating a coil in a magnetic field.</p>
+<h3>1.3 Faraday’s and Lenz’s laws</h3>
+<p><strong>Faraday’s law:</strong> the induced voltage equals minus the rate of change of magnetic flux. For a coil with N turns:</p>
+<div class="formula">Uᵢ = −N · ΔΦ / Δt</div>
+<p><strong>Lenz’s law:</strong> the induced current flows in such a direction that its magnetic field <strong>opposes the change</strong> that produced it. The minus sign in Faraday’s law expresses Lenz’s law. It is a consequence of the conservation of energy: if the induced current assisted the change, energy would be created from nothing.</p>
+{{SVG0}}
+<p>Applications: generators in power stations, transformers, dynamo, induction hob, electromagnetic brake (eddy currents), inductive charging, sensors (electric guitar pickup, microphone).</p>
+<h3>1.4 Voltage across a moving conductor</h3>
+<p>If a conductor of length l moves with velocity v perpendicular to the field lines, in a time Δt it sweeps an area ΔS = l v Δt. The flux through it is ΔΦ = B l v Δt, and therefore:</p>
+<div class="formula">Uᵢ = ΔΦ / Δt = B l v</div>
+<p>The Lorentz force gives the same result: a force evB acts on the free electrons in the conductor along its length. The electrons accumulate at one end until their electric field balances the magnetic force.</p>
+<h3>1.5 Solution of the task</h3>
+<p>Given: l = 20 cm = 0.20 m, B = 0.1 T, Uᵢ = 0.01 V.</p>
+{{SVG1}}
+<div class="formula">Uᵢ = B l v &nbsp; → &nbsp; v = Uᵢ / (B l) = 0.01 V / (0.1 T · 0.20 m) = 0.5 m/s</div>
+<p>Unit check: V/(T·m) = V/(V·s·m⁻²·m) = m/s.</p>
+<div class="result"><strong>The conductor moves at a speed of v = 0.5 m/s.</strong></div>
+<!--PART-->
+<h2>2. Gravitational Field</h2>
+<h3>2.1 Newton’s law of gravitation</h3>
+<p>Any two bodies attract each other with gravitational forces. For particles (and also for uniform spheres, r being the distance between their centres):</p>
+<div class="formula">F = G · m₁ m₂ / r² &nbsp;&nbsp;&nbsp; G = 6.67 · 10⁻¹¹ N·m²·kg⁻²</div>
+<p>The size of the force is <strong>directly proportional to the product of the masses</strong> and <strong>inversely proportional to the square of the distance</strong>. The gravitational constant G is very small, so gravitational forces between everyday objects are imperceptible. They become significant only when at least one body is very massive (the Earth, the Sun).</p>
+<h3>2.2 Gravitational field and its strength</h3>
+<p>A gravitational field is the space around a body in which a gravitational force acts on other bodies. It is described by the <strong>gravitational field strength</strong> – the force acting on a body of mass 1 kg:</p>
+<div class="formula">K = F<sub>g</sub> / m = G M / r² &nbsp;&nbsp; [K] = N·kg⁻¹ = m·s⁻²</div>
+<p>The field strength points towards the centre of the body producing the field. The field of a particle (sphere) is <strong>radial</strong>; in a small region near the Earth’s surface we treat it as <strong>uniform</strong>. At the Earth’s surface K ≈ 9.8 N/kg.</p>
+<h3>2.3 Solution of the task</h3>
+{{SVG2}}
+<p><strong>a)</strong> By Newton’s third law (action and reaction) the second body exerts an equally large force of <strong>12 N</strong> on the first, in the opposite direction. Both forces lie on the line joining the centres and point towards the other body – the bodies attract. Each acts on a different body, so they do not cancel. The forces are equal even when the masses of the bodies are different. Only the accelerations they give the bodies are different.</p>
+<p><strong>b)</strong> The new force follows from the ratio; the constant G cancels:</p>
+<div class="formula">F′ / F = (m₁′ / m₁) · (m₂′ / m₂) · (r / r′)²</div>
+<table><tr><th>Change relative to the original state</th><th>Calculation</th><th>New force</th></tr><tr><td>r′ = 2r</td><td>12 N · 1/2²</td><td><strong>3 N</strong></td></tr><tr><td>r′ = r/2</td><td>12 N · 2²</td><td><strong>48 N</strong></td></tr><tr><td>m₁′ = 2m₁</td><td>12 N · 2</td><td><strong>24 N</strong></td></tr><tr><td>r′ = 2r, m₁′ = 2m₁</td><td>12 N · 2/2²</td><td><strong>6 N</strong></td></tr><tr><td>r′ = 2r, m₁′ = 2m₁, m₂′ = 2m₂</td><td>12 N · 2 · 2/2²</td><td><strong>12 N</strong></td></tr></table>
+{{SVG3}}
+<p>Distance has a greater effect than mass – it appears squared. Doubling the distance is exactly compensated by doubling both masses, so in the last case the force remains 12 N.</p>
+<div class="result"><strong>a) 12 N, opposite direction; b) 3 N, 48 N, 24 N, 6 N and 12 N.</strong></div>
+<!--PART-->
+<h2>3. Experiment – Surface Tension from Capillary Rise</h2>
+<h3>3.1 Principle</h3>
+<p>Water wets clean glass well – water molecules are attracted to glass more than to each other. The water surface in a narrow tube (capillary) is therefore curved downwards (concave meniscus) and the water in the capillary rises above the surrounding surface – <strong>capillary rise</strong>. A liquid that does not wet the wall (mercury in glass) falls in the capillary instead – <strong>capillary depression</strong>.</p>
+{{SVG4}}
+<h3>3.2 Derivation</h3>
+<p>The surface force F = σ · 2πr acts along the edge of the meniscus (length 2πr). With perfect wetting (contact angle θ ≈ 0°) it points vertically upwards. Water rises until this force balances the weight of the water column of height h:</p>
+<div class="formula">2π r σ = ρ π r² h g</div>
+<div class="formula">σ = ρ g r h / 2 &nbsp;&nbsp;&nbsp; h = 2σ / (ρ g r)</div>
+<p>With imperfect wetting the force must be multiplied by cos θ; then σ = ρgrh / (2 cos θ). The height of the column is inversely proportional to the radius of the capillary: the thinner the capillary, the higher the water rises. That is why the internal radius r must be known.</p>
+<h3>3.3 Apparatus</h3>
+<p>Several clean glass capillaries with different internal diameters (0.5–2 mm), a wide vessel with water, a stand with a clamp, a ruler with a millimetre scale or a measuring magnifier, thermometer. The internal radius is found with a measuring magnifier on the cut end of the capillary, or indirectly: fill the capillary with water, weigh the water in a column of length L and calculate r from the volume V = πr²L.</p>
+<h3>3.4 Procedure</h3>
+<ol><li>Clean the capillaries (e.g. with detergent and rinse thoroughly with distilled water) so that wetting is perfect.</li>
+<li>Fix the capillary vertically and dip its lower end into the water. Draw the water in the capillary slightly higher and let it fall back to equilibrium – the meniscus settles more reliably.</li>
+<li>Read the height h from the outer water surface to the bottom of the meniscus.</li>
+<li>Repeat the measurement for the other capillaries and record the water temperature.</li>
+<li>For each capillary calculate σ = ρgrh/2 and average the results.</li>
+</ol>
+<h3>3.5 Sample evaluation</h3>
+<p class="subtle">The following numbers are model data for water at 20 °C, ρ = 998 kg/m³, g = 9.81 m/s²; they are not a real measurement.</p>
+<table><tr><th>Capillary</th><th>r (mm)</th><th>h (mm)</th><th>r · h (mm²)</th><th>σ (N/m)</th></tr><tr><td>1</td><td>0.25</td><td>59.4</td><td>14.9</td><td>0.0727</td></tr><tr><td>2</td><td>0.50</td><td>29.7</td><td>14.9</td><td>0.0727</td></tr><tr><td>3</td><td>1.00</td><td>14.9</td><td>14.9</td><td>0.0729</td></tr></table>
+<p>For example, for capillary 2:</p>
+<div class="formula">σ = ρ g r h / 2 = 998 · 9.81 · 0.50 · 10⁻³ · 29.7 · 10⁻³ / 2 N/m ≈ 0.0727 N/m</div>
+<p>The product r · h is the same for all capillaries, which confirms the inverse proportionality h ~ 1/r. The average σ ≈ 0.073 N/m agrees well with the table value of 0.0728 N/m at 20 °C.</p>
+<h3>3.6 Sources of error</h3>
+<ul><li>Dirt and grease on the capillary walls worsen wetting (cos θ &lt; 1) and the result comes out too small. Detergent lowers the surface tension of water.</li>
+<li>The largest relative error comes from determining the internal radius – it is small and appears directly in the formula.</li>
+<li>Reading the height h (parallax, curvature of the meniscus), a capillary that is not vertical.</li>
+<li>Temperature – surface tension decreases as the temperature rises.</li>
+</ul>
+<div class="result"><strong>Conclusion:</strong> The balance between the surface force and the weight of the water column gives σ = ρgrh/2. Measuring the capillary rise in capillaries of known radius gives σ ≈ 0.073 N/m for water.</div>

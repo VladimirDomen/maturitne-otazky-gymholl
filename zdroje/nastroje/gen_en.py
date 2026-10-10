@@ -28,6 +28,7 @@ TOPICS = {
     17: ['Electric Current in Metals', 'Dynamics – Bullet in a Barrel', 'Surface Layer of a Liquid'],
     18: ['Free Oscillations', 'Motion in a Gravitational Field – Horizontal Projection', 'Diameter of an Oleic Acid Molecule'],
     19: ['Magnetic Field', 'Fluid Mechanics – Flow in a Pipe', 'Specific Latent Heat of Fusion of Ice'],
+    20: ['Electromagnetic Induction', 'Gravitational Field', 'Surface Tension from Capillary Rise'],
     26: ['Electron Shell of the Atom', 'Electric Current', 'Properties of Gases'],
 }
 
@@ -216,6 +217,25 @@ SVG_EN = {
         'film',
     'nitka':
         'thread',
+    'Priamy vodič dĺžky 20 cm sa pohybuje rýchlosťou v kolmo na indukčné čiary homogénneho magnetického poľa smerujúceho do nákresne':
+        'A straight conductor 20 cm long moves with velocity v perpendicular to the field lines of a uniform magnetic field directed into the page',
+    'B do nákresne':
+        'B into the page',
+    'Magnet sa severným pólom približuje k cievke; indukovaný prúd vytvorí v cievke severný pól oproti magnetu, ktorý ho odpudzuje':
+        'A magnet approaches a coil with its north pole; the induced current creates a north pole in the coil facing the magnet, which repels it',
+    'indukovaný prúd vytvorí pól, ktorý magnet odpudzuje':
+        'the induced current creates a pole that repels the magnet',
+    'Dve telesá sa navzájom gravitačne priťahujú silami s veľkosťou 12 N; vzdialenosť ich stredov je r':
+        'Two bodies attract each other gravitationally with forces of magnitude 12 N; the distance between their centres is r',
+    'Graf gravitačnej sily od vzdialenosti: pri vzdialenosti r je sila 12 N, pri r/2 je 48 N, pri 2r je 3 N':
+        'Graph of gravitational force against distance: at distance r the force is 12 N, at r/2 it is 48 N, at 2r it is 3 N',
+    'Voda vystúpi v tenkej sklenenej kapiláre do výšky h nad hladinu v nádobe':
+        'Water rises in a thin glass capillary to a height h above the water surface in the vessel',
+    'v = 0,5 m/s': 'v = 0.5 m/s',
+    'kapilára':
+        'capillary',
+    'hladina':
+        'water surface',
 }
 
 def tr_svg(svg):
