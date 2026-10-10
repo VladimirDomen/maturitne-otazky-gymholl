@@ -264,6 +264,17 @@ const OTAZKY = [
       sk: ['Šmykové trenie a valivý odpor', 'Experiment: závislosť trecej sily od tlakovej sily, plochy, povrchu a rýchlosti'],
       en: ['Sliding friction and rolling resistance', 'Experiment: dependence of friction on normal force, area, surface and speed'] },
   ]},
+  { n: 24, casti: [
+    { o: ['vlnenie'],
+      sk: ['Mechanické vlnenie', 'Pozdĺžne a priečne vlnenie, rovnica postupnej vlny, vlastnosti vlnenia, stojaté vlnenie a rýchlosť vlny'],
+      en: ['Mechanical waves', 'Longitudinal and transverse waves, progressive wave equation, properties of waves, standing waves and wave speed'] },
+    { o: ['tekutiny'],
+      sk: ['Kapilarita', 'Povrchové napätie, zmáčanie, výstup benzínu v kapiláre – priemer, sklon, Mesiac'],
+      en: ['Capillarity', 'Surface tension, wetting, rise of petrol in a capillary – diameter, tilt, the Moon'] },
+    { o: ['mechanika'],
+      sk: ['Koeficient šmykového trenia', 'Experiment: silomer, rovnomerný pohyb, graf trecej sily od tlakovej sily'],
+      en: ['Coefficient of sliding friction', 'Experiment: spring balance, constant velocity, graph of friction against normal force'] },
+  ]},
   { n: 25, casti: [
     { o: ['mikrosvet'],
       sk: ['Atómové jadro', 'Jadrové sily, väzbová energia, rádioaktivita, reťazová reakcia, ochrana pred žiarením'],

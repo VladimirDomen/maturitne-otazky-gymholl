@@ -31,6 +31,7 @@ TOPICS = {
     20: ['Electromagnetic Induction', 'Gravitational Field', 'Surface Tension from Capillary Rise'],
     21: ['Alternating Current – Generation and Transformation', 'Structure and Properties of Gases', 'Conversions of Mechanical Energy'],
     23: ['Fluid Mechanics – Flow', 'Change of State – Heating of a Bullet', 'Sliding Friction and Rolling Resistance'],
+    24: ['Mechanical Waves', 'Capillarity', 'Coefficient of Sliding Friction'],
     25: ['Atomic Nucleus', 'Electric Current in Electrolytes – Nickel Plating', 'Measuring with a Vernier Caliper and Measurement Errors'],
     26: ['Electron Shell of the Atom', 'Electric Current', 'Properties of Gases'],
 }
@@ -119,6 +120,11 @@ SVG_EN = {
     'Zapojenie: zdroj striedavého napätia, ampérmeter v sérii s kondenzátorom alebo cievkou, voltmeter paralelne':
         'Circuit: AC voltage source, ammeter in series with a capacitor or a coil, voltmeter in parallel',
     'C alebo L': 'C or L',
+    'Stojaté vlnenie: susedné uzly vzdialené 1,5 m': 'Standing wave: adjacent nodes 1.5 m apart',
+    'Kapilárna elevácia v zvislej a v šikmej kapiláre': 'Capillary rise in a vertical and an inclined capillary',
+    'Kváder na vodorovnej podložke ťahaný silomerom': 'Block on a horizontal surface pulled by a spring balance',
+    'Graf trecej sily od tlakovej sily, priamka so smernicou 0,30': 'Graph of friction force against normal force, straight line with gradient 0.30',
+    'benzín': 'petrol', 'smernica = μ ≈ 0,30': 'gradient = μ ≈ 0.30',
     'spínač': 'switch', 'zdroj': 'source', 'ampérmeter': 'ammeter', 'voltmeter': 'voltmeter', 'rezistor': 'resistor',
     'Elektrolýza roztoku síranu meďnatého medzi dvoma medenými elektródami; katióny medi idú ku katóde, síranové anióny k anóde':
         'Electrolysis of copper(II) sulfate solution between two copper electrodes; copper cations move to the cathode, sulfate anions to the anode',
