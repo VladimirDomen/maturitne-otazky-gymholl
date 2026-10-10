@@ -110,6 +110,17 @@ const OTAZKY = [
       sk: ['Matematické kyvadlo', 'Experiment: perióda kyvadla, graf T² od l, určenie g'],
       en: ['Simple pendulum', 'Experiment: period of a pendulum, graph of T² against l, determining g'] },
   ]},
+  { n: 9, casti: [
+    { o: ['termika'],
+      sk: ['Zmeny skupenstva', 'Skupenské premeny, kinetická teória, fázový diagram, roztopenie cínu'],
+      en: ['Changes of state', 'Phase transitions, kinetic theory, phase diagram, melting of tin'] },
+    { o: ['mikrosvet', 'elektrina'],
+      sk: ['Elektrón v elektrickom poli', 'Elektrónový obal, urýchlenie elektrónu napätím, de Broglieho vlnová dĺžka'],
+      en: ['Electron in an electric field', 'Electron shell, accelerating an electron through a voltage, de Broglie wavelength'] },
+    { o: ['vlnenie'],
+      sk: ['Postupné priečne vlnenie', 'Experiment: vlnenie na lane, pohyb častíc a šírenie energie'],
+      en: ['Progressive transverse waves', 'Experiment: waves on a rope, motion of particles and transfer of energy'] },
+  ]},
   { n: 12, casti: [
     { o: ['termika'],
       sk: ['Pevné látky', 'Kryštalické a amorfné látky, deformácia, Hookov zákon, teplotná rozťažnosť, pevnosť lanka'],

@@ -17,6 +17,7 @@ TOPICS = {
     6: ['Energy of a Particle', 'Oscillator', 'Electric Circuit'],
     7: ['Mechanics of a Rigid Body', 'Alternating Current', 'Refractive Index of Light'],
     8: ['Molecular Physics and Thermodynamics', 'Electromagnetic Waves', 'Simple Pendulum'],
+    9: ['Changes of State', 'Electron in an Electric Field', 'Progressive Transverse Waves'],
     12: ['Solids', 'Photoelectric Effect', 'Inertial Mass'],
     26: ['Electron Shell of the Atom', 'Electric Current', 'Properties of Gases'],
 }
@@ -73,6 +74,14 @@ SVG_EN = {
     'Schéma matematického kyvadla': 'Diagram of a simple pendulum',
     'Dĺžka l sa meria od závesu po ťažisko závažia.': 'Length l is measured from the pivot to the centre of the bob.',
     'Ilustračné výsledky – približne lineárna závislosť': 'Illustrative results – approximately linear dependence',
+    'Schematický fázový diagram bežnej látky s kladným sklonom krivky topenia':
+        'Schematic phase diagram of a typical substance with a positive slope of the melting curve',
+    'Priečne vlnenie: lano sa vlní, body kmitajú zvislo a vlna sa šíri vodorovne':
+        'Transverse wave: the rope undulates, points oscillate vertically and the wave travels horizontally',
+    'PEVNÁ FÁZA': 'SOLID', 'KVAPALINA': 'LIQUID', 'PLYN': 'GAS', 'sublimácia': 'sublimation', 'topenie': 'melting',
+    'vyparovanie': 'vaporisation', 'trojný bod': 'triple point', 'kritický bod': 'critical point',
+    'nadkritická': 'supercritical', 'oblasť': 'region', 'šírenie vlnenia': 'direction of propagation',
+    'Častice lana kmitajú kolmo na smer šírenia.': 'Rope particles oscillate perpendicular to the propagation.',
     'spínač': 'switch', 'zdroj': 'source', 'ampérmeter': 'ammeter', 'voltmeter': 'voltmeter', 'rezistor': 'resistor',
 }
 
