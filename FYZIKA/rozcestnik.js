@@ -83,7 +83,7 @@ const OTAZKY = [
 /* ---------- texty rozhrania ---------- */
 const T = {
   sk: {
-    vzor: 'Vzor', zad: 'Zadanie', vyp: 'Vypracovanie →',
+    vzor: 'Vzor', zad: 'Zadanie', vyp: 'Vypracovanie',
     linkZ: n => `Vzor${n}_zadanie.html`, linkV: n => `Vzor${n}_vypracovanie.html`,
     pocet: n => n === 1 ? 'vzor' : n < 5 ? 'vzory' : 'vzorov',
     casti: 'tematických častí', oblasti: 'oblastí fyziky', vsetky: 'Všetky',
@@ -91,7 +91,7 @@ const T = {
     info: (o, n) => `${o}: ${n} ${T.pocet(n)} · zvýraznené sú časti z tejto oblasti`,
   },
   en: {
-    vzor: 'Model', zad: 'Questions', vyp: 'Solutions →',
+    vzor: 'Model', zad: 'Questions', vyp: 'Solutions',
     linkZ: n => `Model${n}_questions.html`, linkV: n => `Model${n}_solutions.html`,
     pocet: n => n === 1 ? 'model' : 'models',
     casti: 'topic parts', oblasti: 'areas of physics', vsetky: 'All',
@@ -120,7 +120,10 @@ $('grid').innerHTML = OTAZKY.map(q => {
   <article class="card" data-o="${vsetky.join(' ')}" style="--c1:${hlavne[0]};--c2:${hlavne[1]};--c3:${hlavne[2]}">
     <div class="card-head">
       <div><div class="card-label">${T.vzor}</div><div class="card-num">${q.n}</div></div>
-      <div class="card-dots">${hlavne.map(c => `<i style="--c:${c}"></i>`).join('')}</div>
+      <div class="card-btns">
+        <a class="btn btn-z" href="${T.linkZ(q.n)}">${T.zad}</a>
+        <a class="btn btn-v" href="${T.linkV(q.n)}">${T.vyp}</a>
+      </div>
     </div>
     <ol class="parts">
       ${q.casti.map((c, i) => `
@@ -133,10 +136,6 @@ $('grid').innerHTML = OTAZKY.map(q => {
         </div>
       </li>`).join('')}
     </ol>
-    <div class="card-foot">
-      <a class="btn btn-z" href="${T.linkZ(q.n)}">${T.zad}</a>
-      <a class="btn btn-v" href="${T.linkV(q.n)}">${T.vyp}</a>
-    </div>
   </article>`;
 }).join('') + `<div class="empty" id="empty" hidden>${T.prazdne}</div>`;
 
