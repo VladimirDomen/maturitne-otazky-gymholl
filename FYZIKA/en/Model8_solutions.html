@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Model 8 – Worked solutions</title>
+<link rel="stylesheet" href="../mo.css">
+</head>
+<body class="vyp">
+
+<header class="mo-head"><div class="mo-head-in">
+<div class="mo-kicker"><span class="mo-num">MODEL 8</span><span class="mo-kind">Worked solutions</span></div>
+<h1>Molecular Physics and Thermodynamics · Electromagnetic Waves · Simple Pendulum</h1>
+<p>Detailed worked solutions with explanations</p>
+</div></header>
+
+<nav class="mo-bar"><div class="mo-bar-in">
+<a class="mo-back" href="index.html">← All models</a>
+<div class="mo-switch"><a href="Model8_questions.html">Questions</a><a href="Model8_solutions.html" class="on">Solutions</a></div>
+<button type="button" onclick="window.print()">Print / PDF</button>
+<a class="mo-lang" href="../Vzor8_vypracovanie.html" hreflang="sk" title="Slovenská verzia">SK</a>
+</div></nav>
+
+<main class="wrap">
+
+<section class="sheet" id="cast-1"><div class="topline">Part 1 of 3</div>
+<h2>1. Molecular Physics and Thermodynamics</h2>
+<h3>1.1 Foundations of molecular physics</h3>
+<p>Substances consist of particles (atoms, molecules and ions). The particles move constantly and randomly and interact with each other. At a higher temperature, the mean kinetic energy of their random motion generally increases. Molecular physics explains the macroscopic properties of substances by the microscopic behaviour of particles.</p>
+<h3>1.2 Temperature scales</h3>
+<p>The Celsius temperature <em>t</em> is given in °C, the thermodynamic temperature <em>T</em> in kelvins (K). It holds that:</p>
+<div class="formula">T = (t / °C + 273.15) K</div>
+<p>For example, 20 °C corresponds to 293.15 K. A temperature difference of 1 °C equals a difference of 1 K. Absolute zero is 0 K = −273.15 °C.</p>
+<h3>1.3 Internal energy</h3>
+<p>The internal energy <em>U</em> is the sum of the microscopic kinetic energies of the particles and the potential energies of their mutual interaction. It changes by <strong>doing work</strong> or by <strong>heat transfer</strong>.</p>
+<h3>1.4 First law of thermodynamics</h3>
+<div class="formula">ΔU = Q + W<sub>on</sub></div>
+<p><em>Q</em> is the heat received by the system, <em>W<sub>on</sub></em> the work done on the system. Using the work <em>W<sub>by</sub></em> done by the system, the same balance reads <strong>ΔU = Q − W<sub>by</sub></strong>. The law expresses the conservation of energy in thermodynamic processes.</p>
+<h3>1.5 Calorimetric equation</h3>
+<p>In a thermally insulated system, the sum of the heats received and given off is zero. When two substances are mixed without a change of state and neglecting the heat capacity of the vessel:</p>
+<div class="formula">m₁c₁(t − t₁) + m₂c₂(t − t₂) = 0</div>
+<p>The relation follows from <em>Q = mcΔt</em>. In general, the heat received by the calorimeter and any latent heats are also included.</p>
+<h3>1.6 Amount of substance</h3>
+<p>Number of particles <strong>N = 4.8 · 10²⁴</strong>. Avogadro constant <strong>N<sub>A</sub> = 6.02214076 · 10²³ mol⁻¹</strong>.</p>
+<div class="formula">n = N / N<sub>A</sub> = (4.8 · 10²⁴) / (6.022 · 10²³) ≈ 7.97 mol</div>
+<div class="result"><strong>Result: n ≈ 8.0 mol of hydrogen atoms.</strong> This is the amount of atoms, not of H₂ molecules.</div>
+</section>
+
+<section class="sheet" id="cast-2"><div class="topline">Part 2 of 3</div>
+<h2>2. Electromagnetic Waves – Solution</h2>
+<p>Given: A = 20 V, f = 10 MHz = 10⁷ Hz, v = 3 · 10⁸ m/s, x = 3 m, t = 10⁻³ s.</p>
+<p>For a progressive wave travelling in the positive direction of the <em>x</em>-axis with zero initial phase:</p>
+<div class="formula">u(x,t) = A sin(ωt − kx) = A sin[2πf(t − x/v)]</div>
+<p>Angular frequency and wavelength:</p>
+<div class="formula">ω = 2πf = 2π · 10⁷ rad/s<br>λ = v/f = 30 m &nbsp;→&nbsp; k = 2π/30 rad/m</div>
+<p>Equation of the progressive wave (with <em>x</em> in metres and <em>t</em> in seconds):</p>
+<div class="formula">u(x,t) = 20 sin(2π · 10⁷t − 2πx/30) V</div>
+<p>Substituting the time and distance:</p>
+<div class="formula">u(3; 10⁻³) = 20 sin[2π(10⁴ − 0.1)]<br>= 20 sin(−π/5) ≈ −11.76 V</div>
+<div class="result"><strong>The instantaneous value of the voltage is approximately −11.8 V.</strong> The sign expresses the polarity relative to the chosen reference.</div>
+<p class="subtle">The sine form used assumes zero initial phase. With a different initial phase, the instantaneous value would be different.</p>
+</section>
+
+<section class="sheet" id="cast-3"><div class="topline">Part 3 of 3</div>
+<h2>3. Experiment – Verifying the Period of a Simple Pendulum</h2>
+<h3>Theory</h3>
+<p>A simple pendulum is modelled as a point mass on a light, inextensible string of length <em>l</em>. For small displacements (up to about 10°):</p>
+<div class="formula">T = 2π√(l/g) &nbsp;&nbsp; and hence &nbsp;&nbsp; T² = (4π²/g)l</div>
+<p>The period depends on the length of the string and the gravitational acceleration; in this approximation it does not depend on the mass of the bob.</p>
+<svg class="diagram" viewBox="0 0 560 280" role="img" aria-label="Diagram of a simple pendulum"><path d="M135 35H335" stroke="#243e58" stroke-width="7"/><circle cx="235" cy="44" r="6" fill="#243e58"/><line x1="235" y1="44" x2="235" y2="237" stroke="#91a1b0" stroke-width="2" stroke-dasharray="7 6"/><line x1="235" y1="44" x2="339" y2="211" stroke="#246b91" stroke-width="3"/><circle cx="339" cy="211" r="22" fill="#5396b9" stroke="#1b5578" stroke-width="2"/><path d="M235 92 A48 48 0 0 1 260 86" stroke="#bd7134" fill="none" stroke-width="2"/><text x="263" y="91" font-size="19">α</text><text x="295" y="138" font-size="19">l</text><text x="367" y="217" font-size="18">m</text><text x="28" y="250" font-size="15">Length l is measured from the pivot to the centre of the bob.</text></svg>
+<h3>Equipment</h3>
+<p>A stand, strong thread, a small spherical bob, a metre rule or tape measure, a stopwatch and possibly a protractor.</p>
+<h3>Procedure</h3>
+<ol><li>Set up the pendulum and measure the length from the point of suspension to the centre of mass of the bob.</li>
+<li>Displace the bob by a small angle (e.g. 5–10°) and release it without pushing.</li>
+<li>Measure the time <em>t<sub>10</sub></em> for 10 complete oscillations and calculate <em>T = t<sub>10</sub>/10</em>.</li>
+<li>Repeat the measurement and carry it out for several lengths <em>l</em>.</li>
+<li>Calculate <em>T²</em> and compare with the theory; plot the graph of <em>T²</em> against <em>l</em>.</li>
+</ol>
+<h3>Sample measured data</h3>
+<table><thead><tr><th>l (m)</th><th>Time of 10 oscillations t₁₀ (s)</th><th>T (s)</th><th>T² (s²)</th></tr>
+</thead><tbody><tr><td>0.25</td><td>10.0</td><td>1.00</td><td>1.00</td></tr>
+<tr><td>0.40</td><td>12.7</td><td>1.27</td><td>1.61</td></tr>
+<tr><td>0.60</td><td>15.5</td><td>1.55</td><td>2.40</td></tr>
+<tr><td>0.80</td><td>17.9</td><td>1.79</td><td>3.20</td></tr>
+<tr><td>1.00</td><td>20.1</td><td>2.01</td><td>4.04</td></tr>
+</tbody></table>
+<p class="subtle">The table contains illustrative values; in a real experiment replace them with your own measurements.</p>
+<h3>Evaluation and graph</h3>
+<p>From the relation <em>T² = (4π²/g)l</em> we expect a straight line passing approximately through the origin. Its gradient <em>a = ΔT²/Δl</em> has the unit s²/m and allows us to determine the gravitational acceleration:</p>
+<div class="formula">g = 4π²/a</div>
+<svg class="diagram" viewBox="0 0 600 330" role="img" aria-label="Graph of the square of the period against the length of the pendulum"><rect x="0" y="0" width="600" height="330" fill="#fff"/><g stroke="#e3ebf0"><path d="M75 55H552M75 105H552M75 155H552M75 205H552M75 255H552M170 45V255M265 45V255M360 45V255M455 45V255M550 45V255"/></g><path d="M75 35V255H565" stroke="#344e62" stroke-width="2" fill="none"/><path d="M75 255 L550 55" stroke="#267cb0" stroke-width="3" fill="none"/><g fill="#267cb0"><circle cx="194" cy="205" r="5"/><circle cx="265" cy="174" r="5"/><circle cx="360" cy="135" r="5"/><circle cx="455" cy="95" r="5"/><circle cx="550" cy="53" r="5"/></g><g font-size="14" fill="#344e62"><text x="10" y="30">T² (s²)</text><text x="552" y="298">l (m)</text><text x="57" y="260">0</text><text x="54" y="208">1</text><text x="54" y="158">2</text><text x="54" y="108">3</text><text x="54" y="58">4</text><text x="163" y="276">0.2</text><text x="257" y="276">0.4</text><text x="352" y="276">0.6</text><text x="447" y="276">0.8</text><text x="538" y="276">1.0</text></g><text x="100" y="315" font-size="13" fill="#546b7d">Illustrative results – approximately linear dependence</text></svg>
+<p>For example, for a length <em>l = 1.00 m</em> and a period <em>T = 2.01 s</em>:</p>
+<div class="formula">g = 4π²l/T² ≈ 9.77 m/s²</div>
+<p>The result is close to the expected value of 9.81 m/s². A more accurate evaluation is obtained from the regression line of all points, not from a single measurement.</p>
+<h3>Sources of error</h3>
+<p>Reaction time when using the stopwatch, error in measuring the length, too large an initial displacement, air resistance, friction at the pivot or pushing the bob on release. Timing several oscillations and repeating the experiments reduces the relative effect of the timing error.</p>
+<div class="result"><strong>Conclusion:</strong> The experiment confirms that, for small displacements, <em>T²</em> is directly proportional to the length of the pendulum <em>l</em>.</div>
+</section>
+
+</main>
+
+<footer class="mo-foot"><a href="index.html">← All models</a><span>Model 8 · Worked solutions</span></footer>
+<script src="../mo.js"></script>
+</body>
+</html>

@@ -99,6 +99,17 @@ const OTAZKY = [
       sk: ['Index lomu svetla', 'Experiment: Snellov zákon, meranie uhlov, graf sin α – sin β'],
       en: ['Refractive index of light', 'Experiment: Snell’s law, measuring angles, graph of sin α against sin β'] },
   ]},
+  { n: 8, casti: [
+    { o: ['termika'],
+      sk: ['Molekulová fyzika a termodynamika', 'Kinetická teória, teplotné stupnice, vnútorná energia, 1. termodynamický zákon, kalorimetrická rovnica, látkové množstvo'],
+      en: ['Molecular physics and thermodynamics', 'Kinetic theory, temperature scales, internal energy, first law of thermodynamics, calorimetry, amount of substance'] },
+    { o: ['vlnenie'],
+      sk: ['Elektromagnetické vlnenie', 'Rovnica postupnej vlny u(x,t), okamžitá hodnota napätia'],
+      en: ['Electromagnetic waves', 'Progressive wave equation u(x,t), instantaneous value of voltage'] },
+    { o: ['vlnenie', 'mechanika'],
+      sk: ['Matematické kyvadlo', 'Experiment: perióda kyvadla, graf T² od l, určenie g'],
+      en: ['Simple pendulum', 'Experiment: period of a pendulum, graph of T² against l, determining g'] },
+  ]},
   { n: 12, casti: [
     { o: ['termika'],
       sk: ['Pevné látky', 'Kryštalické a amorfné látky, deformácia, Hookov zákon, teplotná rozťažnosť, pevnosť lanka'],

@@ -16,6 +16,7 @@ TOPICS = {
     5: ['Dynamics', 'Electromagnetic Induction', 'Nuclear Power Plant'],
     6: ['Energy of a Particle', 'Oscillator', 'Electric Circuit'],
     7: ['Mechanics of a Rigid Body', 'Alternating Current', 'Refractive Index of Light'],
+    8: ['Molecular Physics and Thermodynamics', 'Electromagnetic Waves', 'Simple Pendulum'],
     12: ['Solids', 'Photoelectric Effect', 'Inertial Mass'],
     26: ['Electron Shell of the Atom', 'Electric Current', 'Properties of Gases'],
 }
@@ -68,6 +69,10 @@ SVG_EN = {
     'sin α': 'sin α', 'sin β': 'sin β',
     'Závesná pružina so závažím a meranie predĺženia a periódy': 'Hanging spring with a mass; measuring the extension and the period',
     'Stopky: čas N kmitov': 'Time of N oscillations', 'bez závažia': 'without load',
+    'Graf závislosti druhej mocniny periódy od dĺžky kyvadla': 'Graph of the square of the period against the length of the pendulum',
+    'Schéma matematického kyvadla': 'Diagram of a simple pendulum',
+    'Dĺžka l sa meria od závesu po ťažisko závažia.': 'Length l is measured from the pivot to the centre of the bob.',
+    'Ilustračné výsledky – približne lineárna závislosť': 'Illustrative results – approximately linear dependence',
     'spínač': 'switch', 'zdroj': 'source', 'ampérmeter': 'ammeter', 'voltmeter': 'voltmeter', 'rezistor': 'resistor',
 }
 
