@@ -15,3 +15,6 @@ desktop.ini
 
 # Python
 __pycache__/
+
+# Fotky poznámok (len lokálne)
+zdroje/foto/

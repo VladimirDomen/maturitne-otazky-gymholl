@@ -1,0 +1,107 @@
+<h2>1. Electric Current in Semiconductors</h2>
+<h3>1.1 Intrinsic conduction</h3>
+<p>Typical semiconductors are silicon and germanium. Their atoms have four valence electrons and are held in the crystal by covalent bonds. At very low temperatures all electrons are in bonds and the material does not conduct. At higher temperatures or under illumination some bonds break: a free electron is released and leaves behind a <strong>hole</strong>, which behaves like a positive charge. Electrons and holes are created in pairs and recombine again.</p>
+<p>As the temperature rises, the number of free charge carriers increases, so <strong>the resistance of a semiconductor decreases</strong> – the opposite of metals. This is used in a thermistor. Similarly, the resistance of a photoresistor decreases when it is illuminated.</p>
+<h3>1.2 Extrinsic conduction</h3>
+<p><strong>N-type:</strong> an element with five valence electrons (e.g. phosphorus, arsenic) is added to silicon. The fifth electron is not in a bond and is easily released – the impurity is a <em>donor</em>. The majority carriers are electrons.</p>
+<p><strong>P-type:</strong> an element with three valence electrons (e.g. boron, gallium, indium) is added. One bond remains incomplete and a hole is formed – the impurity is an <em>acceptor</em>. The majority carriers are holes.</p>
+<p>Both types are electrically neutral as a whole. Even a small amount of impurity increases the conductivity by many orders of magnitude.</p>
+<h3>1.3 PN junction</h3>
+<p>When a boundary between P and N regions is formed, electrons diffuse from the N region into the P region and holes the other way. They recombine near the boundary. Fixed impurity ions remain there: positive on the N side and negative on the P side. A <strong>depletion layer</strong> almost free of charge carriers is formed, with an internal electric field that opposes further diffusion. There is a potential barrier at the junction; for silicon it corresponds to about 0.6–0.7 V.</p>
+<h3>1.4 The diode and its characteristic</h3>
+<p><strong>Forward bias:</strong> the P region is connected to the positive terminal. The external voltage reduces the barrier, the depletion layer narrows and once the threshold voltage is exceeded the current rises steeply.</p>
+<p><strong>Reverse bias:</strong> the P region is connected to the negative terminal. The depletion layer widens and only a very small reverse current of minority carriers flows. If the voltage is too high, breakdown occurs.</p>
+<p>The current–voltage characteristic I = f(U) is non-linear: a diode <strong>is not an ohmic component</strong> and its resistance depends on the operating point.</p>
+<h3>1.5 Applications of the PN junction</h3>
+<ul><li><strong>Rectifier</strong> – half-wave with one diode, full-wave with a bridge rectifier; chargers and mains power supplies.</li>
+<li><strong>LED</strong> – light is emitted during recombination in forward bias.</li>
+<li><strong>Photodiode and photovoltaic cell</strong> – light creates electron–hole pairs, producing a current or a voltage.</li>
+<li><strong>Zener diode</strong> – keeps a constant voltage in reverse bias (voltage stabilisation).</li>
+<li><strong>Reverse-polarity protection</strong> and the <strong>transistor</strong> (two PN junctions) – amplification and switching, the basis of integrated circuits.</li>
+</ul>
+<h3>1.6 Solution of the task</h3>
+{{SVG0}}
+<p>The resistor, the diode and the ammeter are in series, so the same current I = 4 A flows through all of them. An ideal ammeter has negligible resistance and no current flows through ideal voltmeters.</p>
+{{SVG1}}
+<p><strong>a)</strong> On the graph we find 4 A on the I axis and read the corresponding voltage:</p>
+<div class="formula">U₂ = 1.0 V</div>
+<p><strong>b)</strong> Ohm’s law applies to the resistor:</p>
+<div class="formula">U₁ = RI = 5 Ω · 4 A = 20 V</div>
+<p><strong>c)</strong> In a series circuit the voltages add up. The terminal voltage of the source is the voltage between its terminals, i.e. across the whole external circuit:</p>
+<div class="formula">U = U₁ + U₂ = 20 V + 1 V = 21 V</div>
+<p><strong>d)</strong> Resistance of the diode at this operating point:</p>
+<div class="formula">R<sub>D</sub> = U₂/I = 1 V / 4 A = 0.25 Ω</div>
+<p>The characteristic is not a straight line. For example, at a current of 1 A the voltage across the diode is about 0.8 V, so R<sub>D</sub> ≈ 0.8 Ω. As the current increases, the depletion layer narrows and the resistance of the diode decreases.</p>
+<p><strong>e)</strong> In reverse bias only a negligible current flows: the ammeter reads about 0 A, the voltage across the resistor is U₁ = RI ≈ 0 V and the whole source voltage is across the diode, U₂ ≈ 21 V (provided breakdown does not occur).</p>
+<div class="result"><strong>U₂ = 1 V, U₁ = 20 V, U = 21 V, R<sub>D</sub> = 0.25 Ω.</strong></div>
+<p class="subtle">A current of 4 A at 1 V corresponds to a power rectifier diode. The power dissipated in the resistor is P = U₁I = 80 W and in the diode 4 W – the resistor must be rated for such power.</p>
+<!--PART-->
+<h2>2. Mechanics of a Rigid Body – Beam on Two Supports</h2>
+<h3>2.1 Moment of a force</h3>
+<p>The turning effect of a force on a body with an axis of rotation is expressed by the moment of the force:</p>
+<div class="formula">M = F · d &nbsp;&nbsp; [M] = N·m</div>
+<p>The <strong>moment arm d</strong> is the perpendicular distance of the line of action of the force from the axis of rotation. A force whose line of action passes through the axis has zero moment. Moments turning the body in opposite directions are taken with opposite signs.</p>
+<h3>2.2 Principle of moments and equilibrium</h3>
+<p><strong>Principle of moments:</strong> a body that can rotate is in equilibrium if the vector sum of the moments of all forces about the axis of rotation is zero – the sum of the moments turning it in one direction equals the sum of the moments in the opposite direction.</p>
+<p>A free rigid body is in equilibrium if both conditions hold:</p>
+<div class="formula">𝐅₁ + 𝐅₂ + … = 𝟎 &nbsp;&nbsp; and &nbsp;&nbsp; M₁ + M₂ + … = 0</div>
+<p>The second condition holds about any chosen axis. It is convenient to choose the axis so that an unknown force passes through it – its moment is then zero.</p>
+<h3>2.3 Solution of the task</h3>
+<p>Three forces act on the beam: the weight of the load G downwards and the forces of the walls F₁ (wall A) and F₂ (wall B) upwards. By Newton’s third law the beam presses on wall B with 12 kN, so wall B acts on the beam with a force F₂ = 12 kN.</p>
+<div class="formula">G = mg = 12 000 kg · 10 m/s² = 120 000 N = 120 kN</div>
+{{SVG2}}
+<p><strong>a)</strong> We take the axis at the support on wall A. Force F₁ has zero arm about it. The weight has arm x and force F₂ has arm l:</p>
+<div class="formula">F₂ · l = G · x &nbsp; → &nbsp; x = F₂l/G = (12 kN · 6 m)/(120 kN) = 0.6 m<br>y = l − x = 6 m − 0.6 m = 5.4 m</div>
+<p><strong>b)</strong> From the equilibrium of forces:</p>
+<div class="formula">F₁ + F₂ = G &nbsp; → &nbsp; F₁ = 120 kN − 12 kN = 108 kN</div>
+<p><strong>Check</strong> – principle of moments about wall B: F₁ · l = G · y, i.e. 108 kN · 6 m = 648 kN·m and 120 kN · 5.4 m = 648 kN·m. The result is consistent.</p>
+<div class="result"><strong>x = 0.6 m, y = 5.4 m; the beam presses on wall A with a force of 108 kN.</strong></div>
+<p>The load is close to wall A, so this wall carries as much as 90 % of its weight. The forces of the walls are in the ratio F₁ : F₂ = y : x = 9 : 1.</p>
+<p class="subtle">With g = 9.81 m/s², G ≈ 117.7 kN, x ≈ 0.61 m, y ≈ 5.39 m and F₁ ≈ 105.7 kN.</p>
+<!--PART-->
+<h2>3. Experiment – Inductance of a Coil and Capacitance of a Capacitor</h2>
+<h3>3.1 Theory</h3>
+<p>In an AC circuit a capacitor and a coil oppose the current in a way that depends on frequency – this is called <strong>reactance</strong>. For the angular frequency ω = 2πf:</p>
+<div class="formula">capacitive reactance: X<sub>C</sub> = 1/(ωC) &nbsp;&nbsp;&nbsp; inductive reactance: X<sub>L</sub> = ωL</div>
+<p>We treat the capacitor as ideal. A real coil also has the resistance R of its winding. Its <strong>impedance</strong> is:</p>
+<div class="formula">Z = √(R² + X<sub>L</sub>²)</div>
+<p>Meters on an AC range show the rms values of voltage and current. The ratio U/I gives the impedance (for a capacitor directly X<sub>C</sub>).</p>
+<h3>3.2 Equipment</h3>
+<p>A low-voltage AC source (e.g. 0–12 V, 50 Hz), two multimeters (ammeter and voltmeter on the AC range), a non-polarised capacitor (e.g. 10 μF), a coil without an iron core (e.g. a school coil with many turns), a DC source or an ohmmeter, connecting leads.</p>
+<h3>3.3 Circuit</h3>
+{{SVG3}}
+<p>The ammeter is in series with the measured component Z, the voltmeter in parallel with it.</p>
+<h3>3.4 Procedure – capacitor</h3>
+<ol><li>Connect the capacitor according to the diagram.</li>
+<li>For several source voltages (e.g. 4, 8 and 12 V) record U and I.</li>
+<li>For each measurement calculate X<sub>C</sub> = U/I and find the capacitance from the mean:</li>
+</ol>
+<div class="formula">C = 1/(2πf · X<sub>C</sub>) = I/(2πf · U)</div>
+<h3>3.5 Procedure – coil</h3>
+<ol><li>First measure the resistance R of the winding with <strong>direct</strong> current (R = U/I or with an ohmmeter). With direct current the inductance has no effect.</li>
+<li>Connect the coil to the AC voltage and measure U and I. Calculate Z = U/I.</li>
+<li>Find the inductive reactance and the inductance from:</li>
+</ol>
+<div class="formula">X<sub>L</sub> = √(Z² − R²) &nbsp;&nbsp;&nbsp; L = X<sub>L</sub>/(2πf)</div>
+<p>That is why measuring the coil with alternating current alone is not enough: the ratio U/I also includes the resistance of the winding.</p>
+<h3>3.6 Sample evaluation</h3>
+<p class="subtle">The following numbers are model data for f = 50 Hz; they are not a real measurement.</p>
+<p><strong>Capacitor:</strong></p>
+<table><tr><th>U (V)</th><th>I (mA)</th><th>X<sub>C</sub> = U/I (Ω)</th></tr>
+<tr><td>4.0</td><td>12.6</td><td>317</td></tr>
+<tr><td>8.0</td><td>25.1</td><td>319</td></tr>
+<tr><td>12.0</td><td>37.7</td><td>318</td></tr>
+</table>
+<div class="formula">X<sub>C</sub> ≈ 318 Ω &nbsp; → &nbsp; C = 1/(2π · 50 Hz · 318 Ω) ≈ 1.0 · 10⁻⁵ F = 10 μF</div>
+<p><strong>Coil:</strong> with direct current U = 2.0 V, I = 0.20 A, so R = 10 Ω.</p>
+<table><tr><th>U (V)</th><th>I (A)</th><th>Z = U/I (Ω)</th></tr>
+<tr><td>4.0</td><td>0.100</td><td>40</td></tr>
+<tr><td>8.0</td><td>0.200</td><td>40</td></tr>
+<tr><td>12.0</td><td>0.300</td><td>40</td></tr>
+</table>
+<div class="formula">X<sub>L</sub> = √(40² − 10²) Ω ≈ 38.7 Ω &nbsp; → &nbsp; L = 38.7 Ω/(2π · 50 Hz) ≈ 0.12 H</div>
+<p>The results can also be evaluated graphically: U against I is a straight line whose gradient is X<sub>C</sub> or Z respectively.</p>
+<h3>3.7 Uncertainties and safety</h3>
+<p>We work only with a safe low voltage, never directly with the 230 V mains. An electrolytic capacitor must not be used with AC voltage. A coil with an iron core has an inductance that depends on the current, so we measure without the core or state it. Inaccuracy is caused by the tolerances of the multimeters on the AC range and by deviations of the frequency from 50 Hz. If we neglected the winding resistance, we would obtain a larger inductance for the coil (from 40 Ω instead of 38.7 Ω).</p>
+<p>The inductance can also be checked by the resonance method: the coil and a known capacitor are connected in series, the frequency of a signal generator is varied and the current maximum is found at f₀ = 1/(2π√(LC)).</p>
+<div class="result"><strong>Conclusion:</strong> The capacitance is found from C = I/(2πfU). The inductance from L = √(Z² − R²)/(2πf), where Z is measured with alternating and R with direct current.</div>

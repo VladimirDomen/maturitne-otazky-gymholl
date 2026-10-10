@@ -21,6 +21,7 @@ TOPICS = {
     10: ['Properties of Gases', 'Pressure in a Tyre', 'Concave Spherical Mirror'],
     11: ['Properties of Liquids', 'Thin-Film Interference', 'Current–Voltage Characteristic of a Diode'],
     12: ['Solids', 'Photoelectric Effect', 'Inertial Mass'],
+    13: ['Electric Current in Semiconductors', 'Mechanics of a Rigid Body', 'Inductance and Capacitance'],
     15: ['Electric Field', 'Atomic Nucleus', 'Inclined Plane'],
     26: ['Electron Shell of the Atom', 'Electric Current', 'Properties of Gases'],
 }
@@ -99,6 +100,16 @@ SVG_EN = {
     'Kvalitatívny graf charakteristiky diódy': 'Qualitative graph of the diode characteristic',
     'záverný smer': 'reverse bias', 'priepustný smer': 'forward bias',
     'Schematicky, bez mierky; nejde o namerané údaje.': 'Schematic, not to scale; not measured data.',
+    'Obvod: zdroj, ampérmeter, rezistor a dióda v priepustnom smere v sérii; voltmeter V₁ na rezistore, V₂ na dióde':
+        'Circuit: source, ammeter, resistor and forward-biased diode in series; voltmeter V₁ across the resistor, V₂ across the diode',
+    'Voltampérová charakteristika diódy v priepustnom smere, pri prúde 4 A je napätie 1 V':
+        'Current–voltage characteristic of the diode in forward bias; at a current of 4 A the voltage is 1 V',
+    'Nosník dĺžky 6 m na dvoch stenách A a B s bremenom vo vzdialenosti x od steny A':
+        'Beam of length 6 m on two walls A and B with a load at distance x from wall A',
+    'Nosník na dvoch stenách s bremenom, sily pôsobiace na nosník': 'Beam on two walls with a load; forces acting on the beam',
+    'Zapojenie: zdroj striedavého napätia, ampérmeter v sérii s kondenzátorom alebo cievkou, voltmeter paralelne':
+        'Circuit: AC voltage source, ammeter in series with a capacitor or a coil, voltmeter in parallel',
+    'C alebo L': 'C or L',
     'spínač': 'switch', 'zdroj': 'source', 'ampérmeter': 'ammeter', 'voltmeter': 'voltmeter', 'rezistor': 'resistor',
 }
 

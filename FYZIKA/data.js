@@ -154,6 +154,17 @@ const OTAZKY = [
       sk: ['Zotrvačná hmotnosť', 'Experiment: tuhosť pružiny a perióda kmitov, m = kT²/(4π²)'],
       en: ['Inertial mass', 'Experiment: spring constant and period of oscillation, m = kT²/(4π²)'] },
   ]},
+  { n: 13, casti: [
+    { o: ['elektrina'],
+      sk: ['Elektrický prúd v polovodičoch', 'Vlastná a prímesová vodivosť, PN prechod, dióda, obvod s diódou a rezistorom'],
+      en: ['Electric current in semiconductors', 'Intrinsic and extrinsic conduction, PN junction, diode, circuit with a diode and a resistor'] },
+    { o: ['mechanika'],
+      sk: ['Mechanika tuhého telesa', 'Moment sily, momentová veta, nosník na dvoch podperách'],
+      en: ['Mechanics of a rigid body', 'Moment of force, principle of moments, beam on two supports'] },
+    { o: ['elektrina', 'magnetizmus'],
+      sk: ['Indukčnosť a kapacita', 'Experiment: kapacitancia a induktancia, meranie striedavým a jednosmerným prúdom'],
+      en: ['Inductance and capacitance', 'Experiment: capacitive and inductive reactance, measuring with AC and DC'] },
+  ]},
   { n: 15, casti: [
     { o: ['elektrina'],
       sk: ['Elektrické pole', 'Náboj, intenzita, Coulombov zákon, kapacita, sériové a paralelné zapojenie kondenzátorov'],
