@@ -1,0 +1,101 @@
+"""Vzor 27 podľa fotky 27 a MO27 (text písaný priamo; λ = 240 nm potvrdené). Časť 2 sformulovaná podľa fotky
+(sila na rovnaké predĺženie ako pri ohriatí o 1 °C + normálové napätie), v časti 3 doplnené modelové údaje.
+-> Vzor27_zadanie.html + Vzor27_vypracovanie.html.  Spustenie: python -I gen27.py <priečinok FYZIKA>"""
+import sys, pathlib
+
+DST = pathlib.Path(sys.argv[1])
+N = 27
+TOPICS = ['Elektromagnetické vlnenie', 'Pevné látky – rozťažnosť a pružnosť', 'Výtoková rýchlosť kvapaliny']
+
+def page(n, kind, parts):
+    vyp = kind == 'vyp'
+    label = 'Vypracovanie' if vyp else 'Zadanie'
+    sub = 'Podrobné vypracovanie s vysvetlením' if vyp else 'Fyzika · 3 tematické časti'
+    body = ''.join(f'\n<section class="sheet" id="cast-{i}"><div class="topline">Časť {i} z {len(parts)}</div>\n{p.strip()}\n</section>\n'
+                   for i, p in enumerate(parts, 1))
+    z_on, v_on = ('', ' class="on"') if vyp else (' class="on"', '')
+    return f'''<!DOCTYPE html>
+<html lang="sk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Vzor {n} – {label}</title>
+<link rel="stylesheet" href="mo.css">
+</head>
+<body class="{'vyp' if vyp else 'zad'}">
+
+<header class="mo-head"><div class="mo-head-in">
+<div class="mo-kicker"><span class="mo-num">VZOR {n}</span><span class="mo-kind">{label}</span></div>
+<h1>{' · '.join(TOPICS)}</h1>
+<p>{sub}</p>
+</div></header>
+
+<nav class="mo-bar"><div class="mo-bar-in">
+<a class="mo-back" href="index.html">← Všetky vzory</a>
+<div class="mo-switch"><a href="Vzor{n}_zadanie.html"{z_on}>Zadanie</a><a href="Vzor{n}_vypracovanie.html"{v_on}>Vypracovanie</a></div>
+<button type="button" onclick="window.print()">Tlačiť / PDF</button>
+<a class="mo-lang" href="en/Model{n}_{'solutions' if vyp else 'questions'}.html" hreflang="en" title="English version">EN</a>
+</div></nav>
+
+<main class="wrap">
+{body}
+</main>
+
+<footer class="mo-foot"><a href="index.html">← Všetky vzory</a><span>Vzor {n} · {label}</span></footer>
+<script src="mo.js"></script>
+</body>
+</html>
+'''
+
+# ---------- obrázky ----------
+def lom(vyp):
+    lam = 'λ = 160 nm' if vyp else 'λ = ?'
+    return ('<svg class="diagram" viewBox="0 0 560 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Elektromagnetické vlnenie prechádza z vákua do prostredia, kde sa šíri pomalšie">'
+            '<rect x="20" y="120" width="520" height="115" fill="#e8f1f8"/>'
+            '<path d="M20 120H540" stroke="#375873" stroke-width="2"/>'
+            '<path d="M260 20V235" stroke="#9aaabb" stroke-width="1.5" stroke-dasharray="5 5"/>'
+            '<path d="M90 30L260 120L336 225" stroke="#6a4fc4" stroke-width="3" fill="none"/><path d="M182 79L168.6 78.7L174.2 68.1ZM302 178L290.1 171.8L299.8 164.8Z" fill="#6a4fc4"/>'
+            '<g font-size="15" fill="#193b59"><text x="30" y="106">vákuum</text><text x="30" y="226">prostredie</text>'
+            '<text x="330" y="54">λ₀ = 240 nm</text><text x="330" y="78">c = 3 · 10⁸ m/s</text>'
+            f'<text x="360" y="170">v = 2 · 10⁸ m/s</text><text x="360" y="194">{lam}</text></g></svg>')
+
+TYC = ('<svg class="diagram" viewBox="0 0 560 170" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Oceľová tyč s dĺžkou 1,5 m a predĺžením Δl">'
+       '<path d="M40 40V130" stroke="#375873" stroke-width="5"/><path d="M28 50L40 40M28 70L40 60M28 90L40 80M28 110L40 100M28 130L40 120" stroke="#375873" stroke-width="2"/>'
+       '<rect x="42" y="70" width="400" height="30" fill="#c9d6e2" stroke="#375873" stroke-width="2"/>'
+       '<rect x="442" y="70" width="18" height="30" fill="#f4c7a8" stroke="#c0392b" stroke-width="1.5" stroke-dasharray="3 3"/>'
+       '<g stroke="#c0392b" stroke-width="3" fill="none"><path d="M462 85H530M518 78L530 85L518 92"/></g>'
+       '<g stroke="#637889" stroke-width="1.5" fill="none"><path d="M42 125H442M42 118V132M442 118V132M442 50H460M442 44V56M460 44V56"/></g>'
+       '<g font-size="15" fill="#193b59"><text x="210" y="150">l₀ = 1,5 m</text><text x="440" y="36">Δl</text><text x="520" y="72" fill="#c0392b">F</text>'
+       '<text x="200" y="60">d = 20 mm</text></g></svg>')
+
+NADOBA = ('<svg class="diagram" viewBox="0 0 520 290" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Voda vyteká vodorovne malým otvorom v stene nádoby a dopadá na podložku">'
+          '<path d="M50 30V250H170V30" fill="none" stroke="#375873" stroke-width="3"/>'
+          '<rect x="52" y="60" width="116" height="188" fill="#cfe7f6"/><path d="M52 60H168" stroke="#2f6db3" stroke-width="2"/>'
+          '<path d="M170 150Q270 150 370 250" fill="none" stroke="#2f6db3" stroke-width="4"/>'
+          '<path d="M30 250H480" stroke="#375873" stroke-width="3"/>'
+          '<g stroke="#193b59" stroke-width="2" fill="none"><path d="M178 132H232M222 126L234 132L222 138"/></g>'
+          '<g stroke="#637889" stroke-width="1.5" fill="none"><path d="M36 60V150M30 60H44M30 150H170"/><path d="M190 150V250M184 150H196"/>'
+          '<path d="M170 270H370M170 263V277M370 263V277M370 250V277" /></g>'
+          '<g font-size="16" fill="#193b59"><text x="14" y="110">H</text><text x="198" y="205">h</text><text x="265" y="290">x</text><text x="238" y="128">v₀</text>'
+          '<text x="80" y="200">voda</text></g></svg>')
+
+# ---------- zadanie ----------
+Z1 = f'''<h2>1. Elektromagnetické vlnenie</h2><div class="task"><ol><li>Vysvetlite vznik elektromagnetického vlnenia.</li><li>Opíšte druhy elektromagnetického vlnenia a porovnajte ich vlnové dĺžky, frekvencie a energiu.</li><li>Analyzujte rýchlosť elektromagnetického vlnenia vo vákuu a v prostredí.</li></ol><p><strong>Úloha:</strong> Elektromagnetické vlnenie s vlnovou dĺžkou <strong>λ₀ = 240&nbsp;nm</strong> vo vákuu prechádza do prostredia, v ktorom sa šíri rýchlosťou <strong>v = 2 · 10⁸&nbsp;m/s</strong>. Určte jeho frekvenciu, vlnovú dĺžku v tomto prostredí a druh žiarenia.</p>{lom(False)}</div>'''
+
+Z2 = f'''<h2>2. Štruktúra a vlastnosti pevných látok</h2><div class="task"><ol><li>Vysvetlite teplotnú dĺžkovú rozťažnosť pevných látok.</li><li>Opíšte deformáciu ťahom: normálové napätie, relatívne predĺženie a Hookov zákon.</li></ol><p><strong>Úloha:</strong> Oceľová tyč má dĺžku <strong>l₀ = 1,5&nbsp;m</strong> a priemer <strong>d = 20&nbsp;mm</strong>. Súčiniteľ teplotnej dĺžkovej rozťažnosti ocele je <strong>α = 1,2 · 10⁻⁵&nbsp;K⁻¹</strong>, modul pružnosti v ťahu <strong>E = 2,1 · 10¹¹&nbsp;Pa</strong>.</p>{TYC}<ol type="a"><li>O koľko sa tyč predĺži po ohriatí o 1&nbsp;°C?</li><li>Akú silu treba, aby sa tyč pri stálej teplote predĺžila o rovnakú hodnotu ako pri ohriatí o 1&nbsp;°C?</li><li>Aké normálové napätie vznikne v tyči pri tomto predĺžení?</li></ol></div>'''
+
+Z3 = f'''<h2>3. Experiment – výtoková rýchlosť kvapaliny</h2><div class="task"><p>Aplikáciou vodorovného vrhu určte výtokovú rýchlosť kvapaliny, ktorá vyteká malým otvorom v stene nádoby. Navrhnite pomôcky, postup merania a výpočet. Výsledok porovnajte s rýchlosťou podľa Torricelliho vzťahu.</p>{NADOBA}</div>'''
+
+# ---------- vypracovanie ----------
+V1 = f'''<h2>1. Elektromagnetické vlnenie</h2><h3>1.1 Vznik</h3><p>Elektromagnetické vlnenie vzniká pri zrýchlenom pohybe elektrických nábojov – napríklad pri kmitaní elektrónov v anténe. Časovo premenné elektrické pole vytvára premenné magnetické pole a to zasa elektrické pole. Pole sa tak šíri priestorom aj bez látkového prostredia.</p><p>Zdrojom môže byť oscilačný obvod LC. V uzavretom obvode sa energia len premieňa medzi kondenzátorom a cievkou. Ak obvod „otvoríme“ do podoby antény (elektrický dipól), vyžaruje elektromagnetické vlnenie s frekvenciou f = 1/(2π√(LC)).</p><p>Elektromagnetické vlnenie je <strong>priečne</strong>: vektor intenzity elektrického poľa 𝐄 a vektor magnetickej indukcie 𝐁 sú navzájom kolmé a oba kolmé na smer šírenia. Kmitajú s rovnakou fázou.</p><h3>1.2 Druhy elektromagnetického vlnenia</h3><p>Všetky druhy majú rovnakú podstatu a vo vákuu rovnakú rýchlosť. Líšia sa vlnovou dĺžkou, frekvenciou a energiou fotónov E = hf = hc/λ, a preto aj vznikom a účinkami.</p><table><tr><th>Druh</th><th>Vlnová dĺžka (približne)</th><th>Zdroj, využitie</th></tr><tr><td>rádiové vlny</td><td>nad 1 m</td><td>antény; rozhlas, televízia</td></tr><tr><td>mikrovlny</td><td>1 mm – 1 m</td><td>radar, mobilné siete, mikrovlnná rúra</td></tr><tr><td>infračervené</td><td>760 nm – 1 mm</td><td>teplé telesá; diaľkové ovládače, termovízia</td></tr><tr><td>viditeľné svetlo</td><td>380 – 760 nm</td><td>Slnko, žiarovky, LED</td></tr><tr><td>ultrafialové</td><td>10 – 380 nm</td><td>Slnko, výbojky; dezinfekcia, opaľovanie</td></tr><tr><td>röntgenové</td><td>0,01 – 10 nm</td><td>röntgenka; medicína, defektoskopia</td></tr><tr><td>gama</td><td>pod 0,01 nm</td><td>jadrové deje; ožarovanie, sterilizácia</td></tr></table><p>Smerom nadol v tabuľke klesá vlnová dĺžka, rastie frekvencia a energia fotónov. Ultrafialové, röntgenové a gama žiarenie môžu poškodzovať živé tkanivá.</p><h3>1.3 Rýchlosť elektromagnetického vlnenia</h3><p>Vo vákuu sa každé elektromagnetické vlnenie šíri rýchlosťou svetla:</p><div class="formula">c = 1/√(ε₀μ₀) ≈ 3 · 10⁸ m/s</div><p>V látkovom prostredí je rýchlosť menšia, v = c/n, kde n je index lomu prostredia. Pri prechode do iného prostredia sa <strong>frekvencia nemení</strong> – určuje ju zdroj. Mení sa rýchlosť, a preto aj vlnová dĺžka: λ = v/f = λ₀/n. Index lomu závisí od frekvencie (disperzia), preto sa rôzne farby lámu rôzne.</p><p>Na rozdiel od mechanického vlnenia elektromagnetické vlnenie nepotrebuje látkové prostredie a vo vákuu má najväčšiu rýchlosť. Mechanické vlnenie sa vo vákuu nešíri vôbec.</p><h3>1.4 Riešenie úlohy</h3>{lom(True)}<p>Frekvenciu určíme z údajov vo vákuu; pri prechode do prostredia sa nezmení:</p><div class="formula">f = c/λ₀ = (3 · 10⁸ m/s)/(240 · 10⁻⁹ m) = 1,25 · 10¹⁵ Hz</div><p>Vlnová dĺžka v prostredí:</p><div class="formula">λ = v/f = (2 · 10⁸ m/s)/(1,25 · 10¹⁵ Hz) = 1,6 · 10⁻⁷ m = 160 nm</div><p>Index lomu prostredia je n = c/v = 1,5, preto λ = λ₀/n = 240 nm / 1,5 = 160 nm. Energia jedného fotónu:</p><div class="formula">E = hf = 6,63 · 10⁻³⁴ J·s · 1,25 · 10¹⁵ Hz ≈ 8,3 · 10⁻¹⁹ J ≈ 5,2 eV</div><div class="result"><strong>f = 1,25 · 10¹⁵ Hz, λ = 160 nm. Ide o ultrafialové žiarenie.</strong></div><p class="subtle">Druh žiarenia určujeme podľa vlnovej dĺžky vo vákuu (alebo podľa frekvencie), nie podľa vlnovej dĺžky v látke. Žiarenie s λ₀ = 240 nm patrí do oblasti UVC, ktorú pohlcuje ozónová vrstva a ktorá sa používa na dezinfekciu.</p>'''
+
+V2 = f'''<h2>2. Štruktúra a vlastnosti pevných látok</h2><h3>2.1 Teplotná dĺžková rozťažnosť</h3><p>Častice pevnej látky kmitajú okolo rovnovážnych polôh. S rastúcou teplotou sa zväčšuje amplitúda kmitov a stredné vzdialenosti častíc, preto sa teleso predlžuje. Pre nie príliš veľké zmeny teploty:</p><div class="formula">Δl = αl₀Δt &nbsp;&nbsp;&nbsp; l = l₀(1 + αΔt)</div><p>α je súčiniteľ teplotnej dĺžkovej rozťažnosti [K⁻¹]. S rozťažnosťou treba počítať pri koľajniciach, mostoch či potrubiach (dilatačné škáry, kompenzátory). Využíva sa v bimetalovom pásiku.</p><h3>2.2 Deformácia ťahom a Hookov zákon</h3><p>Ak na tyč s prierezom S pôsobí sila F kolmo na prierez, vzniká v nej <strong>normálové napätie</strong> a tyč sa predĺži. <strong>Relatívne predĺženie</strong> je podiel predĺženia a pôvodnej dĺžky:</p><div class="formula">σ<sub>n</sub> = F/S &nbsp;&nbsp;&nbsp; ε = Δl/l₀</div><p>Pri pružnej deformácii platí <strong>Hookov zákon</strong>: normálové napätie je priamo úmerné relatívnemu predĺženiu.</p><div class="formula">σ<sub>n</sub> = Eε</div><p>E je modul pružnosti v ťahu [Pa]. Hookov zákon platí len po medzu úmernosti; pri väčšom napätí vzniká trvalá deformácia a pri medzi pevnosti sa materiál poruší.</p><h3>2.3 Riešenie úlohy</h3>{TYC}<p><strong>a)</strong> Predĺženie pri ohriatí o Δt = 1 °C:</p><div class="formula">Δl = αl₀Δt = 1,2 · 10⁻⁵ K⁻¹ · 1,5 m · 1 K = 1,8 · 10⁻⁵ m = 0,018 mm</div><p><strong>b)</strong> Rovnaké predĺženie znamená rovnaké relatívne predĺženie ε = Δl/l₀ = αΔt = 1,2 · 10⁻⁵. Z Hookovho zákona a z prierezu S = πd²/4:</p><div class="formula">S = π · (0,020 m)²/4 ≈ 3,14 · 10⁻⁴ m²<br>F = σ<sub>n</sub>S = EεS = 2,1 · 10¹¹ Pa · 1,2 · 10⁻⁵ · 3,14 · 10⁻⁴ m² ≈ 790 N</div><p><strong>c)</strong> Normálové napätie:</p><div class="formula">σ<sub>n</sub> = Eε = 2,1 · 10¹¹ Pa · 1,2 · 10⁻⁵ = 2,52 · 10⁶ Pa ≈ 2,5 MPa</div><div class="result"><strong>a) Δl = 0,018 mm; b) F ≈ 790 N; c) σ<sub>n</sub> ≈ 2,5 MPa.</strong></div><p>Hoci je predĺženie len 18 μm, treba naň silu asi 790 N. Rovnako veľkou silou by tyč tlačila na pevné prekážky, keby sme jej pri ohriatí o 1 °C zabránili predĺžiť sa. Sila nezávisí od dĺžky tyče – len od E, α, Δt a prierezu.</p>'''
+
+V3 = f'''<h2>3. Experiment – výtoková rýchlosť kvapaliny</h2><h3>3.1 Teória</h3><p>Prúd vody, ktorý vyteká vodorovne z otvoru vo výške h nad podložkou, sa pohybuje ako teleso pri <strong>vodorovnom vrhu</strong>. Vodorovne sa pohybuje rovnomerne, zvisle voľným pádom:</p><div class="formula">x = v₀t &nbsp;&nbsp;&nbsp; h = ½gt²</div><p>Z druhej rovnice t = √(2h/g). Po dosadení do prvej dostaneme výtokovú rýchlosť z nameraného dostrelu x:</p><div class="formula">v₀ = x √(g/(2h))</div><p>Teoretickú výtokovú rýchlosť ideálnej kvapaliny udáva <strong>Torricelliho vzťah</strong>, ktorý vyplýva z Bernoulliho rovnice. H je hĺbka otvoru pod hladinou:</p><div class="formula">v = √(2gH)</div><h3>3.2 Pomôcky</h3><p>Vysoká plastová nádoba alebo fľaša s malým bočným otvorom (priemer 2–4 mm), voda, meter, podložka alebo vanička na zachytenie prúdu, fixka.</p>{NADOBA}<h3>3.3 Postup</h3><ol><li>Nádobu postavíme na stôl tak, aby otvor smeroval vodorovne. Zmeriame výšku h otvoru nad podložkou, na ktorú prúd dopadá.</li><li>Nádobu naplníme a fixkou si označíme hladinu. Zmeriame hĺbku H otvoru pod hladinou.</li><li>Otvoríme otvor a zmeriame vodorovnú vzdialenosť x od steny pod otvorom po miesto dopadu prúdu. Hladina klesá, preto meriame rýchlo alebo dolievame vodu na stálu výšku.</li><li>Meranie zopakujeme pre niekoľko hĺbok H.</li><li>Pre každé meranie vypočítame v₀ z dostrelu a porovnáme s v = √(2gH).</li></ol><h3>3.4 Ukážka vyhodnotenia</h3><p class="subtle">Nasledujúce čísla sú modelové údaje pre h = 0,50 m a g = 9,81 m/s²; nejde o skutočné meranie.</p><table><tr><th>H (m)</th><th>x (m)</th><th>v₀ = x√(g/2h) (m/s)</th><th>√(2gH) (m/s)</th><th>pomer</th></tr><tr><td>0,20</td><td>0,60</td><td>1,88</td><td>1,98</td><td>0,95</td></tr><tr><td>0,15</td><td>0,52</td><td>1,63</td><td>1,72</td><td>0,95</td></tr><tr><td>0,10</td><td>0,43</td><td>1,35</td><td>1,40</td><td>0,96</td></tr></table><p>Napríklad pre prvý riadok:</p><div class="formula">v₀ = 0,60 m · √(9,81 m/s² / (2 · 0,50 m)) ≈ 1,88 m/s</div><div class="result"><strong>Záver:</strong> Výtoková rýchlosť určená z vodorovného vrhu je asi o 5 % menšia ako ideálna Torricelliho rýchlosť. S rastúcou hĺbkou otvoru pod hladinou rastie výtoková rýchlosť aj dostrel.</div><h3>3.5 Nepresnosti</h3><p>Skutočná kvapalina má vnútorné trenie a prúd sa za otvorom zužuje, preto je skutočná rýchlosť menšia ako ideálna. Chyby merania spôsobuje klesajúca hladina, nepresne určené miesto dopadu (prúd sa rozstrekuje), otvor, ktorý nemieri presne vodorovne, a odpor vzduchu. Pomáha merať viackrát a použiť tenkú stenu s hladkým otvorom.</p>'''
+
+for name, html in (('zadanie', page(N, 'zad', [Z1, Z2, Z3])), ('vypracovanie', page(N, 'vyp', [V1, V2, V3]))):
+    for bad in ('ekonštru', 'rukopis', 'MO27', 'Otázka', 'maturit'):
+        assert bad not in html, (name, bad)
+    (DST / f'Vzor{N}_{name}.html').write_text(html, encoding='utf-8', newline='\n')
+    print('ok', name, len(html))

@@ -308,4 +308,15 @@ const OTAZKY = [
       sk: ['Vlastnosti plynov', 'Experiment: teplota plynu pri rýchlom stláčaní a rozpínaní, 1. termodynamický zákon'],
       en: ['Properties of gases', 'Experiment: gas temperature in rapid compression and expansion, first law of thermodynamics'] },
   ]},
+  { n: 27, casti: [
+    { o: ['vlnenie', 'optika'],
+      sk: ['Elektromagnetické vlnenie', 'Vznik, druhy a spektrum, rýchlosť vo vákuu a v prostredí, UV žiarenie 240 nm'],
+      en: ['Electromagnetic waves', 'Production, types and spectrum, speed in a vacuum and in a medium, 240 nm UV radiation'] },
+    { o: ['termika'],
+      sk: ['Pevné látky – rozťažnosť a pružnosť', 'Teplotná dĺžková rozťažnosť, Hookov zákon, sila a napätie v oceľovej tyči'],
+      en: ['Solids – thermal expansion and elasticity', 'Linear thermal expansion, Hooke’s law, force and stress in a steel rod'] },
+    { o: ['tekutiny', 'mechanika'],
+      sk: ['Výtoková rýchlosť kvapaliny', 'Experiment: vodorovný vrh prúdu vody, porovnanie s Torricelliho vzťahom'],
+      en: ['Outflow speed of a liquid', 'Experiment: horizontal projection of a water jet, comparison with Torricelli’s formula'] },
+  ]},
 ];

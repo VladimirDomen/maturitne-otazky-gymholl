@@ -35,6 +35,7 @@ TOPICS = {
     24: ['Mechanical Waves', 'Capillarity', 'Coefficient of Sliding Friction'],
     25: ['Atomic Nucleus', 'Electric Current in Electrolytes – Nickel Plating', 'Measuring with a Vernier Caliper and Measurement Errors'],
     26: ['Electron Shell of the Atom', 'Electric Current', 'Properties of Gases'],
+    27: ['Electromagnetic Waves', 'Solids – Thermal Expansion and Elasticity', 'Outflow Speed of a Liquid'],
 }
 
 SVG_EN = {
@@ -129,6 +130,12 @@ SVG_EN = {
     'Časový priebeh napätia a prúdu na ideálnej cievke, prúd zaostáva o štvrtinu periódy':
         'Voltage and current against time for an ideal coil; the current lags by a quarter of a period',
     'Skladanie dvoch síl pomocou rovnobežníka síl': 'Adding two forces using the parallelogram of forces', 'F ≈ 6,1 N': 'F ≈ 6.1 N',
+    'Elektromagnetické vlnenie prechádza z vákua do prostredia, kde sa šíri pomalšie':
+        'An electromagnetic wave passes from a vacuum into a medium where it travels more slowly',
+    'Oceľová tyč s dĺžkou 1,5 m a predĺžením Δl': 'Steel rod of length 1.5 m with extension Δl',
+    'Voda vyteká vodorovne malým otvorom v stene nádoby a dopadá na podložku':
+        'Water flows horizontally out of a small hole in the wall of a container and lands on the base',
+    'vákuum': 'vacuum', 'prostredie': 'medium',
     'spínač': 'switch', 'zdroj': 'source', 'ampérmeter': 'ammeter', 'voltmeter': 'voltmeter', 'rezistor': 'resistor',
     'Elektrolýza roztoku síranu meďnatého medzi dvoma medenými elektródami; katióny medi idú ku katóde, síranové anióny k anóde':
         'Electrolysis of copper(II) sulfate solution between two copper electrodes; copper cations move to the cathode, sulfate anions to the anode',
