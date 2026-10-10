@@ -13,6 +13,7 @@ TOPICS = {
     2: ['Gravitational Field', 'Mechanical Waves', 'Electric Current'],
     3: ['Motion in a Gravitational Field', 'Interference of Waves', 'Origin of Electric Current'],
     4: ['Kinematics of a Particle', 'Magnetic Field', 'The Microworld'],
+    6: ['Energy of a Particle', 'Oscillator', 'Electric Circuit'],
     26: ['Electron Shell of the Atom', 'Electric Current', 'Properties of Gases'],
 }
 
@@ -42,6 +43,14 @@ SVG_EN = {
         'Two parallel wires, currents flowing to the right, midpoint P between the wires',
     'Klesajúca exponenciálna závislosť počtu nerozpadnutých jadier od času':
         'Decreasing exponential dependence of the number of undecayed nuclei on time',
+    'Zdvíhanie závažia o výšku 1,5 metra': 'Lifting a load by a height of 1.5 metres',
+    'Graf harmonického kmitania s amplitúdou 0,1 m a prechodmi nulou v časoch 0,25 a 0,55 s':
+        'Graph of harmonic oscillation with amplitude 0.1 m and zero crossings at 0.25 s and 0.55 s',
+    'Jednosmerný obvod: batéria, vypínač a ampérmeter v sérii s rezistorom; voltmeter paralelne k rezistoru':
+        'DC circuit: battery, switch and ammeter in series with a resistor; voltmeter in parallel with the resistor',
+    'Graf lineárnej závislosti elektrického prúdu od napätia pre 100 ohmový odpor':
+        'Linear graph of current against voltage for a 100-ohm resistor',
+    'spínač': 'switch', 'zdroj': 'source', 'ampérmeter': 'ammeter', 'voltmeter': 'voltmeter', 'rezistor': 'resistor',
 }
 
 def tr_svg(svg):
@@ -49,6 +58,8 @@ def tr_svg(svg):
         txt = m.group(2)
         if txt in SVG_EN:
             txt = SVG_EN[txt]
+        elif re.fullmatch(r'[\w\s=+−().-]*\d,\d[\w\s=+−().,-]*', txt) and not re.search(r'[a-záäčďéíĺľňóôŕšťúýž]{3,}', txt):
+            txt = re.sub(r'(\d),(\d)', r'\1.\2', txt)   # čísla a jednotky: desatinná bodka
         elif re.search(r'[a-záäčďéíĺľňóôŕšťúýž]{3,}|\d,\d', txt):
             raise SystemExit(f'Nepreložený text v obrázku: {txt}')
         return m.group(1) + txt + m.group(3)

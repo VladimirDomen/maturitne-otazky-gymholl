@@ -1,0 +1,72 @@
+<h2>1. Energy of a Particle</h2>
+<div class="task"><b>Task.</b> Explain mechanical work, kinetic and potential energy, the law of conservation of mechanical energy, power and efficiency. <b>Problem:</b> A load with a mass of <b>50 kg</b> is lifted by <b>1.5 m</b> in <b>7.5 s</b>. Determine the average power during lifting. Neglect losses.</div>
+<h3>Theory</h3>
+<p>The <b>mechanical work</b> done by a constant force is <i>W = Fs cos α</i>, where α is the angle between the force and the displacement. The unit is the joule (J).</p>
+<div class="grid2"><div><p><b>Kinetic energy:</b></p>
+<div class="formula">E<sub>k</sub> = ½mv²</div>
+<p><b>Gravitational potential energy</b> near the Earth’s surface:</p>
+<div class="formula">E<sub>p</sub> = mgh</div>
+</div>
+<div><p><b>Law of conservation of mechanical energy:</b> if only conservative forces do work,</p>
+<div class="formula">E<sub>k</sub> + E<sub>p</sub> = const.</div>
+<p>When non-conservative forces act, mechanical energy can be converted into other forms of energy.</p>
+</div>
+</div>
+<p><b>Average power</b> is the ratio of work to time: <i>P = W/t</i> (unit watt, W). <b>Efficiency</b> is the ratio of the useful energy or power to the energy or power supplied: <i>η = P<sub>useful</sub>/P<sub>input</sub></i>; for a percentage we multiply by 100 %.</p>
+<div class="grid2"><div>
+{{SVG0}}
+<p class="caption">Lifting the load</p>
+</div>
+<div><h3>Solution</h3>
+<p>When the load is lifted at a steady speed, the work done equals the increase in potential energy:</p>
+<div class="formula">W = mgh</div>
+<div class="formula">W = 50 · 9.81 · 1.5 = 735.75 J</div>
+<div class="formula">P = W/t = 735.75/7.5</div>
+<div class="result">Result: P = 98.1 W (approximately 100 W with g ≈ 10 m/s²).</div>
+<p class="subtle">This is the average mechanical power without losses, assuming the kinetic energy of the load is the same at the start and at the end.</p>
+</div>
+</div>
+<!--PART-->
+<h2>2. Oscillator</h2>
+<div class="task"><b>Task.</b> The graph shows the displacement of a harmonic oscillator as a function of time. Determine the amplitude, period, frequency and angular frequency. Write the equation of the oscillation, describe the phase and determine the maximum velocity and the maximum acceleration. The values <b>0.05 m</b> and <b>0.10 m</b> are marked on the displacement axis; the passages through the equilibrium position at <b>0.25 s</b> and <b>0.55 s</b> are marked on the time axis.</div>
+{{SVG1}}
+<p class="caption">Passages through the equilibrium position at 0.25 s (downwards) and 0.55 s (upwards).</p>
+<h3>Solution</h3>
+<p><b>Amplitude:</b> A = 0.10 m. The two passages through the equilibrium position are consecutive, so the time between them equals half a period.</p>
+<div class="formula">T/2 = 0.55 − 0.25 = 0.30 s ⇒ <b>T = 0.60 s</b></div>
+<div class="formula">f = 1/T = 1/0.60 ≈ <b>1.67 Hz</b></div>
+<div class="formula">ω = 2π/T = 10π/3 ≈ <b>10.47 rad/s</b></div>
+<p>The general equation of oscillation is <i>y(t) = A sin(ωt + φ<sub>0</sub>)</i>. On the graph, at t = 0.25 s the displacement passes through zero downwards, so the phase is π. Hence:</p>
+<div class="formula">φ<sub>0</sub> = π − ω · 0.25 = π/6</div>
+<div class="result">Equation of the graph:<div class="formula">y(t) = 0.10 sin((10π/3)t + π/6) &nbsp; [m]</div></div>
+<p>The <b>phase</b> φ(t) = ωt + φ<sub>0</sub> determines the state of the oscillation at a given time. Velocity and acceleration are obtained by differentiating the displacement:</p>
+<div class="formula">v(t) = Aω cos(ωt + φ<sub>0</sub>), &nbsp; a(t) = −Aω² sin(ωt + φ<sub>0</sub>)</div>
+<div class="grid2"><div class="result">Maximum velocity:<div class="formula">v<sub>max</sub> = Aω ≈ <b>1.05 m/s</b></div></div>
+<div class="result">Maximum acceleration:<div class="formula">a<sub>max</sub> = Aω² ≈ <b>10.97 m/s²</b></div></div>
+</div>
+<p class="subtle">Displacement and acceleration always have opposite signs: a = −ω²y. The speed is greatest at the equilibrium position; the magnitude of the acceleration is greatest at the extreme positions.</p>
+<!--PART-->
+<h2>3. Measuring Voltage and Current in an Electric Circuit</h2>
+<div class="task"><b>Task.</b> Design a simple electric circuit and demonstrate the correct measurement of voltage and current. As an additional task, verify Ohm’s law by measurement for a resistor at an approximately constant temperature.</div>
+<h3>Circuit diagram</h3>
+{{SVG2}}
+<p class="caption">The ammeter A is in series with the component; the voltmeter V is connected in parallel with the resistor R.</p>
+<h3>Procedure</h3>
+<ol><li>With the source disconnected, assemble the circuit according to the diagram; check the polarity and suitable ranges of the meters.</li>
+<li>Connect the ammeter <b>in series</b> and the voltmeter <b>in parallel</b> with the resistor. Never connect the ammeter directly across the source.</li>
+<li>Switch on the source at a low, safe voltage and read the voltage U and the current I.</li>
+<li>Change the source voltage and record further pairs (U, I). Do not let the resistor overheat.</li>
+<li>Calculate R = U/I and plot the graph of I against U. Check whether the points lie approximately on a straight line through the origin.</li>
+</ol>
+<h3>Ohm’s law</h3>
+<p>At constant temperature, the current through an ohmic conductor is directly proportional to the voltage across it:</p>
+<div class="formula"><b>U = RI, &nbsp; I = U/R, &nbsp; R = U/I</b></div>
+<p>Units: voltage in volts (V), current in amperes (A), resistance in ohms (Ω).</p>
+<p><b>Sample results</b> for a 100 Ω resistor (model values, not actually measured data):</p>
+<div class="scroll"><table><thead><tr><th>U (V)</th><th>0</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th></tr>
+</thead><tbody><tr><th>I (A)</th><td>0</td><td>0.010</td><td>0.020</td><td>0.030</td><td>0.040</td><td>0.050</td></tr>
+<tr><th>R (Ω)</th><td>–</td><td>100</td><td>100</td><td>100</td><td>100</td><td>100</td></tr>
+</tbody></table></div>
+{{SVG3}}
+<p class="caption">Sample graph of I against U for R = 100 Ω; the gradient of the line equals 1/R.</p>
+<div class="result">Conclusion: If, at an approximately constant temperature, the values of U/I are constant and the graph of I against U is a straight line through the origin, the measurement supports Ohm’s law for the resistor used.</div>
