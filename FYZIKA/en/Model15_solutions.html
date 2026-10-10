@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Model 15 – Worked solutions</title>
+<link rel="stylesheet" href="../mo.css">
+</head>
+<body class="vyp">
+
+<header class="mo-head"><div class="mo-head-in">
+<div class="mo-kicker"><span class="mo-num">MODEL 15</span><span class="mo-kind">Worked solutions</span></div>
+<h1>Electric Field · Atomic Nucleus · Inclined Plane</h1>
+<p>Detailed worked solutions with explanations</p>
+</div></header>
+
+<nav class="mo-bar"><div class="mo-bar-in">
+<a class="mo-back" href="index.html">← All models</a>
+<div class="mo-switch"><a href="Model15_questions.html">Questions</a><a href="Model15_solutions.html" class="on">Solutions</a></div>
+<button type="button" onclick="window.print()">Print / PDF</button>
+<a class="mo-lang" href="../Vzor15_vypracovanie.html" hreflang="sk" title="Slovenská verzia">SK</a>
+</div></nav>
+
+<main class="wrap">
+
+<section class="sheet" id="cast-1"><div class="topline">Part 1 of 3</div>
+<h2>1. Electric Field</h2>
+<h3>1.1 Electric charge and electric field</h3>
+<p>There are positive and negative charges. Like charges repel, unlike charges attract. Charge is additive and quantised: q = ne, where e ≈ 1.602 · 10⁻¹⁹ C and n is an integer. In an isolated system the total charge is conserved. Charging by friction or by contact is a transfer of charge, not the creation of charge from nothing.</p>
+<p>A charged body creates an electric field. The field strength expresses the force on a unit positive test charge:</p>
+<div class="formula">𝐄 = 𝐅/q₀ &nbsp;&nbsp; [E] = N/C = V/m</div>
+<p>The direction of the field strength is the direction of the force on a positive charge. Field lines point from positive charges to negative ones; for an isolated charge they are radial.</p>
+<h3>1.2 Coulomb’s law</h3>
+<div class="formula">F = [1/(4πε)] · |q₁q₂|/r²</div>
+<p>The relation holds for point charges in a homogeneous isotropic medium; in a vacuum ε = ε₀ and 1/(4πε₀) ≈ 8.99 · 10⁹ N·m²/C². The force acts along the line joining the charges. Its magnitude is directly proportional to the product of the magnitudes of the charges and inversely proportional to the square of the distance. For an isolated point charge E = |q|/(4πεr²).</p>
+<h3>1.3 The capacitor and its capacitance</h3>
+<p>A capacitor consists of two conductors separated by an insulator. The conductors carry charges +Q and −Q. The capacitance C = Q/U expresses the ability to store charge at a given voltage. The unit is the farad: 1 F = 1 C/V. For an ideal parallel-plate capacitor C = εS/d and the energy of the field is E = ½CU².</p>
+<p><strong>In parallel:</strong> all capacitors have the same voltage. The charges add up: Q = ΣQᵢ = UΣCᵢ, so:</p>
+<div class="formula">C<sub>p</sub> = C₁ + C₂ + …</div>
+<p><strong>In series:</strong> for initially uncharged capacitors with isolated inner nodes, the capacitors carry charges of equal magnitude. The voltages add up: U = Σ(Q/Cᵢ), so:</p>
+<div class="formula">1/C<sub>s</sub> = 1/C₁ + 1/C₂ + …</div>
+<h3>1.4 Total capacitance</h3>
+<svg class="diagram" viewBox="0 0 700 250" role="img" aria-label="Two parallel branches of two capacitors in series, followed by two capacitors in series"><g stroke="#193b59" stroke-width="3" fill="none"><path d="M35 125H90V65H150M90 125V185H150M165 65H235M250 65H330V125H390M165 185H235M250 185H330V125M405 125H475M490 125H640"/><path d="M150 43V87M165 43V87M235 43V87M250 43V87M150 163V207M165 163V207M235 163V207M250 163V207M390 103V147M405 103V147M475 103V147M490 103V147"/></g><g font-family="Arial" font-size="18" fill="#193b59"><text x="142" y="30">C₁</text><text x="227" y="30">C₂</text><text x="142" y="238">C₃</text><text x="227" y="238">C₄</text><text x="383" y="88">C₅</text><text x="468" y="88">C₆</text><text x="17" y="130">A</text><text x="649" y="130">B</text></g></svg>
+<p>First we solve each of the two branches. Two identical capacitors in series have half the capacitance of one:</p>
+<div class="formula">C₁₂ = C₃₄ = (10 · 10)/(10 + 10) = 5 μF</div>
+<p>The branches are connected in parallel:</p>
+<div class="formula">C<sub>block</sub> = 5 + 5 = 10 μF</div>
+<p>The whole block is in series with C₅ and C₆, both of 10 μF:</p>
+<div class="formula">1/C<sub>AB</sub> = 1/10 + 1/10 + 1/10 = 3/10 (μF)⁻¹</div>
+<div class="result"><strong>C<sub>AB</sub> = 10/3 μF ≈ 3.33 μF.</strong></div>
+</section>
+
+<section class="sheet" id="cast-2"><div class="topline">Part 2 of 3</div>
+<h2>2. Atomic Nucleus – Mass and Energy</h2>
+<h3>2.1 Nucleus, isotopes and binding energy</h3>
+<p>The nucleus contains protons and neutrons – nucleons. The proton number Z gives the number of protons and determines the chemical element. The nucleon number A = Z + N is the number of all nucleons. Isotopes have the same Z and a different number of neutrons.</p>
+<p>The mass of a bound nucleus is smaller than the sum of the masses of free protons and neutrons. The difference is called the mass defect:</p>
+<div class="formula">Δm<sub>binding</sub> = Zm<sub>p</sub> + Nm<sub>n</sub> − m<sub>nucleus</sub><br>E<sub>binding</sub> = Δm<sub>binding</sub>c²</div>
+<p>The binding energy is the energy needed to split the nucleus completely into free nucleons. When the nucleus forms, the same energy can be released. The rest energy of a body is E₀ = mc². A change in the energy of a system is therefore related to a change in its mass.</p>
+<h3>2.2 Completing the reaction</h3>
+<div class="formula"><sup>27</sup><sub>13</sub>Al + <sup>4</sup><sub>2</sub>He → <sup>A</sup><sub>14</sub>Si + <sup>1</sup><sub>1</sub>H</div>
+<p>Conservation of nucleon number: 27 + 4 = A + 1, hence <strong>A = 30</strong>. Conservation of electric charge: 13 + 2 = 14 + 1. The complete reaction is ²⁷Al(α,p)³⁰Si: an alpha particle strikes an aluminium nucleus, producing silicon-30 and a proton.</p>
+<h3>2.3 Energy balance</h3>
+<table><tr><th>Isotope</th><th>Mass of the neutral atom</th></tr>
+<tr><td>²⁷Al</td><td>26.981539 u</td></tr>
+<tr><td>⁴He</td><td>4.002603 u</td></tr>
+<tr><td>³⁰Si</td><td>29.973770 u</td></tr>
+<tr><td>¹H</td><td>1.007825 u</td></tr>
+</table>
+<p>The table gives the <strong>masses of neutral atoms</strong>, not the average atomic masses of the natural mixture of isotopes. In this accounting there is the same number of electrons on both sides (15), so their rest masses cancel. Differences in the binding energies of the electrons are neglected in the school calculation. The alpha particle is in fact a helium nucleus and the emitted proton a hydrogen nucleus.</p>
+<div class="formula">m<sub>before</sub> = 26.981539 + 4.002603 = 30.984142 u<br>m<sub>after</sub> = 29.973770 + 1.007825 = 30.981595 u<br>Δm = m<sub>before</sub> − m<sub>after</sub> = 0.002547 u</div>
+<div class="formula">Q = Δmc² = 0.002547 · 931.494 MeV<br>Q ≈ 2.3725 MeV ≈ 3.80 · 10⁻¹³ J</div>
+<div class="result"><strong>Approximately 2.37 MeV = 3.80 · 10⁻¹³ J is released per reaction.</strong> Q is positive, so the reaction is exoenergetic.</div>
+<p>The energy balance also includes kinetic energy: E<sub>k,after</sub> = E<sub>k,before</sub> + Q. With the products in their ground states, the released energy appears as their kinetic energy. A positive Q does not mean the reaction takes place without accelerating the alpha particle; positive nuclei repel each other and the Coulomb barrier must be overcome.</p>
+<p class="subtle">Source of masses: <a href="https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl">NIST – Atomic Weights and Isotopic Compositions</a>; values rounded to six decimal places. The mass defect of a bound nucleus and the mass difference in a reaction are different calculations; both use the relation between mass and energy.</p>
+</section>
+
+<section class="sheet" id="cast-3"><div class="topline">Part 3 of 3</div>
+<h2>3. Experiment – Uniformly Accelerated Motion on an Inclined Plane</h2>
+<h3>3.1 Aim and theory</h3>
+<p>We verify that, when starting from rest, the distance is directly proportional to the square of the time. We use a trolley with light, freely rotating wheels on a straight track with a small, constant slope.</p>
+<div class="formula">s = ½at² &nbsp; → &nbsp; a = 2s/t²</div>
+<p>The component of weight along the plane is mg sin α. Neglecting resistance and the rotational energy of the wheels, we expect a ≈ g sin α. For a real trolley the acceleration is usually smaller but approximately constant. To verify the dependence s ∝ t², we do not need to know the exact size of the resistive forces, provided they do not change significantly during the motion.</p>
+<h3>3.2 Equipment</h3>
+<p>A straight board or grooved track about 1.5–2 m long, supports to raise one end, a small trolley, a measuring tape, a stopwatch, tape for marks, a simple stop for release without pushing and a soft buffer.</p>
+<h3>3.3 Arrangement and trial run</h3>
+<p>We mark a common start and several distances, for example 0.20; 0.40; 0.60; 0.80 and 1.00 m. We adjust the track so that travelling 1 m takes about 3–5 seconds. The trolley must start reliably and must not stick. If it is too fast, we reduce the slope; if it does not start, we increase it slightly.</p>
+<h3>3.4 Procedure</h3>
+<ol><li>We place the trolley at the start, always with the same reference point, for example the front axle.</li>
+<li>We remove the stop without pushing and start the stopwatch. We measure the time until the same point of the trolley passes the chosen mark.</li>
+<li>For each distance we make at least five separate runs. We keep the same slope and start for all of them.</li>
+<li>We calculate the mean time t̄, its square and the acceleration a = 2s/t̄².</li>
+<li>We plot s against t̄². An approximately straight line through the origin confirms the model.</li>
+</ol>
+<h3>3.5 Sample evaluation</h3>
+<p class="subtle">The following numbers are model data for a = 0.10 m/s²; they are not a real measurement.</p>
+<table><tr><th>s (m)</th><th>t (s)</th><th>t² (s²)</th><th>2s/t² (m/s²)</th></tr>
+<tr><td>0.20</td><td>2.00</td><td>4.00</td><td>0.100</td></tr>
+<tr><td>0.40</td><td>2.83</td><td>8.01</td><td>0.100</td></tr>
+<tr><td>0.60</td><td>3.46</td><td>11.97</td><td>0.100</td></tr>
+<tr><td>0.80</td><td>4.00</td><td>16.00</td><td>0.100</td></tr>
+<tr><td>1.00</td><td>4.47</td><td>19.98</td><td>0.100</td></tr>
+</table>
+<p>The gradient of the graph of s against t² is k = a/2. For example, from the end points:</p>
+<div class="formula">k ≈ (1.00 − 0.20)/(19.98 − 4.00) ≈ 0.0501 m/s²<br>a = 2k ≈ 0.100 m/s²</div>
+<p>Twice the time corresponds to four times the distance: in the table the trolley travels 0.20 m in 2 s and 0.80 m in 4 s. Uniform motion would give s ∝ t, so it can be distinguished from this result.</p>
+<h3>3.6 Visual check without a stopwatch</h3>
+<p>As a supplement we use a regular beat. At each beat we observe where the trolley is. For acceleration from rest, the distances travelled in successive equal time intervals are approximately in the ratio <strong>1 : 3 : 5 : 7</strong>. The marks for the instants T, 2T, 3T, 4T are therefore placed at total distances d, 4d, 9d, 16d from the start. With a suitable slope, the trolley passes the marks approximately in a regular rhythm. This is a visual demonstration; the table of measurements provides a more accurate check.</p>
+<h3>3.7 Sources of error and choice of body</h3>
+<p>The largest effects come from reaction time, unintentional pushing, friction, unevenness of the track and inaccurate determination of passing a mark. A slower motion, repetition and the same observer help. For short times, manual timing is inaccurate. If the graph is not approximately linear or does not pass close to the origin, we check the start and the conditions of the motion.</p>
+<p>A ball in a groove can also be used, but its energy is shared between translational and rotational motion. For a uniform solid sphere rolling without slipping, a = (5/7)g sin α, not g sin α. The relation s = ½at² remains valid. For this experiment the trolley is easier to follow.</p>
+<div class="result"><strong>Conclusion:</strong> If s against t² forms an approximately straight line and the values of 2s/t² are similar within the uncertainty, the measurement supports the model of uniformly accelerated motion from rest.</div>
+</section>
+
+</main>
+
+<footer class="mo-foot"><a href="index.html">← All models</a><span>Model 15 · Worked solutions</span></footer>
+<script src="../mo.js"></script>
+</body>
+</html>

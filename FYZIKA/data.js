@@ -132,6 +132,17 @@ const OTAZKY = [
       sk: ['Zotrvačná hmotnosť', 'Experiment: tuhosť pružiny a perióda kmitov, m = kT²/(4π²)'],
       en: ['Inertial mass', 'Experiment: spring constant and period of oscillation, m = kT²/(4π²)'] },
   ]},
+  { n: 15, casti: [
+    { o: ['elektrina'],
+      sk: ['Elektrické pole', 'Náboj, intenzita, Coulombov zákon, kapacita, sériové a paralelné zapojenie kondenzátorov'],
+      en: ['Electric field', 'Charge, field strength, Coulomb’s law, capacitance, capacitors in series and parallel'] },
+    { o: ['mikrosvet'],
+      sk: ['Atómové jadro', 'Nukleóny, izotopy, väzbová energia, energetická bilancia jadrovej reakcie'],
+      en: ['Atomic nucleus', 'Nucleons, isotopes, binding energy, energy balance of a nuclear reaction'] },
+    { o: ['mechanika'],
+      sk: ['Naklonená rovina', 'Experiment: rovnomerne zrýchlený pohyb z pokoja, s ∼ t², určenie zrýchlenia'],
+      en: ['Inclined plane', 'Experiment: uniformly accelerated motion from rest, s ∝ t², determining acceleration'] },
+  ]},
   { n: 26, casti: [
     { o: ['mikrosvet', 'optika'],
       sk: ['Elektrónový obal atómu', 'Kvantovanie energie, emisné a absorpčné spektrum, energia fotónu'],

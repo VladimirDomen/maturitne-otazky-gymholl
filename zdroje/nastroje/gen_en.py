@@ -19,6 +19,7 @@ TOPICS = {
     8: ['Molecular Physics and Thermodynamics', 'Electromagnetic Waves', 'Simple Pendulum'],
     9: ['Changes of State', 'Electron in an Electric Field', 'Progressive Transverse Waves'],
     12: ['Solids', 'Photoelectric Effect', 'Inertial Mass'],
+    15: ['Electric Field', 'Atomic Nucleus', 'Inclined Plane'],
     26: ['Electron Shell of the Atom', 'Electric Current', 'Properties of Gases'],
 }
 
@@ -82,6 +83,8 @@ SVG_EN = {
     'vyparovanie': 'vaporisation', 'trojný bod': 'triple point', 'kritický bod': 'critical point',
     'nadkritická': 'supercritical', 'oblasť': 'region', 'šírenie vlnenia': 'direction of propagation',
     'Častice lana kmitajú kolmo na smer šírenia.': 'Rope particles oscillate perpendicular to the propagation.',
+    'Dve paralelné vetvy po dvoch sériových kondenzátoroch, potom dva sériové kondenzátory':
+        'Two parallel branches of two capacitors in series, followed by two capacitors in series',
     'spínač': 'switch', 'zdroj': 'source', 'ampérmeter': 'ammeter', 'voltmeter': 'voltmeter', 'rezistor': 'resistor',
 }
 
