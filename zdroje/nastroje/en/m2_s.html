@@ -1,0 +1,83 @@
+<h2>1. Gravitational Field</h2>
+<h3>1. Gravitational field</h3>
+<p>A gravitational field is the region in which a body with mass exerts a gravitational force on other bodies. The gravitational force is attractive. The field is described, for example, by the field strength <strong>K</strong> (gravitational force per unit mass):</p>
+<div class="formula">K = F<sub>g</sub> / m   [N/kg]</div>
+<p>The field strength is a vector; its direction is the direction of the gravitational force on a test body.</p>
+<h3>2. Newton’s law of gravitation</h3>
+<p>Two bodies with mass attract each other with a force directly proportional to the product of their masses and inversely proportional to the square of their distance (for point masses or spherically symmetric bodies).</p>
+<div class="formula">F<sub>g</sub> = G · m<sub>1</sub>m<sub>2</sub> / r²</div>
+<p><em>G</em> is the gravitational constant (approximately 6.67 × 10<sup>−11</sup> N·m²/kg²), <em>m₁, m₂</em> are the masses and <em>r</em> is the distance between their centres for spherically symmetric bodies.</p>
+<h3>3. Uniform and radial field</h3>
+<p><strong>Uniform field:</strong> the field strength vector has approximately the same magnitude and direction throughout the region considered; the field lines are parallel (a good approximation near the Earth’s surface over a small area).</p>
+<p><strong>Radial field:</strong> the field lines point towards the centre of the source body, and outside a spherically symmetric body the magnitude of the field strength decreases with the square of the distance.</p>
+<h3>4. The Earth’s gravitational field</h3>
+<div class="formula">K(r) = GM<sub>E</sub> / r²</div>
+<p>At the Earth’s surface <em>r = R</em>, so <em>K₀ = GM<sub>E</sub>/R²</em>. Above the surface <em>r = R + h</em>, therefore:</p>
+<div class="formula">K(h) = K₀ · R²/(R+h)²</div>
+<p>In the elementary model outside the Earth, the field strength decreases with increasing distance from the centre. At every point of the field, the gravitational acceleration is numerically equal to the field strength (the units m/s² and N/kg are equivalent).</p>
+<h3>5. Kepler’s laws</h3>
+<ol><li><strong>First:</strong> the planets orbit the Sun in ellipses with the Sun at one focus.</li>
+<li><strong>Second:</strong> the line joining a planet to the Sun sweeps out equal areas in equal time intervals.</li>
+<li><strong>Third:</strong> for bodies orbiting the same central body, <em>T²/a³ = const.</em>, where <em>a</em> is the semi-major axis of the orbit.</li>
+</ol>
+<h3>6. Solution of the calculation</h3>
+<p><strong>Given:</strong> K₀ = 10 N/kg, Earth’s radius R.</p>
+<h4>Variant A: height h = 3R above the surface</h4>
+<p>First express the distance from the centre: <em>r = R + h = R + 3R = 4R</em>.</p>
+<div class="formula">K = K₀ · (R/4R)² = 10/16 = <strong>0.625 N/kg</strong></div>
+<h4>Variant B: distance r = 3R from the centre</h4>
+<p>Here we do not add the radius, because the distance is already measured from the centre.</p>
+<div class="formula">K = K₀ · (R/3R)² = 10/9 ≈ <strong>1.11 N/kg</strong></div>
+<div class="note"><strong>Common mistake:</strong> The height <em>h</em> above the surface and the distance <em>r</em> from the centre are not the same. Before substituting, always determine <em>r = R + h</em> if a height is given.</div>
+<!--PART-->
+<h2>2. Mechanical Waves</h2>
+<h3>1. Origin and types of waves</h3>
+<p>A mechanical wave is the propagation of a disturbance through a material medium. The particles of the medium oscillate about their equilibrium positions and pass energy on to neighbouring particles; in an ideal wave the material as a whole does not travel with the wave.</p>
+<p><strong>Transverse wave:</strong> the displacement of the particles is perpendicular to the direction of propagation (e.g. a wave on a stretched rope). <strong>Longitudinal wave:</strong> the displacement of the particles is parallel to the direction of propagation (e.g. sound in air).</p>
+<h3>2. Equation of a progressive harmonic wave</h3>
+<p>For a wave travelling in the positive direction of the <em>x</em>-axis we can write:</p>
+<div class="formula">y(x,t) = A sin[2π(t/T − x/λ) + φ₀]</div>
+<p>Equivalent form: <em>y(x,t) = A sin(ωt − kx + φ₀)</em>, where <em>ω = 2π/T = 2πf</em> and <em>k = 2π/λ</em>. Basic quantities: <em>y</em> – instantaneous displacement (m), <em>A</em> – amplitude (m), <em>t</em> – time (s), <em>T</em> – period (s), <em>x</em> – position (m), <em>λ</em> – wavelength (m), <em>φ₀</em> – initial phase (rad). For a wave travelling in the negative <em>x</em> direction, the sign of the spatial term changes.</p>
+<h3>3. Relations between the quantities</h3>
+<div class="formula">f = 1/T    ·    v = λ/T = λf</div>
+<h3>4. Position and time graph – calculations</h3>
+<div class="grid2"><div><h4>Graph A: y(x)</h4>
+{{SVG0}}
+<p>This is a “snapshot” of the wave at one instant.</p>
+</div>
+<div><h4>Graph B: y(t)</h4>
+{{SVG1}}
+<p>This is the motion of one point of the medium over time.</p>
+</div>
+</div>
+<p>On the graphs, the range 0 to 12 contains <strong>two complete periods of the sine curve</strong>.</p>
+<table><tr><th>Quantity</th><th>Graph A: y(x)</th><th>Graph B: y(t)</th></tr>
+<tr><td>Amplitude A</td><td>0.2 m</td><td>0.2 m</td></tr>
+<tr><td>Point A</td><td>x = 1.5 m; y = +0.2 m</td><td>t = 1.5 s; y = +0.2 m</td></tr>
+<tr><td>Point B</td><td>x = 4.5 m; y = −0.2 m</td><td>t = 4.5 s; y = −0.2 m</td></tr>
+<tr><td>Quantity read off</td><td>λ = 6 m</td><td>T = 6 s</td></tr>
+<tr><td>Frequency</td><td>cannot be determined from y(x) alone</td><td>f = 1/6 Hz ≈ 0.167 Hz</td></tr>
+</table>
+<p>If both graphs belong to <em>the same wave</em>, the wavelength and the period give:</p>
+<div class="formula">v = λ/T = 6 m / 6 s = <strong>1 m/s</strong></div>
+<!--PART-->
+<h2>3. Electric Current</h2>
+<h3>1. Electric current and voltage</h3>
+<p>Electric current is the ordered motion of electrically charged particles. Its magnitude is the charge that passes through a cross-section of the conductor per unit time (for a constant current):</p>
+<div class="formula">I = ΔQ/Δt   [A]</div>
+<p>The conventional direction of current in the external part of a circuit is from the positive terminal of the source to the negative one; in metals the electrons move in the opposite direction.</p>
+<p>The voltage between two points expresses the work done by electric forces per unit charge: <em>U = W/Q</em> (with the appropriate definition of work between the points); the unit is the volt (V).</p>
+<h3>2. Electrical resistance and Ohm’s law</h3>
+<div class="formula">U = RI    ⟺    R = U/I</div>
+<p>The unit of resistance is the ohm (Ω); <em>1 Ω = 1 V/A</em>. Ohm’s law in the form <em>U = RI</em> describes an ohmic conductor under constant physical conditions (especially temperature). The ratio <em>U/I</em> can also be calculated for a non-ohmic component at a given operating point, but it need not be constant.</p>
+<h3>3. Measuring resistance correctly</h3>
+{{SVG2}}
+<ol><li>The <strong>ammeter</strong> is connected <strong>in series</strong> with the resistor so that the measured current flows through it.</li>
+<li>The <strong>voltmeter</strong> is connected <strong>in parallel</strong> with the resistor so that it measures the voltage across it.</li>
+<li>We measure the voltage <em>U</em> and the current <em>I</em>, then calculate <em>R = U/I</em>.</li>
+</ol>
+<p><strong>Illustrative measurement:</strong> If the voltmeter reads <em>U = 6.0 V</em> and the ammeter <em>I = 0.030 A</em>, then:</p>
+<div class="formula">R = 6.0 / 0.030 = <strong>200 Ω</strong></div>
+<p class="subtle">The numerical values are illustrative; they serve to demonstrate the procedure.</p>
+<h3>4. What can affect the result</h3>
+<p>In a real measurement we take into account the internal resistance of the meters, the quality of the connections, the selected measuring range and possible heating of the resistor. In a school experiment we use a safe low-voltage source.</p>

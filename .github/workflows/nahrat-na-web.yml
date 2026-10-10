@@ -1,0 +1,152 @@
+# Nahratie vzorov na camp.sk/MATURITNE_OTAZKY/gymholl/ (FYZIKA, neskôr MATEMATIKA)
+#
+# Spúšťa sa len ručne: GitHub → Actions → „Nahrať na web“ → Run workflow.
+#
+# Spojenie: SFTP na ftp.camp.sk, účet camp.sk.maturitne, ktorý na hostingu
+# vidí len priečinok public_html/MATURITNE_OTAZKY/gymholl.
+# Heslo je v GitHube ako secret FTP_HESLO a do výpisov sa nedostane.
+#
+# Čo sa nahrá:
+#   • Len priečinky FYZIKA/ a MATEMATIKA/ (ak existuje).
+#   • NIKDY zdroje/ (pôvodné súbory a nástroje), .git, .github, .gitignore.
+#   • Na serveri leží .nasadene s commitom, ktorý je na webe; nahrajú sa len
+#     zmeny odvtedy. Bez .nasadene alebo so zaškrtnutím „Nahrať všetko“ sa
+#     nahrá všetko.
+#
+# Poistka: cieľový priečinok musí byť buď prázdny (prvé nahratie), alebo v ňom
+# musí byť FYZIKA/mo.css. Inak (účet by ukazoval inam, napr. do BESST)
+# postup skončí a nič nezmení.
+
+name: Nahrať na web
+
+on:
+  workflow_dispatch:
+    inputs:
+      vsetko:
+        description: 'Nahrať všetko (nielen zmenené súbory)'
+        type: boolean
+        default: false
+
+concurrency:
+  group: nahravanie-na-web
+  cancel-in-progress: false
+
+jobs:
+  nahrat:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      SERVER: ftp.camp.sk
+      POUZIVATEL: camp.sk.maturitne
+      LFTP_PASSWORD: ${{ secrets.FTP_HESLO }}
+
+    steps:
+      - name: Stiahnuť repozitár
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: Nainštalovať lftp
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq lftp
+
+      - name: Pripraviť pripojenie
+        run: |
+          cat > pripojenie.lftp <<'KONIEC'
+          set sftp:auto-confirm yes
+          set net:max-retries 2
+          set net:timeout 30
+          set cmd:fail-exit yes
+          KONIEC
+          echo "open -u $POUZIVATEL --env-password sftp://$SERVER" >> pripojenie.lftp
+
+      - name: Overiť cieľový priečinok
+        run: |
+          { cat pripojenie.lftp; echo 'pwd'; } > pwd.lftp
+          timeout 60 lftp -f pwd.lftp
+          { cat pripojenie.lftp; echo 'cls -1a'; } > obsah.lftp
+          timeout 60 lftp -f obsah.lftp > obsah.txt
+          echo "Obsah cieľového priečinka:"; cat obsah.txt
+          # okrem . a .. nič = prázdny priečinok
+          if ! grep -vqxE '\.{1,2}/?' obsah.txt; then
+            echo "Cieľový priečinok je prázdny — prvé nahratie."
+            exit 0
+          fi
+          { cat pripojenie.lftp; echo 'cls FYZIKA/mo.css'; } > poistka.lftp
+          if ! timeout 60 lftp -f poistka.lftp > /dev/null 2>&1; then
+            echo "::error::Cieľový priečinok nie je prázdny a nie je v ňom FYZIKA/mo.css. Účet asi neukazuje do public_html/MATURITNE_OTAZKY/gymholl — nič som nenahral."
+            exit 1
+          fi
+          echo "Cieľový priečinok je priečinok vzorov (gymholl)."
+
+      - name: Zistiť, čo je na webe
+        id: stav
+        run: |
+          { cat pripojenie.lftp; echo 'cls -1a'; } > zoznam.lftp
+          NASADENE=''
+          if timeout 60 lftp -f zoznam.lftp | grep -qx '.nasadene'; then
+            { cat pripojenie.lftp; echo 'get .nasadene -o nasadene-na-serveri'; } > stav.lftp
+            timeout 60 lftp -f stav.lftp && NASADENE=$(tr -d '[:space:]' < nasadene-na-serveri)
+          fi
+          if [ "${{ inputs.vsetko }}" = "true" ]; then
+            echo "Zaškrtnuté „Nahrať všetko“."
+            echo "rezim=vsetko" >> "$GITHUB_OUTPUT"
+          elif ! [[ "$NASADENE" =~ ^[0-9a-f]{40}$ ]] || ! git cat-file -e "$NASADENE^{commit}" 2>/dev/null; then
+            echo "Na serveri nie je záznam o nahratej verzii — nahrám všetko."
+            echo "rezim=vsetko" >> "$GITHUB_OUTPUT"
+          else
+            echo "Na webe je verzia $NASADENE."
+            echo "rezim=zmeny" >> "$GITHUB_OUTPUT"
+            echo "nasadene=$NASADENE" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Nahrať všetko
+        if: steps.stav.outputs.rezim == 'vsetko'
+        run: |
+          cat pripojenie.lftp > vsetko.lftp
+          for p in FYZIKA MATEMATIKA; do
+            [ -d "$p" ] && echo "mirror -R --verbose=1 --parallel=4 $p $p" >> vsetko.lftp
+          done
+          timeout 900 lftp -f vsetko.lftp
+
+      - name: Nahrať zmenené súbory
+        if: steps.stav.outputs.rezim == 'zmeny'
+        env:
+          NASADENE: ${{ steps.stav.outputs.nasadene }}
+        run: |
+          # na web idú len súbory z FYZIKA/ a MATEMATIKA/
+          nahravat() {
+            case "$1" in
+              FYZIKA/*|MATEMATIKA/*) return 0 ;;
+              *) return 1 ;;
+            esac
+          }
+          cat pripojenie.lftp > zmeny.lftp
+          nahrat=0; zmazat=0
+          while IFS=$'\t' read -r stav subor novy; do
+            case "$stav" in
+              R*) if nahravat "$subor"; then echo "rm -f \"$subor\"" >> zmeny.lftp; zmazat=$((zmazat+1)); fi
+                  subor="$novy" ;;
+            esac
+            nahravat "$subor" || continue
+            if [ "$stav" = "D" ]; then
+              echo "rm -f \"$subor\"" >> zmeny.lftp; zmazat=$((zmazat+1))
+            else
+              echo "mkdir -p -f \"$(dirname "$subor")\"" >> zmeny.lftp
+              echo "put \"$subor\" -o \"$subor\"" >> zmeny.lftp
+              echo "  ↑ $subor"
+              nahrat=$((nahrat+1))
+            fi
+          done < <(git diff --name-status -M "$NASADENE" HEAD)
+          echo "Nahrám $nahrat súborov, zmažem $zmazat."
+          if [ $((nahrat+zmazat)) -gt 0 ]; then
+            timeout 900 lftp -f zmeny.lftp
+          else
+            echo "Od poslednej verzie sa na webe nič nezmenilo."
+          fi
+
+      - name: Zapísať nahratú verziu
+        run: |
+          git rev-parse HEAD > .nasadene
+          { cat pripojenie.lftp; echo 'put .nasadene -o .nasadene'; } > zapis.lftp
+          timeout 60 lftp -f zapis.lftp
+          echo "Na webe je teraz verzia $(cat .nasadene) — $(git log -1 --format=%s)."

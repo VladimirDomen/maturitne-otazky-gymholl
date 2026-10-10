@@ -1,0 +1,100 @@
+<h2>1. Motion of a Body in a Gravitational Field</h2>
+<h3>Uniform and radial field</h3>
+<p>In a uniform field the gravitational acceleration has the same magnitude and direction at every point. The field lines are parallel. Near the Earth’s surface and for small differences in height we use the approximation of a constant gravitational acceleration g = 9.81 m/s².</p>
+<p>In the radial field of a spherically symmetric body, the gravitational force points towards its centre. Outside the body, the magnitude of the acceleration decreases with the square of the distance from the centre:</p>
+<div class="formula">F = GMm/r², &nbsp; a = GM/r²</div>
+<p>G is the gravitational constant, M the mass of the central body, m the mass of the moving body and r the distance from the centre. At large heights a constant g can no longer be used.</p>
+<h3>Motion in a uniform field</h3>
+<p>Without air resistance, the acceleration always points vertically downwards, even while the body is rising. The y-axis is chosen upwards and x horizontally.</p>
+<div class="scroll">
+<table><tr><th>Motion</th><th>Initial velocity and equations</th><th>Trajectory</th></tr>
+<tr><td>Free fall</td><td>v₀ = 0; y = y₀ − gt²/2; vᵧ = −gt</td><td>Vertical line</td></tr>
+<tr><td>Vertical upward projection</td><td>y = y₀ + v₀t − gt²/2; vᵧ = v₀ − gt</td><td>Vertical line</td></tr>
+<tr><td>Horizontal projection</td><td>x = v₀t; y = y₀ − gt²/2</td><td>Part of a parabola</td></tr>
+<tr><td>Oblique projection</td><td>x = v₀ cos α · t; y = y₀ + v₀ sin α · t − gt²/2</td><td>Part of a parabola</td></tr>
+</table>
+</div>
+<p>In horizontal and oblique projection, uniform horizontal motion combines with vertical motion with acceleration −g. The angle α is measured from the horizontal.</p>
+<h3>Motion in a radial field</h3>
+<p>The gravitational force changes the velocity of the body and can curve its path. Orbits around a central body can be circular or elliptical; with sufficient energy, escape parabolic or hyperbolic paths are also possible.</p>
+<p>In a circular orbit, the gravitational force provides the centripetal acceleration:</p>
+<div class="formula">GMm/r² = mv²/r &nbsp; ⇒ &nbsp; v = √(GM/r)</div>
+<p>The first cosmic velocity is the speed of a circular orbit just above the surface in an idealised model without an atmosphere. For the Earth it is approximately 7.9 km/s. The second cosmic velocity is the minimum escape velocity from a given place for further motion without propulsion, neglecting resistance and the influence of other bodies.</p>
+<div class="formula">v₁ = √(GM/R), &nbsp; v₂ = √(2GM/R) = √2 · v₁</div>
+<p>For the Earth’s surface, v₂ is approximately 11.2 km/s. The escape condition follows from the conservation of energy: mv₂²/2 − GMm/R = 0.</p>
+<h3>Solution: position after 1 second</h3>
+<p><strong>Given:</strong> v₀ = 20 m/s, t = 1 s, y₀ = 0 m, g = 9.81 m/s². We want y(1 s).</p>
+<p>Since the positive direction is upwards and the acceleration is downwards, aᵧ = −g. The general relation for uniformly accelerated motion therefore gives:</p>
+<div class="formula">y = y₀ + v₀t + aᵧt²/2<br>y = v₀t − gt²/2<br>y = 20 · 1 − (9.81 · 1²)/2<br>y = 20 − 4.905 = 15.095 m</div>
+<div class="result"><strong>After 1 second the body is approximately 15.1 m above the point of projection.</strong></div>
+<p><strong>Check:</strong> vᵧ = 20 − 9.81 · 1 = 10.19 m/s &gt; 0, so it is still rising. It reaches the highest point at t = v₀/g ≈ 2.04 s. The maximum height is v₀²/(2g) ≈ 20.39 m; the calculated position is lower.</p>
+<div class="note">At the highest point the instantaneous velocity is zero, but the acceleration is still −g. With the rounded value g = 10 m/s², the height after 1 s would be 15 m.</div>
+<!--PART-->
+<h2>2. Interference of Waves</h2>
+<h3>Superposition and interference</h3>
+<p>When waves meet, the resulting instantaneous displacement is the sum of their displacements: y = y₁ + y₂. The waves may reinforce or cancel each other. A stable interference pattern requires coherent waves: they have the same frequency and a constant phase difference.</p>
+<p>For two waves that start in phase in the same medium:</p>
+<div class="formula">Constructive: Δl = nλ<br>Destructive: Δl = (2n + 1)λ/2, &nbsp; n = 0, 1, 2, …</div>
+<p>Δl is the path difference. For equal amplitudes A, constructive interference gives an amplitude of 2A and complete destructive interference gives zero amplitude. If the sources are not in phase, the conditions shift according to their initial phase difference.</p>
+<h3>Reflection and refraction</h3>
+<p>On reflection the wave returns into the original medium. The angle of reflection equals the angle of incidence; both are measured from the normal to the boundary. At a fixed end of a string the reflected displacement is inverted (phase shift π); at a free end it is not inverted.</p>
+<p>When passing into another medium, the speed and direction of propagation may change. The frequency is set by the source, so it does not change; the wavelength adjusts to the speed according to λ = v/f.</p>
+<div class="formula">sin α / sin β = v₁/v₂</div>
+<p>When passing into a medium with a lower speed, the wave is refracted towards the normal. For light, n₁ sin α = n₂ sin β also holds, where n is the refractive index.</p>
+<h3>Formation of a standing wave</h3>
+<p>Two harmonic waves of the same frequency, wavelength and amplitude travelling along the same line in opposite directions can form a standing wave. Typically these are an incident and a reflected wave.</p>
+<div class="formula">y₁ = A sin(ωt − kx), &nbsp; y₂ = A sin(ωt + kx)<br>y = 2A sin(ωt) cos(kx)<br>ω = 2πf, &nbsp; k = 2π/λ</div>
+<p>We used the identity sin a + sin b = 2 sin((a+b)/2) cos((a−b)/2). The local amplitude is 2A |cos(kx)|. Depending on the choice of origin or phase, the equation can also be written with sin(kx); the distances between the nodes do not change.</p>
+<p><strong>Nodes</strong> are points with permanently zero displacement. <strong>Antinodes</strong> have the largest amplitude. Both nodes and antinodes stay in fixed positions.</p>
+<div class="formula">Adjacent nodes: d = λ/2<br>Adjacent antinodes: d = λ/2<br>Node and nearest antinode: d = λ/4</div>
+{{SVG0}}
+<p class="subtle">The two lines show the opposite extreme positions of the standing wave. The figure shows the distribution of nodes and antinodes, not the direction of air motion in a longitudinal sound wave.</p>
+<p>In a progressive wave the phase travels through the medium and the wave transports energy. In an ideal standing wave formed by equally strong waves travelling in opposite directions, the mean net energy flow is zero. Points between two adjacent nodes oscillate in phase; points in neighbouring segments oscillate in antiphase.</p>
+<h3>Wave properties of light</h3>
+<p>Light is an electromagnetic wave and can also travel in a vacuum. Interference (for example in a double slit), diffraction and polarisation demonstrate its wave properties. Polarisation shows that light is a transverse wave. Light is also reflected and refracted.</p>
+<h3>Solution of the calculation</h3>
+<p><strong>Given:</strong> v = 343 m/s, f = 245 Hz. We want λ and the distance between adjacent nodes d.</p>
+<p>In one period T = 1/f a progressive wave travels a distance λ. Hence v = λ/T = λf.</p>
+<div class="formula">λ = v/f = 343/245 m = 1.4 m<br>d = λ/2 = 1.4/2 m = 0.7 m</div>
+<div class="result"><strong>The wavelength is 1.4 m. The distance between adjacent nodes is 0.7 m = 70 cm.</strong></div>
+<p>A node is 0.35 m from the nearest antinode. Check: λf = 1.4 · 245 = 343 m/s.</p>
+<!--PART-->
+<h2>3. Origin of Electric Current</h2>
+<h3>Electric current in a metal conductor</h3>
+<p>Electric current is the ordered motion of particles with electric charge. Its magnitude expresses the charge that passes through a cross-section of the conductor per unit time:</p>
+<div class="formula">I = ΔQ/Δt, &nbsp; [I] = A = C/s</div>
+<p>This relation gives the average current in the given interval; for a steady current also its instantaneous value. In a metal the charge carriers are free electrons. Without an electric field they move randomly and produce no macroscopic current.</p>
+<p>For a current to arise we need mobile charge carriers and an electric field that causes their ordered motion. A sustained current in an ordinary circuit requires a closed conducting path and a source that maintains the voltage. The conventional direction of current is the direction of motion of positive charge; electrons in a metal move in the opposite direction.</p>
+<h3>Magnetic flux</h3>
+<p>Magnetic flux expresses how a magnetic field passes through the area of a loop. For a uniform field and a flat loop:</p>
+<div class="formula">Φ = BS cos α, &nbsp; [Φ] = Wb</div>
+<p>B is the magnetic flux density in teslas, S the area of the loop in m² and α the angle between the direction of the magnetic field and the <strong>normal to the surface</strong>. The flux is maximal when the field is perpendicular to the surface and zero when the field is parallel to it.</p>
+<h3>Electromagnetic induction</h3>
+<p>When the magnetic flux linked with a circuit changes, an induced electromotive force arises. In a closed conducting circuit this voltage can drive a current. The flux can be changed by changing B, the area of the loop or its orientation.</p>
+<p>Faraday’s law for a coil with N turns through which the same flux passes:</p>
+<div class="formula">Uᵢ = −N · ΔΦ/Δt &nbsp; (average value)<br>Uᵢ = −N · dΦ/dt &nbsp; (instantaneous value)</div>
+<p>The induced voltage is greater the faster the flux changes and the greater the number of turns. A large but constant flux alone is not enough: if the flux does not change, the induced voltage is zero.</p>
+<p><strong>Lenz’s law:</strong> The induced current has such a direction that its magnetic field opposes the change in magnetic flux that caused it. This is expressed by the minus sign. The field does not automatically oppose the original field, but its <strong>change</strong>.</p>
+<div class="note">When the flux increases, the induced field opposes its growth; when the flux decreases, it tends to maintain the original flux. Mechanical work done in moving the magnet can be converted into electrical energy and heat.</div>
+<h3>Experiment: magnet, coil and galvanometer</h3>
+<ol><li>We connect the coil to a galvanometer and move a magnet towards its opening. The flux changes and the galvanometer shows a current.</li>
+<li>We stop the magnet. If neither the field nor the coil changes, the flux is constant and the current stops.</li>
+<li>We move the magnet away. The change of flux has the opposite sign and the galvanometer deflects the other way.</li>
+<li>A faster motion of the magnet usually gives a larger deflection. Reversing the pole of the magnet also reverses the direction of the induced current for the same motion.</li>
+</ol>
+<p>A voltage can also arise in an open circuit, but a sustained conduction current has no closed path. In a simple resistive model I = Uᵢ/R; in general the self-inductance of the circuit can also affect the behaviour.</p>
+<h3>Charging by contact and electromagnetic induction</h3>
+<div class="scroll">
+<table><tr><th>Property</th><th>Charging a metal conductor by contact</th><th>Electromagnetic induction</th></tr>
+<tr><td>Cause</td><td>Conducting contact with a charged body or source at a different potential.</td><td>Change of the magnetic flux linked with the circuit.</td></tr>
+<tr><td>What happens to the charge</td><td>Electrons are transferred between the bodies. An originally neutral insulated conductor can acquire a non-zero total charge.</td><td>An electric field or a force on moving carriers sets the charges already present in motion. No external transfer of charge from the magnet is required.</td></tr>
+<tr><td>Typical result</td><td>A charged conductor; if insulated, it can keep the charge even after separation.</td><td>An induced voltage and, in a closed circuit, a current while the flux is changing.</td></tr>
+<tr><td>Contact with the cause</td><td>A conducting path is needed to transfer the charge.</td><td>Contact with the magnet is not needed.</td></tr>
+<tr><td>Example</td><td>We touch a neutral metal sphere on an insulating stand with a charged metal sphere.</td><td>We move a magnet near a coil connected to a galvanometer.</td></tr>
+</table>
+</div>
+<div class="result"><strong>On contact, charge is transferred between the bodies. In electromagnetic induction a voltage arises because of a change in magnetic flux; a current can flow in a closed circuit without the circuit becoming charged overall.</strong></div>
+<p>When conductors touch, the charge redistributes until their potentials are equal. It need not be shared equally: this depends on the shape, size and surroundings of the conductors. During the redistribution a current may flow briefly.</p>
+<div class="note"><strong>Beware of similar names:</strong> Electrostatic induction is the redistribution of charges in a conductor caused by a nearby charged body. Without contact or earthing, the total charge of an originally neutral conductor does not change. It is a different phenomenon from electromagnetic induction caused by a change in magnetic flux.</div>
+<h3>Short answer for the oral examination</h3>
+<p>In a metal conductor the current is formed by electrons moving in an ordered way. The voltage can be maintained by a source or can arise by electromagnetic induction. When the magnetic flux changes, an induced voltage arises and, in a closed circuit, a current. Its direction is given by Lenz’s law. Charging by contact, on the other hand, means a transfer of charge between bodies; an insulated conductor may remain charged afterwards.</p>

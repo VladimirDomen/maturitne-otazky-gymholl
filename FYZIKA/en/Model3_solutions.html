@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Model 3 – Worked solutions</title>
+<link rel="stylesheet" href="../mo.css">
+</head>
+<body class="vyp">
+
+<header class="mo-head"><div class="mo-head-in">
+<div class="mo-kicker"><span class="mo-num">MODEL 3</span><span class="mo-kind">Worked solutions</span></div>
+<h1>Motion in a Gravitational Field · Interference of Waves · Origin of Electric Current</h1>
+<p>Detailed worked solutions with explanations</p>
+</div></header>
+
+<nav class="mo-bar"><div class="mo-bar-in">
+<a class="mo-back" href="index.html">← All models</a>
+<div class="mo-switch"><a href="Model3_questions.html">Questions</a><a href="Model3_solutions.html" class="on">Solutions</a></div>
+<button type="button" onclick="window.print()">Print / PDF</button>
+<a class="mo-lang" href="../Vzor3_vypracovanie.html" hreflang="sk" title="Slovenská verzia">SK</a>
+</div></nav>
+
+<main class="wrap">
+
+<section class="sheet" id="cast-1"><div class="topline">Part 1 of 3</div>
+<h2>1. Motion of a Body in a Gravitational Field</h2>
+<h3>Uniform and radial field</h3>
+<p>In a uniform field the gravitational acceleration has the same magnitude and direction at every point. The field lines are parallel. Near the Earth’s surface and for small differences in height we use the approximation of a constant gravitational acceleration g = 9.81 m/s².</p>
+<p>In the radial field of a spherically symmetric body, the gravitational force points towards its centre. Outside the body, the magnitude of the acceleration decreases with the square of the distance from the centre:</p>
+<div class="formula">F = GMm/r², &nbsp; a = GM/r²</div>
+<p>G is the gravitational constant, M the mass of the central body, m the mass of the moving body and r the distance from the centre. At large heights a constant g can no longer be used.</p>
+<h3>Motion in a uniform field</h3>
+<p>Without air resistance, the acceleration always points vertically downwards, even while the body is rising. The y-axis is chosen upwards and x horizontally.</p>
+<div class="scroll">
+<table><tr><th>Motion</th><th>Initial velocity and equations</th><th>Trajectory</th></tr>
+<tr><td>Free fall</td><td>v₀ = 0; y = y₀ − gt²/2; vᵧ = −gt</td><td>Vertical line</td></tr>
+<tr><td>Vertical upward projection</td><td>y = y₀ + v₀t − gt²/2; vᵧ = v₀ − gt</td><td>Vertical line</td></tr>
+<tr><td>Horizontal projection</td><td>x = v₀t; y = y₀ − gt²/2</td><td>Part of a parabola</td></tr>
+<tr><td>Oblique projection</td><td>x = v₀ cos α · t; y = y₀ + v₀ sin α · t − gt²/2</td><td>Part of a parabola</td></tr>
+</table>
+</div>
+<p>In horizontal and oblique projection, uniform horizontal motion combines with vertical motion with acceleration −g. The angle α is measured from the horizontal.</p>
+<h3>Motion in a radial field</h3>
+<p>The gravitational force changes the velocity of the body and can curve its path. Orbits around a central body can be circular or elliptical; with sufficient energy, escape parabolic or hyperbolic paths are also possible.</p>
+<p>In a circular orbit, the gravitational force provides the centripetal acceleration:</p>
+<div class="formula">GMm/r² = mv²/r &nbsp; ⇒ &nbsp; v = √(GM/r)</div>
+<p>The first cosmic velocity is the speed of a circular orbit just above the surface in an idealised model without an atmosphere. For the Earth it is approximately 7.9 km/s. The second cosmic velocity is the minimum escape velocity from a given place for further motion without propulsion, neglecting resistance and the influence of other bodies.</p>
+<div class="formula">v₁ = √(GM/R), &nbsp; v₂ = √(2GM/R) = √2 · v₁</div>
+<p>For the Earth’s surface, v₂ is approximately 11.2 km/s. The escape condition follows from the conservation of energy: mv₂²/2 − GMm/R = 0.</p>
+<h3>Solution: position after 1 second</h3>
+<p><strong>Given:</strong> v₀ = 20 m/s, t = 1 s, y₀ = 0 m, g = 9.81 m/s². We want y(1 s).</p>
+<p>Since the positive direction is upwards and the acceleration is downwards, aᵧ = −g. The general relation for uniformly accelerated motion therefore gives:</p>
+<div class="formula">y = y₀ + v₀t + aᵧt²/2<br>y = v₀t − gt²/2<br>y = 20 · 1 − (9.81 · 1²)/2<br>y = 20 − 4.905 = 15.095 m</div>
+<div class="result"><strong>After 1 second the body is approximately 15.1 m above the point of projection.</strong></div>
+<p><strong>Check:</strong> vᵧ = 20 − 9.81 · 1 = 10.19 m/s &gt; 0, so it is still rising. It reaches the highest point at t = v₀/g ≈ 2.04 s. The maximum height is v₀²/(2g) ≈ 20.39 m; the calculated position is lower.</p>
+<div class="note">At the highest point the instantaneous velocity is zero, but the acceleration is still −g. With the rounded value g = 10 m/s², the height after 1 s would be 15 m.</div>
+</section>
+
+<section class="sheet" id="cast-2"><div class="topline">Part 2 of 3</div>
+<h2>2. Interference of Waves</h2>
+<h3>Superposition and interference</h3>
+<p>When waves meet, the resulting instantaneous displacement is the sum of their displacements: y = y₁ + y₂. The waves may reinforce or cancel each other. A stable interference pattern requires coherent waves: they have the same frequency and a constant phase difference.</p>
+<p>For two waves that start in phase in the same medium:</p>
+<div class="formula">Constructive: Δl = nλ<br>Destructive: Δl = (2n + 1)λ/2, &nbsp; n = 0, 1, 2, …</div>
+<p>Δl is the path difference. For equal amplitudes A, constructive interference gives an amplitude of 2A and complete destructive interference gives zero amplitude. If the sources are not in phase, the conditions shift according to their initial phase difference.</p>
+<h3>Reflection and refraction</h3>
+<p>On reflection the wave returns into the original medium. The angle of reflection equals the angle of incidence; both are measured from the normal to the boundary. At a fixed end of a string the reflected displacement is inverted (phase shift π); at a free end it is not inverted.</p>
+<p>When passing into another medium, the speed and direction of propagation may change. The frequency is set by the source, so it does not change; the wavelength adjusts to the speed according to λ = v/f.</p>
+<div class="formula">sin α / sin β = v₁/v₂</div>
+<p>When passing into a medium with a lower speed, the wave is refracted towards the normal. For light, n₁ sin α = n₂ sin β also holds, where n is the refractive index.</p>
+<h3>Formation of a standing wave</h3>
+<p>Two harmonic waves of the same frequency, wavelength and amplitude travelling along the same line in opposite directions can form a standing wave. Typically these are an incident and a reflected wave.</p>
+<div class="formula">y₁ = A sin(ωt − kx), &nbsp; y₂ = A sin(ωt + kx)<br>y = 2A sin(ωt) cos(kx)<br>ω = 2πf, &nbsp; k = 2π/λ</div>
+<p>We used the identity sin a + sin b = 2 sin((a+b)/2) cos((a−b)/2). The local amplitude is 2A |cos(kx)|. Depending on the choice of origin or phase, the equation can also be written with sin(kx); the distances between the nodes do not change.</p>
+<p><strong>Nodes</strong> are points with permanently zero displacement. <strong>Antinodes</strong> have the largest amplitude. Both nodes and antinodes stay in fixed positions.</p>
+<div class="formula">Adjacent nodes: d = λ/2<br>Adjacent antinodes: d = λ/2<br>Node and nearest antinode: d = λ/4</div>
+<svg viewBox="0 0 680 225" role="img" aria-label="Standing wave, nodes 0.7 metres apart"><line x1="45" y1="110" x2="625" y2="110" stroke="#718096"/><polyline points="50.0,110.0 51.4,108.3 52.8,106.5 54.2,104.8 55.6,103.1 57.0,101.4 58.4,99.7 59.8,98.0 61.2,96.3 62.6,94.7 64.0,93.0 65.4,91.4 66.8,89.8 68.2,88.2 69.6,86.6 71.0,85.0 72.4,83.5 73.8,82.0 75.2,80.5 76.6,79.1 78.0,77.7 79.4,76.3 80.8,74.9 82.2,73.6 83.6,72.3 85.0,71.1 86.4,69.9 87.8,68.7 89.2,67.6 90.6,66.5 92.0,65.5 93.4,64.5 94.8,63.6 96.2,62.7 97.6,61.8 99.0,61.0 100.4,60.2 101.8,59.5 103.2,58.9 104.6,58.3 106.0,57.7 107.4,57.2 108.8,56.7 110.2,56.3 111.6,56.0 113.0,55.7 114.4,55.4 115.8,55.2 117.2,55.1 118.6,55.0 120.0,55.0 121.4,55.0 122.8,55.1 124.2,55.2 125.6,55.4 127.0,55.7 128.4,56.0 129.8,56.3 131.2,56.7 132.6,57.2 134.0,57.7 135.4,58.3 136.8,58.9 138.2,59.5 139.6,60.2 141.0,61.0 142.4,61.8 143.8,62.7 145.2,63.6 146.6,64.5 148.0,65.5 149.4,66.5 150.8,67.6 152.2,68.7 153.6,69.9 155.0,71.1 156.4,72.3 157.8,73.6 159.2,74.9 160.6,76.3 162.0,77.7 163.4,79.1 164.8,80.5 166.2,82.0 167.6,83.5 169.0,85.0 170.4,86.6 171.8,88.2 173.2,89.8 174.6,91.4 176.0,93.0 177.4,94.7 178.8,96.3 180.2,98.0 181.6,99.7 183.0,101.4 184.4,103.1 185.8,104.8 187.2,106.5 188.6,108.3 190.0,110.0 191.4,111.7 192.8,113.5 194.2,115.2 195.6,116.9 197.0,118.6 198.4,120.3 199.8,122.0 201.2,123.7 202.6,125.3 204.0,127.0 205.4,128.6 206.8,130.2 208.2,131.8 209.6,133.4 211.0,135.0 212.4,136.5 213.8,138.0 215.2,139.5 216.6,140.9 218.0,142.3 219.4,143.7 220.8,145.1 222.2,146.4 223.6,147.7 225.0,148.9 226.4,150.1 227.8,151.3 229.2,152.4 230.6,153.5 232.0,154.5 233.4,155.5 234.8,156.4 236.2,157.3 237.6,158.2 239.0,159.0 240.4,159.8 241.8,160.5 243.2,161.1 244.6,161.7 246.0,162.3 247.4,162.8 248.8,163.3 250.2,163.7 251.6,164.0 253.0,164.3 254.4,164.6 255.8,164.8 257.2,164.9 258.6,165.0 260.0,165.0 261.4,165.0 262.8,164.9 264.2,164.8 265.6,164.6 267.0,164.3 268.4,164.0 269.8,163.7 271.2,163.3 272.6,162.8 274.0,162.3 275.4,161.7 276.8,161.1 278.2,160.5 279.6,159.8 281.0,159.0 282.4,158.2 283.8,157.3 285.2,156.4 286.6,155.5 288.0,154.5 289.4,153.5 290.8,152.4 292.2,151.3 293.6,150.1 295.0,148.9 296.4,147.7 297.8,146.4 299.2,145.1 300.6,143.7 302.0,142.3 303.4,140.9 304.8,139.5 306.2,138.0 307.6,136.5 309.0,135.0 310.4,133.4 311.8,131.8 313.2,130.2 314.6,128.6 316.0,127.0 317.4,125.3 318.8,123.7 320.2,122.0 321.6,120.3 323.0,118.6 324.4,116.9 325.8,115.2 327.2,113.5 328.6,111.7 330.0,110.0 331.4,108.3 332.8,106.5 334.2,104.8 335.6,103.1 337.0,101.4 338.4,99.7 339.8,98.0 341.2,96.3 342.6,94.7 344.0,93.0 345.4,91.4 346.8,89.8 348.2,88.2 349.6,86.6 351.0,85.0 352.4,83.5 353.8,82.0 355.2,80.5 356.6,79.1 358.0,77.7 359.4,76.3 360.8,74.9 362.2,73.6 363.6,72.3 365.0,71.1 366.4,69.9 367.8,68.7 369.2,67.6 370.6,66.5 372.0,65.5 373.4,64.5 374.8,63.6 376.2,62.7 377.6,61.8 379.0,61.0 380.4,60.2 381.8,59.5 383.2,58.9 384.6,58.3 386.0,57.7 387.4,57.2 388.8,56.7 390.2,56.3 391.6,56.0 393.0,55.7 394.4,55.4 395.8,55.2 397.2,55.1 398.6,55.0 400.0,55.0 401.4,55.0 402.8,55.1 404.2,55.2 405.6,55.4 407.0,55.7 408.4,56.0 409.8,56.3 411.2,56.7 412.6,57.2 414.0,57.7 415.4,58.3 416.8,58.9 418.2,59.5 419.6,60.2 421.0,61.0 422.4,61.8 423.8,62.7 425.2,63.6 426.6,64.5 428.0,65.5 429.4,66.5 430.8,67.6 432.2,68.7 433.6,69.9 435.0,71.1 436.4,72.3 437.8,73.6 439.2,74.9 440.6,76.3 442.0,77.7 443.4,79.1 444.8,80.5 446.2,82.0 447.6,83.5 449.0,85.0 450.4,86.6 451.8,88.2 453.2,89.8 454.6,91.4 456.0,93.0 457.4,94.7 458.8,96.3 460.2,98.0 461.6,99.7 463.0,101.4 464.4,103.1 465.8,104.8 467.2,106.5 468.6,108.3 470.0,110.0 471.4,111.7 472.8,113.5 474.2,115.2 475.6,116.9 477.0,118.6 478.4,120.3 479.8,122.0 481.2,123.7 482.6,125.3 484.0,127.0 485.4,128.6 486.8,130.2 488.2,131.8 489.6,133.4 491.0,135.0 492.4,136.5 493.8,138.0 495.2,139.5 496.6,140.9 498.0,142.3 499.4,143.7 500.8,145.1 502.2,146.4 503.6,147.7 505.0,148.9 506.4,150.1 507.8,151.3 509.2,152.4 510.6,153.5 512.0,154.5 513.4,155.5 514.8,156.4 516.2,157.3 517.6,158.2 519.0,159.0 520.4,159.8 521.8,160.5 523.2,161.1 524.6,161.7 526.0,162.3 527.4,162.8 528.8,163.3 530.2,163.7 531.6,164.0 533.0,164.3 534.4,164.6 535.8,164.8 537.2,164.9 538.6,165.0 540.0,165.0 541.4,165.0 542.8,164.9 544.2,164.8 545.6,164.6 547.0,164.3 548.4,164.0 549.8,163.7 551.2,163.3 552.6,162.8 554.0,162.3 555.4,161.7 556.8,161.1 558.2,160.5 559.6,159.8 561.0,159.0 562.4,158.2 563.8,157.3 565.2,156.4 566.6,155.5 568.0,154.5 569.4,153.5 570.8,152.4 572.2,151.3 573.6,150.1 575.0,148.9 576.4,147.7 577.8,146.4 579.2,145.1 580.6,143.7 582.0,142.3 583.4,140.9 584.8,139.5 586.2,138.0 587.6,136.5 589.0,135.0 590.4,133.4 591.8,131.8 593.2,130.2 594.6,128.6 596.0,127.0 597.4,125.3 598.8,123.7 600.2,122.0 601.6,120.3 603.0,118.6 604.4,116.9 605.8,115.2 607.2,113.5 608.6,111.7 610.0,110.0" fill="none" stroke="#174d8a" stroke-width="3"/><polyline points="50.0,110.0 51.4,111.7 52.8,113.5 54.2,115.2 55.6,116.9 57.0,118.6 58.4,120.3 59.8,122.0 61.2,123.7 62.6,125.3 64.0,127.0 65.4,128.6 66.8,130.2 68.2,131.8 69.6,133.4 71.0,135.0 72.4,136.5 73.8,138.0 75.2,139.5 76.6,140.9 78.0,142.3 79.4,143.7 80.8,145.1 82.2,146.4 83.6,147.7 85.0,148.9 86.4,150.1 87.8,151.3 89.2,152.4 90.6,153.5 92.0,154.5 93.4,155.5 94.8,156.4 96.2,157.3 97.6,158.2 99.0,159.0 100.4,159.8 101.8,160.5 103.2,161.1 104.6,161.7 106.0,162.3 107.4,162.8 108.8,163.3 110.2,163.7 111.6,164.0 113.0,164.3 114.4,164.6 115.8,164.8 117.2,164.9 118.6,165.0 120.0,165.0 121.4,165.0 122.8,164.9 124.2,164.8 125.6,164.6 127.0,164.3 128.4,164.0 129.8,163.7 131.2,163.3 132.6,162.8 134.0,162.3 135.4,161.7 136.8,161.1 138.2,160.5 139.6,159.8 141.0,159.0 142.4,158.2 143.8,157.3 145.2,156.4 146.6,155.5 148.0,154.5 149.4,153.5 150.8,152.4 152.2,151.3 153.6,150.1 155.0,148.9 156.4,147.7 157.8,146.4 159.2,145.1 160.6,143.7 162.0,142.3 163.4,140.9 164.8,139.5 166.2,138.0 167.6,136.5 169.0,135.0 170.4,133.4 171.8,131.8 173.2,130.2 174.6,128.6 176.0,127.0 177.4,125.3 178.8,123.7 180.2,122.0 181.6,120.3 183.0,118.6 184.4,116.9 185.8,115.2 187.2,113.5 188.6,111.7 190.0,110.0 191.4,108.3 192.8,106.5 194.2,104.8 195.6,103.1 197.0,101.4 198.4,99.7 199.8,98.0 201.2,96.3 202.6,94.7 204.0,93.0 205.4,91.4 206.8,89.8 208.2,88.2 209.6,86.6 211.0,85.0 212.4,83.5 213.8,82.0 215.2,80.5 216.6,79.1 218.0,77.7 219.4,76.3 220.8,74.9 222.2,73.6 223.6,72.3 225.0,71.1 226.4,69.9 227.8,68.7 229.2,67.6 230.6,66.5 232.0,65.5 233.4,64.5 234.8,63.6 236.2,62.7 237.6,61.8 239.0,61.0 240.4,60.2 241.8,59.5 243.2,58.9 244.6,58.3 246.0,57.7 247.4,57.2 248.8,56.7 250.2,56.3 251.6,56.0 253.0,55.7 254.4,55.4 255.8,55.2 257.2,55.1 258.6,55.0 260.0,55.0 261.4,55.0 262.8,55.1 264.2,55.2 265.6,55.4 267.0,55.7 268.4,56.0 269.8,56.3 271.2,56.7 272.6,57.2 274.0,57.7 275.4,58.3 276.8,58.9 278.2,59.5 279.6,60.2 281.0,61.0 282.4,61.8 283.8,62.7 285.2,63.6 286.6,64.5 288.0,65.5 289.4,66.5 290.8,67.6 292.2,68.7 293.6,69.9 295.0,71.1 296.4,72.3 297.8,73.6 299.2,74.9 300.6,76.3 302.0,77.7 303.4,79.1 304.8,80.5 306.2,82.0 307.6,83.5 309.0,85.0 310.4,86.6 311.8,88.2 313.2,89.8 314.6,91.4 316.0,93.0 317.4,94.7 318.8,96.3 320.2,98.0 321.6,99.7 323.0,101.4 324.4,103.1 325.8,104.8 327.2,106.5 328.6,108.3 330.0,110.0 331.4,111.7 332.8,113.5 334.2,115.2 335.6,116.9 337.0,118.6 338.4,120.3 339.8,122.0 341.2,123.7 342.6,125.3 344.0,127.0 345.4,128.6 346.8,130.2 348.2,131.8 349.6,133.4 351.0,135.0 352.4,136.5 353.8,138.0 355.2,139.5 356.6,140.9 358.0,142.3 359.4,143.7 360.8,145.1 362.2,146.4 363.6,147.7 365.0,148.9 366.4,150.1 367.8,151.3 369.2,152.4 370.6,153.5 372.0,154.5 373.4,155.5 374.8,156.4 376.2,157.3 377.6,158.2 379.0,159.0 380.4,159.8 381.8,160.5 383.2,161.1 384.6,161.7 386.0,162.3 387.4,162.8 388.8,163.3 390.2,163.7 391.6,164.0 393.0,164.3 394.4,164.6 395.8,164.8 397.2,164.9 398.6,165.0 400.0,165.0 401.4,165.0 402.8,164.9 404.2,164.8 405.6,164.6 407.0,164.3 408.4,164.0 409.8,163.7 411.2,163.3 412.6,162.8 414.0,162.3 415.4,161.7 416.8,161.1 418.2,160.5 419.6,159.8 421.0,159.0 422.4,158.2 423.8,157.3 425.2,156.4 426.6,155.5 428.0,154.5 429.4,153.5 430.8,152.4 432.2,151.3 433.6,150.1 435.0,148.9 436.4,147.7 437.8,146.4 439.2,145.1 440.6,143.7 442.0,142.3 443.4,140.9 444.8,139.5 446.2,138.0 447.6,136.5 449.0,135.0 450.4,133.4 451.8,131.8 453.2,130.2 454.6,128.6 456.0,127.0 457.4,125.3 458.8,123.7 460.2,122.0 461.6,120.3 463.0,118.6 464.4,116.9 465.8,115.2 467.2,113.5 468.6,111.7 470.0,110.0 471.4,108.3 472.8,106.5 474.2,104.8 475.6,103.1 477.0,101.4 478.4,99.7 479.8,98.0 481.2,96.3 482.6,94.7 484.0,93.0 485.4,91.4 486.8,89.8 488.2,88.2 489.6,86.6 491.0,85.0 492.4,83.5 493.8,82.0 495.2,80.5 496.6,79.1 498.0,77.7 499.4,76.3 500.8,74.9 502.2,73.6 503.6,72.3 505.0,71.1 506.4,69.9 507.8,68.7 509.2,67.6 510.6,66.5 512.0,65.5 513.4,64.5 514.8,63.6 516.2,62.7 517.6,61.8 519.0,61.0 520.4,60.2 521.8,59.5 523.2,58.9 524.6,58.3 526.0,57.7 527.4,57.2 528.8,56.7 530.2,56.3 531.6,56.0 533.0,55.7 534.4,55.4 535.8,55.2 537.2,55.1 538.6,55.0 540.0,55.0 541.4,55.0 542.8,55.1 544.2,55.2 545.6,55.4 547.0,55.7 548.4,56.0 549.8,56.3 551.2,56.7 552.6,57.2 554.0,57.7 555.4,58.3 556.8,58.9 558.2,59.5 559.6,60.2 561.0,61.0 562.4,61.8 563.8,62.7 565.2,63.6 566.6,64.5 568.0,65.5 569.4,66.5 570.8,67.6 572.2,68.7 573.6,69.9 575.0,71.1 576.4,72.3 577.8,73.6 579.2,74.9 580.6,76.3 582.0,77.7 583.4,79.1 584.8,80.5 586.2,82.0 587.6,83.5 589.0,85.0 590.4,86.6 591.8,88.2 593.2,89.8 594.6,91.4 596.0,93.0 597.4,94.7 598.8,96.3 600.2,98.0 601.6,99.7 603.0,101.4 604.4,103.1 605.8,104.8 607.2,106.5 608.6,108.3 610.0,110.0" fill="none" stroke="#74a8de" stroke-width="2" stroke-dasharray="6 4"/><circle cx="50" cy="110" r="5" fill="#d98125"/><text x="50" y="145" text-anchor="middle" font-size="16">0.0 m</text><circle cx="190" cy="110" r="5" fill="#d98125"/><text x="190" y="145" text-anchor="middle" font-size="16">0.7 m</text><circle cx="330" cy="110" r="5" fill="#d98125"/><text x="330" y="145" text-anchor="middle" font-size="16">1.4 m</text><circle cx="470" cy="110" r="5" fill="#d98125"/><text x="470" y="145" text-anchor="middle" font-size="16">2.1 m</text><circle cx="610" cy="110" r="5" fill="#d98125"/><text x="610" y="145" text-anchor="middle" font-size="16">2.8 m</text><text x="120" y="40" text-anchor="middle" font-size="17">antinode</text><text x="190" y="180" text-anchor="middle" font-size="17">node</text><text x="330" y="210" text-anchor="middle" font-size="17">Adjacent nodes: λ/2 = 0.7 m</text></svg>
+<p class="subtle">The two lines show the opposite extreme positions of the standing wave. The figure shows the distribution of nodes and antinodes, not the direction of air motion in a longitudinal sound wave.</p>
+<p>In a progressive wave the phase travels through the medium and the wave transports energy. In an ideal standing wave formed by equally strong waves travelling in opposite directions, the mean net energy flow is zero. Points between two adjacent nodes oscillate in phase; points in neighbouring segments oscillate in antiphase.</p>
+<h3>Wave properties of light</h3>
+<p>Light is an electromagnetic wave and can also travel in a vacuum. Interference (for example in a double slit), diffraction and polarisation demonstrate its wave properties. Polarisation shows that light is a transverse wave. Light is also reflected and refracted.</p>
+<h3>Solution of the calculation</h3>
+<p><strong>Given:</strong> v = 343 m/s, f = 245 Hz. We want λ and the distance between adjacent nodes d.</p>
+<p>In one period T = 1/f a progressive wave travels a distance λ. Hence v = λ/T = λf.</p>
+<div class="formula">λ = v/f = 343/245 m = 1.4 m<br>d = λ/2 = 1.4/2 m = 0.7 m</div>
+<div class="result"><strong>The wavelength is 1.4 m. The distance between adjacent nodes is 0.7 m = 70 cm.</strong></div>
+<p>A node is 0.35 m from the nearest antinode. Check: λf = 1.4 · 245 = 343 m/s.</p>
+</section>
+
+<section class="sheet" id="cast-3"><div class="topline">Part 3 of 3</div>
+<h2>3. Origin of Electric Current</h2>
+<h3>Electric current in a metal conductor</h3>
+<p>Electric current is the ordered motion of particles with electric charge. Its magnitude expresses the charge that passes through a cross-section of the conductor per unit time:</p>
+<div class="formula">I = ΔQ/Δt, &nbsp; [I] = A = C/s</div>
+<p>This relation gives the average current in the given interval; for a steady current also its instantaneous value. In a metal the charge carriers are free electrons. Without an electric field they move randomly and produce no macroscopic current.</p>
+<p>For a current to arise we need mobile charge carriers and an electric field that causes their ordered motion. A sustained current in an ordinary circuit requires a closed conducting path and a source that maintains the voltage. The conventional direction of current is the direction of motion of positive charge; electrons in a metal move in the opposite direction.</p>
+<h3>Magnetic flux</h3>
+<p>Magnetic flux expresses how a magnetic field passes through the area of a loop. For a uniform field and a flat loop:</p>
+<div class="formula">Φ = BS cos α, &nbsp; [Φ] = Wb</div>
+<p>B is the magnetic flux density in teslas, S the area of the loop in m² and α the angle between the direction of the magnetic field and the <strong>normal to the surface</strong>. The flux is maximal when the field is perpendicular to the surface and zero when the field is parallel to it.</p>
+<h3>Electromagnetic induction</h3>
+<p>When the magnetic flux linked with a circuit changes, an induced electromotive force arises. In a closed conducting circuit this voltage can drive a current. The flux can be changed by changing B, the area of the loop or its orientation.</p>
+<p>Faraday’s law for a coil with N turns through which the same flux passes:</p>
+<div class="formula">Uᵢ = −N · ΔΦ/Δt &nbsp; (average value)<br>Uᵢ = −N · dΦ/dt &nbsp; (instantaneous value)</div>
+<p>The induced voltage is greater the faster the flux changes and the greater the number of turns. A large but constant flux alone is not enough: if the flux does not change, the induced voltage is zero.</p>
+<p><strong>Lenz’s law:</strong> The induced current has such a direction that its magnetic field opposes the change in magnetic flux that caused it. This is expressed by the minus sign. The field does not automatically oppose the original field, but its <strong>change</strong>.</p>
+<div class="note">When the flux increases, the induced field opposes its growth; when the flux decreases, it tends to maintain the original flux. Mechanical work done in moving the magnet can be converted into electrical energy and heat.</div>
+<h3>Experiment: magnet, coil and galvanometer</h3>
+<ol><li>We connect the coil to a galvanometer and move a magnet towards its opening. The flux changes and the galvanometer shows a current.</li>
+<li>We stop the magnet. If neither the field nor the coil changes, the flux is constant and the current stops.</li>
+<li>We move the magnet away. The change of flux has the opposite sign and the galvanometer deflects the other way.</li>
+<li>A faster motion of the magnet usually gives a larger deflection. Reversing the pole of the magnet also reverses the direction of the induced current for the same motion.</li>
+</ol>
+<p>A voltage can also arise in an open circuit, but a sustained conduction current has no closed path. In a simple resistive model I = Uᵢ/R; in general the self-inductance of the circuit can also affect the behaviour.</p>
+<h3>Charging by contact and electromagnetic induction</h3>
+<div class="scroll">
+<table><tr><th>Property</th><th>Charging a metal conductor by contact</th><th>Electromagnetic induction</th></tr>
+<tr><td>Cause</td><td>Conducting contact with a charged body or source at a different potential.</td><td>Change of the magnetic flux linked with the circuit.</td></tr>
+<tr><td>What happens to the charge</td><td>Electrons are transferred between the bodies. An originally neutral insulated conductor can acquire a non-zero total charge.</td><td>An electric field or a force on moving carriers sets the charges already present in motion. No external transfer of charge from the magnet is required.</td></tr>
+<tr><td>Typical result</td><td>A charged conductor; if insulated, it can keep the charge even after separation.</td><td>An induced voltage and, in a closed circuit, a current while the flux is changing.</td></tr>
+<tr><td>Contact with the cause</td><td>A conducting path is needed to transfer the charge.</td><td>Contact with the magnet is not needed.</td></tr>
+<tr><td>Example</td><td>We touch a neutral metal sphere on an insulating stand with a charged metal sphere.</td><td>We move a magnet near a coil connected to a galvanometer.</td></tr>
+</table>
+</div>
+<div class="result"><strong>On contact, charge is transferred between the bodies. In electromagnetic induction a voltage arises because of a change in magnetic flux; a current can flow in a closed circuit without the circuit becoming charged overall.</strong></div>
+<p>When conductors touch, the charge redistributes until their potentials are equal. It need not be shared equally: this depends on the shape, size and surroundings of the conductors. During the redistribution a current may flow briefly.</p>
+<div class="note"><strong>Beware of similar names:</strong> Electrostatic induction is the redistribution of charges in a conductor caused by a nearby charged body. Without contact or earthing, the total charge of an originally neutral conductor does not change. It is a different phenomenon from electromagnetic induction caused by a change in magnetic flux.</div>
+<h3>Short answer for the oral examination</h3>
+<p>In a metal conductor the current is formed by electrons moving in an ordered way. The voltage can be maintained by a source or can arise by electromagnetic induction. When the magnetic flux changes, an induced voltage arises and, in a closed circuit, a current. Its direction is given by Lenz’s law. Charging by contact, on the other hand, means a transfer of charge between bodies; an insulated conductor may remain charged afterwards.</p>
+</section>
+
+</main>
+
+<footer class="mo-foot"><a href="index.html">← All models</a><span>Model 3 · Worked solutions</span></footer>
+</body>
+</html>

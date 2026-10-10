@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Vzor 4 – Vypracovanie</title>
+<link rel="stylesheet" href="mo.css">
+</head>
+<body class="vyp">
+
+<header class="mo-head"><div class="mo-head-in">
+<div class="mo-kicker"><span class="mo-num">VZOR 4</span><span class="mo-kind">Vypracovanie</span></div>
+<h1>Kinematika hmotného bodu · Magnetické pole · Mikrosvet</h1>
+<p>Podrobné vypracovanie s vysvetlením</p>
+</div></header>
+
+<nav class="mo-bar"><div class="mo-bar-in">
+<a class="mo-back" href="index.html">← Všetky vzory</a>
+<div class="mo-switch"><a href="Vzor4_zadanie.html">Zadanie</a><a href="Vzor4_vypracovanie.html" class="on">Vypracovanie</a></div>
+<button type="button" onclick="window.print()">Tlačiť / PDF</button>
+<a class="mo-lang" href="en/Model4_solutions.html" hreflang="en" title="English version">EN</a>
+</div></nav>
+
+<main class="wrap">
+
+<section class="sheet" id="cast-1"><div class="topline">Časť 1 z 3</div>
+<h2>1. Kinematika hmotného bodu</h2><h3>Základné pojmy</h3><p><b>Mechanický pohyb</b> je zmena polohy telesa vzhľadom na zvolenú vzťažnú sústavu v čase. <b>Hmotný bod</b> je model telesa, ktorého rozmery môžeme vzhľadom na skúmaný pohyb zanedbať. <b>Vzťažnú sústavu</b> tvorí vzťažné teleso, súradnicová sústava a hodiny.</p><p><b>Relatívnosť pohybu a pokoja:</b> Cestujúci sediaci vo vlaku je v pokoji vzhľadom na vlak a v pohybe vzhľadom na nástupište. Pohyb nemožno opisovať bez určenia vzťažnej sústavy.</p><p><b>Trajektória</b> je geometrická čiara opísaná pohybujúcim sa bodom, <b>dráha s</b> je dĺžka prejdenej časti trajektórie. <b>Rýchlosť</b> vyjadruje časovú zmenu polohy, <b>zrýchlenie</b> časovú zmenu rýchlosti.</p><p>Podľa trajektórie rozlišujeme <b>priamočiary</b> a <b>krivočiary</b> pohyb; podľa rýchlosti <b>rovnomerný</b> a <b>nerovnomerný</b> (napríklad rovnomerne zrýchlený alebo spomalený).</p><h3>Výpočtová úloha – rovnomerné brzdenie</h3><div class="task">v₀ = 72 km/h; a = −1,8 m/s²; konečná rýchlosť v = 0. Určte čas zastavenia a brzdnú dráhu.</div><p><b>1. Prevod rýchlosti:</b></p><div class="formula">v₀ = 72 : 3,6 = 20 m/s</div><p><b>2. Čas zastavenia:</b> pri konštantnom zrýchlení platí v = v₀ + at, teda</p><div class="formula">t = (0 − 20)/(−1,8) ≈ 11,11 s</div><p><b>3. Brzdná dráha:</b></p><div class="formula">s = v₀t + ½at² = 20·11,11 − 0,9·11,11² ≈ 111,1 m</div><p>Kontrola pomocou rovnice bez času:</p><div class="formula">v² = v₀² + 2as ⇒ s = (0 − 20²)/(2·(−1,8)) ≈ 111,1 m</div><div class="result">Výsledok: Automobil zastaví približne za 11,1 s a prejde asi 111 m.</div>
+</section>
+
+<section class="sheet" id="cast-2"><div class="topline">Časť 2 z 3</div>
+<h2>2. Stacionárne magnetické pole</h2><h3>Teória</h3><p><b>Stacionárne magnetické pole</b> je magnetické pole, ktoré sa s časom nemení. Vzniká napríklad okolo vodiča so stálym elektrickým prúdom. Magnetická indukcia <b>B</b> je vektorová veličina, jej jednotka je tesla (T). Indukčné čiary okolo dlhého priameho vodiča tvoria sústredné kružnice. Ich orientáciu určíme <b>pravidlom pravej ruky</b>: palec ukazuje smer konvenčného prúdu, pokrčené prsty smer magnetických indukčných čiar.</p><div class="formula">B = μ₀I / (2πr), &nbsp; μ₀ = 4π · 10⁻⁷ T·m/A</div><p>Dva rovnobežné vodiče s prúdmi <b>rovnakého smeru sa priťahujú</b>; s opačnými smermi sa odpudzujú. V magnetickom poli platí princíp superpozície: výsledná indukcia je <b>vektorovým súčtom</b> indukcií od jednotlivých vodičov.</p><h3>Úloha – magnetická indukcia v strede</h3><svg class="diagram" viewBox="0 0 640 235" role="img" aria-label="Dva rovnobežné vodiče, prúdy smerujú doprava, stred P medzi vodičmi"><defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10Z" fill="#1b588f"/></marker></defs><g stroke="#1b588f" stroke-width="3" fill="none" marker-end="url(#arr)"><path d="M45 65H585"/><path d="M45 172H585"/></g><g fill="#173d6b" font-size="20"><text x="415" y="46">I₁ = 12 A</text><text x="415" y="205">I₂ = 10 A</text><text x="62" y="124">d = 15 cm</text><text x="316" y="128">P</text></g><circle cx="300" cy="118.5" r="5" fill="#ca8230"/><g stroke="#888" stroke-width="1.5"><path d="M250 65V172M243 65H257M243 172H257" stroke-dasharray="4 3"/></g></svg><p><b>1. Vzdialenosť bodu P od každého vodiča:</b></p><div class="formula">r = d/2 = 0,15/2 = 0,075 m</div><p><b>2. Indukcia vytvorená prvým vodičom:</b></p><div class="formula">B₁ = μ₀·12/(2π·0,075) = 3,2·10⁻⁵ T = 32 μT</div><p><b>3. Indukcia vytvorená druhým vodičom:</b></p><div class="formula">B₂ = μ₀·10/(2π·0,075) ≈ 2,67·10⁻⁵ T ≈ 26,7 μT</div><p><b>4. Smer vektorov:</b> Ak oba prúdy smerujú doprava, v bode P je pole horného vodiča <b>do roviny nákresu</b> a pole dolného vodiča <b>z roviny nákresu</b>. Polia teda majú opačné smery. Keďže B₁ &gt; B₂, výsledné pole smeruje do roviny nákresu.</p><div class="formula">B = |B₁ − B₂| = 5,33·10⁻⁶ T ≈ 5,3 μT</div><div class="result">Výsledok: B ≈ 5,3 μT; pri zakreslených smeroch prúdov smeruje výsledná indukcia do roviny nákresu.</div>
+</section>
+
+<section class="sheet" id="cast-3"><div class="topline">Časť 3 z 3</div>
+<h2>3. Mikrosvet – rádioaktívny rozpad</h2><h3>Teória</h3><p><b>Atóm</b> tvorí jadro s protónmi a neutrónmi a elektrónový obal. Počet protónov je protónové číslo Z, počet nukleónov je nukleónové číslo A. <b>Rádioaktivita</b> je samovoľná premena nestabilných atómových jadier sprevádzaná emisiou častíc alebo elektromagnetického žiarenia.</p><ul><li><b>α žiarenie:</b> jadrá hélia (2 protóny a 2 neutróny); malá prenikavosť.</li><li><b>β žiarenie:</b> elektróny alebo pozitróny vznikajúce pri jadrových premenách.</li><li><b>γ žiarenie:</b> vysokoenergetické elektromagnetické žiarenie.</li></ul><p>Rozpad jednotlivého jadra je náhodný jav, no pri veľkom počte jadier možno vývoj ich počtu opisovať exponenciálnym zákonom.</p><h3>Zákon rádioaktívneho rozpadu</h3><div class="formula">N(t) = N₀ e<sup>−λt</sup> = N₀·2<sup>−t/T½</sup></div><p><b>N(t)</b> je počet nerozpadnutých jadier v čase t, <b>N₀</b> počiatočný počet, <b>λ</b> rozpadová konštanta a <b>T½</b> polčas rozpadu. Platí <b>T½ = ln 2 / λ</b>.</p><h3>Graf počtu nerozpadnutých jadier v čase</h3><svg class="diagram" viewBox="0 0 640 330" role="img" aria-label="Klesajúca exponenciálna závislosť počtu nerozpadnutých jadier od času"><g stroke="#354b61" stroke-width="2.1" fill="none"><path d="M70 20V278H608"/><path d="M63 32L70 18L77 32 M595 271L610 278L595 285"/></g><g fill="#183b60" font-size="17"><text x="35" y="19">N</text><text x="610" y="302">t</text><text x="24" y="48">N₀</text><text x="12" y="162">N₀/2</text><text x="12" y="220">N₀/4</text><text x="15" y="251">N₀/8</text><text x="67" y="299">0</text><text x="200" y="304">T½</text><text x="334" y="304">2T½</text><text x="468" y="304">3T½</text></g><g stroke="#c08b3e" stroke-dasharray="6 5" stroke-width="1.6"><path d="M70 161H206V278 M70 219.5H342V278 M70 248.75H478V278"/></g><path id="curve" fill="none" stroke="#2476b7" stroke-width="4" d="M70 44 C138 103,155 132,206 161 C260 194,293 208,342 219.5 C404 236,435 244,478 248.75 C524 254,562 259,592 262"/><g fill="#2476b7"><circle cx="70" cy="44" r="4"/><circle cx="206" cy="161" r="4"/><circle cx="342" cy="219.5" r="4"/><circle cx="478" cy="248.75" r="4"/></g></svg><p>Na začiatku je <b>N(0) = N₀</b>. Po jednom polčase zostáva N₀/2, po dvoch N₀/4, po troch N₀/8. Ide o <b>klesajúcu exponenciálnu krivku</b>, ktorá sa približuje k nule, ale v matematickom modeli ju nedosiahne v konečnom čase.</p><div class="formula">N(nT½) = N₀ / 2ⁿ</div><div class="result">Záver: Po každom polčase sa počet zostávajúcich rádioaktívnych jadier zmenší na polovicu.</div>
+</section>
+
+</main>
+
+<footer class="mo-foot"><a href="index.html">← Všetky vzory</a><span>Vzor 4 · Vypracovanie</span></footer>
+</body>
+</html>

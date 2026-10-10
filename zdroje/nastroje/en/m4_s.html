@@ -1,0 +1,51 @@
+<h2>1. Kinematics of a Particle</h2>
+<h3>Basic concepts</h3>
+<p><b>Mechanical motion</b> is the change of position of a body with respect to a chosen frame of reference over time. A <b>particle (point mass)</b> is a model of a body whose dimensions can be neglected for the motion being studied. A <b>frame of reference</b> consists of a reference body, a coordinate system and a clock.</p>
+<p><b>Relativity of motion and rest:</b> A passenger sitting in a train is at rest relative to the train and in motion relative to the platform. Motion cannot be described without specifying a frame of reference.</p>
+<p>The <b>trajectory</b> is the geometric line traced out by the moving point; the <b>distance travelled s</b> is the length of the part of the trajectory covered. <b>Velocity</b> expresses the rate of change of position with time, <b>acceleration</b> the rate of change of velocity with time.</p>
+<p>By trajectory we distinguish <b>rectilinear</b> and <b>curvilinear</b> motion; by velocity <b>uniform</b> and <b>non-uniform</b> motion (for example uniformly accelerated or decelerated).</p>
+<h3>Calculation – uniform braking</h3>
+<div class="task">v₀ = 72 km/h; a = −1.8 m/s²; final velocity v = 0. Determine the stopping time and the braking distance.</div>
+<p><b>1. Converting the velocity:</b></p>
+<div class="formula">v₀ = 72 : 3.6 = 20 m/s</div>
+<p><b>2. Stopping time:</b> for constant acceleration v = v₀ + at, so</p>
+<div class="formula">t = (0 − 20)/(−1.8) ≈ 11.11 s</div>
+<p><b>3. Braking distance:</b></p>
+<div class="formula">s = v₀t + ½at² = 20·11.11 − 0.9·11.11² ≈ 111.1 m</div>
+<p>Check using the equation without time:</p>
+<div class="formula">v² = v₀² + 2as ⇒ s = (0 − 20²)/(2·(−1.8)) ≈ 111.1 m</div>
+<div class="result">Result: The car stops in approximately 11.1 s and travels about 111 m.</div>
+<!--PART-->
+<h2>2. Stationary Magnetic Field</h2>
+<h3>Theory</h3>
+<p>A <b>stationary magnetic field</b> is a magnetic field that does not change with time. It arises, for example, around a wire carrying a steady electric current. The magnetic flux density <b>B</b> is a vector quantity; its unit is the tesla (T). The magnetic field lines around a long straight wire are concentric circles. Their orientation is given by the <b>right-hand grip rule</b>: the thumb points in the direction of the conventional current, the curled fingers in the direction of the magnetic field lines.</p>
+<div class="formula">B = μ₀I / (2πr), &nbsp; μ₀ = 4π · 10⁻⁷ T·m/A</div>
+<p>Two parallel wires with currents in <b>the same direction attract each other</b>; with opposite directions they repel. The principle of superposition applies to the magnetic field: the resultant flux density is the <b>vector sum</b> of the flux densities of the individual wires.</p>
+<h3>Problem – magnetic flux density at the midpoint</h3>
+{{SVG0}}
+<p><b>1. Distance of point P from each wire:</b></p>
+<div class="formula">r = d/2 = 0.15/2 = 0.075 m</div>
+<p><b>2. Flux density due to the first wire:</b></p>
+<div class="formula">B₁ = μ₀·12/(2π·0.075) = 3.2·10⁻⁵ T = 32 μT</div>
+<p><b>3. Flux density due to the second wire:</b></p>
+<div class="formula">B₂ = μ₀·10/(2π·0.075) ≈ 2.67·10⁻⁵ T ≈ 26.7 μT</div>
+<p><b>4. Directions of the vectors:</b> If both currents flow to the right, at point P the field of the upper wire points <b>into the plane of the diagram</b> and the field of the lower wire <b>out of the plane of the diagram</b>. The fields therefore have opposite directions. Since B₁ &gt; B₂, the resultant field points into the plane of the diagram.</p>
+<div class="formula">B = |B₁ − B₂| = 5.33·10⁻⁶ T ≈ 5.3 μT</div>
+<div class="result">Result: B ≈ 5.3 μT; for the current directions shown, the resultant flux density points into the plane of the diagram.</div>
+<!--PART-->
+<h2>3. The Microworld – Radioactive Decay</h2>
+<h3>Theory</h3>
+<p>An <b>atom</b> consists of a nucleus with protons and neutrons and an electron shell. The number of protons is the proton (atomic) number Z, the number of nucleons is the nucleon (mass) number A. <b>Radioactivity</b> is the spontaneous transformation of unstable atomic nuclei accompanied by the emission of particles or electromagnetic radiation.</p>
+<ul><li><b>α radiation:</b> helium nuclei (2 protons and 2 neutrons); low penetrating power.</li>
+<li><b>β radiation:</b> electrons or positrons produced in nuclear transformations.</li>
+<li><b>γ radiation:</b> high-energy electromagnetic radiation.</li>
+</ul>
+<p>The decay of an individual nucleus is a random event, but for a large number of nuclei the change in their number can be described by an exponential law.</p>
+<h3>Law of radioactive decay</h3>
+<div class="formula">N(t) = N₀ e<sup>−λt</sup> = N₀·2<sup>−t/T½</sup></div>
+<p><b>N(t)</b> is the number of undecayed nuclei at time t, <b>N₀</b> the initial number, <b>λ</b> the decay constant and <b>T½</b> the half-life. <b>T½ = ln 2 / λ</b>.</p>
+<h3>Graph of the number of undecayed nuclei against time</h3>
+{{SVG1}}
+<p>At the start <b>N(0) = N₀</b>. After one half-life N₀/2 remains, after two N₀/4, after three N₀/8. It is a <b>decreasing exponential curve</b> that approaches zero but, in the mathematical model, never reaches it in a finite time.</p>
+<div class="formula">N(nT½) = N₀ / 2ⁿ</div>
+<div class="result">Conclusion: After each half-life, the number of remaining radioactive nuclei is halved.</div>

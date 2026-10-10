@@ -1,0 +1,17 @@
+# Systémové súbory Windows a macOS
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Dočasné a záložné súbory editorov
+*.bak
+*.tmp
+*.swp
+*~
+
+# Nastavenia editorov
+.vscode/
+.idea/
+
+# Python
+__pycache__/

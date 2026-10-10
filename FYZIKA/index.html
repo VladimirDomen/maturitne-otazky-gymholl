@@ -1,0 +1,52 @@
+<!--
+  ============================================
+  FYZIKA — VZOROVÉ ZADANIA — ROZCESTNÍK (SK)
+  ============================================
+  Karty a filter vytvára rozcestnik.js (dáta pre SK aj EN).
+  Anglická verzia: en/index.html.
+  Zámerne bez názvu školy; stránky majú noindex.
+  ============================================
+-->
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Vzorové zadania z fyziky</title>
+<link rel="stylesheet" href="rozcestnik.css">
+</head>
+<body>
+
+<header class="hero">
+  <nav class="lang" aria-label="Jazyk"><a href="index.html" class="on" hreflang="sk">SK</a><a href="en/index.html" hreflang="en">EN</a></nav>
+  <!-- dekorácia: obežné dráhy -->
+  <svg class="orbits" viewBox="0 0 400 400" aria-hidden="true" fill="none" stroke="#fff" stroke-width="1.4">
+    <ellipse cx="200" cy="200" rx="180" ry="70" transform="rotate(-25 200 200)"/>
+    <ellipse cx="200" cy="200" rx="180" ry="70" transform="rotate(35 200 200)"/>
+    <ellipse cx="200" cy="200" rx="180" ry="70" transform="rotate(95 200 200)"/>
+    <circle cx="200" cy="200" r="16" fill="#fff"/>
+    <circle cx="352" cy="128" r="6" fill="#e9b45e" stroke="none"/>
+    <circle cx="118" cy="330" r="6" fill="#e9b45e" stroke="none"/>
+  </svg>
+  <div class="hero-in">
+    <div class="hero-kicker">Fyzika</div>
+    <h1>Vzorové zadania</h1>
+    <p>Zadania s podrobným vypracovaním. Každý vzor má tri časti z rôznych oblastí fyziky.</p>
+    <div class="stats" id="stats"></div>
+  </div>
+</header>
+
+<section class="filter" aria-label="Filter podľa oblasti">
+  <div class="filter-label">Filtrovať podľa oblasti</div>
+  <div class="chips" id="chips"></div>
+  <div class="filter-info" id="info"></div>
+</section>
+
+<main class="grid" id="grid"></main>
+
+<footer>Každý vzor: zadanie a podrobné vypracovanie · tlač cez tlačidlo „Tlačiť / PDF“</footer>
+
+<script src="rozcestnik.js"></script>
+</body>
+</html>

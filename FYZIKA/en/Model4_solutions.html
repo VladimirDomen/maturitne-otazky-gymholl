@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Model 4 – Worked solutions</title>
+<link rel="stylesheet" href="../mo.css">
+</head>
+<body class="vyp">
+
+<header class="mo-head"><div class="mo-head-in">
+<div class="mo-kicker"><span class="mo-num">MODEL 4</span><span class="mo-kind">Worked solutions</span></div>
+<h1>Kinematics of a Particle · Magnetic Field · The Microworld</h1>
+<p>Detailed worked solutions with explanations</p>
+</div></header>
+
+<nav class="mo-bar"><div class="mo-bar-in">
+<a class="mo-back" href="index.html">← All models</a>
+<div class="mo-switch"><a href="Model4_questions.html">Questions</a><a href="Model4_solutions.html" class="on">Solutions</a></div>
+<button type="button" onclick="window.print()">Print / PDF</button>
+<a class="mo-lang" href="../Vzor4_vypracovanie.html" hreflang="sk" title="Slovenská verzia">SK</a>
+</div></nav>
+
+<main class="wrap">
+
+<section class="sheet" id="cast-1"><div class="topline">Part 1 of 3</div>
+<h2>1. Kinematics of a Particle</h2>
+<h3>Basic concepts</h3>
+<p><b>Mechanical motion</b> is the change of position of a body with respect to a chosen frame of reference over time. A <b>particle (point mass)</b> is a model of a body whose dimensions can be neglected for the motion being studied. A <b>frame of reference</b> consists of a reference body, a coordinate system and a clock.</p>
+<p><b>Relativity of motion and rest:</b> A passenger sitting in a train is at rest relative to the train and in motion relative to the platform. Motion cannot be described without specifying a frame of reference.</p>
+<p>The <b>trajectory</b> is the geometric line traced out by the moving point; the <b>distance travelled s</b> is the length of the part of the trajectory covered. <b>Velocity</b> expresses the rate of change of position with time, <b>acceleration</b> the rate of change of velocity with time.</p>
+<p>By trajectory we distinguish <b>rectilinear</b> and <b>curvilinear</b> motion; by velocity <b>uniform</b> and <b>non-uniform</b> motion (for example uniformly accelerated or decelerated).</p>
+<h3>Calculation – uniform braking</h3>
+<div class="task">v₀ = 72 km/h; a = −1.8 m/s²; final velocity v = 0. Determine the stopping time and the braking distance.</div>
+<p><b>1. Converting the velocity:</b></p>
+<div class="formula">v₀ = 72 : 3.6 = 20 m/s</div>
+<p><b>2. Stopping time:</b> for constant acceleration v = v₀ + at, so</p>
+<div class="formula">t = (0 − 20)/(−1.8) ≈ 11.11 s</div>
+<p><b>3. Braking distance:</b></p>
+<div class="formula">s = v₀t + ½at² = 20·11.11 − 0.9·11.11² ≈ 111.1 m</div>
+<p>Check using the equation without time:</p>
+<div class="formula">v² = v₀² + 2as ⇒ s = (0 − 20²)/(2·(−1.8)) ≈ 111.1 m</div>
+<div class="result">Result: The car stops in approximately 11.1 s and travels about 111 m.</div>
+</section>
+
+<section class="sheet" id="cast-2"><div class="topline">Part 2 of 3</div>
+<h2>2. Stationary Magnetic Field</h2>
+<h3>Theory</h3>
+<p>A <b>stationary magnetic field</b> is a magnetic field that does not change with time. It arises, for example, around a wire carrying a steady electric current. The magnetic flux density <b>B</b> is a vector quantity; its unit is the tesla (T). The magnetic field lines around a long straight wire are concentric circles. Their orientation is given by the <b>right-hand grip rule</b>: the thumb points in the direction of the conventional current, the curled fingers in the direction of the magnetic field lines.</p>
+<div class="formula">B = μ₀I / (2πr), &nbsp; μ₀ = 4π · 10⁻⁷ T·m/A</div>
+<p>Two parallel wires with currents in <b>the same direction attract each other</b>; with opposite directions they repel. The principle of superposition applies to the magnetic field: the resultant flux density is the <b>vector sum</b> of the flux densities of the individual wires.</p>
+<h3>Problem – magnetic flux density at the midpoint</h3>
+<svg class="diagram" viewBox="0 0 640 235" role="img" aria-label="Two parallel wires, currents flowing to the right, midpoint P between the wires"><defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10Z" fill="#1b588f"/></marker></defs><g stroke="#1b588f" stroke-width="3" fill="none" marker-end="url(#arr)"><path d="M45 65H585"/><path d="M45 172H585"/></g><g fill="#173d6b" font-size="20"><text x="415" y="46">I₁ = 12 A</text><text x="415" y="205">I₂ = 10 A</text><text x="62" y="124">d = 15 cm</text><text x="316" y="128">P</text></g><circle cx="300" cy="118.5" r="5" fill="#ca8230"/><g stroke="#888" stroke-width="1.5"><path d="M250 65V172M243 65H257M243 172H257" stroke-dasharray="4 3"/></g></svg>
+<p><b>1. Distance of point P from each wire:</b></p>
+<div class="formula">r = d/2 = 0.15/2 = 0.075 m</div>
+<p><b>2. Flux density due to the first wire:</b></p>
+<div class="formula">B₁ = μ₀·12/(2π·0.075) = 3.2·10⁻⁵ T = 32 μT</div>
+<p><b>3. Flux density due to the second wire:</b></p>
+<div class="formula">B₂ = μ₀·10/(2π·0.075) ≈ 2.67·10⁻⁵ T ≈ 26.7 μT</div>
+<p><b>4. Directions of the vectors:</b> If both currents flow to the right, at point P the field of the upper wire points <b>into the plane of the diagram</b> and the field of the lower wire <b>out of the plane of the diagram</b>. The fields therefore have opposite directions. Since B₁ &gt; B₂, the resultant field points into the plane of the diagram.</p>
+<div class="formula">B = |B₁ − B₂| = 5.33·10⁻⁶ T ≈ 5.3 μT</div>
+<div class="result">Result: B ≈ 5.3 μT; for the current directions shown, the resultant flux density points into the plane of the diagram.</div>
+</section>
+
+<section class="sheet" id="cast-3"><div class="topline">Part 3 of 3</div>
+<h2>3. The Microworld – Radioactive Decay</h2>
+<h3>Theory</h3>
+<p>An <b>atom</b> consists of a nucleus with protons and neutrons and an electron shell. The number of protons is the proton (atomic) number Z, the number of nucleons is the nucleon (mass) number A. <b>Radioactivity</b> is the spontaneous transformation of unstable atomic nuclei accompanied by the emission of particles or electromagnetic radiation.</p>
+<ul><li><b>α radiation:</b> helium nuclei (2 protons and 2 neutrons); low penetrating power.</li>
+<li><b>β radiation:</b> electrons or positrons produced in nuclear transformations.</li>
+<li><b>γ radiation:</b> high-energy electromagnetic radiation.</li>
+</ul>
+<p>The decay of an individual nucleus is a random event, but for a large number of nuclei the change in their number can be described by an exponential law.</p>
+<h3>Law of radioactive decay</h3>
+<div class="formula">N(t) = N₀ e<sup>−λt</sup> = N₀·2<sup>−t/T½</sup></div>
+<p><b>N(t)</b> is the number of undecayed nuclei at time t, <b>N₀</b> the initial number, <b>λ</b> the decay constant and <b>T½</b> the half-life. <b>T½ = ln 2 / λ</b>.</p>
+<h3>Graph of the number of undecayed nuclei against time</h3>
+<svg class="diagram" viewBox="0 0 640 330" role="img" aria-label="Decreasing exponential dependence of the number of undecayed nuclei on time"><g stroke="#354b61" stroke-width="2.1" fill="none"><path d="M70 20V278H608"/><path d="M63 32L70 18L77 32 M595 271L610 278L595 285"/></g><g fill="#183b60" font-size="17"><text x="35" y="19">N</text><text x="610" y="302">t</text><text x="24" y="48">N₀</text><text x="12" y="162">N₀/2</text><text x="12" y="220">N₀/4</text><text x="15" y="251">N₀/8</text><text x="67" y="299">0</text><text x="200" y="304">T½</text><text x="334" y="304">2T½</text><text x="468" y="304">3T½</text></g><g stroke="#c08b3e" stroke-dasharray="6 5" stroke-width="1.6"><path d="M70 161H206V278 M70 219.5H342V278 M70 248.75H478V278"/></g><path id="curve" fill="none" stroke="#2476b7" stroke-width="4" d="M70 44 C138 103,155 132,206 161 C260 194,293 208,342 219.5 C404 236,435 244,478 248.75 C524 254,562 259,592 262"/><g fill="#2476b7"><circle cx="70" cy="44" r="4"/><circle cx="206" cy="161" r="4"/><circle cx="342" cy="219.5" r="4"/><circle cx="478" cy="248.75" r="4"/></g></svg>
+<p>At the start <b>N(0) = N₀</b>. After one half-life N₀/2 remains, after two N₀/4, after three N₀/8. It is a <b>decreasing exponential curve</b> that approaches zero but, in the mathematical model, never reaches it in a finite time.</p>
+<div class="formula">N(nT½) = N₀ / 2ⁿ</div>
+<div class="result">Conclusion: After each half-life, the number of remaining radioactive nuclei is halved.</div>
+</section>
+
+</main>
+
+<footer class="mo-foot"><a href="index.html">← All models</a><span>Model 4 · Worked solutions</span></footer>
+</body>
+</html>
