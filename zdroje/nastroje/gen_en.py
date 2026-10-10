@@ -25,6 +25,7 @@ TOPICS = {
     14: ['Electric Current in Electrolytes', 'Energy of a Particle', 'Efficiency of a Transformer'],
     15: ['Electric Field', 'Atomic Nucleus', 'Inclined Plane'],
     16: ['Electric Current', 'Kinematics – v–t Graph', 'Wavelength of Light'],
+    18: ['Free Oscillations', 'Motion in a Gravitational Field – Horizontal Projection', 'Diameter of an Oleic Acid Molecule'],
     26: ['Electron Shell of the Atom', 'Electric Current', 'Properties of Gases'],
 }
 
@@ -145,6 +146,32 @@ SVG_EN = {
     'Laser, optická mriežka a tienidlo vo vzdialenosti L; na tienidle stredové maximum a maximá 1. a 2. rádu vo vzdialenostiach x1 a x2':
         'Laser, diffraction grating and screen at distance L; on the screen the central maximum and 1st- and 2nd-order maxima at distances x1 and x2',
     'laser': 'laser', 'mriežka': 'grating', 'tienidlo': 'screen',
+    'Pružinový oscilátor: závažie na pružine kmitá okolo rovnovážnej polohy medzi výchylkami plus A a mínus A':
+        'Mass–spring oscillator: the mass oscillates about the equilibrium position between displacements plus A and minus A',
+    'rovnovážna poloha: y = 0':
+        'equilibrium position: y = 0',
+    'Graf výchylky od času s vyznačenou amplitúdou 90 mm a periódou 0,2 s':
+        'Displacement–time graph with the amplitude 90 mm and the period 0.2 s marked',
+    'Graf výchylky od času: sínusoida s maximom 90 mm, začína v nule a stúpa, prechody nulou v časoch 0,1 s, 0,2 s a 0,3 s':
+        'Displacement–time graph: a sine curve with a maximum of 90 mm, starting at zero and rising, crossing zero at 0.1 s, 0.2 s and 0.3 s',
+    'Teleso vrhnuté vodorovne rýchlosťou 60 m/s z výšky 60 m; poloha v čase 2 s a miesto dopadu sú neznáme':
+        'Body projected horizontally at 60 m/s from a height of 60 m; its position at 2 s and the point of impact are unknown',
+    'Trajektória vodorovného vrhu v mierke: v čase 2 s je teleso 120 m od okraja a 40 m nad zemou, dopadne 208 m od okraja pod uhlom 30 stupňov':
+        'Trajectory of the horizontal projection to scale: at 2 s the body is 120 m from the edge and 40 m above the ground; it lands 208 m from the edge at an angle of 30 degrees',
+    'dopad po 3,46 s':
+        'impact after 3.46 s',
+    'Vľavo pohľad zhora na vaničku s vodou posypanou práškom a kruhovou olejovou škvrnou s priemerom D; vpravo rez jednomolekulovou vrstvou hrúbky d na hladine vody':
+        'Left: top view of a tray of water sprinkled with powder and a circular oil film of diameter D; right: cross-section of the monomolecular layer of thickness d on the water surface',
+    'pohľad zhora':
+        'top view',
+    'rez vrstvou (zväčšené)':
+        'cross-section (enlarged)',
+    'voda':
+        'water',
+    'molekuly kyseliny olejovej':
+        'oleic acid molecules',
+    '– polárna skupina vo vode':
+        '– polar group in the water',
 }
 
 def tr_svg(svg):

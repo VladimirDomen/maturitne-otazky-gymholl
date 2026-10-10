@@ -198,6 +198,17 @@ const OTAZKY = [
       sk: ['Vlnová dĺžka svetla', 'Experiment: optická mriežka a laser, d sin α = kλ'],
       en: ['Wavelength of light', 'Experiment: diffraction grating and laser, d sin α = kλ'] },
   ]},
+  { n: 18, casti: [
+    { o: ['vlnenie'],
+      sk: ['Vlastné kmitanie', 'Kmitavý pohyb, výchylka a amplitúda, kinematická rovnica, A, T, f a φ₀ z grafu'],
+      en: ['Free oscillations', 'Oscillatory motion, displacement and amplitude, kinematic equation, A, T, f and φ₀ from a graph'] },
+    { o: ['gravitacia', 'mechanika'],
+      sk: ['Pohyb v gravitačnom poli', 'Vodorovný vrh: poloha a rýchlosť v čase 2 s, čas a vzdialenosť dopadu'],
+      en: ['Motion in a gravitational field', 'Horizontal projection: position and velocity at 2 s, time and distance of impact'] },
+    { o: ['termika'],
+      sk: ['Priemer molekuly kyseliny olejovej', 'Experiment: olejová škvrna na vode, d = V/S'],
+      en: ['Diameter of an oleic acid molecule', 'Experiment: oil film on water, d = V/S'] },
+  ]},
   { n: 26, casti: [
     { o: ['mikrosvet', 'optika'],
       sk: ['Elektrónový obal atómu', 'Kvantovanie energie, emisné a absorpčné spektrum, energia fotónu'],
