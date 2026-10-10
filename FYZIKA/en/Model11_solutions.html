@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Model 11 – Worked solutions</title>
+<link rel="stylesheet" href="../mo.css">
+</head>
+<body class="vyp">
+
+<header class="mo-head"><div class="mo-head-in">
+<div class="mo-kicker"><span class="mo-num">MODEL 11</span><span class="mo-kind">Worked solutions</span></div>
+<h1>Properties of Liquids · Thin-Film Interference · Current–Voltage Characteristic of a Diode</h1>
+<p>Detailed worked solutions with explanations</p>
+</div></header>
+
+<nav class="mo-bar"><div class="mo-bar-in">
+<a class="mo-back" href="index.html">← All models</a>
+<div class="mo-switch"><a href="Model11_questions.html">Questions</a><a href="Model11_solutions.html" class="on">Solutions</a></div>
+<button type="button" onclick="window.print()">Print / PDF</button>
+<a class="mo-lang" href="../Vzor11_vypracovanie.html" hreflang="sk" title="Slovenská verzia">SK</a>
+</div></nav>
+
+<main class="wrap">
+
+<section class="sheet" id="cast-1"><div class="topline">Part 1 of 3</div>
+<h2>1. Structure and Properties of Liquids</h2>
+<h3>Structure and surface layer</h3>
+<p>The particles of a liquid are close together, interact through attractive and repulsive forces and move randomly. A liquid has an approximately constant volume but takes the shape of its container. Inside the liquid, the action of the surrounding particles balances out on average. At a free surface the surroundings of a particle are different, and the surface layer has additional energy compared with the interior.</p>
+<p>To enlarge the surface, work must be done. A liquid of given volume therefore tends towards the smallest possible surface; a small free drop is approximately spherical.</p>
+<div class="formula">ΔEₚ = σΔS; for constant σ: Eₚ = σS</div>
+<p>σ is the surface tension, S the surface area. The equation expresses the surface energy at constant temperature and composition.</p>
+<h3>Surface force and surface tension</h3>
+<p>The surface force acts in the plane of the surface, perpendicular to its edge, and tends to reduce the surface area.</p>
+<div class="formula">σ = F/l; F = σl<br>[σ] = N/m = J/m²</div>
+<p>l is the length of the edge of <b>one</b> surface. A soap film has two surfaces, so a force F = 2σl acts on a movable bar of length l. Surface tension depends on the liquid, the temperature and impurities; it generally decreases as the temperature rises.</p>
+<h3>Wetting and meniscus</h3>
+<p>The decisive factors are the interactions between the liquid, the solid and the surrounding gas. The contact angle θ is measured <b>in the liquid</b> between the surface of the solid and the tangent to the liquid surface.</p>
+<table><tr><th>Phenomenon</th><th>Contact angle</th><th>Example and meniscus</th></tr>
+<tr><td>Wetting</td><td>θ &lt; 90°</td><td>Water on clean glass; concave meniscus</td></tr>
+<tr><td>Non-wetting</td><td>θ &gt; 90°</td><td>Mercury on glass; convex meniscus</td></tr>
+</table>
+<h3>Capillary phenomena</h3>
+<p>In a narrow vertical tube the liquid level can rise above the level of the surrounding liquid (capillary rise) or fall below it (capillary depression).</p>
+<p>The vertical component of the surface force acting around the circumference of the capillary is 2πrσ cos θ. In equilibrium it is balanced by the weight of the liquid column:</p>
+<div class="formula">2πrσ cos θ = ρgπr²h<br>h = 2σ cos θ/(ρgr)</div>
+<p>r is the inner radius of the tube and ρ the density of the liquid; we neglect the density of air. For wetting h is positive, for non-wetting negative. The narrower the capillary, the greater the magnitude of the change in level. Examples: soaking of paper, wicks and pores in building materials.</p>
+<h3>Calculation of the volume of mercury</h3>
+<p>V₀ = 50 cm³, t₀ = 18 °C, t = 39 °C. We use the approximate table value β = 1.82 × 10⁻⁴ K⁻¹, suitable around room temperature. In this range we consider β constant.</p>
+<div class="formula">Δt = 39 − 18 = 21 °C = 21 K (temperature difference)<br>V = V₀(1 + βΔt)<br>V = 50[1 + (1.82 × 10⁻⁴) × 21] cm³<br>V = 50 × 1.003822 cm³ = 50.1911 cm³</div>
+<div class="result">At 39 °C the mercury has a volume of approximately <b>50.19 cm³</b>.<br>The increase in volume is ΔV ≈ 0.191 cm³.</div>
+<p>This is the expansion of the mercury itself. The expansion of the container is not part of the calculation.</p>
+<p class="subtle">The table value of the expansion coefficient of mercury is rounded to 1.82 × 10⁻⁴ K⁻¹. Reference for the temperature dependence: <a href="https://www.nist.gov/system/files/documents/srd/jpcrd483.pdf">data on the density and expansion of mercury (NIST)</a>.</p>
+</section>
+
+<section class="sheet" id="cast-2"><div class="topline">Part 2 of 3</div>
+<h2>2. Interference in an Oil Film</h2>
+<h3>Refractive indices</h3>
+<div class="formula">nₒ = c/vₒ = (3 × 10⁸)/(2 × 10⁸) = 1.50<br>n<sub>w</sub> = c/v<sub>w</sub> = (3 × 10⁸)/(2.25 × 10⁸) ≈ 1.33</div>
+<p>n<sub>air</sub> &lt; nₒ and nₒ &gt; n<sub>w</sub>. The two reflected waves arise by splitting the same incident wave and can interfere.</p>
+<svg class="diagram" viewBox="0 0 760 290" role="img" aria-label="Reflections of light on an oil film"><rect width="760" height="290" fill="#f8fbff"/><rect x="40" y="125" width="680" height="70" fill="#ffe4a3"/><rect x="40" y="195" width="680" height="85" fill="#cde8fb"/><g stroke="#31546e" fill="none" stroke-width="2"><path d="M40 125H720 M40 195H720"/><path d="M180 30L230 125L280 30"/><path d="M230 125L267 195L305 125L355 30"/></g><g font-family="Arial" font-size="17" fill="#182735"><text x="440" y="65">Air: n ≈ 1</text><text x="440" y="153">Oil: n = 1.50</text><text x="440" y="233">Water: n ≈ 1.33</text><text x="65" y="112">reflection: shift π</text><text x="75" y="220">reflection: no shift π</text><text x="560" y="181">d = 0.2 μm</text><text x="190" y="18">incident</text><text x="283" y="45">1</text><text x="357" y="45">2</text></g></svg>
+<p>The drawing separates the paths slightly obliquely; the calculation below applies to <b>normal incidence</b>.</p>
+<ul><li>Reflection at the <b>air → oil</b> boundary: reflection from an optically denser medium, the phase changes by π (half a period).</li>
+<li>Reflection at the <b>oil → water</b> boundary: reflection from an optically less dense medium, no such phase shift occurs.</li>
+</ul>
+<p>The second wave passes through the film down and back, i.e. a geometric path of 2d. The optical path difference is 2nₒd. In addition, there is a phase difference of π between the waves due to the first reflection.</p>
+<div class="formula">2nₒd = 2 × 1.5 × 0.2 μm = 0.6 μm = 600 nm<br>Δφ = 2π · (2nₒd/λ₀) + π</div>
+<p>λ₀ denotes the wavelength <b>in a vacuum</b>, approximately also in air. In oil λₒ = λ₀/nₒ. The frequency does not change when passing between media.</p>
+<h3>Reinforcement of the reflected light</h3>
+<p>Since only one reflection changes the phase by π, the reflection maximum occurs when the optical path difference contains an odd number of half-wavelengths:</p>
+<div class="formula">2nₒd = (m + ½)λ₀, m = 0, 1, 2, …<br>λ₀ = 600/(m + ½) nm = 1200/(2m + 1) nm</div>
+<table><tr><th>m</th><th>λ₀</th><th>Region</th></tr>
+<tr><td>0</td><td>1200 nm</td><td>Infrared</td></tr>
+<tr><td>1</td><td>400 nm</td><td>Visible, violet</td></tr>
+<tr><td>2</td><td>240 nm</td><td>Ultraviolet</td></tr>
+</table>
+<div class="result">In the visible range the reflected light is reinforced at <b>λ₀ = 400 nm</b>.</div>
+<h3>Weakening of the reflected light</h3>
+<div class="formula">2nₒd = mλ₀, m = 1, 2, 3, …<br>λ₀ = 600/m nm</div>
+<table><tr><th>m</th><th>λ₀</th><th>Region</th></tr>
+<tr><td>1</td><td>600 nm</td><td>Visible, orange</td></tr>
+<tr><td>2</td><td>300 nm</td><td>Ultraviolet</td></tr>
+<tr><td>3</td><td>200 nm</td><td>Ultraviolet</td></tr>
+</table>
+<div class="result">In the visible range the reflected light is weakened at <b>λ₀ = 600 nm</b>.</div>
+<p class="subtle">Weakening does not mean complete extinction: the amplitudes of the two reflected waves are generally not equal. We use the school model of two rays and constant refractive indices; dispersion is neglected. The speed in water mainly determines whether the second reflection changes the phase.</p>
+<p class="subtle">All optical results apply to the conditions stated in the problem.</p>
+</section>
+
+<section class="sheet" id="cast-3"><div class="topline">Part 3 of 3</div>
+<h2>3. Current–Voltage Characteristic of a Diode</h2>
+<h3>Principle</h3>
+<p>A semiconductor diode contains a PN junction. In the forward direction we connect the positive terminal of the source to the anode and the negative terminal to the cathode. The barrier of the junction decreases and the current increases. In the reverse direction the barrier increases and only a small reverse current flows until breakdown occurs.</p>
+<h3>Equipment and circuit</h3>
+<p>An adjustable DC source, a diode, a protective resistor, an ammeter, a voltmeter and leads.</p>
+<svg class="diagram" viewBox="0 0 760 290" role="img" aria-label="Circuit for measuring the current–voltage characteristic"><g fill="none" stroke="#263e50" stroke-width="3"><path d="M90 95H170 M220 95H280 M325 95H390 M470 95H630V230H90V165"/><circle cx="90" cy="130" r="35"/><circle cx="195" cy="95" r="25"/><rect x="280" y="82" width="45" height="26"/><path d="M390 75L435 95L390 115Z M438 73V117 M438 95H470"/><path d="M370 95V170H399 M449 170H485V95"/><circle cx="424" cy="170" r="25"/></g><g fill="#182735" font-size="19" font-family="Arial"><text x="80" y="136">⎓</text><text x="188" y="101">A</text><text x="418" y="176">V</text><text x="65" y="52">Source</text><text x="267" y="60">R</text><text x="389" y="54">Diode</text><text x="58" y="273">Ammeter in series, voltmeter in parallel with the diode.</text></g></svg>
+<p>The protective resistor limits the current. Its value is chosen according to the source voltage and the permitted diode current: R ≥ (U<sub>source,max</sub> − U<sub>D</sub>)/I<sub>max</sub>. For example, with a source up to 5 V and an ordinary silicon diode, 1 kΩ can be used for a school measurement if the diode parameters allow a current of the order of a few mA.</p>
+<h3>Procedure</h3>
+<ol><li>Set the source to zero voltage and assemble the circuit. Check the polarity and the ranges of the meters.</li>
+<li>Connect the diode in the forward direction. Gradually increase the source voltage and record the <b>voltage directly across the diode</b> and the current. In the region of steep current rise choose smaller steps.</li>
+<li>Do not exceed the permitted current and power of the diode. Reduce the voltage to zero before changing the connection.</li>
+<li>Reverse the diode and measure the reverse direction only up to the voltage permitted for the given type. An ordinary diode is not driven into breakdown in this measurement.</li>
+<li>For the reverse direction, use a more sensitive current range if possible. If the meter reads zero, the reverse current may simply be smaller than its resolution.</li>
+<li>Plot the graph I = f(U). Draw the forward direction in the first quadrant and the reverse direction in the third; if the current units differ, use separate graphs.</li>
+</ol>
+<h3>Table of actually measured values</h3>
+<table><tr><th>Measurement</th><th>U forward (V)</th><th>I (mA)</th><th>U reverse (V)</th><th>I (μA)</th></tr>
+<tr><td>1</td><td>……</td><td>……</td><td>……</td><td>……</td></tr>
+<tr><td>2</td><td>……</td><td>……</td><td>……</td><td>……</td></tr>
+<tr><td>3</td><td>……</td><td>……</td><td>……</td><td>……</td></tr>
+<tr><td>4</td><td>……</td><td>……</td><td>……</td><td>……</td></tr>
+<tr><td>5</td><td>……</td><td>……</td><td>……</td><td>……</td></tr>
+<tr><td>6</td><td>……</td><td>……</td><td>……</td><td>……</td></tr>
+</table>
+<h3>Shape of the characteristic</h3>
+<svg class="diagram" viewBox="0 0 760 300" role="img" aria-label="Qualitative graph of the diode characteristic"><rect width="760" height="300" fill="#fafcfe"/><g stroke="#647482" fill="none" stroke-width="2"><path d="M60 200H700 M340 270V30"/></g><path d="M80 216L270 210Q310 208 340 200Q440 200 470 194Q500 175 515 135Q532 85 540 40" fill="none" stroke="#287b9f" stroke-width="4"/><g font-family="Arial" font-size="18" fill="#182735"><text x="690" y="190">U</text><text x="355" y="40">I</text><text x="350" y="225">0</text><text x="105" y="250">reverse bias</text><text x="520" y="250">forward bias</text><text x="60" y="20">Schematic, not to scale; not measured data.</text></g></svg>
+<h3>Evaluation</h3>
+<p>The characteristic of a diode is <b>non-linear</b>: the ratio U/I is not constant. For an ordinary silicon diode, a significant forward current is often observed at around 0.6–0.7 V, but this is not an exact, fixed threshold; it depends on the current, the temperature and the type of diode. In the reverse direction the current at the permitted voltage is very small.</p>
+<div class="result">The diode conducts current much better in the forward than in the reverse direction. This property enables the rectification of alternating current.</div>
+</section>
+
+</main>
+
+<footer class="mo-foot"><a href="index.html">← All models</a><span>Model 11 · Worked solutions</span></footer>
+<script src="../mo.js"></script>
+</body>
+</html>

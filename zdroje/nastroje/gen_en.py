@@ -18,6 +18,8 @@ TOPICS = {
     7: ['Mechanics of a Rigid Body', 'Alternating Current', 'Refractive Index of Light'],
     8: ['Molecular Physics and Thermodynamics', 'Electromagnetic Waves', 'Simple Pendulum'],
     9: ['Changes of State', 'Electron in an Electric Field', 'Progressive Transverse Waves'],
+    10: ['Properties of Gases', 'Pressure in a Tyre', 'Concave Spherical Mirror'],
+    11: ['Properties of Liquids', 'Thin-Film Interference', 'Current–Voltage Characteristic of a Diode'],
     12: ['Solids', 'Photoelectric Effect', 'Inertial Mass'],
     15: ['Electric Field', 'Atomic Nucleus', 'Inclined Plane'],
     26: ['Electron Shell of the Atom', 'Electric Current', 'Properties of Gases'],
@@ -85,6 +87,18 @@ SVG_EN = {
     'Častice lana kmitajú kolmo na smer šírenia.': 'Rope particles oscillate perpendicular to the propagation.',
     'Dve paralelné vetvy po dvoch sériových kondenzátoroch, potom dva sériové kondenzátory':
         'Two parallel branches of two capacitors in series, followed by two capacitors in series',
+    'Konštrukcia zdanlivého obrazu dutým zrkadlom': 'Construction of a virtual image in a concave mirror',
+    'predmet': 'object', 'obraz': 'image',
+    'Plné čiary: lúče. Prerušované čiary: ich predĺženia za zrkadlo.': 'Solid lines: rays. Dashed lines: their extensions behind the mirror.',
+    'Odrazy svetla na olejovej vrstve': 'Reflections of light on an oil film',
+    'Vzduch: n ≈ 1': 'Air: n ≈ 1', 'Olej: n = 1,50': 'Oil: n = 1.50', 'Voda: n ≈ 1,33': 'Water: n ≈ 1.33',
+    'odraz: posun π': 'reflection: shift π', 'odraz: bez posunu π': 'reflection: no shift π', 'dopad': 'incident',
+    'Schéma merania voltampérovej charakteristiky': 'Circuit for measuring the current–voltage characteristic',
+    'Zdroj': 'Source', 'Dióda': 'Diode',
+    'Ampérmeter sériovo, voltmeter paralelne k dióde.': 'Ammeter in series, voltmeter in parallel with the diode.',
+    'Kvalitatívny graf charakteristiky diódy': 'Qualitative graph of the diode characteristic',
+    'záverný smer': 'reverse bias', 'priepustný smer': 'forward bias',
+    'Schematicky, bez mierky; nejde o namerané údaje.': 'Schematic, not to scale; not measured data.',
     'spínač': 'switch', 'zdroj': 'source', 'ampérmeter': 'ammeter', 'voltmeter': 'voltmeter', 'rezistor': 'resistor',
 }
 
