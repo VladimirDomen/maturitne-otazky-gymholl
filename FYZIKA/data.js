@@ -330,4 +330,15 @@ const OTAZKY = [
       sk: ['Merná tepelná kapacita pevnej látky', 'Experiment: zmiešavací kalorimeter, kalorimetrická rovnica'],
       en: ['Specific heat capacity of a solid', 'Experiment: mixing calorimeter, calorimetric equation'] },
   ]},
+  { n: 29, casti: [
+    { o: ['optika', 'vlnenie'],
+      sk: ['Vlnová optika', 'Svetlo ako elektromagnetické vlnenie, koherentnosť, optická dráha, tenké vrstvy, disperzia'],
+      en: ['Wave optics', 'Light as an electromagnetic wave, coherence, optical path, thin films, dispersion'] },
+    { o: ['elektrina'],
+      sk: ['Elektrický prúd', 'Počet elektrónov, prúd a napätie, Ohmov zákon'],
+      en: ['Electric current', 'Number of electrons, current and voltage, Ohm’s law'] },
+    { o: ['magnetizmus'],
+      sk: ['Stacionárne magnetické pole', 'Experiment: pilinové obrazce magnetu, vodiča, závitu a súhlasných a nesúhlasných pólov'],
+      en: ['Stationary magnetic field', 'Experiment: iron-filing patterns of a magnet, a conductor, a loop and like and unlike poles'] },
+  ]},
 ];

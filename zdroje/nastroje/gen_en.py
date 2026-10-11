@@ -37,6 +37,7 @@ TOPICS = {
     26: ['Electron Shell of the Atom', 'Electric Current', 'Properties of Gases'],
     27: ['Electromagnetic Waves', 'Solids – Thermal Expansion and Elasticity', 'Outflow Speed of a Liquid'],
     28: ['Optical Imaging', 'Electric Field of Two Charges', 'Specific Heat Capacity of a Solid'],
+    29: ['Wave Optics', 'Electric Current', 'Stationary Magnetic Field'],
 }
 
 SVG_EN = {
@@ -141,6 +142,14 @@ SVG_EN = {
     'Dva kladné bodové náboje vo vzdialenosti 21 cm a stred ich spojnice M': 'Two positive point charges 21 cm apart and the midpoint M between them',
     'Zmiešavací kalorimeter s vodou, teplomerom, miešadlom a zahriatym telesom': 'Mixing calorimeter with water, a thermometer, a stirrer and a heated body',
     'zahriate teleso': 'heated body', 'miešadlo': 'stirrer',
+    'Interferencia svetla na tenkej vrstve: lúč sa odráža od hornej aj dolnej plochy vrstvy':
+        'Interference of light in a thin film: the ray is reflected from both the upper and the lower surface of the film',
+    'Indukčné čiary tyčového magnetu, priameho vodiča s prúdom a závitu s prúdom':
+        'Field lines of a bar magnet, a straight current-carrying conductor and a current-carrying loop',
+    'Indukčné čiary medzi nesúhlasnými pólmi a medzi súhlasnými pólmi dvoch magnetov':
+        'Field lines between unlike poles and between like poles of two magnets',
+    'vzduch': 'air', 'vrstva n': 'film n', 'tyčový magnet': 'bar magnet', 'priamy vodič': 'straight conductor',
+    'nesúhlasné póly – priťahujú sa': 'unlike poles – attract', 'súhlasné póly – odpudzujú sa': 'like poles – repel',
     'spínač': 'switch', 'zdroj': 'source', 'ampérmeter': 'ammeter', 'voltmeter': 'voltmeter', 'rezistor': 'resistor',
     'Elektrolýza roztoku síranu meďnatého medzi dvoma medenými elektródami; katióny medi idú ku katóde, síranové anióny k anóde':
         'Electrolysis of copper(II) sulfate solution between two copper electrodes; copper cations move to the cathode, sulfate anions to the anode',
