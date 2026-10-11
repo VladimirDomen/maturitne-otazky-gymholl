@@ -1,0 +1,296 @@
+<!--
+  ============================================
+  FYZIKA — PLÁN SEMINÁRA A VZOROVÉ ZADANIA (pracovná stránka pre učiteľa)
+  ============================================
+  Upravený plán seminára (90 hodín) porovnaný s 30 vzormi.
+  Nie je prepojený z rozcestníka; stránka má noindex.
+  Dáta sú v poli PLAN nižšie; názvy častí vzorov sa berú z data.js.
+  Zápis vzorov: '5/1 17/2' = vzor 5 časť 1, vzor 17 časť 2.
+  Typy zmien: nova, zlucena, rozdelena, presun, doplnit, ru (riešenie úloh).
+  ============================================
+-->
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Plán seminára a vzory</title>
+<style>
+:root{
+  --navy:#152c4d; --navy2:#1f4a7d; --blue:#174d8a; --ink:#192b44; --muted:#56687f;
+  --line:#d7e2ed; --bg:#f2f5f9; --gold:#e9b45e;
+  --nova:#2e8b57; --zlucena:#6a4fc4; --rozdelena:#c4661b; --presun:#4f5d73; --doplnit:#c0392b;
+  --serif:Georgia,'Times New Roman',serif;
+  --sans:system-ui,-apple-system,'Segoe UI',Arial,sans-serif;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 var(--sans)}
+a{color:var(--blue)}
+
+.hero{color:#fff;background:linear-gradient(135deg,var(--navy),var(--navy2));border-bottom:4px solid var(--gold)}
+.hero-in{max-width:1200px;margin:0 auto;padding:36px 16px 30px}
+.kicker{font:700 12px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+.hero h1{font:700 36px/1.15 var(--serif);margin:12px 0 8px}
+.hero p{margin:0;color:#cfdcee;max-width:720px}
+.stats{display:flex;gap:28px;flex-wrap:wrap;margin-top:20px}
+.stat b{display:block;font:700 28px/1 var(--serif)}
+.stat span{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#a9bfdc}
+.back{display:inline-block;margin-top:18px;color:#fff;font-size:14px}
+
+main{max-width:1200px;margin:0 auto;padding:20px 16px 50px}
+.bar{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;margin-bottom:8px}
+.bar label{display:flex;gap:8px;align-items:center;font-weight:600;cursor:pointer}
+.legend{display:flex;flex-wrap:wrap;gap:8px}
+.tag{display:inline-block;font:700 11.5px/1 var(--sans);color:#fff;background:var(--c);border-radius:20px;padding:5px 9px;white-space:nowrap}
+.tag[data-t=nova]{--c:var(--nova)} .tag[data-t=zlucena]{--c:var(--zlucena)}
+.tag[data-t=rozdelena]{--c:var(--rozdelena)} .tag[data-t=presun]{--c:var(--presun)}
+.tag[data-t=doplnit]{--c:var(--doplnit)}
+
+h2{font:700 22px/1.2 var(--serif);margin:30px 0 10px;display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 12px}
+h2 small{font:600 13px/1 var(--sans);color:var(--muted)}
+.wrap{overflow-x:auto;background:#fff;border:1px solid var(--line);border-radius:12px}
+table{width:100%;border-collapse:collapse;min-width:760px}
+th{font:700 11.5px/1.2 var(--sans);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);text-align:left;padding:10px 12px;border-bottom:2px solid var(--line);background:#f8fafc}
+td{padding:9px 12px;border-bottom:1px solid #edf1f6;vertical-align:top}
+tr:last-child td{border-bottom:0}
+td.h{font-weight:700;white-space:nowrap}
+td.p{color:var(--muted);white-space:nowrap}
+tr.ru td{color:#8a99ad;font-style:italic;background:#fafbfd}
+tr.zmena td.u{font-weight:600}
+.web{display:inline-block;font:700 11px/1 var(--sans);color:var(--navy);background:#fff3dd;border:1px solid #f1d39b;border-radius:6px;padding:3px 6px;margin-left:6px}
+.web.chyba{background:#fde8e6;border-color:#f2b8b1;color:#a12a1b}
+.refs{display:flex;flex-wrap:wrap;gap:5px}
+.ref{font:600 12.5px/1 var(--sans);text-decoration:none;color:var(--blue);background:#eef3f8;border:1px solid #dbe5f0;border-radius:6px;padding:4px 6px;white-space:nowrap}
+.ref:hover{background:var(--blue);color:#fff}
+.note{color:var(--muted);font-size:13.5px}
+body.len-zmeny tr:not(.zmena){display:none}
+
+.box{background:#fff;border:1px solid var(--line);border-left:5px solid var(--gold);border-radius:12px;padding:14px 18px;margin:18px 0}
+.box h3{margin:0 0 6px;font:700 17px/1.3 var(--serif)}
+.box ul{margin:6px 0 0;padding-left:20px}
+.sum{min-width:0;max-width:520px}
+.sum td:nth-child(n+2),.sum th:nth-child(n+2){text-align:right}
+.sum tr.spolu td{font-weight:700;border-top:2px solid var(--line)}
+
+@media (max-width:600px){ .hero h1{font-size:28px} }
+@media print{
+  body{background:#fff;font-size:11.5px}
+  .hero{background:none;color:var(--ink);border-bottom:2px solid var(--ink)}
+  .hero p,.stat span{color:var(--muted)} .back,.bar label{display:none}
+  .wrap{border:0;overflow:visible} table{min-width:0}
+  .ref{border:0;background:none;padding:0} tr{break-inside:avoid}
+  .tag{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-in">
+    <div class="kicker">Fyzikálny seminár · pracovná stránka</div>
+    <h1>Plán seminára a vzorové zadania</h1>
+    <p>Upravený plán (90 hodín) tak, aby každá z 90 častí vzorov 1–30 mala svoju hodinu.
+       Odkaz vzoru otvára priamo danú časť zadania (V5/1 = vzor 5, časť 1).</p>
+    <div class="stats" id="stats"></div>
+    <a class="back" href="index.html">← Všetky vzory</a>
+  </div>
+</header>
+
+<main>
+  <div class="bar">
+    <label><input type="checkbox" id="lenZmeny"> Zobraziť len zmenené hodiny</label>
+    <div class="legend">
+      <span class="tag" data-t="nova">nová</span>
+      <span class="tag" data-t="zlucena">zlúčená</span>
+      <span class="tag" data-t="rozdelena">rozdelená</span>
+      <span class="tag" data-t="presun">presunutá</span>
+      <span class="tag" data-t="doplnit">doplniť obsah</span>
+      <span class="web">05</span><span class="note">téma na webe</span>
+      <span class="web chyba">05</span><span class="note">téma na webe zatiaľ chýba</span>
+    </div>
+  </div>
+
+  <div class="box">
+    <h3>Prečo tieto zmeny</h3>
+    <ul>
+      <li><b>Uvoľnené hodiny</b> (žiadna časť vzorov sa na ne nepýta): výboj v plynoch, magnetické vlastnosti a energia cievky, krivka deformácie, oko, emisia a laser, aplikovaný výskum.</li>
+      <li><b>Pridané hodiny</b> (vzory ich chcú, plán na ne nemal čas): spracovanie merania, kalorimetria, povrchové napätie, obvody (Kirchhoff), obvody s R, L, C, kyvadlo, vlnová optika.</li>
+      <li><b>26 z 30 vzorov</b> má tretiu časť experiment – hodiny „Riešenie úloh“ striedať medzi výpočtami a opisom experimentov (postup, schéma, graf).</li>
+    </ul>
+  </div>
+
+  <div id="plan"></div>
+
+  <h2>Súhrn hodín</h2>
+  <div class="wrap sum"><table id="sum"></table></div>
+</main>
+
+<script src="data.js"></script>
+<script>
+/* [hodina, učivo, pôvodne, vzory, typ zmeny, poznámka, témy na webe] */
+const PLAN = [
+ { n:1, nazov:'Úvod do štúdia predmetu', povodne:3, h:[
+  ['1.1','Obsah predmetu, organizačné pokyny, bezpečnosť pri práci','1.1','','',''],
+  ['1.2','Meranie fyzikálnych veličín, sústava SI','1.2','10/3 25/3','',''],
+  ['1.3','Spracovanie merania: tabuľka, graf, linearizácia, chyby','–','','nova','podklad pre experimenty v 26 vzoroch'],
+  ['1.4','Skalárne a vektorové fyzikálne veličiny','1.3','7/1 22/3','',''],
+ ]},
+ { n:2, nazov:'Mechanika', povodne:17, h:[
+  ['2.1','Kinematika hmotného bodu','2.1','4/1 16/2','',''],
+  ['2.2','Priamočiare a krivočiare pohyby, voľný pád','2.2','4/1 5/1 15/3','','','01 02 03'],
+  ['2.3','Riešenie úloh','2.3','','ru',''],
+  ['2.4','Dynamika: Newtonove pohybové zákony, hybnosť, trenie','2.4','5/1 17/2 23/3 24/3','doplnit','na webe doplniť 05 (aj valivý odpor) a 06','04 !05 !06'],
+  ['2.5','Riešenie úloh','2.5','','ru',''],
+  ['2.6','Gravitačné pole','2.6','2/1 20/2','','','07'],
+  ['2.7','Pohyby v gravitačnom poli','2.7','3/1 18/2','','','08 09'],
+  ['2.8','Riešenie úloh','2.8','','ru',''],
+  ['2.9','Mechanika tuhého telesa, moment sily','2.9','7/1 13/2','','','10'],
+  ['2.10','Momentová veta, stabilita telies','2.10','7/1 13/2','','stabilitu stačí stručne','11'],
+  ['2.11','Riešenie úloh','2.11','','ru',''],
+  ['2.12','Mechanická práca, energia','2.12','6/1 14/2','','','12 13'],
+  ['2.13','Formy a premeny energie, zákon zachovania energie','2.13','6/1 14/2 21/3','doplnit','na webe doplniť tému 14','!14'],
+  ['2.14','Riešenie úloh','2.14','','ru',''],
+  ['2.15','Mechanika kvapalín a plynov, hydrostatika','2.15','1/1 10/3','',''],
+  ['2.16','Hydrodynamika','2.16','19/2 23/1 27/3','','aj Torricelliho vzťah'],
+  ['2.17','Riešenie úloh','2.17','','ru',''],
+ ]},
+ { n:3, nazov:'Molekulová fyzika a termodynamika', povodne:14, h:[
+  ['3.1','Kinetická teória stavby látok','3.1','8/1 9/1 18/3','',''],
+  ['3.2','Teplota, vnútorná energia','3.2','8/1 23/2 26/3','',''],
+  ['3.3','Teplo, kalorimetrická rovnica','–','8/1 19/3 22/2 28/3','nova',''],
+  ['3.4','Riešenie úloh','3.3','','ru',''],
+  ['3.5','Štruktúra a vlastnosti plynov','3.4','10/1 21/2','',''],
+  ['3.6','Práca plynu','3.5','21/2 26/3','',''],
+  ['3.7','Riešenie úloh','3.6','','ru',''],
+  ['3.8','Tuhé látky, deformácia, Hookov zákon, teplotná rozťažnosť','3.7 + 3.8','12/1 27/2','zlucena','krivka deformácie len stručne'],
+  ['3.9','Riešenie úloh','3.9','','ru',''],
+  ['3.10','Štruktúra a vlastnosti kvapalín','3.10','11/1 24/2','',''],
+  ['3.11','Povrchové napätie a kapilarita: výpočty a experimenty','–','17/3 20/3 24/2','nova',''],
+  ['3.12','Riešenie úloh','3.11','','ru',''],
+  ['3.13','Premeny skupenstva látok','3.12','9/1 19/3 22/2 23/2','',''],
+  ['3.14','Fázový diagram','3.13','9/1','',''],
+  ['3.15','Riešenie úloh','3.14','','ru',''],
+ ]},
+ { n:4, nazov:'Elektrina a magnetizmus', povodne:23, h:[
+  ['4.1','Elektrický náboj, elektrické pole','4.1','3/3 9/2 15/1 28/2','',''],
+  ['4.2','Kapacita vodiča, kondenzátory','4.2','13/3 15/1','',''],
+  ['4.3','Riešenie úloh','4.3','','ru',''],
+  ['4.4','Elektrický prúd v rôznych prostrediach (prehľad, aj výboj v plynoch)','4.4 + 4.9','16/1 29/2','zlucena','výboj v plynoch len ako zmienka'],
+  ['4.5','Elektrický prúd v kovoch, Ohmov zákon','4.5','2/3 6/3 17/1 26/2 29/2','',''],
+  ['4.6','Obvody: Kirchhoffove zákony, vnútorný odpor zdroja, reostat','–','16/1 17/1 26/2 30/2','nova',''],
+  ['4.7','Riešenie úloh','4.6','','ru',''],
+  ['4.8','Elektrický prúd v polovodičoch','4.7','11/3 13/1','',''],
+  ['4.9','Elektrický prúd v kvapalinách','4.8','14/1 25/2','',''],
+  ['4.10','Riešenie úloh','4.10','','ru',''],
+  ['4.11','Stacionárne magnetické pole','4.11','4/2 19/1 29/3','',''],
+  ['4.12','Magnetická indukcia','4.12','4/2 19/1','',''],
+  ['4.13','Riešenie úloh','4.13','','ru',''],
+  ['4.14','Nestacionárne magnetické pole, elektromagnetická indukcia','4.14','3/3 5/2 20/1','',''],
+  ['4.15','Riešenie úloh','4.15','','ru',''],
+  ['4.16','Magnetické vlastnosti látok, energia magnetického poľa cievky','4.16 + 4.17','14/3 27/1','zlucena','vo vzoroch len okrajovo'],
+  ['4.17','Striedavý prúd, vznik striedavého prúdu a napätia','4.19','7/2 21/1 22/1','',''],
+  ['4.18','Generátor striedavého prúdu','4.20','21/1','',''],
+  ['4.19','Obvody striedavého prúdu s R, L, C','–','13/3 22/1','nova','v pôvodnom pláne chýbalo'],
+  ['4.20','Riešenie úloh','4.18','','presun','presunutá za striedavý prúd'],
+  ['4.21','Výkon, efektívna hodnota','4.21','1/2 7/2 14/3','',''],
+  ['4.22','Transformátor','4.22','1/2 14/3 21/1','',''],
+  ['4.23','Riešenie úloh','4.23','','ru',''],
+ ]},
+ { n:5, nazov:'Mechanické kmitanie', povodne:3, h:[
+  ['5.1','Vlastné kmitanie oscilátora, pružinový oscilátor','5.1','6/2 12/3 18/1','',''],
+  ['5.2','Matematické kyvadlo, určenie g','–','8/3 18/1','nova','rezonancia presunutá do 6.3'],
+  ['5.3','Riešenie úloh','5.3','','ru',''],
+ ]},
+ { n:6, nazov:'Vlnenie', povodne:14, h:[
+  ['6.1','Postupné mechanické vlnenie','6.1','2/2 9/3 24/1','',''],
+  ['6.2','Vlastnosti vlnenia','6.2','3/2 24/1','',''],
+  ['6.3','Stojaté vlnenie, nútené kmitanie a rezonancia','6.3 + 5.2','3/2 24/1 30/3','zlucena','rezonančná trubica'],
+  ['6.4','Riešenie úloh','6.4','','ru',''],
+  ['6.5','Elektromagnetické vlnenie','6.5','8/2 27/1','',''],
+  ['6.6','Spektrum elektromagnetického vlnenia','6.6','27/1','',''],
+  ['6.7','Svetlo ako elektromagnetické vlnenie','6.7','27/1 29/1','',''],
+  ['6.8','Lom svetla, index lomu, disperzia','6.8','1/3 7/3','rozdelena',''],
+  ['6.9','Interferencia a ohyb svetla, optická mriežka','6.8','11/2 16/3 29/1','rozdelena',''],
+  ['6.10','Riešenie úloh','6.9','','ru',''],
+  ['6.11','Optické zobrazovanie zrkadlami','6.10','10/2 28/1','',''],
+  ['6.12','Riešenie úloh','6.11','','ru',''],
+  ['6.13','Šošovky (oko ako príklad)','6.12 + 6.13','1/3 28/1','zlucena','oko len ako príklad'],
+  ['6.14','Riešenie úloh','6.14','','ru',''],
+ ]},
+ { n:7, nazov:'Základy fyziky mikrosveta', povodne:16, h:[
+  ['7.1','Kvantová optika','7.1','26/1 30/1','',''],
+  ['7.2','Fotoelektrický jav','7.2','12/2 30/1','',''],
+  ['7.3','Riešenie úloh','7.3','','ru',''],
+  ['7.4','Korpuskulárno-vlnový dualizmus','7.4','9/2 30/1','',''],
+  ['7.5','Zloženie atómov, spektrá','7.5','4/3 9/2 26/1','',''],
+  ['7.6','Spontánna a stimulovaná emisia, laser','7.6 + 7.7','26/1','zlucena','vo vzoroch len okrajovo'],
+  ['7.7','Jadro atómu, jadrové sily','7.8','15/2 25/1','',''],
+  ['7.8','Väzbová energia, hmotnostný úbytok','7.9','15/2 25/1','',''],
+  ['7.9','Riešenie úloh','7.10','','ru',''],
+  ['7.10','Jadrové reakcie, jadrová elektráreň','7.11','5/3 15/2 25/1','doplnit','doplniť jadrovú elektráreň'],
+  ['7.11','Prirodzená rádioaktivita','7.12','4/3 25/1','',''],
+  ['7.12','Riešenie úloh','7.13','','ru',''],
+  ['7.13','Využitie rádionuklidov, ochrana pred žiarením','7.14','25/1','',''],
+  ['7.14','Systematizácia poznatkov, záverečné zhrnutie','7.16','','','7.15 Aplikovaný výskum vypustená'],
+ ]},
+];
+
+const TYP = { nova:'nová', zlucena:'zlúčená', rozdelena:'rozdelená', presun:'presunutá', doplnit:'doplniť' };
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+/* názov časti vzoru z data.js (ak je k dispozícii) */
+function nazovCasti(v, c) {
+  try {
+    const z = OTAZKY.find(o => o.n === v);
+    return z ? z.casti[c - 1].sk.join(' – ') : '';
+  } catch (e) { return ''; }
+}
+
+const pokryte = new Set();
+let html = '';
+PLAN.forEach(cel => {
+  html += `<h2>${cel.n} ${esc(cel.nazov)} <small>${cel.h.length} h (pôvodne ${cel.povodne})</small></h2>
+  <div class="wrap"><table><thead><tr><th>Hodina</th><th>Učivo</th><th>Pôvodne</th><th>Vzor / časť</th><th>Zmena</th></tr></thead><tbody>`;
+  cel.h.forEach(([h, u, p, refs, typ, pozn, web]) => {
+    const cls = [typ === 'ru' ? 'ru' : '', typ && typ !== 'ru' ? 'zmena' : ''].join(' ').trim();
+    const webHtml = (web || '').split(' ').filter(Boolean)
+      .map(t => t[0] === '!' ? `<span class="web chyba" title="téma na webe zatiaľ chýba">${t.slice(1)}</span>`
+                             : `<span class="web" title="téma na webe">${t}</span>`).join('');
+    const refHtml = refs.split(' ').filter(Boolean).map(r => {
+      const [v, c] = r.split('/').map(Number);
+      pokryte.add(r);
+      return `<a class="ref" href="Vzor${v}_zadanie.html#cast-${c}" title="${esc(nazovCasti(v, c))}">V${v}/${c}</a>`;
+    }).join('');
+    const tag = typ && typ !== 'ru' ? `<span class="tag" data-t="${typ}">${TYP[typ]}</span>` : '';
+    html += `<tr class="${cls}"><td class="h">${h}</td><td class="u">${esc(u)}${webHtml}</td>
+      <td class="p">${esc(p)}</td><td><div class="refs">${refHtml}</div></td>
+      <td>${tag}${pozn ? `<div class="note">${esc(pozn)}</div>` : ''}</td></tr>`;
+  });
+  html += '</tbody></table></div>';
+});
+document.getElementById('plan').innerHTML = html;
+
+/* súhrn */
+let s = '<thead><tr><th>Celok</th><th>Pôvodne</th><th>Nový plán</th></tr></thead><tbody>', a = 0, b = 0;
+PLAN.forEach(c => { a += c.povodne; b += c.h.length;
+  s += `<tr><td>${c.n} ${esc(c.nazov)}</td><td>${c.povodne}</td><td>${c.h.length}</td></tr>`; });
+s += `<tr class="spolu"><td>Spolu</td><td>${a}</td><td>${b}</td></tr></tbody>`;
+document.getElementById('sum').innerHTML = s;
+
+/* štatistiky a kontrola: ktoré časti vzorov nemajú hodinu */
+const vsetky = (typeof OTAZKY !== 'undefined') ? OTAZKY.flatMap(o => o.casti.map((_, i) => `${o.n}/${i + 1}`)) : [];
+const chyba = vsetky.filter(r => !pokryte.has(r));
+const zmien = PLAN.flatMap(c => c.h).filter(r => r[4] && r[4] !== 'ru').length;
+document.getElementById('stats').innerHTML =
+  `<div class="stat"><b>${b}</b><span>hodín</span></div>
+   <div class="stat"><b>${vsetky.length || '–'}</b><span>častí vzorov</span></div>
+   <div class="stat"><b>${vsetky.length ? vsetky.length - chyba.length : '–'}</b><span>častí s hodinou</span></div>
+   <div class="stat"><b>${zmien}</b><span>zmien v pláne</span></div>`;
+if (chyba.length) console.warn('Časti vzorov bez hodiny:', chyba.join(', '));
+
+const cb = document.getElementById('lenZmeny');
+cb.addEventListener('change', () => document.body.classList.toggle('len-zmeny', cb.checked));
+</script>
+</body>
+</html>
