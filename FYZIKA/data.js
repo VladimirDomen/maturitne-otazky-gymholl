@@ -341,4 +341,15 @@ const OTAZKY = [
       sk: ['Stacionárne magnetické pole', 'Experiment: pilinové obrazce magnetu, vodiča, závitu a súhlasných a nesúhlasných pólov'],
       en: ['Stationary magnetic field', 'Experiment: iron-filing patterns of a magnet, a conductor, a loop and like and unlike poles'] },
   ]},
+  { n: 30, casti: [
+    { o: ['mikrosvet', 'optika'],
+      sk: ['Kvantová optika', 'Fotón, fotoelektrický jav, Einsteinova rovnica, dualizmus, energia fotónov 390 a 790 nm'],
+      en: ['Quantum optics', 'Photon, photoelectric effect, Einstein’s equation, duality, photon energies at 390 and 790 nm'] },
+    { o: ['elektrina'],
+      sk: ['Elektrický prúd v kovoch – obvod', 'Sériové zapojenie s reostatom, celkový odpor, prúd, napätie na voltmetroch'],
+      en: ['Electric current in metals – circuit', 'Series circuit with a rheostat, total resistance, current, voltmeter readings'] },
+    { o: ['vlnenie'],
+      sk: ['Kmitanie vzduchového stĺpca', 'Experiment: rezonančná trubica, frekvencia a dĺžka stĺpca, rýchlosť zvuku'],
+      en: ['Oscillation of an air column', 'Experiment: resonance tube, frequency and column length, speed of sound'] },
+  ]},
 ];

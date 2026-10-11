@@ -38,6 +38,7 @@ TOPICS = {
     27: ['Electromagnetic Waves', 'Solids – Thermal Expansion and Elasticity', 'Outflow Speed of a Liquid'],
     28: ['Optical Imaging', 'Electric Field of Two Charges', 'Specific Heat Capacity of a Solid'],
     29: ['Wave Optics', 'Electric Current', 'Stationary Magnetic Field'],
+    30: ['Quantum Optics', 'Electric Current in Metals – Circuit', 'Oscillation of an Air Column'],
 }
 
 SVG_EN = {
@@ -150,6 +151,11 @@ SVG_EN = {
         'Field lines between unlike poles and between like poles of two magnets',
     'vzduch': 'air', 'vrstva n': 'film n', 'tyčový magnet': 'bar magnet', 'priamy vodič': 'straight conductor',
     'nesúhlasné póly – priťahujú sa': 'unlike poles – attract', 'súhlasné póly – odpudzujú sa': 'like poles – repel',
+    'Sériový obvod so zdrojom, reostatom R1 a rezistormi R2 a R3; voltmeter V1 na R1, voltmeter V2 medzi začiatkom R1 a koncom R2':
+        'Series circuit with a source, rheostat R1 and resistors R2 and R3; voltmeter V1 across R1, voltmeter V2 between the start of R1 and the end of R2',
+    'Rezonančná trubica s vodou: pri hladine je uzol, pri otvorenom konci kmitňa stojatého vlnenia':
+        'Resonance tube with water: a node at the water surface and an antinode of the standing wave at the open end',
+    'zdroj zvuku': 'sound source', 'kmitňa (otvorený koniec)': 'antinode (open end)', 'uzol (hladina vody)': 'node (water surface)',
     'spínač': 'switch', 'zdroj': 'source', 'ampérmeter': 'ammeter', 'voltmeter': 'voltmeter', 'rezistor': 'resistor',
     'Elektrolýza roztoku síranu meďnatého medzi dvoma medenými elektródami; katióny medi idú ku katóde, síranové anióny k anóde':
         'Electrolysis of copper(II) sulfate solution between two copper electrodes; copper cations move to the cathode, sulfate anions to the anode',

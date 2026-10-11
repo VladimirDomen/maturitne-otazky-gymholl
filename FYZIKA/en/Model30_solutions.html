@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Model 30 – Worked solutions</title>
+<link rel="stylesheet" href="../mo.css">
+</head>
+<body class="vyp">
+
+<header class="mo-head"><div class="mo-head-in">
+<div class="mo-kicker"><span class="mo-num">MODEL 30</span><span class="mo-kind">Worked solutions</span></div>
+<h1>Quantum Optics · Electric Current in Metals – Circuit · Oscillation of an Air Column</h1>
+<p>Detailed worked solutions with explanations</p>
+</div></header>
+
+<nav class="mo-bar"><div class="mo-bar-in">
+<a class="mo-back" href="index.html">← All models</a>
+<div class="mo-switch"><a href="Model30_questions.html">Questions</a><a href="Model30_solutions.html" class="on">Solutions</a></div>
+<button type="button" onclick="window.print()">Print / PDF</button>
+<a class="mo-lang" href="../Vzor30_vypracovanie.html" hreflang="sk" title="Slovenská verzia">SK</a>
+</div></nav>
+
+<main class="wrap">
+
+<section class="sheet" id="cast-1"><div class="topline">Part 1 of 3</div>
+<h2>1. Quantum Optics</h2>
+<h3>1.1 Quantum and photon</h3>
+<p>Planck found that a body emits and absorbs energy only in whole portions – <strong>quanta</strong>. Einstein explained that light itself consists of quanta – <strong>photons</strong>. A photon moves at the speed of light and has energy and momentum:</p>
+<div class="formula">E = hf = hc/λ &nbsp;&nbsp;&nbsp; p = h/λ</div>
+<p>h = 6.626 · 10⁻³⁴ J·s is Planck’s constant. The energy of a photon increases with frequency – a photon of violet light has more energy than a photon of red light.</p>
+<h3>1.2 Photoelectric effect</h3>
+<p><strong>External photoelectric effect:</strong> light releases electrons from the surface of a metal. Observations that the wave theory cannot explain:</p>
+<ul><li>electrons are released only if the frequency of light is greater than the <strong>threshold frequency</strong> f₀ of the metal – at a lower frequency even a high intensity does not help,</li>
+<li>the kinetic energy of the electrons depends on the frequency, not on the intensity of the light,</li>
+<li>the intensity of the light determines only the number of released electrons,</li>
+<li>the effect occurs instantly.</li>
+</ul>
+<p>Explanation: one photon gives all its energy to one electron. If the photon energy is enough to overcome the binding (the work function W<sub>v</sub>), the electron leaves the metal. Threshold frequency and <strong>threshold wavelength</strong>:</p>
+<div class="formula">f₀ = W<sub>v</sub>/h &nbsp;&nbsp;&nbsp; λ₀ = hc/W<sub>v</sub></div>
+<p>The photoelectric effect occurs only for λ &lt; λ₀.</p>
+<p><strong>Internal photoelectric effect:</strong> in a semiconductor a photon frees an electron from a bond, but the electron stays inside the material. An electron–hole pair is created and the conductivity increases. Applications: photoresistor, photodiode, photovoltaic cell, camera sensor. The external effect is used in a photomultiplier.</p>
+<h3>1.3 Einstein’s equation</h3>
+<div class="formula">hf = W<sub>v</sub> + ½mv²<sub>max</sub></div>
+<p>The photon energy is used for the work function and the rest is the maximum kinetic energy of the electron.</p>
+<h3>1.4 Duality and the de Broglie wave</h3>
+<p>Light has wave properties (interference, diffraction) as well as particle properties (photoelectric effect). De Broglie extended this <strong>wave–particle duality</strong> to all particles. To a particle with momentum p = mv he assigned a wavelength:</p>
+<div class="formula">λ = h/p = h/(mv)</div>
+<p>The wave properties of electrons were confirmed by electron diffraction on crystals. The electron microscope uses them.</p>
+<h3>1.5 Solution of the task</h3>
+<div class="formula">E₁ = hc/λ₁ = (6.626 · 10⁻³⁴ · 3 · 10⁸)/(390 · 10⁻⁹) J ≈ 5.10 · 10⁻¹⁹ J ≈ 3.18 eV<br>E₂ = hc/λ₂ = (6.626 · 10⁻³⁴ · 3 · 10⁸)/(790 · 10⁻⁹) J ≈ 2.52 · 10⁻¹⁹ J ≈ 1.57 eV</div>
+<div class="result"><strong>E₁ ≈ 5.10 · 10⁻¹⁹ J = 3.18 eV; E₂ ≈ 2.52 · 10⁻¹⁹ J = 1.57 eV.</strong></div>
+<p>The energy is inversely proportional to the wavelength: E₁/E₂ = λ₂/λ₁ ≈ 2. Radiation of 390 nm is violet light at the short-wavelength edge of the visible spectrum; 790 nm is already near-infrared radiation beyond the red edge.</p>
+<p class="subtle">A useful relation: E (eV) ≈ 1 240/λ (nm). A photon of 3.18 eV releases electrons, for example, from caesium (W<sub>v</sub> ≈ 2.1 eV, λ₀ ≈ 590 nm); a photon of 1.57 eV does not.</p>
+</section>
+
+<section class="sheet" id="cast-2"><div class="topline">Part 2 of 3</div>
+<h2>2. Electric Current in Metals – Circuit</h2>
+<h3>2.1 Theory</h3>
+<p>In metals the charge is carried by free electrons. At constant temperature <strong>Ohm’s law</strong> applies, I = U/R. In a <strong>series</strong> connection the same current flows through all resistors, the voltages add up and the total resistance is the sum of the resistances: R = R₁ + R₂ + R₃. A rheostat is a resistor with variable resistance – moving the slider changes the length of wire through which the current flows. An ideal voltmeter has a very large resistance, so no current flows through it and it does not affect the circuit.</p>
+<h3>2.2 Solution of the task</h3>
+<svg class="diagram" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Series circuit with a source, rheostat R1 and resistors R2 and R3; voltmeter V1 across R1, voltmeter V2 between the start of R1 and the end of R2"><g stroke="#193b59" stroke-width="3" fill="none"><path d="M120 110V60H250M268 60H460V110M460 190V240H330M250 240H120V190"/><path d="M120 60H50V134M50 166V240H120"/><path d="M120 60L274.1 141.6M305.9 158.4L460 240"/><rect x="108" y="110" width="24" height="80" fill="#fff"/><rect x="250" y="228" width="80" height="24" fill="#fff"/><rect x="448" y="110" width="24" height="80" fill="#fff"/><path d="M250 38V82"/><path d="M268 48V72" stroke-width="7"/><circle cx="50" cy="150" r="16" fill="#fff"/><circle cx="290" cy="150" r="18" fill="#fff"/></g><path d="M98 202L140 104" stroke="#c0392b" stroke-width="2"/><path d="M142.0 99.0L134.3 105.5L142.6 109.0Z" fill="#c0392b"/><g fill="#193b59"><circle cx="120" cy="60" r="4.5"/><circle cx="120" cy="240" r="4.5"/><circle cx="460" cy="240" r="4.5"/></g><g font-size="15" fill="#193b59"><text x="39" y="156">V₁</text><text x="279" y="156">V₂</text><text x="232" y="30">U</text><text x="240" y="100">+</text><text x="276" y="100">−</text><text x="144" y="160">R₁</text><text x="276" y="276">R₂</text><text x="480" y="156">R₃</text><text x="102" y="52">A</text><text x="102" y="262">B</text><text x="466" y="262">C</text></g></svg>
+<p><strong>a)</strong> The resistors are in series:</p>
+<div class="formula">R = R₁ + R₂ + R₃ = 10 Ω + 20 Ω + 30 Ω = 60 Ω</div>
+<p><strong>b)</strong> Current in the circuit:</p>
+<div class="formula">I = U/R = 12 V / 60 Ω = 0.2 A</div>
+<p><strong>c)</strong> Voltmeter V₁ measures the voltage across the rheostat:</p>
+<div class="formula">U₁ = R₁I = 10 Ω · 0.2 A = 2 V</div>
+<p>Voltmeter V₂ is connected crosswise between points A and C. Along the lower path between them are R₁ and R₂:</p>
+<div class="formula">U<sub>AC</sub> = (R₁ + R₂)I = 30 Ω · 0.2 A = 6 V</div>
+<p>Check along the upper path through the source and R₃: U<sub>AC</sub> = U − R₃I = 12 V − 6 V = 6 V. The voltage between two points does not depend on the path along which we calculate it.</p>
+<p><strong>d)</strong> For R₁ = 30 Ω:</p>
+<div class="formula">R = 80 Ω, &nbsp; I = 12 V / 80 Ω = 0.15 A<br>U₁ = 30 Ω · 0.15 A = 4.5 V, &nbsp; U<sub>AC</sub> = 50 Ω · 0.15 A = 7.5 V</div>
+<div class="result"><strong>a) R = 60 Ω; b) I = 0.2 A; c) V₁ reads 2 V, V₂ reads 6 V; d) the current falls to 0.15 A, V₁ reads 4.5 V and V₂ 7.5 V.</strong></div>
+<p>Increasing the resistance of the rheostat decreases the current, but the voltage across the rheostat rises – the rheostat “takes” a larger share of the source voltage. This is how a rheostat is used to control current.</p>
+</section>
+
+<section class="sheet" id="cast-3"><div class="topline">Part 3 of 3</div>
+<h2>3. Experiment – Oscillation of an Air Column</h2>
+<h3>3.1 Principle</h3>
+<p>The air in a tube is an elastic medium. A sound wave (longitudinal) is reflected at the ends of the tube, and the incident and reflected waves form a <strong>standing wave</strong>. The air column sounds strongly – resonates – only at certain frequencies. At the closed end (the water surface) there is a displacement node, at the open end an antinode.</p>
+<svg class="diagram" viewBox="0 0 560 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Resonance tube with water: a node at the water surface and an antinode of the standing wave at the open end"><rect x="102" y="180" width="126" height="70" fill="#cfe7f6" stroke="#375873" stroke-width="2"/><rect x="132" y="180" width="66" height="55" fill="#cfe7f6"/><g stroke="#375873" stroke-width="3"><path d="M130 30V235M200 30V235"/></g><path d="M132 180H198" stroke="#2f6db3" stroke-width="2.5"/><g fill="none" stroke="#c4661b" stroke-width="2.5"><path d="M165 180Q165 90 188 40"/><path d="M165 180Q165 90 142 40" stroke-dasharray="6 5"/></g><g stroke="#637889" stroke-width="1.5" fill="none"><path d="M240 40V180M233 40H247M233 180H247"/></g><path d="M70 40L104 40" stroke="#193b59" stroke-width="2"/><path d="M112.0 40.0L102.0 35.0L102.0 45.0Z" fill="#193b59"/><g font-size="15" fill="#193b59"><text x="250" y="116">L</text><text x="22" y="30">sound source</text><text x="240" y="236">water</text><text x="300" y="48">antinode (open end)</text><text x="300" y="186">node (water surface)</text><text x="300" y="116">L = λ/4, f = v/(4L)</text></g></svg>
+<p>For a tube closed at one end, in the fundamental mode the length of the column is a quarter of the wavelength:</p>
+<div class="formula">L = λ/4 &nbsp; → &nbsp; f₁ = v/(4L) &nbsp;&nbsp;&nbsp; higher: f = (2k + 1)v/(4L)</div>
+<p>For a tube open at both ends L = λ/2 and f₁ = v/(2L). In both cases: <strong>the shorter the air column, the higher the frequency</strong>. Organ pipes, the flute and bottles with different amounts of water work on this principle.</p>
+<h3>3.2 Equipment</h3>
+<p>A glass or plastic tube dipped into a tall cylinder of water (raising the tube changes L), a sound generator with a loudspeaker or a mobile phone app, a measuring tape. In addition, a tuning fork of known frequency or several identical bottles with different amounts of water.</p>
+<h3>3.3 Procedure</h3>
+<ol><li>Place the loudspeaker above the open end of the tube.</li>
+<li>Set the length of the air column L (from the water surface to the rim of the tube).</li>
+<li>Vary the generator frequency smoothly and find the lowest frequency at which the sound becomes markedly louder – resonance.</li>
+<li>Repeat the measurement for several lengths L.</li>
+<li>Calculate the product f·L and from it the speed of sound v = 4fL.</li>
+</ol>
+<p>With a tuning fork we proceed the other way round: the frequency is fixed and we change L until the column sounds. At 440 Hz the first resonance occurs at L ≈ 19.5 cm and the next at L ≈ 58.5 cm (3λ/4).</p>
+<h3>3.4 Sample evaluation</h3>
+<p class="subtle">The following numbers are model data; they are not a real measurement.</p>
+<table><tr><th>L (m)</th><th>f (Hz)</th><th>f·L (m/s)</th><th>v = 4fL (m/s)</th></tr>
+<tr><td>0.20</td><td>420</td><td>84.0</td><td>336</td></tr>
+<tr><td>0.30</td><td>282</td><td>84.6</td><td>338</td></tr>
+<tr><td>0.40</td><td>212</td><td>84.8</td><td>339</td></tr>
+<tr><td>0.50</td><td>170</td><td>85.0</td><td>340</td></tr>
+</table>
+<p>The product f·L is approximately constant, so the frequency is inversely proportional to the length of the column. When the length doubles (0.20 → 0.40 m), the frequency falls to about half.</p>
+<div class="result"><strong>Conclusion:</strong> A shorter air column oscillates at a higher frequency, f ≈ v/(4L). The measurements give a speed of sound of about 340 m/s.</div>
+<h3>3.5 Uncertainties</h3>
+<p>The antinode is not exactly at the rim of the tube but slightly above it. The effective length of the column is therefore slightly greater (end correction of about 0.6 of the tube radius), and the speed of sound comes out slightly below 343 m/s – especially for short columns. Further errors come from the inaccurate location of the loudness maximum, the air temperature (the speed of sound increases with it) and the length measurement.</p>
+</section>
+
+</main>
+
+<footer class="mo-foot"><a href="index.html">← All models</a><span>Model 30 · Worked solutions</span></footer>
+<script src="../mo.js"></script>
+</body>
+</html>
