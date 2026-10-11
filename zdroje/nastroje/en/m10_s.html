@@ -27,8 +27,7 @@
 <li><b>Isobaric process:</b> Q = ΔU + pΔV. On heating, part of the heat supplied increases the internal energy and part is used for the work done by the gas.</li>
 <li><b>Adiabatic process:</b> Q = 0, so ΔU = −W. On expansion the gas cools, on compression it warms up.</li>
 </ul>
-<!--PART-->
-<h2>2. Air Pressure in a Tyre</h2>
+<h3>Task – pressure in a tyre</h3>
 <p>Given: p₁ = 250 kPa, t₁ = 17 °C, t₂ = 77 °C, V = const., the amount of air does not change.</p>
 <div class="formula">T₁ = 17 + 273.15 = 290.15 K<br>T₂ = 77 + 273.15 = 350.15 K</div>
 <p>From the equation of state at constant volume:</p>
@@ -36,7 +35,7 @@
 <div class="result">The final absolute pressure is approximately <b>302 kPa</b>. It has increased by approximately 51.7 kPa, i.e. by 20.7 %.</div>
 <p class="subtle"><b>If 250 kPa meant gauge pressure:</b> we would first add the atmospheric pressure. With p<sub>atm</sub> = 101.3 kPa, p₁ = 351.3 kPa and p₂ ≈ 423.95 kPa. The final gauge pressure would be approximately <b>322.65 kPa ≈ 323 kPa</b>. The problem above explicitly states the absolute pressure.</p>
 <!--PART-->
-<h2>3. Concave Spherical Mirror</h2>
+<h2>2. Concave Spherical Mirror</h2>
 <p>Given: R = 4 cm, a = 1 cm, y = 0.5 cm. Distances are measured from the <b>vertex V of the mirror</b>. The centre of curvature C is at a distance R from the vertex.</p>
 <h3>Focal length</h3>
 <div class="formula">f = R/2 = 4/2 cm = 2 cm</div>
@@ -56,3 +55,37 @@
 <h3>Magnification and height of the image</h3>
 <div class="formula">Z = y′/y = −a′/a = −(−2)/1 = 2<br>y′ = Z · y = 2 · 0.5 cm = 1 cm</div>
 <div class="result">The image is <b>2 cm behind the mirror</b>, has a height of <b>1 cm</b> and is <b>virtual, upright and magnified twice</b>. It cannot be caught on a screen.</div>
+<!--PART-->
+<h2>3. Experiment – Density of a Solid</h2>
+<h3>3.1 Theory</h3>
+<p><strong>Density</strong> of a substance is the ratio of the mass of a body to its volume:</p>
+<div class="formula">ρ = m/V &nbsp;&nbsp; [ρ] = kg/m³ (1 g/cm³ = 1 000 kg/m³)</div>
+<p>The mass is found with scales. The volume of a regular body is calculated from its dimensions, the volume of an irregular body is found by immersing it in water. Density is a characteristic property of a substance, so it can be used to identify the substance (aluminium 2 700 kg/m³, steel 7 850 kg/m³, brass about 8 500 kg/m³).</p>
+<h3>3.2 Apparatus</h3>
+<p>A metal cylinder (e.g. aluminium), digital scales, a vernier caliper, a measuring cylinder with water, a spring balance, a beaker of water, thread.</p>
+<h3>3.3 Method A – body of regular shape</h3>
+<ol><li>Measure the mass m of the cylinder with the scales.</li>
+<li>Measure the diameter d and the height h with the vernier caliper, each dimension several times at different places.</li>
+<li>Calculate the volume V = πd²h/4 and the density ρ = m/V.</li>
+</ol>
+<h3>3.4 Method B – immersion in a measuring cylinder</h3>
+<ol><li>Pour water into the measuring cylinder and read the volume V₁ (at the bottom of the meniscus).</li>
+<li>Carefully lower the body on a thread until it is completely under water and read V₂.</li>
+<li>The volume of the body is V = V₂ − V₁. This method also works for bodies of irregular shape.</li>
+</ol>
+<h3>3.5 Method C – hydrostatic weighing</h3>
+{{SVG1}}
+<p>Hang the body on the spring balance and read its weight G in air. Then immerse it in water and read G′. The difference is the buoyant force according to Archimedes’ principle:</p>
+<div class="formula">F<sub>b</sub> = G − G′ = ρ<sub>w</sub>Vg &nbsp; → &nbsp; ρ = ρ<sub>w</sub> · G/(G − G′)</div>
+<p>We need to know neither the volume nor the mass – two readings of the spring balance are enough.</p>
+<h3>3.6 Sample evaluation</h3>
+<p class="subtle">The following numbers are model data for an aluminium cylinder; they are not a real measurement.</p>
+<table><tr><th>Method</th><th>Measured values</th><th>ρ</th></tr>
+<tr><td>A – dimensions</td><td>m = 42.4 g; d = 2.00 cm; h = 5.00 cm; V = 15.7 cm³</td><td>2.70 g/cm³</td></tr>
+<tr><td>B – measuring cylinder</td><td>V₁ = 50.0 ml; V₂ = 65.5 ml; V = 15.5 cm³</td><td>2.74 g/cm³</td></tr>
+<tr><td>C – hydrostatic weighing</td><td>G = 0.416 N; G′ = 0.262 N</td><td>2.70 g/cm³</td></tr>
+</table>
+<div class="formula">A: ρ = m/V = 42.4 g / (π · 2.00² · 5.00/4) cm³ = 42.4 g / 15.7 cm³ ≈ 2.70 g/cm³<br>C: ρ = 1 000 kg/m³ · 0.416 N / (0.416 N − 0.262 N) ≈ 2 700 kg/m³</div>
+<div class="result"><strong>Conclusion:</strong> The density of the cylinder is about 2 700 kg/m³, which corresponds to aluminium. Methods A and C are the most accurate; the measuring cylinder has a coarse scale.</div>
+<h3>3.7 Uncertainties</h3>
+<p>In method B the largest error is in reading the volume – a division of 0.5 ml for a volume of 15 ml means a relative error of about 3 %. No air bubbles may remain on the body and the thread should be thin. In method A the result is affected mainly by the diameter, because it appears squared: the relative error of the volume is δV ≈ 2δd + δh. In method C the scale division of the spring balance matters, and the body must not rest on the bottom or the walls of the beaker.</p>

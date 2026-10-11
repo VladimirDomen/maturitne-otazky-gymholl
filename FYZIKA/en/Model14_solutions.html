@@ -11,7 +11,7 @@
 
 <header class="mo-head"><div class="mo-head-in">
 <div class="mo-kicker"><span class="mo-num">MODEL 14</span><span class="mo-kind">Worked solutions</span></div>
-<h1>Electric Current in Electrolytes · Energy of a Particle · Efficiency of a Transformer</h1>
+<h1>Electric Current in Electrolytes · Energy of a Particle · Operation and Efficiency of a Transformer</h1>
 <p>Detailed worked solutions with explanations</p>
 </div></header>
 
@@ -113,10 +113,11 @@
 </section>
 
 <section class="sheet" id="cast-3"><div class="topline">Part 3 of 3</div>
-<h2>3. Experiment – Efficiency of a Transformer</h2>
+<h2>3. Experiment – Operation and Efficiency of a Transformer</h2>
 <h3>3.1 Theory</h3>
 <p>A transformer changes an alternating voltage. It has two coils on a common closed core made of ferromagnetic sheets. The alternating current in the <strong>primary coil</strong> (N₁ turns) produces a varying magnetic flux in the core. This flux induces an alternating voltage of the same frequency in the <strong>secondary coil</strong> (N₂ turns). For an ideal transformer:</p>
 <div class="formula">U₂/U₁ = N₂/N₁ = k &nbsp;&nbsp;&nbsp; I₂/I₁ ≈ N₁/N₂</div>
+<p>The number k is the <strong>turns ratio</strong>. For N₂ &gt; N₁ the transformer steps the voltage up (and the current down), for N₂ &lt; N₁ it steps the voltage down. A transformer works only with alternating current – a direct current does not produce a varying magnetic flux and no voltage is induced in the secondary coil.</p>
 <p><strong>Efficiency</strong> is the ratio of the output power delivered to the load (P₂) to the input power taken from the source (P₁):</p>
 <div class="formula">η = P₂/P₁ = (U₂ I₂)/(U₁ I₁) · 100 %</div>
 <p>This relation holds when the load is resistive (a bulb, a resistor) and the transformer is sufficiently loaded. Then voltage and current are approximately in phase. Exactly, the input power is P₁ = U₁I₁ cos φ₁.</p>
@@ -131,23 +132,30 @@
 <h3>3.3 Circuit</h3>
 <svg class="diagram" viewBox="0 0 680 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Circuit for measuring the efficiency of a transformer: source, ammeter A1 and voltmeter V1 on the primary coil; ammeter A2, voltmeter V2 and load R on the secondary coil"><path d="M250 60H390V220H250ZM275 85V195H365V85Z" fill="#b9c4cf" fill-rule="evenodd" stroke="#637889" stroke-width="1.5"/><g stroke="#b87333" stroke-width="4" fill="none"><path d="M244 100H281M244 112H281M244 124H281M244 136H281M244 148H281M244 160H281M244 172H281M244 184H281M359 104H396M359 122H396M359 140H396M359 158H396M359 176H396"/></g><g stroke="#193b59" stroke-width="3" fill="none"><path d="M60 116V40H136M164 40H230V100H244M244 184H230V240H60V164"/><path d="M190 40V126M190 154V240"/><path d="M396 104H410V40H486M514 40H580V110M580 170V240H410V176H396"/><path d="M450 40V126M450 154V240"/><rect x="568" y="110" width="24" height="60" fill="#fff"/><circle cx="60" cy="140" r="24" fill="#fff"/><circle cx="150" cy="40" r="14" fill="#fff"/><circle cx="190" cy="140" r="14" fill="#fff"/><circle cx="500" cy="40" r="14" fill="#fff"/><circle cx="450" cy="140" r="14" fill="#fff"/></g><g fill="#193b59"><circle cx="190" cy="40" r="4"/><circle cx="190" cy="240" r="4"/><circle cx="450" cy="40" r="4"/><circle cx="450" cy="240" r="4"/></g><g font-size="16" fill="#193b59"><text x="50" y="148" font-size="22">~</text><text x="141" y="46">A₁</text><text x="181" y="146">V₁</text><text x="491" y="46">A₂</text><text x="441" y="146">V₂</text><text x="200" y="210">N₁</text><text x="416" y="210">N₂</text><text x="300" y="50">core</text><text x="600" y="146">load R</text></g></svg>
 <p>In the primary circuit ammeter A₁ measures current I₁ and voltmeter V₁ the voltage U₁ across the primary coil. In the secondary circuit A₂ measures the current I₂ through the load and V₂ the voltage U₂ across the secondary coil.</p>
-<h3>3.4 Procedure</h3>
-<ol><li>Assemble the transformer with a closed core (the yoke fits well) and connect the circuit according to the diagram. Record N₁ and N₂.</li>
-<li>First measure the voltages <strong>without load</strong> and compare the ratio U₁/U₂ with the ratio N₁/N₂.</li>
-<li>Connect the load R and read U₁, I₁, U₂, I₂. Repeat the measurement for several different loads.</li>
+<h3>3.4 Verifying the operation – measurement without load</h3>
+<ol><li>Assemble the transformer with a closed core (the yoke fits well) and connect the circuit according to the diagram, for now without a load. Record N₁ and N₂.</li>
+<li>Apply an alternating voltage U₁ to the primary coil and read U₁ and U₂.</li>
+<li>Replace the secondary coil with coils of a different number of turns and repeat the measurement.</li>
+<li>For each pair compare U₂/U₁ with N₂/N₁.</li>
+<li>For comparison apply a DC voltage to the primary – voltmeter V₂ reads zero (it deflects briefly only when switching on and off).</li>
+</ol>
+<p class="subtle">The following numbers are model data for N₁ = 600 and U₁ = 12.0 V; they are not a real measurement.</p>
+<table><tr><th>N₂</th><th>N₂/N₁</th><th>U₂ (V)</th><th>U₂/U₁</th></tr><tr><td>300</td><td>0.50</td><td>5.9</td><td>0.49</td></tr><tr><td>600</td><td>1.00</td><td>11.8</td><td>0.98</td></tr><tr><td>1 200</td><td>2.00</td><td>23.4</td><td>1.95</td></tr></table>
+<p>The voltage ratio agrees with the turns ratio; U₂ is only 1–3 % smaller – part of the magnetic flux leaks outside the secondary coil. This verifies the operation of the transformer.</p>
+<h3>3.5 Extension – measuring the efficiency</h3>
+<p>The efficiency can be checked at school with the same meters, but the result is only approximate (see below).</p>
+<ol><li>With N₁ = 600 and N₂ = 300 connect a load R to the secondary and read U₁, I₁, U₂, I₂. Repeat the measurement for several different loads.</li>
 <li>For each measurement calculate P₁ = U₁I₁, P₂ = U₂I₂ and η = P₂/P₁.</li>
 <li>For comparison the yoke can be removed – the flux leakage increases, U₂ drops and the efficiency decreases considerably.</li>
 </ol>
-<h3>3.5 Sample evaluation</h3>
-<p class="subtle">The following numbers are model data for N₁ = 600, N₂ = 300 and U₁ = 12.0 V; they are not a real measurement.</p>
-<p>Without load: U₂ = 5.9 V, U₁/U₂ ≈ 2.03 ≈ N₁/N₂ = 2.</p>
+<p class="subtle">Model data for N₁ = 600, N₂ = 300 and U₁ = 12.0 V; they are not a real measurement.</p>
 <table><tr><th>R (Ω)</th><th>I₁ (A)</th><th>P₁ (W)</th><th>U₂ (V)</th><th>I₂ (A)</th><th>P₂ (W)</th><th>η</th></tr><tr><td>20</td><td>0.19</td><td>2.28</td><td>5.7</td><td>0.285</td><td>1.62</td><td>71 %</td></tr><tr><td>10</td><td>0.33</td><td>3.96</td><td>5.6</td><td>0.56</td><td>3.14</td><td>79 %</td></tr><tr><td>5</td><td>0.62</td><td>7.44</td><td>5.4</td><td>1.08</td><td>5.83</td><td>78 %</td></tr></table>
 <p>For example, for R = 10 Ω:</p>
 <div class="formula">η = (5.6 V · 0.56 A)/(12.0 V · 0.33 A) = 3.14 W / 3.96 W ≈ 0.79 = 79 %</div>
 <p>At a small load a large part of the primary current is the magnetising current, which carries only reactive power. The product U₁I₁ is then greater than the real input power and the calculated efficiency comes out lower. At a large current the copper losses (RI²) increase and the voltage U₂ drops. The efficiency is therefore greatest at a medium load.</p>
 <h3>3.6 Sources of error and safety</h3>
 <p>Work only with a safe low voltage – never connect the primary coil directly to the 230 V mains. Change the circuit only with the source switched off. The load must withstand the given power. Errors are caused by the tolerances of the meters on AC ranges, neglecting the phase shift (cos φ₁) and the consumption of the meters themselves. More accurate results are obtained by measuring input and output power with wattmeters.</p>
-<div class="result"><strong>Conclusion:</strong> The efficiency is found from η = U₂I₂/(U₁I₁). A school transformer with a closed core reaches about 70–80 % with a resistive load. Losses occur in the windings, in the core and through flux leakage.</div>
+<div class="result"><strong>Conclusion:</strong> The ratio of the voltages across the coils equals the ratio of their numbers of turns, U₂/U₁ ≈ N₂/N₁ – the transformer works on the principle of electromagnetic induction and only with alternating current. The efficiency found from η = U₂I₂/(U₁I₁) is about 70–80 % for a school transformer with a resistive load; losses occur in the windings, in the core and through flux leakage.</div>
 </section>
 
 </main>

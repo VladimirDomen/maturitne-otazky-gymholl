@@ -18,11 +18,11 @@ TOPICS = {
     7: ['Mechanics of a Rigid Body', 'Alternating Current', 'Refractive Index of Light'],
     8: ['Molecular Physics and Thermodynamics', 'Electromagnetic Waves', 'Simple Pendulum'],
     9: ['Changes of State', 'Electron in an Electric Field', 'Progressive Transverse Waves'],
-    10: ['Properties of Gases', 'Pressure in a Tyre', 'Concave Spherical Mirror'],
+    10: ['Properties of Gases', 'Concave Spherical Mirror', 'Density of a Solid'],
     11: ['Properties of Liquids', 'Thin-Film Interference', 'Current–Voltage Characteristic of a Diode'],
     12: ['Solids', 'Photoelectric Effect', 'Inertial Mass'],
     13: ['Electric Current in Semiconductors', 'Mechanics of a Rigid Body', 'Inductance and Capacitance'],
-    14: ['Electric Current in Electrolytes', 'Energy of a Particle', 'Efficiency of a Transformer'],
+    14: ['Electric Current in Electrolytes', 'Energy of a Particle', 'Operation and Efficiency of a Transformer'],
     15: ['Electric Field', 'Atomic Nucleus', 'Inclined Plane'],
     16: ['Electric Current', 'Kinematics – v–t Graph', 'Wavelength of Light'],
     17: ['Electric Current in Metals', 'Dynamics – Bullet in a Barrel', 'Surface Layer of a Liquid'],
@@ -155,6 +155,9 @@ SVG_EN = {
         'Series circuit with a source, rheostat R1 and resistors R2 and R3; voltmeter V1 across R1, voltmeter V2 between the start of R1 and the end of R2',
     'Rezonančná trubica s vodou: pri hladine je uzol, pri otvorenom konci kmitňa stojatého vlnenia':
         'Resonance tube with water: a node at the water surface and an antinode of the standing wave at the open end',
+    'Hydrostatické váženie: teleso zavesené na silomere na vzduchu a ponorené do vody':
+        'Hydrostatic weighing: a body hanging on a spring balance in air and immersed in water',
+    'na vzduchu': 'in air', 'vo vode': 'in water', 'G′ = 0,262 N': 'G′ = 0.262 N',
     'zdroj zvuku': 'sound source', 'kmitňa (otvorený koniec)': 'antinode (open end)', 'uzol (hladina vody)': 'node (water surface)',
     'spínač': 'switch', 'zdroj': 'source', 'ampérmeter': 'ammeter', 'voltmeter': 'voltmeter', 'rezistor': 'resistor',
     'Elektrolýza roztoku síranu meďnatého medzi dvoma medenými elektródami; katióny medi idú ku katóde, síranové anióny k anóde':
